@@ -1,0 +1,534 @@
+@import url('code.css');
+
+@font-face {
+    font-family: "Public Sans ExtraBold";
+    src: url("/assets/fonts/public-sans/ttf/PublicSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Public Sans Bold";
+    src: url("/assets/fonts/public-sans/ttf/PublicSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Public Sans Regular";
+    src: url("/assets/fonts/public-sans/ttf/PublicSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Public Sans Light";
+    src: url("/assets/fonts/public-sans/ttf/PublicSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Public Sans Thin";
+    src: url("/assets/fonts/public-sans/ttf/PublicSans-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Medium";
+    src: url("/assets/fonts/jetbrains-mono/JetBrainsMono-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrains Mono ExtraBold";
+    src: url("/assets/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.ttf") format("truetype");
+}
+
+/* Dark mode 
+
+[data-bs-theme=dark] {
+    color-scheme: dark;*/
+:root, [data-bs-theme=dark], [data-bs-theme=light] {
+    --bs-body-color: #fff;
+    --bs-body-color-rgb: 255, 255, 255;
+    --bs-body-bg: #13171f;
+    --bs-body-bg-rgb: 19, 23, 31;
+    --bs-body-secondary: red;
+    --bs-body-secondary-bg: #0f1218;
+    --bs-link-color: #70e17b;
+    --bs-link-color-rgb: 112, 225, 123;
+    --bs-link-hover-color: var(--bs-link-color);
+    --bs-link-hover-color-rgb: 112, 225, 123;
+    --bs-highlight-bg: var(--bs-link-color);
+    --bs-highlight-color: var(--bs-body-bg);
+    --bs-btn-primary: var(--bs-link-color);
+    --bs-btn-primary-color: var(--bs-link-color);
+    --bs-btn-primary-border-color: var(--bs-link-color);
+    --bs-btn-primary-focus-shadow-rgb: 112, 225, 123;
+    --bs-btn-primary-active-shadow-rgb: 112, 225, 123;
+    --bs-btn-primary-active-color: var(--bs-link-color);
+    --bs-btn-primary-active-bg: var(--bs-link-color);
+    --bs-btn-bg: var(--bs-link-color);
+    --bs-btn-border-color: var(--bs-link-color);
+    --bs-btn-color: var(--bs-body-bg);
+    --bs-btn-hover-bg: var(--bs-link-color);
+    --bs-btn-hover-border-color: var(--bs-link-color);
+    --bs-btn-hover-color: #0f1218;
+    --bs-btn-primary-bg: var(--bs-link-color);
+    --bs-nav-link-color: var(--bs-body-color);
+    --bs-border-color: #252f3e;
+    --bs-link-hover-decoration: none;
+    --bs-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    --bs-card-shadow: 0 0.25rem .5rem rgba(0, 0, 0, 0.1);
+    --bs-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    --bs-box-shadow-md: 0 0.25rem 0.5rem rgba(0, 0, 0, .5);
+    --bs-font-monospace: "JetBrains Mono Medium", monospace;
+    --bs-font-light: "Public Sans Light", sans-serif;
+    --bs-font-bold: "Public Sans Bold", sans-serif;
+    --bs-font-regular: "Public Sans Regular", sans-serif;
+    --bs-font-serif: "Merriweather Light", sans-serif;
+    --bs-font-thin: "Public Sans Thin", sans-serif;
+    --bs-font-extra-bold: "Public Sans ExtraBold", sans-serif;
+    --bs-font-sans-serif: "Public Sans Regular", sans-serif;
+    --bs-secondary: var(--bs-body-color);
+    --bs-nav-link-color: var(--bs-body-color);
+    --bs-nav-link-hover-color: var(--bs-link-color);
+    --bs-badge-bg: var(--bs-link-color);
+    --bs-border-radius-sm: .25rem;
+    --bs-selection-bg: var(--bs-link-color);
+    --bs-selection-color: var(--bs-body-bg);
+    --bs-text-bg-primary: #face00;
+    --bs-text-bg-success: #4866ff;
+    --bs-card-hover-bg: #0f1218;
+    --bs-text-secondary: var(--bs-secondary);
+    --bs-form-control-color: var(--bs-body-color);
+    --bs-form-control-bg: var(--bs-body-bg);
+    --bs-form-control-border-color: var(--bs-border-color);
+    --bs-form-control-focus-border-color: var(--bs-link-color);
+    --bs-form-control-focus-box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    --bs-form-control-focus-color: var(--bs-body-color);
+    --bs-text-opacity: .5;
+    --bs-nav-link-font-size: 1.1em;
+    --bs-info-text-emphasis: var(--bs-body-color);
+    --bs-info-bg-subtle: var(--bs-body-secondary-bg);
+    --bs-info-border-subtle: var(--bs-border-color);
+    --bs-emphasis-color: var(--bs-body-color) !important;
+}
+
+.form-control {
+    color: var(--bs-body-color) !important;
+}
+
+.form-control:focus {
+    border-color: var(--bs-body-color);
+    box-shadow: 0 0.25rem 0.5rem #252f3e;
+}
+
+::placeholder, ::-ms-input-placeholder {
+    color: var(--bs-body-color);
+    opacity: var(--bs-text-opacity);
+}
+
+/* General */
+
+body {
+    color: var(--bs-body-color);
+    background: var(--bs-body-bg);
+    background-color: var(--bs-body-bg);
+    font-family: var(--bs-font-sans-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+    font-family: var(--bs-font-bold);
+}
+
+h1, a.btn, .feedback {
+    letter-spacing: -.01em;
+}
+
+body.docs h2,
+body.page h2,
+body.docs h3,
+body.page h3 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+body footer a {
+    color: var(--bs-body-color);
+}
+
+body footer img,
+body ul.navbar-nav img {
+    filter: invert(1);
+}
+
+blockquote {
+    padding: 1rem 1rem .5rem 1rem;
+    margin: 1rem 0 1rem 1.5rem;
+    border-left: 0.25rem solid var(--bs-border-color);
+}
+
+.lead {
+    font-family: var(--bs-font-regular) !important;
+}
+
+strong {
+    font-family: var(--bs-font-bold);
+}
+
+.text-secondary {
+    color: rgba(255, 255, 255, var(--bs-text-opacity)) !important;
+}
+
+/* Selection */
+
+::selection {
+    background-color: var(--bs-selection-bg);
+    color: var(--bs-selection-color);
+}
+
+/* Links */
+
+a:hover {
+    text-decoration: var(--bs-link-hover-decoration);
+    color: var(--bs-link-hover-color);
+}
+
+a[href^="http"]:not([href^="https://scangov.org"]):not([href^="https://scangov.com"]):not([href^="http://localhost:4000/"]):not([href^="https://docs.scangov.org"])::after {
+    content: "\f35d";
+    /* Font Awesome Unicode for 'arrow-up-right-from-square' */
+    font-family: "Font Awesome 5 Free";
+    /* Ensure FontAwesome is loaded */
+    font-weight: 900;
+    margin-left: 5px;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.social a[href^="http"]:not([href^="https://scangov.org"]):not([href^="https://scangov.com"]):not([href^="http://localhost:4000/"]):not([href^="https://docs.scangov.org"])::after {
+    display: none !important;
+}
+
+.social a, .social a:visited {
+    color: var(--bs-body-color);
+    display: inline-block;
+    margin-right: .75rem;
+}
+
+.social a:hover {
+    color: var(--bs-link-color);
+}
+
+a.btn-primary, a.btn-primary:visited, .btn-primary {
+    background-color: var(--bs-link-color);
+    color: var(--bs-body-bg);
+    border-radius: var(--bs-border-radius);
+    border: 1px solid var(--bs-border-color);
+    box-shadow: var(--bs-card-shadow);
+    cursor: pointer;
+    font-family: var(--bs-font-bold);
+    padding: .55rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+a.btn-primary-outline {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border-radius: var(--bs-border-radius-sm);
+    border: 1px solid var(--bs-border-color);
+    box-shadow: var(--bs-card-shadow);
+    cursor: pointer;
+    font-family: var(--bs-font-sans-serif);
+    padding: .55rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+a.btn-primary-outline:hover, .btn-primary-outline:hover {
+    background-color: var(--bs-btn-bg) !important;
+    color: var(--bs-body-bg);
+    border: 1px solid var(--bs-border-color);
+    box-shadow: var(--bs-box-shadow-md) !important;
+}
+
+.feedback {
+    opacity: 0;
+    background-color: var(--bs-link-color);
+    color: var(--bs-body-bg);
+    border-radius: var(--bs-border-radius);
+    border: 1px solid var(--bs-border-color);
+    box-shadow: var(--bs-card-shadow);
+    cursor: pointer;
+    font-family: var(--bs-font-bold);
+    padding: .55rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    text-decoration: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.feedback svg, a.btn svg {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.feedback:hover, a.btn:hover, .btn-primary:hover {
+    background-color: var(--bs-body-bg) !important;
+    box-shadow: var(--bs-box-shadow-md) !important;
+    border: 1px solid var(--bs-border-color);
+    color: var(--bs-body-color) !important;
+    transition: all 0.5s ease;
+}
+
+.feedback:hover svg, a.btn:hover svg {
+    color: var(--bs-body-color) !important;
+    transition: all 0.5s ease;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: var(--bs-shadow);
+}
+
+.navbar-brand {
+    font-family: var(--bs-font-bold);
+}
+
+.navbar-brand {
+    color: var(--bs-body-color) !important;
+}
+
+.navbar-nav, .nav-link, .navbar-nav .nav-link, a.list-group-item {
+    color: var(--bs-body-color) !important;
+}
+
+.navbar-brand:hover, .navbar-nav:hover, .nav-link:hover, .navbar-nav .nav-link:hover, a.list-group-item:hover {
+    color: var(--bs-link-color) !important;
+}
+
+.navbar-brand:hover>svg {
+    fill: var(--bs-link-color) !important;
+}
+
+#logo {
+    fill: var(--bs-body-color);
+    width: 100%;
+    /* Use percentage or specific value as per your layout */
+    max-width: 45px;
+    /* Sets a maximum width */
+}
+
+a.nav-link:hover, .nav-link:hover svg, a.navbar-brand:hover, a.navbar-brand:hover svg, .navbar-brand:hover, .navbar-brand:hover svg {
+    color: var(--bs-link-color);
+}
+
+a.list-group-item:hover {
+    background-color: #0f1218;
+    color: var(--bs-body-color);
+}
+
+.border-end {
+    box-shadow: var(--bs-shadow);
+}
+
+/* Cards */
+
+.card {
+    border: var(--bs-border-color) solid 1px;
+    box-shadow: var(--bs-card-shadow);
+    width: 100%;
+}
+
+a.card {
+    text-decoration: none;
+    transition: 0.25s filter;
+}
+
+.card:hover {
+    background-color: var(--bs-body-secondary-bg) !important;
+    box-shadow: var(--bs-box-shadow-md) !important;
+    /* Add shadow on hover */
+    transition: all 0.5s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Badge */
+
+.badge {
+    font-family: "Public Sans Regular", sans-serif !important;
+    padding: .55rem !important;
+    font-size: .8rem !important;
+    border-radius: var(--bs-border-radius-sm) !important;
+}
+
+.badge-primary:hover {
+    background-color: #fee685 !important;
+    color: var(--bs-body-bg) !important;
+}
+
+.text-bg-primary {
+    background-color: #face00 !important;
+    color: var(--bs-body-bg) !important;
+}
+
+.text-bg-success {
+    background-color: var(--bs-text-bg-success) !important;
+    color: var(--bs-body-color) !important;
+}
+
+/* Images */
+
+main#home img {
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+
+
+svg.fa-circle-check {
+    fill: var(--bs-success);
+}
+
+svg.fa-circle-xmark {
+    fill: var(--bs-danger);
+}
+
+svg.fa-circle-exclamation {
+    fill: var(--bs-warning);
+}
+
+svg.fa-circle-right {
+    fill: var(--bs-info);
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle svg {
+    color: var(--bs-btn-color) !important;
+    transition: 0.15s color;
+}
+
+.dropdown-toggle:hover svg,
+.dropdown-toggle:focus svg {
+    color: var(--bs-btn-hover-color) !important;
+}
+
+/* Timeline */
+
+.timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+}
+
+.timeline .timeline-item {
+    position: relative;
+}
+
+.timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .timeline-item:after {
+    background-color: hsl(0, 0%, 90%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+}
+
+/* Anchor links */
+
+h2 a#heading-hashtag,
+h3 a#heading-hashtag {
+    display: none;
+}
+
+h2:hover a#heading-hashtag,
+h3:hover a#heading-hashtag {
+    display: revert;
+}
+
+.post h2 {
+    margin: 1.25rem 0;
+}
+
+.post ul, .post p {
+    margin-bottom: 1.75rem;
+}
+
+/* File types */
+a[href$=".doc"]::after,
+a[href$=".docx"]::after,
+a[href$=".ppt"]::after,
+a[href$=".pptx"]::after,
+a[href$=".xls"]::after,
+a[href$=".xlsx"]::after,
+a[href$=".pdf"]::after,
+a[href$=".mp3"]::after,
+a[href$=".mp4"]::after,
+a[href$=".avi"]::after,
+a[href$=".mpg"]::after,
+a[href$=".mpeg"]::after,
+a[href$=".mov"]::after,
+a[href$=".wmv"]::after,
+a[href$=".mkv"]::after,
+a[href$=".jpg"]::after,
+a[href$=".jpeg"]::after,
+a[href$=".png"]::after,
+a[href$=".gif"]::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Doc */
+a[href$=".doc"]::after,
+a[href$=".docx"]::after {
+    background-image: url(/assets/font-awesome/svgs/solid/file-word.svg);
+}
+
+/* PowerPoint */
+a[href$=".ppt"]::after,
+a[href$=".pptx"]::after {
+    background-image: url(/assets/font-awesome/svgs/solid/file-powerpoint.svg);
+}
+
+/* Excel */
+a[href$=".xls"]::after,
+a[href$=".xlsx"]::after {
+    background-image: url(/assets/font-awesome/svgs/solid/file-excel.svg);
+}
+
+/* PDF */
+a[href$=".pdf"]::after {
+    background-image: url(/assets/font-awesome/svgs/solid/file-pdf.svg);
+}
+
+/* MP3 */
+a[href$=".mp3"]::after {
+    background-image: url(/assets/font-awesome/svgs/solid/file-audio.svg);
+}
+
+/* MP4 */
+a[href$=".mp4"]::after {
+    background-image: url(/assets/font-awesome/svgs/solid/file-video.svg);
+}

@@ -1,0 +1,10 @@
+docs_list_title: nav
+docs:
+
+- title: Guidance
+  icon: fa-solid fa-trophy
+  url: /guidance
+
+- title: Project ScanGov
+  icon: fa-solid fa-home
+  url: https://scangov.org

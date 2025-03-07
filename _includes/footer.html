@@ -1,0 +1,16 @@
+<footer>
+  <div class="container mt-5 pt-5 border-top">
+    <div class="row">
+      <div class="col-12">
+        <p class="small">
+          <a href="{{ site.org-url }}" style="text-decoration: none;">ScanGov</a>
+          {{ "now" | date: "%Y" }}
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+{% if jekyll.environment == 'production' %}
+  <!-- TODO: add analytics -->
+{% endif %}
+{% include js.html %}</body></html>

@@ -1,0 +1,20 @@
+{
+  "name": "scangov-docs",
+  "version": "1.0.0",
+  "description": "ScanGov documentation",
+  "main": "",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScanGov/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScanGov/docs/issues"
+  },
+  "homepage": "https://github.com/ScanGov/docs#readme"
+}
