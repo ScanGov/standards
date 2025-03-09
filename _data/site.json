@@ -1,0 +1,27 @@
+{
+  "title": "ScanGov Standards",
+  "description": "Government digital experience monitor",
+  "url": "https://standards.scangov.org",
+  "org": "ScanGov",
+  "org-url": "https://scangov.com",
+  "repo": "https://github.com/ScanGov/standards",
+  "github-url": "https://github.com/ScanGov/standards",
+  "linkedin-url": "https://www.linkedin.com/company/scangov",
+  "twitter-url": "",
+  "twitter-username": "",
+  "twitter": "",
+  "date": "%B %-d, %Y",
+  "timezone": "America/Los_Angeles",
+  "nav": [
+    {
+      "url": "/guidance",
+      "title": "Guidance",
+      "icon": "trophy"
+    },
+    {
+      "url": "https://scangov.org",
+      "title": "Project ScanGov",
+      "icon": "home"
+    }
+  ]
+}

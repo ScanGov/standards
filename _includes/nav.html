@@ -43,10 +43,10 @@
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
-        {% for item in site.data.nav.docs %}
+        {% for item in site.nav %}
           {% if item.url %}
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 {% if page.url contains item.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">
+              <a class="nav-item nav-link mx-1 {% if page.url in item.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">
                 <i class="{{ item.icon }}"></i>
                 {{ item.title }}
               </a>

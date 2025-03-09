@@ -1,0 +1,55 @@
+---
+layout: layouts/default.html
+title: "ScanGov Standards"
+date: 2025-02-01
+author: ScanGov
+description: "Our government digital experience standards."
+topics:
+  - Standards
+---
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover shadow">
+      <thead>
+        <tr>
+          <th scope="col" class="p-3">Topics</th>
+          <th scope="col" class="p-3">Standard</th>
+          <th scope="col" class="p-3">Description</th>
+          <th scope="col" class="p-3">Guidance</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for key, value in audits %}
+          {% for item in audits[key].attributes %}
+          <tr>
+            <td class="p-3">
+              <div class="d-flex flex-wrap">
+                <a href="{{ topic_url }}" class="d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
+                  <i class="{{ topic_data.icon }} me-2" title="{{ topic }}"></i> {{ value.displayName }}
+                </a>
+              </div>
+            </td>
+            <td class="p-3">
+              {{ item.displayName }}
+            </td>
+            <td class="p-3">
+              <div>
+                {{ item.description }}<br>
+                <code>
+                  {{ item.tag }}
+                </code>
+              </div>
+            </td>
+            <td class="p-3">
+              <div>
+                <a href="item.docs">
+                  {{ item.key}}
+                </a>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>

@@ -8,9 +8,6 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% endif %}
-    {% if page.keywords %}
-    <meta name="keywords" content="{% assign keywords = page.keywords | join: ', ' %}{{ keywords }}">
-    {% endif %}
     {% if page.author %}
     <meta name="author" content="{{ page.author }}">
     {% endif %}
@@ -45,16 +42,6 @@
     {% endif %}
     <!-- Meta site -->
     <meta property="linkedin:site" content="{{ site.linkedin-url }}">
-    <!-- Twitter -->
-    <meta name="twitter:site" content="{{ site.twitter }}">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.description }}">
-    {% if page.img-twitter %}
-    <meta property="twitter:image" content="{{ site.url }}/assets/img/{{ page.img-path }}/{{ page.img-twitter }}">
-    {% else %}
-    <meta property="twitter:image" content="{{ site.url }}/assets/img/avatar-twitter.png">
-    {% endif %}
     {% if page.img-og %}
     <meta property="og:image" content="{{ site.url }}/assets/img/{{ page.img-path }}/{{ page.img-og }}">
     {% else %}
@@ -71,9 +58,9 @@
     {% endif %}
     {% endif %}
     <!-- Favicon -->
-    {% include favicon.html %}
+    {% include "favicon.html" %}
     <!-- CSS -->
-    {% include style.html %}
+    {% include "style.html" %}
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

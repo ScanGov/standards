@@ -1,9 +1,5 @@
----
-layout: default
----
-
-{% include header.html %}
-{% include nav.html %}
+{% include "header.html" %}
+{% include "nav.html" %}
 <main>
   <div class="pt-5 pb-4 mb-5 border-bottom">
     <div class="container">
@@ -24,9 +20,9 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include content.html %}
+        {{ content | safe }}
       </div>
     </div>
   </div>
 </main>
-{% include footer.html %}
+{% include "footer.html" %}
