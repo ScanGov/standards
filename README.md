@@ -22,3 +22,11 @@ npm i
 
 This site deploys itself to github pages. The git action workflow writes the built files to the gh-pages pages branch which is what the github pages uses for source.
 
+
+
+
+
+	- guidance is a link to the spec: like open graph protocol, wcag, google performance guidance
+		- these are on docs.scangov.org/guidance
+	- There is a guidance page which lists 1 row for each guidance and last column has comma list of all scangov standards related to that single external spec
+

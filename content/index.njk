@@ -15,7 +15,6 @@ topics:
           <th scope="col" class="p-3">Topics</th>
           <th scope="col" class="p-3">Standard</th>
           <th scope="col" class="p-3">Description</th>
-          <th scope="col" class="p-3">Guidance</th>
         </tr>
       </thead>
       <tbody>
@@ -24,27 +23,17 @@ topics:
           <tr>
             <td class="p-3">
               <div class="d-flex flex-wrap">
-                <a href="{{ topic_url }}" class="d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
-                  <i class="{{ topic_data.icon }} me-2" title="{{ topic }}"></i> {{ value.displayName }}
+                <a href="{{ topic_url }}" class="icon-link d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
+                  <i class="fa-solid fa-{{ value.icon }} me-2" title="{{ topic }}"></i> {{ value.displayName }}
                 </a>
               </div>
             </td>
             <td class="p-3">
-              {{ item.displayName }}
+              <a href="{{ item.docs }}">{{ item.displayName }}</a>
             </td>
             <td class="p-3">
               <div>
                 {{ item.description }}<br>
-                <code>
-                  {{ item.tag }}
-                </code>
-              </div>
-            </td>
-            <td class="p-3">
-              <div>
-                <a href="{{ item.docs }}">
-                  {{ item.key}}
-                </a>
               </div>
             </td>
           </tr>
