@@ -2,8 +2,8 @@ import * as fs from 'fs';
 
 export async function getData(url, local = false) {
   return new Promise(async (resolve) => {
-    if(local) {
-      let fileLoc = url.replace('https://github.com/ScanGov/data/raw/refs/heads/main/','');
+    let fileLoc = url.replace('https://github.com/ScanGov/data/raw/refs/heads/main/','');
+    if(local && fs.existsSync('../data/'+fileLoc)) {
       resolve(JSON.parse(fs.readFileSync('../data/'+fileLoc,'utf8')));
     } else {
       try {
