@@ -532,3 +532,9 @@ a[href$=".mp3"]::after {
 a[href$=".mp4"]::after {
     background-image: url(/assets/font-awesome/svgs/solid/file-video.svg);
 }
+
+/* svg size control */
+.icon-link svg {
+    width: 20px;
+    height: 20px;
+}
