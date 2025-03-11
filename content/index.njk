@@ -15,6 +15,7 @@ topics:
           <th scope="col" class="p-3">Topics</th>
           <th scope="col" class="p-3">Standard</th>
           <th scope="col" class="p-3">Description</th>
+          <th scope="col" class="p-3">Guidance</th>
         </tr>
       </thead>
       <tbody>
@@ -35,6 +36,13 @@ topics:
               <div>
                 {{ item.description }}<br>
               </div>
+            </td>
+            <td class="p-3">
+              {% for standard in item.standards %}
+                <div>
+                  <a href="{{ standard.url }}">{{ standard.displayName }}</a>
+                </div>
+              {% endfor %}
             </td>
           </tr>
           {% endfor %}
