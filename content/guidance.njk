@@ -18,25 +18,29 @@ topics:
         </tr>
       </thead>
       <tbody>
+        {% for standard in guidance %}
         <tr>
           <td class="p-3">
             <div class="d-flex flex-wrap">
-              <a href="{{ topic_url }}" class="d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
-                <i class="{{ topic_data.icon }} me-2" title="{{ topic }}"></i>
+              {% for topic in standard.topics %}
+              <a href="{{ topic.url }}" class="icon-link d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
+                <i class="fa-solid fa-{{ topic.icon }} me-2" title="{{ topic.displayName }}"></i>
               </a>
+              {% endfor %}
             </div>
           </td>
           <td class="p-3">
             <div>
-              <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+              <a href="{{ standard.url }}">{{ standard.displayName }}</a>
             </div>
           </td>
           <td class="p-3">
             <div>
-              {{ page.description }}
+              {{ standard.description }}
             </div>
           </td>
         </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
