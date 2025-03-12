@@ -47,16 +47,14 @@
           {% if item.url %}
             <li class="nav-item me-3 me-lg-0 small">
               <a class="nav-item nav-link mx-1 {% if page.url in item.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">
-                <i class="{{ item.icon }}"></i>
+                <span class="{{ item.icon }}"></span>
                 {{ item.title }}
               </a>
             </li>
           {% endif %}
         {% endfor %}
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"
-          href="javascript:void(0)"
-          onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">
           <img
             id="theme-icon"
             src="/assets/img/sun.svg"

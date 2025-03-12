@@ -1,6 +1,6 @@
 {
   "title": "ScanGov Standards",
-  "description": "Government digital experience monitor",
+  "description": "Government digital experience standards",
   "url": "https://standards.scangov.org",
   "org": "ScanGov",
   "org-url": "https://scangov.com",
@@ -14,14 +14,14 @@
   "timezone": "America/Los_Angeles",
   "nav": [
     {
-      "url": "/guidance",
-      "title": "Guidance",
-      "icon": "trophy"
+      "url": "https://scangov.com",
+      "title": "ScanGov",
+      "icon": "fa-solid fa-home"
     },
     {
       "url": "https://scangov.org",
       "title": "Project ScanGov",
-      "icon": "home"
+      "icon": "fa-solid fa-diagram-project"
     }
   ]
 }

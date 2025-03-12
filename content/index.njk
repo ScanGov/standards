@@ -1,9 +1,9 @@
 ---
 layout: layouts/default.html
-title: "ScanGov Standards"
+title: "Government digital experience standards"
 date: 2025-02-01
 author: ScanGov
-description: "Our government digital experience standards."
+description: "Based on established web protocol, guidelines and best practices."
 topics:
   - Standards
 ---
@@ -12,7 +12,7 @@ topics:
     <table class="table table-bordered table-hover shadow">
       <thead>
         <tr>
-          <th scope="col" class="p-3">Topics</th>
+          <th scope="col" class="p-3">Topic</th>
           <th scope="col" class="p-3">Standard</th>
           <th scope="col" class="p-3">Description</th>
           <th scope="col" class="p-3">Guidance</th>
@@ -25,7 +25,7 @@ topics:
             <td class="p-3">
               <div class="d-flex flex-wrap">
                 <a href="{{ topic_url }}" class="icon-link d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
-                  <i class="fa-solid fa-{{ value.icon }} me-2" title="{{ topic }}"></i> {{ value.displayName }}
+                  <i class="fa-solid fa-{{ value.icon }} me-2" title="{{ topic }}" aria-label="{{ value.displayName }}"></i>
                 </a>
               </div>
             </td>
