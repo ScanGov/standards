@@ -15,29 +15,37 @@ topics:
           <th scope="col" class="p-3">Topics</th>
           <th scope="col" class="p-3">Guidance</th>
           <th scope="col" class="p-3">Description</th>
+          <th scope="col" class="p-3">Standards</th>
         </tr>
       </thead>
       <tbody>
-        {% for standard in guidance %}
+        {% for key, item  in guidance %}
         <tr>
           <td class="p-3">
             <div class="d-flex flex-wrap">
-              {% for topic in standard.topics %}
-              <a href="{{ topic.url }}" class="icon-link d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
-                <i class="fa-solid fa-{{ topic.icon }} me-2" title="{{ topic.displayName }}"></i>
-              </a>
+              {% for topic in item.topics %}
+                <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
+                  <i class="fa-solid fa-{{ audits[topic].icon }} me-2" title="{{ audits[topic].displayName }}"></i>
+                </a>
               {% endfor %}
             </div>
           </td>
           <td class="p-3">
             <div>
-              <a href="{{ standard.url }}">{{ standard.displayName }}</a>
+              <a href="{{ item.docs }}">{{ item.displayName }}</a>
             </div>
           </td>
           <td class="p-3">
             <div>
-              {{ standard.description }}
+              {{ item.description }}
             </div>
+          </td>
+          <td class="p-3">
+            <ul>
+              {% for standard in item.standards %}
+                <li><a href="{{ standard.url }}">{{ standard.displayName }}</a></li>
+              {% endfor %}
+            </ul>
           </td>
         </tr>
         {% endfor %}
