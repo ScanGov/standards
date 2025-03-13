@@ -14,6 +14,11 @@
   "timezone": "America/Los_Angeles",
   "nav": [
     {
+      "url": "/guidance",
+      "title": "Guidance",
+      "icon": "fa-solid fa-trophy"
+    },
+    {
       "url": "https://scangov.com",
       "title": "ScanGov",
       "icon": "fa-solid fa-home"
