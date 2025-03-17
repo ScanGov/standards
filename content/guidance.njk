@@ -2,8 +2,9 @@
 layout: layouts/default.html
 title: "Guidance"
 date: 2024-03-08
+modified: 2025-03-17
 author: ScanGov
-description: "ScanGov Standards are based on these established web protocol, guidelines and best practices."
+description: "ScanGov Standards are based on policy, web protocol, guidelines and best practices."
 topics:
   - Guidance
 ---
@@ -24,7 +25,7 @@ topics:
           <td class="p-3">
             <div class="d-flex flex-wrap">
               {% for topic in item.topics %}
-                <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-center mb-1 me-1 text-decoration-none">
+                <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
                   <i class="fa-solid fa-{{ audits[topic].icon }} me-2" title="{{ audits[topic].displayName }}"></i>
                 </a>
               {% endfor %}
