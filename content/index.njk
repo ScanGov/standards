@@ -15,7 +15,9 @@ topics:
         <tr>
           <th scope="col" class="p-3">Topic</th>
           <th scope="col" class="p-3">Standard</th>
+          <!--
           <th scope="col" class="p-3">Description</th>
+          -->
           <th scope="col" class="p-3">Guidance</th>
         </tr>
       </thead>
@@ -36,12 +38,16 @@ topics:
                   <a href="{{ standard.url }}">{{ item.displayName }}</a>
                 </div>
               {% endfor %}
+                <div>
+                  <br><span class="small">{{ item.description }}</span>
+                </div>
             </td>
+            <!--
             <td class="p-3">
               <div>
-                {{ item.description }}<br>
               </div>
             </td>
+            -->
             <td class="p-3">
               <div>
                 <a href="{{ item.docs }}">{{ item.guidance }}</a>
