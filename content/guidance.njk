@@ -15,7 +15,9 @@ topics:
         <tr>
           <th scope="col" class="p-3">Topics</th>
           <th scope="col" class="p-3">Guidance</th>
+          <!--
           <th scope="col" class="p-3">Description</th>
+          -->
           <th scope="col" class="p-3">Standards</th>
         </tr>
       </thead>
@@ -35,12 +37,15 @@ topics:
             <div>
               <a href="{{ item.docs }}">{{ item.displayName }}</a>
             </div>
-          </td>
-          <td class="p-3">
             <div>
-              {{ item.description }}
+              <span class="small">{{ item.description }}</span>
             </div>
           </td>
+          <!--
+          <td class="p-3">
+            
+          </td>
+          -->
           <td class="p-3">
             <ul>
               {% for standard in item.standards %}
