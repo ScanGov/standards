@@ -13,27 +13,24 @@ topics:
     <table class="table table-bordered table-hover shadow">
       <thead>
         <tr>
-          <th scope="col" class="p-3">Topics</th>
+          <th scope="col" class="p-3">Indicators <a href="https://docs.scangov.org/indicators" style="color: inherit;"><i class="fa-solid fa-circle-question" aria-label="Indicators"></i></a></th>
           <th scope="col" class="p-3">Guidance</th>
-          <!--
-          <th scope="col" class="p-3">Description</th>
-          -->
-          <th scope="col" class="p-3">Standards</th>
+          <th scope="col" class="p-3">Standards <a href="https://standards.scangov.org/" style="color: inherit;"><i class="fa-solid fa-circle-question" aria-label="Standards"></i></a></th>
         </tr>
       </thead>
       <tbody>
         {% for key, item  in guidance %}
         <tr>
-          <td class="p-3">
+          <td class="p-3 col-2">
             <div class="d-flex flex-wrap">
               {% for topic in item.topics %}
                 <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
-                  <i class="fa-solid fa-{{ audits[topic].icon }} me-2" title="{{ audits[topic].displayName }}"></i>
+                  <i class="fa-solid fa-{{ audits[topic].icon }} me-2 mb-2" title="{{ audits[topic].displayName }}"></i>
                 </a>
               {% endfor %}
             </div>
           </td>
-          <td class="p-3">
+          <td class="p-3 col-7">
             <div>
               <a href="{{ item.docs }}">{{ item.displayName }}</a>
             </div>
@@ -41,13 +38,8 @@ topics:
               <span class="small">{{ item.description }}</span>
             </div>
           </td>
-          <!--
-          <td class="p-3">
-            
-          </td>
-          -->
-          <td class="p-3">
-            <ul>
+          <td class="p-3 w-30">
+            <ul class="small">
               {% for standard in item.standards %}
                 <li><a href="{{ standard.url }}">{{ standard.displayName }}</a></li>
               {% endfor %}

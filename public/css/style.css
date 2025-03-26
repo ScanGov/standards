@@ -201,7 +201,7 @@ a:hover {
     color: var(--bs-link-hover-color);
 }
 
-a[href^="http"]:not([href^="https://scangov.org"]):not([href^="https://scangov.com"]):not([href^="http://localhost:4000/"]):not([href^="https://docs.scangov.org"])::after {
+a[href^="http"]:not([href^="https://scangov.org"]):not([href^="https://standards.scangov.org"]):not([href^="https://scangov.com"]):not([href^="https://data.scangov.org"]):not([href^="http://localhost:4000/"]):not([href^="https://docs.scangov.org"])::after {
     content: "\f35d";
     /* Font Awesome Unicode for 'arrow-up-right-from-square' */
     font-family: "Font Awesome 5 Free";

@@ -13,45 +13,36 @@ topics:
     <table class="table table-bordered table-hover shadow">
       <thead>
         <tr>
-          <th scope="col" class="p-3">Topic</th>
+          <th scope="col" class="p-3">Indicators <a href="https://docs.scangov.org/indicators" style="color: inherit;"><i class="fa-solid fa-circle-question" aria-label="Indicators"></i></a></th>
           <th scope="col" class="p-3">Standard</th>
-          <!--
-          <th scope="col" class="p-3">Description</th>
-          -->
-          <th scope="col" class="p-3">Guidance</th>
+          <th scope="col" class="p-3">Guidance <a href="https://standards.scangov.org/guidance" style="color: inherit;"><i class="fa-solid fa-circle-question" aria-label="Guidance"></i></a></th>
         </tr>
       </thead>
       <tbody>
         {% for key, value in audits %}
           {% for item in audits[key].attributes %}
           <tr>
-            <td class="p-3">
+            <td class="p-3 col-2">
               <div class="d-flex flex-wrap">
-                <a href="{{ topic_url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
+                <a href="{{ value.url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
                   <i class="fa-solid fa-{{ value.icon }} me-2" title="{{ topic }}" aria-label="{{ value.displayName }}"></i>
                 </a>
               </div>
             </td>
-            <td class="p-3">
-              {% for standard in item.standards %}
+            <td class="p-3 col-7">
                 <div>
-                  <a href="{{ standard.url }}">{{ item.displayName }}</a>
+                  <a href="{{ item.docs }}">{{ item.displayName }}</a>
                 </div>
-              {% endfor %}
                 <div>
                   <span class="small">{{ item.description }}</span>
                 </div>
             </td>
-            <!--
-            <td class="p-3">
-              <div>
-              </div>
-            </td>
-            -->
-            <td class="p-3">
-              <div>
-                <a href="{{ item.docs }}">{{ item.guidance }}</a>
-              </div>
+            <td class="p-3 col-3">
+            <ul class="small">
+              {% for guidance in item.guidance %}
+                <li><a href="{{ guidance.url }}">{{ guidance.displayName }}</a></li>
+              {% endfor %}
+            </ul>
             </td>
           </tr>
           {% endfor %}
