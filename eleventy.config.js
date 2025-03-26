@@ -22,7 +22,7 @@ export default async function (eleventyConfig) {
   }
   const audits = await getData(auditsFile, getDataLocally);
   // let audits = JSON.parse(fs.readFileSync('./_data/audits.json'))
-  eleventyConfig.addPlugin(fontAwesomePlugin)
+  // eleventyConfig.addPlugin(fontAwesomePlugin)
 
   // Drafts, see also _data/eleventyDataSchema.js
   eleventyConfig.addPreprocessor('drafts', '*', (data, content) => {
