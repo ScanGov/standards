@@ -104,7 +104,7 @@
           
             <li class="nav-item me-3 me-lg-0 small">
               <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-home"></span>
+                <span class="fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -115,6 +115,15 @@
               <a class="nav-item nav-link mx-1 " href="https://scangov.org">
                 <span class="fa-solid fa-diagram-project"></span>
                 Project ScanGov
+              </a>
+            </li>
+          
+        
+          
+            <li class="nav-item me-3 me-lg-0 small">
+              <a class="nav-item nav-link mx-1 " href="https://docs.scangov.org">
+                <span class="fa-solid fa-file-lines"></span>
+                Docs
               </a>
             </li>
           
@@ -946,4 +955,18 @@
   <symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="up-right-from-square" class="svg-inline--fa fa-up-right-from-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fas-fa-up-right-from-square">
     <path fill="currentColor" d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
   </symbol>
-</svg></body></html>
+</svg>
+<div id="feedback-container" class="text-center">
+  <a href="https://docs.scangov.org/standards-feedback" id="feedback-button" aria-label="Feedback" class="feedback btn btn-lg">
+    Feedback
+  </a>
+</div>
+<script>
+  const feedbackButton = document.getElementById("feedback-button");
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > window.innerHeight * .3) 
+      feedbackButton.style.opacity = '1';
+    else
+      feedbackButton.style.opacity = '0';
+  });
+</script></body></html>
