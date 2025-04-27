@@ -1,12 +1,12 @@
 # ScanGov Standards
 
-[standards.scangov.org](https://standards.scangov.org)
-
 ## About
 
 The [ScanGov Standards](https://standards.scangov.org) are a set of government digital experience standards based on public policy, web protocol, guidelines and best practices.
 
-- [Guidance](https://standards.scangov.org/guidance/)
+## Guidance
+
+Standards are based on [guidance](https://standards.scangov.org/guidance/).
 
 ## Maintainer
 
@@ -14,13 +14,11 @@ The [ScanGov Standards](https://standards.scangov.org) are a set of government d
 
 ## Contribute
 
-We encourage feedback on the [ScanGov Standards](https://standards.scangov.org) because it makes them better. How to give feedback:
+We encourage collaboration on the [ScanGov Standards](https://standards.scangov.org).:
 
 - [Submit an issue](https://github.com/ScanGov/standards/issues) or pull request
 - Post feedback to the `repo-standards` channel in [ScanGov Discord](https://discord.gg/aTCrf8HD)
 - [Web form](https://docs.google.com/forms/d/e/1FAIpQLSeKiSG0f07leAwW1QqIMSoDIgTA92m0jVy6NADtiaoPhg4rww/viewform?usp=sharing)
-
-## 
 
 ## Development
 
