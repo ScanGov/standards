@@ -1,0 +1,642 @@
+[
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>The <code class=\"language-plaintext highlighter-rouge\">robots.txt</code> file tells AI crawlers and search engines which parts of a website they can or cannot access. This helps website owners control what data is available to AI models while protecting private or sensitive information. It also prevents unnecessary crawling, reducing server load and improving site performance. By following <code class=\"language-plaintext highlighter-rouge\">robots.txt</code> rules, AI crawlers respect website preferences and ensure ethical data collection.</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/crawlable"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>The main content of each page is available in the initial document. It does not require a lot of client-side script execution in order to render. If page usually require a lot of client-side script execution to render main content the content may be made available to bots in an alternate text version of the site.</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/text-content"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/meta-refresh\">Refresh meta tag</a></li>\n  <li><a href=\"https://docs.scangov.org/viewport-meta-tag\">Viewport meta tag</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/target-size\">Touch targets</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/accessibility-best-practices"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr\">How to match ARIA attributes to their roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role\">About ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-command-name\">How to make command elements more accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-conditional-attr\">About conditional ARIA attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-deprecated-role\">About deprecated ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name\">How to make ARIA dialog elements more accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-hidden-body\">How <code class=\"language-plaintext highlighter-rouge\">aria-hidden</code> affects the document body</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus\">How <code class=\"language-plaintext highlighter-rouge\">aria-hidden</code> affects focusable elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-input-field-name\">About input field labels</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-meter-name\">How to name <code class=\"language-plaintext highlighter-rouge\">meter</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name\">How to label <code class=\"language-plaintext highlighter-rouge\">progressbar</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr\">About prohibited ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-required-attr\">About roles and required attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-required-children\">About roles and required children elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-required-parent\">About ARIA roles and required parent element</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-roles\">About valid ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-text\">About the <code class=\"language-plaintext highlighter-rouge\">role=text</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-toggle-field-name\">About toggle fields</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-tooltip-name\">How to name <code class=\"language-plaintext highlighter-rouge\">tooltip</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-treeitem-name\">About labeling <code class=\"language-plaintext highlighter-rouge\">treeitem</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value\">About valid values for ARIA attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr\">About valid ARIA attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria\">How to fix duplicate ARIA IDs</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/aria"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/video-caption\">About video captions</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/audio-video"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/color-contrast\">How to provide sufficient color contrast</a>.</li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/link-in-text-block\">How to make links distinguishable</a>.</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/color-contrast"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>Hidden elements are parts of a webpage that are not visible to users but still present in the code. They might be used for functions like pop-up menus or content that shows only when needed. However, hidden elements can be problematic for accessibility if not properly managed. Screen readers and other assistive tools may still detect them. Use proper techniques, such as <code class=\"language-plaintext highlighter-rouge\">aria-hidden=\"true\"</code> or hiding content visually while maintaining accessibility.</p><p>Follow these recommendations to avoid hiding content from visitors using assistive technology:</p><ol>\n  <li>\n    <p>All heading elements contain content: A heading with no content or inaccessible text prevent screen reader users from accessing information on the page’s structure.</p>\n  </li>\n  <li>\n    <p>Identical links have the same purpose: Links with the same destination should have the same description, to help users understand the link’s purpose and decide whether to follow it.</p>\n  </li>\n  <li>\n    <p>Document has a main landmark: One main landmark helps screen reader users navigate a web page.</p>\n  </li>\n  <li>\n    <p>Elements with visible text labels have matching accessible names: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users.</p>\n  </li>\n  <li>\n    <p>Tables use <code class=\"language-plaintext highlighter-rouge\">&lt;caption&gt;</code> instead of cells with the <code class=\"language-plaintext highlighter-rouge\">[colspan]</code> attribute to indicate a caption: Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the <code class=\"language-plaintext highlighter-rouge\">[colspan]</code> attribute may improve the experience for screen reader users.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;td&gt;</code> elements in a large <code class=\"language-plaintext highlighter-rouge\">&lt;table&gt;</code> have one or more table headers: Screen readers have features to make navigating tables easier. Ensuring that <code class=\"language-plaintext highlighter-rouge\">&lt;td&gt;</code> elements in a large table (3 or more cells in width and height) have an associated table header may improve the experience for screen reader users.</p>\n  </li>\n</ol>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/empty-heading\">About headings</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/identical-links-same-purpose\">About identical links</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/landmark-one-main\">About landmarks</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch\">About accessible names</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/table-fake-caption\">About captions</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/td-has-header\">About table headers</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/hidden"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/valid-lang\">How to use the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a>\n <a href=\"https://dequeuniversity.com/rules/axe/4.10/html-xml-lang-mismatch\">Learn more about the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/html-lang-valid\">How to use the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a>\n <a href=\"https://dequeuniversity.com/rules/axe/4.10/html-has-lang\">Learn more about the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/language"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/skip-link\">About skip links</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/select-name\">About the <code class=\"language-plaintext highlighter-rouge\">select</code> element</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/object-alt\">About alt text for <code class=\"language-plaintext highlighter-rouge\">object</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/link-name\">How to make links accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/label\">About form element labels</a>\n <a href=\"https://dequeuniversity.com/rules/axe/4.10/input-image-alt\">Learn about input image alt text</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/input-button-name\">About input buttons</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt\">About the <code class=\"language-plaintext highlighter-rouge\">alt</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/button-name\">How to make buttons more accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/document-title\">About document titles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/form-field-multiple-labels\">How to use form labels</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/frame-title\">About frame titles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/image-alt\">About the <code class=\"language-plaintext highlighter-rouge\">alt</code> attribute</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/names-labels"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/accesskeys\">About access keys</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/bypass\">About bypass blocks</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/heading-order\">About heading order</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/tabindex\">About the <code class=\"language-plaintext highlighter-rouge\">tabindex</code> attribute</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/navigation"
+  },
+  {
+    "sections": [
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/definition-list\">How to structure definition lists correctly</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/dlitem\">How to structure definition lists correctly</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/list\">About proper list structure</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/listitem\">About proper list structure</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name\">About summary and caption</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/td-headers-attr\">About the <code class=\"language-plaintext highlighter-rouge\">headers</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells\">About table headers</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/tables-lists"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>The HTML <code class=\"language-plaintext highlighter-rouge\">&lt;title&gt;</code> tag sets the title of a webpage, which appears in the browser tab and search results. It helps users know what the page is about and improves search engine optimization. The <code class=\"language-plaintext highlighter-rouge\">&lt;title&gt;</code> tag goes inside the <code class=\"language-plaintext highlighter-rouge\">&lt;head&gt;</code> section of an HTML document. A good title is short, clear, and relevant to the page content.</p>"
+      },
+      {
+        "title": "Code",
+        "content": "<div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;head&gt;</span>\n  <span class=\"nt\">&lt;title&gt;</span>Our website<span class=\"nt\">&lt;/title&gt;</span>\n<span class=\"nt\">&lt;/head&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title\">The Document Title element</a> (Mozilla)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/page-title"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>A page description is a short summary of a webpage, usually shown in search results. It’s set using the <code class=\"language-plaintext highlighter-rouge\">&lt;meta name=\"description\"&gt;</code> tag inside the <code class=\"language-plaintext highlighter-rouge\">&lt;head&gt;</code> section of an HTML document. A good description is clear, brief, and tells users what to expect on the page. It also helps with search engine optimization.</p>"
+      },
+      {
+        "title": "Code",
+        "content": "<div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;head&gt;</span>\n  <span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Welcome to our website\"</span><span class=\"nt\">&gt;</span>\n<span class=\"nt\">&lt;/head&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata\">What’s in the head? Webpage metadata</a> (Mozilla)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/page-description"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>The viewport meta tag helps web pages look good on all devices by controlling the screen size and zoom settings. This makes websites adjust to fit different screens. You can also disable zooming or set a custom zoom level. It’s important for making websites mobile-friendly.</p>"
+      },
+      {
+        "title": "Example",
+        "content": "<div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"viewport\"</span> <span class=\"na\">content=</span><span class=\"s\">\"width=device-width, initial-scale=1.0\"</span><span class=\"nt\">&gt;</span>\n</code></pre></div></div>"
+      }
+    ],
+    "url": "https://docs.scangov.org/viewport-meta-tag"
+  },
+  {
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have HTTPS.</p><p>OMB Memorandum M-15-1338 requires agencies to encrypt HTTP traffic that travels\nover the public internet to or from a Federal system, using HTTPS and HTTP Strict Transport\nSecurity (HSTS)</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>Hypertext Transfer Protocol Secure (HTTPS) is the strongest privacy and integrity protection currently available for public web connections. HTTPS ensures users that their privacy is protected when visiting a government website.</p><p>HTTPS is indicated by a lock icon and/or <code class=\"language-plaintext highlighter-rouge\">https://</code> in the browser bar.</p>"
+      },
+      {
+        "title": "Examples",
+        "content": "<p>Example government websites with HTTPS:</p><ul>\n  <li><a href=\"https://digital.gov\">https://digital.gov</a></li>\n  <li><a href=\"https://whitehouse.gov\">https://whitehouse.gov</a></li>\n</ul>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://https.cio.gov/\">The HTTPS-Only Standard</a> (CIO.gov)</li>\n  <li><a href=\"https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf\">M-15-13: Policy to Require Secure Connections across Federal Websites and Web\nServices</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/https"
+  },
+  {
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have <code class=\"language-plaintext highlighter-rouge\">www</code> and non-<code class=\"language-plaintext highlighter-rouge\">www</code> resolution.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>Domain canonicalization allows access to the intended website address, whether users type <code class=\"language-plaintext highlighter-rouge\">www</code> (<code class=\"language-plaintext highlighter-rouge\">www.example.gov</code>) or not (<code class=\"language-plaintext highlighter-rouge\">example.gov</code>). Improper canonicalization will fail to direct <code class=\"language-plaintext highlighter-rouge\">example.gov</code> to the intended address, and users will receive an error.</p>"
+      },
+      {
+        "title": "Examples",
+        "content": "<p>Example of a government website with <code class=\"language-plaintext highlighter-rouge\">www</code> and non-<code class=\"language-plaintext highlighter-rouge\">www</code> resolution:</p><ul>\n  <li><a href=\"https://digital.gov\">https://digital.gov</a></li>\n  <li><a href=\"https://www.digital.gov\">https://www.digital.gov</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/www-resolution"
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/stld.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have a <code class=\"language-plaintext highlighter-rouge\">.gov</code> / <code class=\"language-plaintext highlighter-rouge\">.edu</code> / <code class=\"language-plaintext highlighter-rouge\">.mil</code> sponsored top-level domain.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>Generic top-level domains (gTLD) (<code class=\"language-plaintext highlighter-rouge\">.com</code>, <code class=\"language-plaintext highlighter-rouge\">.org</code>, etc.) are non-country extensions that indicate the purpose or source of the website.</p><p>sTLDs (<code class=\"language-plaintext highlighter-rouge\">.gov</code> / <code class=\"language-plaintext highlighter-rouge\">.edu</code> / <code class=\"language-plaintext highlighter-rouge\">.mil</code>) are a subgroup of gTLDs managed by designated organizations and restricted to specific registrant types.</p><p>A <code class=\"language-plaintext highlighter-rouge\">.gov</code> / <code class=\"language-plaintext highlighter-rouge\">.edu</code> / <code class=\"language-plaintext highlighter-rouge\">.mil</code> extension verifies that the website is managed by a United States government organization (federal, state, local). Government non-.gov gTLDs can potentially confuse users and create opportunities for non-government entities to spoof official government services. Adopting the <code class=\"language-plaintext highlighter-rouge\">.gov</code> / <code class=\"language-plaintext highlighter-rouge\">.edu</code> / <code class=\"language-plaintext highlighter-rouge\">.mil</code> extension ensures users are visiting an official government website.</p>"
+      },
+      {
+        "title": "Examples",
+        "content": "<p>Example of government websites with a <code class=\"language-plaintext highlighter-rouge\">.gov</code> sTLD:</p><ul>\n  <li><a href=\"https://digital.gov\">digital.gov</a></li>\n  <li><a href=\"https://whitehouse.gov\">whitehouse.gov</a></li>\n</ul>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://en.wikipedia.org/wiki/.gov\">.gov</a> (Wikipedia)</li>\n  <li><a href=\"https://get.gov/\">Get a .gov</a> (Cybersecurity and Infrastructure Security Agency)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sponsored_top-level_domain\">Sponsored top-level domain</a> (Wikipedia)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/stld",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/url",
+        "text": "URL"
+      },
+      {
+        "url": "https://docs.scangov.org/www-resolution",
+        "text": "www resolution"
+      }
+    ]
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>​Cumulative Layout Shift (CLS) measures how much a webpage’s content unexpectedly moves during loading, affecting user experience. A good CLS score is 0.1 or less. Common causes include images or ads without specified dimensions, dynamically added content, and late-loading fonts. To improve CLS, always set size attributes for media, reserve space for ads, and ensure fonts load properly. ​</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/cumulative-layout-shift"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>First Contentful Paint (FCP) measures how quickly a webpage shows any content after a user starts to load it. It checks the time from when the user begins to navigate to the page until any part of the page’s content, like text or images, appears on the screen. A fast FCP reassures users that the page is loading. For a good user experience, aim for an FCP of 1.8 seconds or less.</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/first-contentful-paint"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>Interaction to Next Paint (INP) measures how quickly a webpage responds to user actions like clicks or typing. It tracks the time from when you interact until the next screen update. A good INP score is 200 milliseconds or less, ensuring a smooth experience. INP has replaced First Input Delay (FID) as a key performance metric.</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/interaction-to-next-paint"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>Largest Contentful Paint (LCP) measures how long it takes for the main content of a web page to appear. This is important because it helps users know when the page is ready. A good LCP time is 2.5 seconds or less. It tracks the largest visible element, like images, videos, or text blocks. A faster LCP improves user experience and helps websites perform better.</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/largest-contentful-paint"
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>Time to First Byte (TTFB) measures the time it takes from when a browser requests a resource to when the first byte of data begins to load. It’s an important metric for website performance, affecting how quickly a page appears. A good TTFB is under 0.8 seconds, and anything over 1.8 seconds needs improvement. TTFB is influenced by server responsiveness and connection setup time. Lowering it can improve overall user experience and speed.</p>"
+      }
+    ],
+    "url": "https://docs.scangov.org/time-to-first-byte"
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/sitemaps.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have a sitemap.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>A sitemap is a file that lists all of the pages on a website in addition to information about each so that search engines can more intelligently crawl the site.</p><p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support sitemaps to pick up all Uniform Resources Locators (URLs) in the sitemap and learn about them using the associated metadata. Using sitemap protocol doesn’t guarantee web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p><p>The sitemap is an Extensible Markup Language (XML) file on the website’s root directory that include metadata for each URL, such as:</p><ul>\n  <li>when it was last updated</li>\n  <li>how often it usually changes</li>\n  <li>how important it is, relative to other URLs in the site</li>\n</ul>"
+      },
+      {
+        "title": "Examples",
+        "content": "<p>Example government website sitemaps:</p><ul>\n  <li><a href=\"https://www.usa.gov/sitemap.xml\">https://www.usa.gov/sitemap.xml</a></li>\n  <li><a href=\"https://18f.gov/sitemap.xml\">https://18f.gov/sitemap.xml</a></li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example sitemap code:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;</span>\n\n<span class=\"nt\">&lt;urlset</span> <span class=\"na\">xmlns=</span><span class=\"s\">\"http://www.sitemaps.org/schemas/sitemap/0.9\"</span><span class=\"nt\">&gt;</span>\n\n   <span class=\"nt\">&lt;url&gt;</span>\n\n      <span class=\"nt\">&lt;loc&gt;</span>http://www.example.com/<span class=\"nt\">&lt;/loc&gt;</span>\n\n      <span class=\"nt\">&lt;lastmod&gt;</span>2005-01-01<span class=\"nt\">&lt;/lastmod&gt;</span>\n\n      <span class=\"nt\">&lt;changefreq&gt;</span>monthly<span class=\"nt\">&lt;/changefreq&gt;</span>\n\n      <span class=\"nt\">&lt;priority&gt;</span>0.8<span class=\"nt\">&lt;/priority&gt;</span>\n\n   <span class=\"nt\">&lt;/url&gt;</span>\n\n<span class=\"nt\">&lt;/urlset&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://www.sitemaps.org/\">sitemaps.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sitemaps\">Sitemaps</a> (Wikipedia)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/sitemaps",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/metadata",
+        "text": "Metadata"
+      },
+      {
+        "url": "https://docs.scangov.org/robots-txt",
+        "text": "robots.txt"
+      },
+      {
+        "url": "https://docs.scangov.org/canonicalization",
+        "text": "Canonicalization"
+      },
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/www-resolution",
+        "text": "www resolution"
+      }
+    ]
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/robots-txt.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must allow robots indexing and following.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>Web robots, also known as web wanderers, crawlers or spiders, are automated programs that traverse the Web. Search engines use them to index web content, while spammers use them to scan for email addresses, among other purposes.</p><p>A robots.txt file is a text file placed on a website’s server to instruct web robots (typically search engine crawlers) how to crawl and index pages on their site. It specifies which parts of the site should not be accessed by crawlers or are “off-limits” to them. It’s a way for website owners to communicate with web robots and guide their behavior.</p><p>A robots policy can be used to limit the rate of requests or to block robots from indexing paths, which can save stress on the server. The file consists of one or more records separated by one or more blank lines. The record starts with one or more <code class=\"language-plaintext highlighter-rouge\">User-agent</code> lines, followed by one or more <code class=\"language-plaintext highlighter-rouge\">Disallow</code> lines. Unrecognised headers are ignored.</p><p>User-agent:</p><ul>\n  <li>The value of this field is the name of the robot the record is describing access policy for.</li>\n  <li>If the value is <code class=\"language-plaintext highlighter-rouge\">*</code>, the record describes the default access policy for any robot that has not matched any of the other records. It is not allowed to have multiple such records in the <code class=\"language-plaintext highlighter-rouge\">/robots.txt</code> file.</li>\n</ul><p>Disallow:</p><ul>\n  <li>The value of this field specifies a partial URL that is not to be visited. This can be a full path, or a partial path; any URL that starts with this value will not be retrieved. For example, <code class=\"language-plaintext highlighter-rouge\">Disallow: /help</code> disallows both <code class=\"language-plaintext highlighter-rouge\">/help.html</code> and <code class=\"language-plaintext highlighter-rouge\">/help/index.html</code>, whereas <code class=\"language-plaintext highlighter-rouge\">Disallow: /help/</code> would disallow <code class=\"language-plaintext highlighter-rouge\">/help/index.html</code> but allow <code class=\"language-plaintext highlighter-rouge\">/help.html</code>.</li>\n  <li>Any empty value, indicates that all URLs can be retrieved. At least one Disallow field needs to be present in a record.</li>\n</ul><p>The presence of an empty <code class=\"language-plaintext highlighter-rouge\">/robots.txt</code> file has no explicit associated semantics, it will be treated as if it was not present, i.e. all robots will consider themselves welcome.</p><h3 id=\"sitemap\">\n  \n  \n    Sitemap <a id=\"heading-hashtag\" href=\"#sitemap\"><span class=\"d-none\">href=\"#sitemap\"</span><svg class=\"svg-inline--fa fa-link\" aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg><!-- <i class=\"fa-solid fa-link\"></i> Font Awesome fontawesome.com --></a>\n  \n  \n</h3><p>robots.txt files should point to a sitemap with a line starting with <code class=\"language-plaintext highlighter-rouge\">Sitemap:</code>. If you are having trouble manually adding in your sitemap, see <a href=\"https://github.com/civichackingagency/scangov/issues/151#issue-2404528767\">this solution</a>.</p><h3 id=\"other-methods\">\n  \n  \n    Other methods <a id=\"heading-hashtag\" href=\"#other-methods\"><span class=\"d-none\">href=\"#other-methods\"</span><svg class=\"svg-inline--fa fa-link\" aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg><!-- <i class=\"fa-solid fa-link\"></i> Font Awesome fontawesome.com --></a>\n  \n  \n</h3><p>A robots policy can be set through the <code class=\"language-plaintext highlighter-rouge\">&lt;meta name=\"robots\"&gt;</code> tag.</p><p>It can also be set using the <code class=\"language-plaintext highlighter-rouge\">X-Robots-Tag</code> HTTP response header.</p>"
+      },
+      {
+        "title": "Examples",
+        "content": "<p>Example government website robots.txt files:</p><ul>\n  <li><a href=\"https://www.usa.gov/robots.txt\">https://www.usa.gov/robots.txt</a></li>\n  <li><a href=\"https://www.ca.gov/robots.txt\">https://www.ca.gov/robots.txt</a></li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example robots.txt code:</p><div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"c1\"># Only applies to search.gov scraping</span>\n<span class=\"na\">User-agent</span><span class=\"pi\">:</span> <span class=\"s\">usasearch</span>  \n<span class=\"c1\"># Slow amount of requests</span>\n<span class=\"na\">Crawl-delay</span><span class=\"pi\">:</span> <span class=\"m\">2</span>\n<span class=\"c1\"># Specify it can read /archive/</span>\n<span class=\"na\">Allow</span><span class=\"pi\">:</span> <span class=\"s\">/archive/</span>\n\n<span class=\"c1\"># Applies to all scrapers</span>\n<span class=\"na\">User-agent</span><span class=\"pi\">:</span> <span class=\"err\">*</span>\n<span class=\"c1\"># Slow amount of requests to 1 every 10 seconds</span>\n<span class=\"na\">Crawl-delay</span><span class=\"pi\">:</span> <span class=\"m\">10</span>\n<span class=\"c1\"># Don't let them read /archive/</span>\n<span class=\"na\">Disallow</span><span class=\"pi\">:</span> <span class=\"s\">/archive/</span>\n\n<span class=\"c1\"># Point to a sitemap file</span>\n<span class=\"na\">Sitemap</span><span class=\"pi\">:</span> <span class=\"s\">/sitemap.xml</span>\n</code></pre></div></div><p>Example robots meta code:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"c\">&lt;!-- This page can be indexed \nand links on it can be followed --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"robots\"</span> <span class=\"na\">content=</span><span class=\"s\">\"index, follow\"</span><span class=\"nt\">&gt;</span>\n</code></pre></div></div><p>Example X-Robots-Tag:</p><div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"c1\"># This URL can be indexed </span>\n<span class=\"c1\"># and links on it can be followed</span>\n<span class=\"na\">X-Robots-Tag</span><span class=\"pi\">:</span> <span class=\"s\">index, follow</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://www.robotstxt.org\">robotstxt.org</a></li>\n  <li><a href=\"https://search.gov/indexing/robotstxt.html\">robots.txt</a> (Search.gov)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Robots.txt\">robots.txt</a> (Wikipedia)</li>\n  <li><a href=\"https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag\">Robots Meta Tags Specifications</a> (Google)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/robots-txt",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/metadata",
+        "text": "Metadata"
+      },
+      {
+        "url": "https://docs.scangov.org/canonicalization",
+        "text": "Canonicalization"
+      },
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/www-resolution",
+        "text": "www resolution"
+      },
+      {
+        "url": "https://docs.scangov.org/open-graph",
+        "text": "Open Graph"
+      }
+    ]
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/sitemaps.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have a sitemap.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>A sitemap is a file that lists all of the pages on a website in addition to information about each so that search engines can more intelligently crawl the site.</p><p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support sitemaps to pick up all Uniform Resources Locators (URLs) in the sitemap and learn about them using the associated metadata. Using sitemap protocol doesn’t guarantee web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p><p>The sitemap is an Extensible Markup Language (XML) file on the website’s root directory that include metadata for each URL, such as:</p><ul>\n  <li>when it was last updated</li>\n  <li>how often it usually changes</li>\n  <li>how important it is, relative to other URLs in the site</li>\n</ul>"
+      },
+      {
+        "title": "Examples",
+        "content": "<p>Example government website sitemaps:</p><ul>\n  <li><a href=\"https://www.usa.gov/sitemap.xml\">https://www.usa.gov/sitemap.xml</a></li>\n  <li><a href=\"https://18f.gov/sitemap.xml\">https://18f.gov/sitemap.xml</a></li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example sitemap code:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;</span>\n\n<span class=\"nt\">&lt;urlset</span> <span class=\"na\">xmlns=</span><span class=\"s\">\"http://www.sitemaps.org/schemas/sitemap/0.9\"</span><span class=\"nt\">&gt;</span>\n\n   <span class=\"nt\">&lt;url&gt;</span>\n\n      <span class=\"nt\">&lt;loc&gt;</span>http://www.example.com/<span class=\"nt\">&lt;/loc&gt;</span>\n\n      <span class=\"nt\">&lt;lastmod&gt;</span>2005-01-01<span class=\"nt\">&lt;/lastmod&gt;</span>\n\n      <span class=\"nt\">&lt;changefreq&gt;</span>monthly<span class=\"nt\">&lt;/changefreq&gt;</span>\n\n      <span class=\"nt\">&lt;priority&gt;</span>0.8<span class=\"nt\">&lt;/priority&gt;</span>\n\n   <span class=\"nt\">&lt;/url&gt;</span>\n\n<span class=\"nt\">&lt;/urlset&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://www.sitemaps.org/\">sitemaps.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sitemaps\">Sitemaps</a> (Wikipedia)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/sitemaps",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/metadata",
+        "text": "Metadata"
+      },
+      {
+        "url": "https://docs.scangov.org/robots-txt",
+        "text": "robots.txt"
+      },
+      {
+        "url": "https://docs.scangov.org/canonicalization",
+        "text": "Canonicalization"
+      },
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/www-resolution",
+        "text": "www resolution"
+      }
+    ]
+  },
+  {
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>Canonicalization ensures that search engines index the correct version of a page when there are duplicate or similar pages. By specifying a canonical URL with the <code class=\"language-plaintext highlighter-rouge\">rel=\"canonical\"</code> tag, you direct search engines to the primary page, helping improve SEO. This prevents search engines from splitting the ranking between multiple pages with similar content. Proper canonicalization avoids indexing issues and boosts a site’s performance in search results.</p>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://developers.google.com/search/docs/crawling-indexing/canonicalization\">Google canonicalization guide</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/canonicalization"
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/content-security-policy.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites should have a content security policy.</p><p><a href=\"https://www.cisa.gov/news-events/news/website-security#:~:text=Implement%20a%20Content%20Security%20Policy\">Cybersecurity and Infrastructure Security Agency</a>:</p><blockquote>\n  <p><strong>Implement a Content Security Policy (CSP).</strong> Website owners should also consider implementing a CSP. Implementing a CSP lessens the chances of an attacker successfully loading and running malicious JavaScript on the end user machine.</p>\n</blockquote>"
+      },
+      {
+        "title": "About",
+        "content": "<p><strong>Content Security Policy (CSP)</strong> is a security standard that helps protect websites from attacks like cross-site scripting (XSS) by allowing website owners to declare trusted sources of content.</p><p>CSP is delivered using HTTP headers or HTML meta tags, and uses directives like <code class=\"language-plaintext highlighter-rouge\">default-src</code>, <code class=\"language-plaintext highlighter-rouge\">script-src</code>, and <code class=\"language-plaintext highlighter-rouge\">img-src</code> to control resource loading. CSP can enforce policies, report violations, and is not a replacement for careful input validation, but a defense-in-depth measure. <strong>Strict CSP</strong> is more secure using nonces or hashes.</p><p>Note: It’s an extra layer of protection, not the primary defense.</p>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example header:</p><div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"na\">Content-Security-Policy</span><span class=\"pi\">:</span>\n  <span class=\"s\">default-src 'self';</span>\n  <span class=\"s\">script-src 'self' https://example.gov;</span>\n  <span class=\"s\">style-src 'self' 'unsafe-inline';</span>\n  <span class=\"s\">img-src 'self' https://example.gov;</span>\n  <span class=\"s\">font-src 'self' https://example.gov;</span>\n  <span class=\"s\">object-src 'none';</span>\n  <span class=\"s\">frame-ancestors 'none';</span>\n  <span class=\"s\">upgrade-insecure-requests;</span>\n</code></pre></div></div><p>Example HTML code:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"c\">&lt;!-- Content Security Policy example using meta tag --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">http-equiv=</span><span class=\"s\">\"Content-Security-Policy\"</span> <span class=\"na\">content=</span><span class=\"s\">\"\n  default-src 'self';\n  script-src 'self' https://example.gov;\n  style-src 'self' 'unsafe-inline';\n  img-src 'self' https://example.gov;\n  font-src 'self' https://example.gov;\n  object-src 'none';\n  frame-ancestors 'none';\n  upgrade-insecure-requests;\n\"</span><span class=\"nt\">&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://guides.18f.gov/engineering/security/content-security-policy/\">Content Security Policy</a> (18F)</li>\n  <li><a href=\"https://research.sidstamm.com/papers/csp-www2010.pdf\">Reining in the Web with Content Security Policy</a> (Mozilla)</li>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP\">Content Security Policy</a> (Mozilla)</li>\n  <li><a href=\"https://www.w3.org/TR/CSP3/\">Content Security Policy Level 3</a> (W3C)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Content_Security_Policy\">Content Security Policy</a> (Wikipedia)</li>\n  <li><a href=\"https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html\">Content Security Policy Cheat Sheet</a> (OWASP)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/content-security-policy",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/metadata",
+        "text": "Metadata"
+      },
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/x-content-type-options",
+        "text": "X-Content-Type-Options"
+      },
+      {
+        "url": "https://docs.scangov.org/security-txt",
+        "text": "security.txt"
+      },
+      {
+        "url": "https://docs.scangov.org/owasp-top-10",
+        "text": "OWASP Top 10"
+      }
+    ]
+  },
+  {
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have HSTS.</p><p><a href=\"https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf\">M-15-13</a>:</p><blockquote>\n  <p>Strict Transport Security: Websites and services available over HTTPS must enable HTTP Strict Transport Security (HSTS)12 to instruct compliant browsers to assume HTTPS going forward. This reduces the number of insecure redirects, and protects users against attacks that attempt to downgrade connections to plain HTTP. Once HSTS is in place, domains can be submitted to a “preload list”13 used by all major browsers to ensure the HSTS policy is in effect at all times.</p>\n</blockquote><p><a href=\"https://https.cio.gov/hsts/\">CIO.gov</a>:</p><blockquote>\n  <p>The policy should be deployed at https://domain.gov, not https://www.domain.gov.</p>\n</blockquote>"
+      },
+      {
+        "title": "About",
+        "content": "<p>HTTP Strict Transport Security is a security feature that:</p><ul>\n  <li>Forces web browsers to use HTTPS instead of HTTP.</li>\n  <li>Protects against downgrade attacks and cookie hijacking.</li>\n  <li>Specifies a period during which the browser should enforce HTTPS for the site.</li>\n</ul><p>Key points:</p><ul>\n  <li>Activated by the server through a response header (<code class=\"language-plaintext highlighter-rouge\">Strict-Transport-Security</code>).</li>\n  <li>Helps improve website security by ensuring encrypted connections.</li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example header:</p><p><code class=\"language-plaintext highlighter-rouge\">Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</code></p>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://https.cio.gov/hsts/\">HTTP Strict Transport Security</a> (CIO.gov)</li>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/\">HTTP Strict Transport Security</a> (Mozilla)</li>\n  <li><a href=\"https://cloud.gov/docs/management/headers/\">Security-related HTTP headers</a> (Cloud.gov)</li>\n  <li><a href=\"https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html\">HTTP Strict Transport Security Cheat Sheet</a> (OWASP)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security\">HTTP Strict Transport Security</a> (Wikipedia)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/hsts"
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/security-txt.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have a security.txt file.</p><p>The Cybersecurity and Infrastructure Security Agency recommends this practice in its <a href=\"https://www.cisa.gov/cross-sector-cybersecurity-performance-goals\">Cross-Sector Cybersecurity Performance Goals</a>:</p><blockquote>\n  <p>“All public-facing web domains have a security.txt file that conforms to the\nrecommendations in RFC 9116.”</p>\n</blockquote><p><a href=\"https://www.cisa.gov/news-events/news/securitytxt-simple-file-big-value\">CISA</a>:</p><blockquote>\n  <p>“In an effort to accelerate the delivery of <em>all</em> notifications, CISA supports using the ‘security.txt’ standard to streamline notifications and reduce the risk of compromise. It not only helps our work but also supports other partners that try to warn organizations of internet-accessible vulnerabilities susceptible to cyber threat actors – this is most important for organizations aligned to our most valuable critical infrastructure sectors.”</p>\n</blockquote>"
+      },
+      {
+        "title": "About",
+        "content": "<p>security.txt is a text file located on the site root-level or <code class=\"language-plaintext highlighter-rouge\">/.well-known/</code> directory that helps improve vulnerability disclosure by giving security researchers clear contact and reporting information.</p><p>security.txt is an accepted standard (<a href=\"https://www.rfc-editor.org/rfc/rfc9116\">RFC 9116</a>) by the<a href=\"https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force\"> Internet Engineering Task Force</a>.</p>"
+      },
+      {
+        "title": "Examples",
+        "content": "<ul>\n  <li><a href=\"https://www.cisa.gov/sites/default/files/security.txt\">CISA</a></li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example code:</p><div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"na\">Contact</span><span class=\"pi\">:</span> <span class=\"s\">mailto:IRT@mail.cisa.dhs.gov</span>\n<span class=\"na\">Contact</span><span class=\"pi\">:</span> <span class=\"s\">mailto:TOC@mail.CISA.dhs.gov</span>\n<span class=\"na\">Encryption</span><span class=\"pi\">:</span> <span class=\"s\">https://www.cisa.gov/contact-us</span>\n<span class=\"na\">Hiring</span><span class=\"pi\">:</span> <span class=\"s\">https://www.cisa.gov/careers</span>\n<span class=\"na\">CSAF</span><span class=\"pi\">:</span> <span class=\"s\">https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json</span>\n<span class=\"na\">Expires</span><span class=\"pi\">:</span> <span class=\"s\">2025-10-01T00:00:00.000Z</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://securitytxt.org/\">securitytxt.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/w/index.php?title=Security.txt&amp;oldid=1229043494\">security.txt - Wikipedia</a></li>\n  <li><a href=\"https://www.cisa.gov/news-events/news/securitytxt-simple-file-big-value\">security.txt: A Simple File with Big Value</a></li>\n  <li><a href=\"https://www.rfc-editor.org/rfc/rfc9116\">RFC 9116</a></li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/security-txt",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/content-security-policy",
+        "text": "Content security policy (CSP)"
+      },
+      {
+        "url": "https://docs.scangov.org/x-content-type-options",
+        "text": "X-Content-Type-Options"
+      },
+      {
+        "url": "https://docs.scangov.org/owasp-top-10",
+        "text": "OWASP Top 10"
+      },
+      {
+        "url": "https://docs.scangov.org/cybersecurity-performance-goals",
+        "text": "CISA Cybersecurity Performance Goals"
+      }
+    ]
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/x-content-type-options.mp3",
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have <code class=\"language-plaintext highlighter-rouge\">X-Content-Type-Options</code> designated.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p><code class=\"language-plaintext highlighter-rouge\">X-Content-Type-Options</code> is a security header that:</p><ul>\n  <li>Prevents browsers from MIME-sniffing.</li>\n  <li>Ensures content is rendered as declared (e.g., no misinterpretation of file types).</li>\n  <li>Stops browsers from guessing content types, enhancing security.</li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Example header:</p><div class=\"language-yaml highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"na\">X-Content-Type-Options</span><span class=\"pi\">:</span> <span class=\"s\">nosniff</span>\n</code></pre></div></div><p>Example HTML code:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"c\">&lt;!-- Example of setting X-Content-Type-Options in a meta tag --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">http-equiv=</span><span class=\"s\">\"X-Content-Type-Options\"</span> <span class=\"na\">content=</span><span class=\"s\">\"nosniff\"</span><span class=\"nt\">&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options\">X-Content-Type-Options</a> (Mozilla)</li>\n  <li><a href=\"https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#x-content-type-options\">X-Content-Type-Options</a> (OWASP)</li>\n  <li><a href=\"https://cloud.gov/docs/management/headers/\">Security-related HTTP headers</a> (Cloud.gov)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/x-content-type-options",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/content-security-policy",
+        "text": "Content security policy (CSP)"
+      },
+      {
+        "url": "https://docs.scangov.org/security-txt",
+        "text": "security.txt"
+      },
+      {
+        "url": "https://docs.scangov.org/owasp-top-10",
+        "text": "OWASP Top 10"
+      },
+      {
+        "url": "https://docs.scangov.org/cybersecurity-performance-goals",
+        "text": "CISA Cybersecurity Performance Goals"
+      }
+    ]
+  },
+  {
+    "sections": [
+      {
+        "title": "Guidance",
+        "content": "<p>All government websites must have basic metadata.</p>"
+      },
+      {
+        "title": "About",
+        "content": "<p>Website metadata is the information embedded in a web page’s HTML code that provides additional details about the webpage. This metadata is not visible on the webpage itself but is used by browsers, search engines, and other web services to understand and categorize the content. (<a href=\"https://developer.mozilla.org\">Mozilla Developer Network</a>)</p>"
+      },
+      {
+        "title": "Standards",
+        "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML\">General</a></li>\n</ul>"
+      },
+      {
+        "title": "Code",
+        "content": "<p>Complete list of metadata tags and descriptions for each:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;meta</span> <span class=\"na\">charset=</span><span class=\"s\">\"UTF-8\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Set character encoding to UTF-8 in HTML. --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"viewport\"</span> <span class=\"na\">content=</span><span class=\"s\">\"width=device-width, initial-scale=1.0\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Define viewport settings for responsive web design. --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"keywords\"</span> <span class=\"na\">content=</span><span class=\"s\">\"your, keywords, here\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Meta tag for defining keywords relevant to the webpage content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your website description\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Meta tag for providing a brief description of the webpage content --&gt;</span>\n\n<span class=\"nt\">&lt;title&gt;</span>Your Website Title<span class=\"nt\">&lt;/title&gt;</span>\n<span class=\"c\">&lt;!-- Title tag for setting the title of the webpage --&gt;</span>\n\n<span class=\"nt\">&lt;link</span> <span class=\"na\">rel=</span><span class=\"s\">\"stylesheet\"</span> <span class=\"na\">href=</span><span class=\"s\">\"styles.css\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Link tag to include an external stylesheet for styling the webpage --&gt;</span>\n\n<span class=\"nt\">&lt;link</span> <span class=\"na\">rel=</span><span class=\"s\">\"icon\"</span> <span class=\"na\">href=</span><span class=\"s\">\"favicon.ico\"</span> <span class=\"na\">type=</span><span class=\"s\">\"image/x-icon\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Link tag to specify the favicon for the webpage --&gt;</span>\n\n<span class=\"nt\">&lt;script </span><span class=\"na\">src=</span><span class=\"s\">\"script.js\"</span> <span class=\"na\">defer</span><span class=\"nt\">&gt;&lt;/script&gt;</span>\n<span class=\"c\">&lt;!-- Script tag to include an external JavaScript file with deferred execution --&gt;</span>\n\n<span class=\"c\">&lt;!-- Open Graph meta tags --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:title\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Open Graph Title\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for setting the title of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Open Graph Description\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for providing a brief description of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:image\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for specifying the image associated with the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:url\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your page\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for defining the URL of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:type\"</span> <span class=\"na\">content=</span><span class=\"s\">\"website\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for specifying the type of content (e.g., website, article) --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:locale\"</span> <span class=\"na\">content=</span><span class=\"s\">\"en_US\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for setting the locale (language and country) of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"article:published_time\"</span> <span class=\"na\">content=</span><span class=\"s\">\"YYYY-MM-DDTHH:mm:ssZ\"</span> <span class=\"nt\">/&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for indicating the publish time of an article --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"article:modified_time\"</span> <span class=\"na\">content=</span><span class=\"s\">\"YYYY-MM-DDTHH:mm:ssZ\"</span> <span class=\"nt\">/&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for indicating the last modification time of an article --&gt;</span>\n\n<span class=\"c\">&lt;!-- Twitter meta tags --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"twitter:card\"</span> <span class=\"na\">content=</span><span class=\"s\">\"summary_large_image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Twitter meta tag for specifying the type of Twitter card to use when sharing the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"twitter:title\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Twitter Title\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Twitter meta tag for setting the title of the content when shared on Twitter --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"twitter:description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Twitter Description\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Twitter meta tag for providing a brief description of the content when shared on Twitter --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"twitter:image\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Twitter meta tag for specifying the image associated with the content when shared on Twitter --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"twitter:url\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your page\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Twitter meta tag for defining the URL of the content when shared on Twitter --&gt;</span>\n\n<span class=\"c\">&lt;!-- Content Security Policy (CSP) --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">http-equiv=</span><span class=\"s\">\"Content-Security-Policy\"</span> <span class=\"na\">content=</span><span class=\"s\">\"your-csp-directives-here\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Meta tag for specifying the Content Security Policy directives --&gt;</span>\n\n<span class=\"c\">&lt;!-- Robots meta tag --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"robots\"</span> <span class=\"na\">content=</span><span class=\"s\">\"index, follow\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Meta tag for instructing search engine robots to index and follow links on the webpage --&gt;</span>\n\n<span class=\"c\">&lt;!-- Googlebot meta tag --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"googlebot\"</span> <span class=\"na\">content=</span><span class=\"s\">\"index, follow\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Meta tag for instructing Googlebot to index and follow links on the webpage --&gt;</span>\n\n<span class=\"c\">&lt;!-- Locale meta tag --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"locale\"</span> <span class=\"na\">content=</span><span class=\"s\">\"en_US\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Meta tag for defining the locale (language and country) of the webpage content --&gt;</span>\n\n<span class=\"c\">&lt;!-- Canonical URL --&gt;</span>\n<span class=\"nt\">&lt;link</span> <span class=\"na\">rel=</span><span class=\"s\">\"canonical\"</span> <span class=\"na\">href=</span><span class=\"s\">\"URL to your canonical page\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Link tag for specifying the canonical URL of the webpage --&gt;</span>\n\n<span class=\"c\">&lt;!-- Dublin Core meta tags --&gt;</span>\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.title\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Dublin Core Title\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for setting the title of the webpage --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.creator\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Dublin Core Creator\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for specifying the creator or author of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.subject\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Dublin Core Subject\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for defining the subject or topic of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Dublin Core Description\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for providing a brief description of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.publisher\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Dublin Core Publisher\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for indicating the publisher of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.date\"</span> <span class=\"na\">content=</span><span class=\"s\">\"2024-01-11T12:34:56Z\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for specifying the date of creation or publication of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"DC.language\"</span> <span class=\"na\">content=</span><span class=\"s\">\"en_US\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Dublin Core meta tag for setting the language of the content --&gt;</span>\n\n<span class=\"c\">&lt;!-- gmpg metadata --&gt;</span>\n<span class=\"nt\">&lt;link</span> <span class=\"na\">rel=</span><span class=\"s\">\"gmpg\"</span> <span class=\"na\">href=</span><span class=\"s\">\"http://gmpg.org/xfn/11\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Link tag for including Global Multimedia Protocols Group (gmpg) metadata --&gt;</span>\n</code></pre></div></div>"
+      },
+      {
+        "title": "Links",
+        "content": "<ul>\n  <li><a href=\"https://govfresh.com/thoughts/metadata-open-graph-government-websites\">Metadata, Open Graph and government websites</a> (GovFresh)</li>\n  <li><a href=\"https://govfresh.com/thoughts/analyzing-government-website-metadata\">Analyzing U.S. federal and state government website metadata\n</a> (GovFresh)</li>\n  <li><a href=\"https://search.gov/indexing/metadata.html\">Metadata and tags you should include in your website</a> (searchgov)</li>\n</ul>"
+      }
+    ],
+    "url": "https://docs.scangov.org/metadata"
+  },
+  {
+    "audio": "https://docs.scangov.org/assets/audio/open-graph.mp3",
+    "sections": [
+      {
+        "title": "About",
+        "content": "<p>Open Graph is a protocol that helps websites control how their content look when shared on social media. It decides the title, image, and description that appear in previews. This makes shared links more attractive and informative. Platforms like Facebook and X use Open Graph to display content properly. Website owners add special tags to their pages to customize previews, helping posts stand out and get more clicks.</p>"
+      },
+      {
+        "title": "Examples",
+        "content": "<div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:title\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Open Graph Title\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for setting the title of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Open Graph Description\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for providing a brief description of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:image\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for specifying the image associated with the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:image:alt\"</span> <span class=\"na\">content=</span><span class=\"s\">\"A description of the image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for providing an alternative text description of the image, improving accessibility and context when the image cannot be displayed --&gt;</span>\n \n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:url\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your page\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for defining the URL of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:type\"</span> <span class=\"na\">content=</span><span class=\"s\">\"website\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for specifying the type of content (e.g., website, article) --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:locale\"</span> <span class=\"na\">content=</span><span class=\"s\">\"en_US\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for setting the locale (language and country) of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"article:published_time\"</span> <span class=\"na\">content=</span><span class=\"s\">\"YYYY-MM-DDTHH:mm:ssZ\"</span> <span class=\"nt\">/&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for indicating the publish time of an article --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"article:modified_time\"</span> <span class=\"na\">content=</span><span class=\"s\">\"YYYY-MM-DDTHH:mm:ssZ\"</span> <span class=\"nt\">/&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for indicating the last modification time of an article --&gt;</span>\n\n</code></pre></div></div>"
+      }
+    ],
+    "url": "https://docs.scangov.org/open-graph",
+    "relatedLinks": [
+      {
+        "url": "https://docs.scangov.org/metadata",
+        "text": "Metadata"
+      },
+      {
+        "url": "https://docs.scangov.org/robots-txt",
+        "text": "robots.txt"
+      },
+      {
+        "url": "https://docs.scangov.org/canonicalization",
+        "text": "Canonicalization"
+      },
+      {
+        "url": "https://docs.scangov.org/https",
+        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+      },
+      {
+        "url": "https://docs.scangov.org/www-resolution",
+        "text": "www resolution"
+      }
+    ]
+  }
+]
