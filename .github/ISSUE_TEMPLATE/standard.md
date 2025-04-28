@@ -13,6 +13,7 @@ Reference: [Standards](https://standards.scangov.org)
 
 Name: 
 Link: 
+Indicator:
 
 ## Why
 
