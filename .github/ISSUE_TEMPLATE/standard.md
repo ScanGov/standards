@@ -2,7 +2,7 @@
 name: Standard
 about: Add new standard.
 title: 'Standard: '
-labels: ''
+labels: standard
 assignees: ''
 
 ---

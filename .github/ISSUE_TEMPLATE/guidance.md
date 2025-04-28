@@ -2,7 +2,7 @@
 name: Guidance
 about: Add new guidance.
 title: 'Guidance: '
-labels: ''
+labels: guidance
 assignees: ''
 
 ---
