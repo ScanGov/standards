@@ -28,7 +28,6 @@ let standardsPages = [
   "https://docs.scangov.org/time-to-first-byte",
   "https://docs.scangov.org/sitemaps",
   "https://docs.scangov.org/robots-txt",
-  "https://docs.scangov.org/sitemaps",
   "https://docs.scangov.org/canonicalization",
   "https://docs.scangov.org/content-security-policy",
   "https://docs.scangov.org/hsts",
@@ -53,12 +52,6 @@ while(index < standardsPages.length) {
   let pageContent = await page.evaluate((containerSelector) => {
     let pageData = {};
 
-    if(document.querySelector('audio')) {
-      let mp3Link = document.querySelector('audio source').src;
-      if(mp3Link) {
-        pageData.audio = mp3Link;
-      }
-    }
     const container = document.querySelector(containerSelector);
     if (!container) return [];
     
@@ -68,12 +61,17 @@ while(index < standardsPages.length) {
     // If no H2 elements found, return empty array
     if (h2Elements.length === 0) return [];
     
+    let hasAboutHeader = false;
+
     // Process each H2 element
     h2Elements.forEach((h2, index) => {
       const sectionData = {
         title: h2.textContent.trim().split('href')[0].trim(),
         content: ''
       };
+      if(sectionData.title.indexOf('About') > -1) {
+        hasAboutHeader = true;
+      }
       
       // Get all elements that follow this H2 until the next H2 or end of container
       let nextElement = h2.nextElementSibling;
@@ -89,12 +87,48 @@ while(index < standardsPages.length) {
     });
     
     pageData.sections = sections;
+
+
+    // if the first element is not h2
+    // the first section up to the next h2 or end is the about seciton
+    if(!hasAboutHeader) {
+      let firstElement = container.children[0];
+      if(firstElement.nodeName != 'H2') {
+        const topSectionData = {
+          title: 'About',
+          content: ''
+        };
+        let nextElement = firstElement.nextElementSibling;
+        let contentHtml = '';
+        
+        while (nextElement && nextElement.tagName !== 'H2') {
+          contentHtml += nextElement.outerHTML;
+          nextElement = nextElement.nextElementSibling;
+        }
+        
+        topSectionData.content = contentHtml;
+        sections.push(topSectionData);
+      }
+    }
+
     return pageData;
   }, '.post');
 
   let relatedLinks = await page.evaluate((containerSelector) => {
     let links = [];
+
+    let pageData = {};
+    console.log(containerSelector)
     const container = document.querySelector(containerSelector);
+
+    if(container.querySelector('audio')) {
+      let mp3Link = document.querySelector('audio source').src;
+      if(mp3Link) {
+        pageData.audio = mp3Link;
+      }
+    }
+
+
     const h2Elements = container.querySelectorAll('h2');
     h2Elements.forEach(h2 => {
       if(h2.textContent.indexOf('Related') > -1) {
@@ -122,12 +156,12 @@ while(index < standardsPages.length) {
         }
       }
     })
-    if(document.querySelector('audio'))
 
-    return links;
+    pageData.links = links;
+    return pageData;
   }, '#post');
 
-  pageContent.url = currentPageUrl;
+  pageContent.key = currentPageUrl.replace('https://docs.scangov.org/','');
   pageContent.relatedLinks = relatedLinks;
   allPageContent.push(pageContent);
   index++;
