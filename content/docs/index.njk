@@ -67,10 +67,10 @@ topics:
 {% endfor %}
 </ul>
 
-{% if docpage.pageInfo.guidance %}
+{% if docpage.guidance %}
 <h2>Guidance</h2>
 <ul>
-{% for item in docpage.pageInfo.guidance %}
+{% for item in docpage.guidance %}
   <li><a href="{{ item.url }}">{{ item.displayName }}</a></li>
 {% endfor %}
 </ul>
