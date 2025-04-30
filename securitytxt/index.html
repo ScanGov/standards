@@ -178,20 +178,22 @@
           </h2>
           <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview of security.txt made with Google NotebookLM.</p>
           <script src="/js/plyr.js"></script>
-          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped"><div class="plyr__controls"><button class="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-label="Play"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__controls__item plyr__progress__container"><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="532.584" aria-valuenow="0" id="plyr-seek-6009" aria-valuetext="00:00 of 00:00" style="--value: 0%;" seek-value="16.795363150640966"><progress class="plyr__progress__buffer" min="0" max="100" value="6.0934988659066" role="progressbar" aria-hidden="true">% buffered</progress><span class="plyr__tooltip" style="left: 4.47071%;">00:23</span></div></div><div class="plyr__controls__item plyr__time--current plyr__time" aria-label="Current time">00:00</div><div class="plyr__controls__item plyr__time--duration plyr__time" aria-label="Duration">08:52</div><div class="plyr__controls__item plyr__volume"><button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-6009" aria-valuetext="100.0%" style="--value: 100%;"></div></div><audio id="player">
-            <source src="https://docs.scangov.org/assets/audio/security-txt.mp3" type="audio/mp3">
-          </audio></div>
+          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
+            <audio id="player">
+              <source src="https://docs.scangov.org/assets/audio/security-txt.mp3" type="audio/mp3">
+            </audio>
+          </div>
           <script>
-                      const plyr = new Plyr('audio', {
-                          controls: [
-                              'play',
-                              'progress',
-                              'current-time',
-                              'duration',
-                              'mute',
-                              'volume'
-                          ]
-                      });
+            const plyr = new Plyr('#player', {
+              controls: [
+                'play',
+                'progress',
+                'current-time',
+                'duration',
+                'mute',
+                'volume'
+              ]
+            });
           </script>
         </div>
       
@@ -275,16 +277,6 @@ recommendations in RFC 9116.”</p>
 
       <h2 id="related">Related</h2>
       <ul>
-      
-        <li><a href="https://docs.scangov.org/https">Hypertext Transfer Protocol Secure (HTTPS)</a></li>
-      
-        <li><a href="https://docs.scangov.org/content-security-policy">Content security policy (CSP)</a></li>
-      
-        <li><a href="https://docs.scangov.org/x-content-type-options">X-Content-Type-Options</a></li>
-      
-        <li><a href="https://docs.scangov.org/owasp-top-10">OWASP Top 10</a></li>
-      
-        <li><a href="https://docs.scangov.org/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a></li>
       
       </ul>
 
