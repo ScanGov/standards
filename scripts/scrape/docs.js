@@ -88,18 +88,18 @@ while(index < standardsPages.length) {
     
     pageData.sections = sections;
 
-
     // if the first element is not h2
     // the first section up to the next h2 or end is the about seciton
     if(!hasAboutHeader) {
       let firstElement = container.children[0];
       if(firstElement.nodeName != 'H2') {
+        let nextElement = firstElement.nextElementSibling;
+        let contentHtml = firstElement.outerHTML;
+
         const topSectionData = {
           title: 'About',
           content: ''
         };
-        let nextElement = firstElement.nextElementSibling;
-        let contentHtml = '';
         
         while (nextElement && nextElement.tagName !== 'H2') {
           contentHtml += nextElement.outerHTML;
@@ -115,8 +115,6 @@ while(index < standardsPages.length) {
   }, '.post');
 
   let relatedLinks = await page.evaluate((containerSelector) => {
-    let links = [];
-
     let pageData = {};
     console.log(containerSelector)
     const container = document.querySelector(containerSelector);
@@ -128,36 +126,6 @@ while(index < standardsPages.length) {
       }
     }
 
-
-    const h2Elements = container.querySelectorAll('h2');
-    h2Elements.forEach(h2 => {
-      if(h2.textContent.indexOf('Related') > -1) {
-        let nextElement = h2.nextElementSibling;
-
-
-        h2Elements.forEach(h2 => {
-          if(h2.textContent.indexOf('Related') > -1) {
-            console.log(h2.nextElementSibling.nodeName)
-          }
-        })
-      
-        while (nextElement && nextElement.tagName !== 'H2') {
-          if(nextElement.nodeName == 'UL') {
-            let relatedLis = nextElement.querySelectorAll('li a');
-            relatedLis.forEach(li => {
-              let linkObject = {};
-              linkObject.url = li.href;
-              linkObject.text = li.textContent;
-              links.push(linkObject);
-            })
-
-          }
-          nextElement = nextElement.nextElementSibling;
-        }
-      }
-    })
-
-    pageData.links = links;
     return pageData;
   }, '#post');
 
