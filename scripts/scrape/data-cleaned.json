@@ -6,7 +6,31 @@
         "content": "<p>The <code class=\"language-plaintext highlighter-rouge\">robots.txt</code> file tells AI crawlers and search engines which parts of a website they can or cannot access. This helps website owners control what data is available to AI models while protecting private or sensitive information. It also prevents unnecessary crawling, reducing server load and improving site performance. By following <code class=\"language-plaintext highlighter-rouge\">robots.txt</code> rules, AI crawlers respect website preferences and ensure ethical data collection.</p>"
       }
     ],
-    "url": "https://docs.scangov.org/crawlable"
+    "key": "crawlable",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        },
+        {
+          "url": "https://docs.scangov.org/open-graph",
+          "text": "Open Graph"
+        },
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -15,43 +39,179 @@
         "content": "<p>The main content of each page is available in the initial document. It does not require a lot of client-side script execution in order to render. If page usually require a lot of client-side script execution to render main content the content may be made available to bots in an alternate text version of the site.</p>"
       }
     ],
-    "url": "https://docs.scangov.org/text-content"
+    "key": "text-content",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        },
+        {
+          "url": "https://docs.scangov.org/open-graph",
+          "text": "Open Graph"
+        },
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/meta-refresh\">Refresh meta tag</a></li>\n  <li><a href=\"https://docs.scangov.org/viewport-meta-tag\">Viewport meta tag</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/target-size\">Touch targets</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li>\n    <p>The document does not use <code class=\"language-plaintext highlighter-rouge\">&lt;meta http-equiv=\"refresh\"&gt;</code>: Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[user-scalable=\"no\"]</code> is not used in the <code class=\"language-plaintext highlighter-rouge\">&lt;meta name=\"viewport\"&gt;</code> element and the <code class=\"language-plaintext highlighter-rouge\">[maximum-scale]</code> attribute is not less than 5: Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page.</p>\n  </li>\n  <li>\n    <p>Touch targets do not have sufficient size or spacing: Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/accessibility-best-practices"
+    "key": "a11y-best-practices",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-controls-labels",
+          "text": "Custom controls have associated labels"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr\">How to match ARIA attributes to their roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role\">About ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-command-name\">How to make command elements more accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-conditional-attr\">About conditional ARIA attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-deprecated-role\">About deprecated ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name\">How to make ARIA dialog elements more accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-hidden-body\">How <code class=\"language-plaintext highlighter-rouge\">aria-hidden</code> affects the document body</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus\">How <code class=\"language-plaintext highlighter-rouge\">aria-hidden</code> affects focusable elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-input-field-name\">About input field labels</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-meter-name\">How to name <code class=\"language-plaintext highlighter-rouge\">meter</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name\">How to label <code class=\"language-plaintext highlighter-rouge\">progressbar</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr\">About prohibited ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-required-attr\">About roles and required attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-required-children\">About roles and required children elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-required-parent\">About ARIA roles and required parent element</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-roles\">About valid ARIA roles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-text\">About the <code class=\"language-plaintext highlighter-rouge\">role=text</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-toggle-field-name\">About toggle fields</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-tooltip-name\">How to name <code class=\"language-plaintext highlighter-rouge\">tooltip</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-treeitem-name\">About labeling <code class=\"language-plaintext highlighter-rouge\">treeitem</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value\">About valid values for ARIA attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr\">About valid ARIA attributes</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/duplicate-id-aria\">How to fix duplicate ARIA IDs</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<p>You don’t always need <code class=\"language-plaintext highlighter-rouge\">aria-</code> attributes in your application for it to be accessible. When you do use <code class=\"language-plaintext highlighter-rouge\">aria-</code> attributes follow these recommendations to make sure they are helpful.</p><p>Contains:</p><ol>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[aria-*]</code> attributes match their roles: Each ARIA <code class=\"language-plaintext highlighter-rouge\">role</code> supports a specific subset of <code class=\"language-plaintext highlighter-rouge\">aria-*</code> attributes. Mismatching these invalidates the <code class=\"language-plaintext highlighter-rouge\">aria-*</code> attributes.</p>\n  </li>\n  <li>\n    <p>Uses ARIA roles only on compatible elements: Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">button</code>, <code class=\"language-plaintext highlighter-rouge\">link</code>, and <code class=\"language-plaintext highlighter-rouge\">menuitem</code> elements have accessible names: When an element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>ARIA attributes are used as specified for the element’s role: Some ARIA attributes are only allowed on an element under certain conditions.</p>\n  </li>\n  <li>\n    <p>Deprecated ARIA roles were not used: Deprecated ARIA roles may not be processed correctly by assistive technology.</p>\n  </li>\n  <li>\n    <p>Elements with <code class=\"language-plaintext highlighter-rouge\">role=\"dialog\"</code> or <code class=\"language-plaintext highlighter-rouge\">role=\"alertdialog\"</code> have accessible names: ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[aria-hidden=\"true\"]</code> is not present on the document <code class=\"language-plaintext highlighter-rouge\">&lt;body&gt;</code>: Assistive technologies, like screen readers, work inconsistently when <code class=\"language-plaintext highlighter-rouge\">aria-hidden=\"true\"</code> is set on the document <code class=\"language-plaintext highlighter-rouge\">&lt;body&gt;</code>.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[aria-hidden=\"true\"]</code> elements do not contain focusable descendents: Focusable descendents within an <code class=\"language-plaintext highlighter-rouge\">[aria-hidden=\"true\"]</code> element prevent those interactive elements from being available to users of assistive technologies like screen readers.</p>\n  </li>\n  <li>\n    <p>ARIA input fields have accessible names: When an input field doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>ARIA meter elements have accessible names: When a meter element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>ARIA progressbar elements have accessible names: When a <code class=\"language-plaintext highlighter-rouge\">progressbar</code> element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>Elements use only permitted ARIA attributes: Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies.</p>\n  </li>\n  <li>\n    <p>[role]s have all required [aria-*] attributes: Some ARIA roles have required attributes that describe the state of the element to screen readers.</p>\n  </li>\n  <li>\n    <p>Elements with an ARIA <code class=\"language-plaintext highlighter-rouge\">[role]</code> that require children to contain a specific <code class=\"language-plaintext highlighter-rouge\">[role]</code> have all required children: Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions.</p>\n  </li>\n  <li>\n    <p>[role]s are contained by their required parent element: Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions.</p>\n  </li>\n  <li>\n    <p>[role] values are valid: ARIA roles must have valid values in order to perform their intended accessibility functions.</p>\n  </li>\n  <li>\n    <p>Elements with the role=text attribute do not have focusable descendents: Adding <code class=\"language-plaintext highlighter-rouge\">role=text</code> around a text node split by markup enables VoiceOver to treat it as one phrase, but the element’s focusable descendents will not be announced.</p>\n  </li>\n  <li>\n    <p>ARIA toggle fields have accessible names: When a toggle field doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>ARIA tooltip elements have accessible names: When a tooltip element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>ARIA treeitem elements have accessible names: When a <code class=\"language-plaintext highlighter-rouge\">treeitem</code> element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[aria-*]</code> attributes have valid values: Assistive technologies, like screen readers, can’t interpret ARIA attributes with invalid values.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[aria-*]</code> attributes are valid and not misspelled: Assistive technologies, like screen readers, can’t interpret ARIA attributes with invalid names.</p>\n  </li>\n  <li>\n    <p>ARIA IDs are unique: The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/aria"
+    "key": "a11y-aria",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-controls-labels",
+          "text": "Custom controls have associated labels"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/video-caption\">About video captions</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li><code class=\"language-plaintext highlighter-rouge\">&lt;video&gt;</code> elements contain a <code class=\"language-plaintext highlighter-rouge\">&lt;track&gt;</code> element with <code class=\"language-plaintext highlighter-rouge\">[kind=\"captions\"]</code>: When a video provides a caption it is easier for deaf and hearing impaired users to access its information.</li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/audio-video"
+    "key": "a11y-audio-video",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-controls-labels",
+          "text": "Custom controls have associated labels"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/color-contrast\">How to provide sufficient color contrast</a>.</li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/link-in-text-block\">How to make links distinguishable</a>.</li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li>\n    <p>Background and foreground colors have a sufficient contrast ratio: Low-contrast text is difficult or impossible for many users to read.</p>\n  </li>\n  <li>\n    <p>Links are distinguishable without relying on color: Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/color-contrast"
+    "key": "a11y-color-contrast",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-controls-labels",
+          "text": "Custom controls have associated labels"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -64,43 +224,179 @@
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/empty-heading\">About headings</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/identical-links-same-purpose\">About identical links</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/landmark-one-main\">About landmarks</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch\">About accessible names</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/table-fake-caption\">About captions</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/td-has-header\">About table headers</a></li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/hidden"
+    "key": "hidden",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/valid-lang\">How to use the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a>\n <a href=\"https://dequeuniversity.com/rules/axe/4.10/html-xml-lang-mismatch\">Learn more about the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/html-lang-valid\">How to use the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a>\n <a href=\"https://dequeuniversity.com/rules/axe/4.10/html-has-lang\">Learn more about the <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;html&gt;</code> element has a <code class=\"language-plaintext highlighter-rouge\">[lang]</code> attribute: If a page doesn’t specify a <code class=\"language-plaintext highlighter-rouge\">lang</code> attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn’t actually in the default language, then the screen reader might not announce the page’s text correctly.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;html&gt;</code> element has a valid value for its <code class=\"language-plaintext highlighter-rouge\">[lang]</code> attribute: Specifying a valid <a href=\"https://www.w3.org/International/questions/qa-choosing-language-tags#question\">BCP 47 language</a> helps screen readers announce text properly.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;html&gt;</code> element has an <code class=\"language-plaintext highlighter-rouge\">[xml:lang]</code> attribute with the same base language as the <code class=\"language-plaintext highlighter-rouge\">[lang]</code> attribute: If the webpage does not specify a consistent language, then the screen reader might not announce the page’s text correctly.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[lang]</code> attributes have a valid value: Specifying a valid <a href=\"https://www.w3.org/International/questions/qa-choosing-language-tags#question\">BCP 47 language</a> on elements helps ensure that text is pronounced correctly by a screen reader.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/language"
+    "key": "a11y-language",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/skip-link\">About skip links</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/select-name\">About the <code class=\"language-plaintext highlighter-rouge\">select</code> element</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/object-alt\">About alt text for <code class=\"language-plaintext highlighter-rouge\">object</code> elements</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/link-name\">How to make links accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/label\">About form element labels</a>\n <a href=\"https://dequeuniversity.com/rules/axe/4.10/input-image-alt\">Learn about input image alt text</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/input-button-name\">About input buttons</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt\">About the <code class=\"language-plaintext highlighter-rouge\">alt</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/button-name\">How to make buttons more accessible</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/document-title\">About document titles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/form-field-multiple-labels\">How to use form labels</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/frame-title\">About frame titles</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/image-alt\">About the <code class=\"language-plaintext highlighter-rouge\">alt</code> attribute</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li>\n    <p>Buttons have an accessible name: When a button doesn’t have an accessible name, screen readers announce it as “button”, making it unusable for users who rely on screen readers.</p>\n  </li>\n  <li>\n    <p>Document has a <code class=\"language-plaintext highlighter-rouge\">&lt;title&gt;</code> element: The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search.</p>\n  </li>\n  <li>\n    <p>No form fields have multiple labels: Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either the first, the last, or all of the labels.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;frame&gt;</code> or <code class=\"language-plaintext highlighter-rouge\">&lt;iframe&gt;</code> elements have a title: Screen reader users rely on frame titles to describe the contents of frames.</p>\n  </li>\n  <li>\n    <p>Image elements have <code class=\"language-plaintext highlighter-rouge\">[alt]</code> attributes: Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute.</p>\n  </li>\n  <li>\n    <p>Image elements do not have <code class=\"language-plaintext highlighter-rouge\">[alt]</code> attributes that are redundant text: Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice.</p>\n  </li>\n  <li>\n    <p>Input buttons have discernible text: Adding discernable and accessible text to input buttons may help screen reader users understand the purpose of the input button.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;input type=\"image\"&gt;</code> elements have <code class=\"language-plaintext highlighter-rouge\">[alt]</code> text: When an image is being used as an <code class=\"language-plaintext highlighter-rouge\">&lt;input&gt;</code> button, providing alternative text can help screen reader users understand the purpose of the button.</p>\n  </li>\n  <li>\n    <p>Form elements have associated labels: Labels ensure that form controls are announced properly by assistive technologies, like screen readers.</p>\n  </li>\n  <li>\n    <p>Links have a discernible name: Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;object&gt;</code> elements have alternate text: Screen readers cannot translate non-text content. Adding alternate text to <code class=\"language-plaintext highlighter-rouge\">&lt;object&gt;</code> elements helps screen readers convey meaning to users.</p>\n  </li>\n  <li>\n    <p>Select elements have associated label elements: Form elements without effective labels can create frustrating experiences for screen reader users.</p>\n  </li>\n  <li>\n    <p>Skip links are focusable: Including a skip link can help users skip to the main content to save time.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/names-labels"
+    "key": "a11y-names-labels",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/accesskeys\">About access keys</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/bypass\">About bypass blocks</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/heading-order\">About heading order</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/tabindex\">About the <code class=\"language-plaintext highlighter-rouge\">tabindex</code> attribute</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">[accesskey]</code> values are unique: Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique.</p>\n  </li>\n  <li>\n    <p>The page contains a heading, skip link, or landmark region: Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently.</p>\n  </li>\n  <li>\n    <p>Heading elements appear in a sequentially-descending order: Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies.</p>\n  </li>\n  <li>\n    <p>No element has a <code class=\"language-plaintext highlighter-rouge\">[tabindex]</code> value greater than 0: A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/navigation"
+    "key": "a11y-navigation",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        }
+      ]
+    }
   },
   {
     "sections": [
       {
         "title": "Links",
         "content": "<ul>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/definition-list\">How to structure definition lists correctly</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/dlitem\">How to structure definition lists correctly</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/list\">About proper list structure</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/listitem\">About proper list structure</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/table-duplicate-name\">About summary and caption</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/td-headers-attr\">About the <code class=\"language-plaintext highlighter-rouge\">headers</code> attribute</a></li>\n  <li><a href=\"https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells\">About table headers</a></li>\n</ul>"
+      },
+      {
+        "title": "About",
+        "content": "<ol>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;dl&gt;</code>’s contain only properly-ordered <code class=\"language-plaintext highlighter-rouge\">&lt;dt&gt;</code> and <code class=\"language-plaintext highlighter-rouge\">&lt;dd&gt;</code> groups, <code class=\"language-plaintext highlighter-rouge\">&lt;script&gt;</code>, <template> or `&lt;div&gt;` elements: When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output.</template></p>\n  </li>\n  <li>\n    <p>Definition list items are wrapped in <code class=\"language-plaintext highlighter-rouge\">&lt;dl&gt;</code> elements: Definition list items (<code class=\"language-plaintext highlighter-rouge\">&lt;dt&gt;</code> and <code class=\"language-plaintext highlighter-rouge\">&lt;dd&gt;</code>) must be wrapped in a parent <code class=\"language-plaintext highlighter-rouge\">&lt;dl&gt;</code> element to ensure that screen readers can properly announce them.</p>\n  </li>\n  <li>\n    <p>Lists contain only <code class=\"language-plaintext highlighter-rouge\">&lt;li&gt;</code> elements and script supporting elements (<code class=\"language-plaintext highlighter-rouge\">&lt;script&gt;</code> and <code class=\"language-plaintext highlighter-rouge\">&lt;template&gt;</code>): Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output.</p>\n  </li>\n  <li>\n    <p>List items (<code class=\"language-plaintext highlighter-rouge\">&lt;li&gt;</code>) are contained within <code class=\"language-plaintext highlighter-rouge\">&lt;ul&gt;</code>, <code class=\"language-plaintext highlighter-rouge\">&lt;ol&gt;</code> or <code class=\"language-plaintext highlighter-rouge\">&lt;menu&gt;</code> parent elements: Screen readers require list items (<code class=\"language-plaintext highlighter-rouge\">&lt;li&gt;</code>) to be contained within a parent <code class=\"language-plaintext highlighter-rouge\">&lt;ul&gt;</code>, <code class=\"language-plaintext highlighter-rouge\">&lt;ol&gt;</code> or <code class=\"language-plaintext highlighter-rouge\">&lt;menu&gt;</code> to be announced properly.</p>\n  </li>\n  <li>\n    <p>Tables have different content in the summary attribute and <code class=\"language-plaintext highlighter-rouge\">&lt;caption&gt;</code>: The summary attribute should describe the table structure, while <code class=\"language-plaintext highlighter-rouge\">&lt;caption&gt;</code> should have the onscreen title. Accurate table mark-up helps users of screen readers.</p>\n  </li>\n  <li>\n    <p>Cells in a <code class=\"language-plaintext highlighter-rouge\">&lt;table&gt;</code> element that use the <code class=\"language-plaintext highlighter-rouge\">[headers]</code> attribute refer to table cells within the same table: Screen readers have features to make navigating tables easier. Ensuring <code class=\"language-plaintext highlighter-rouge\">&lt;td&gt;</code> cells using the <code class=\"language-plaintext highlighter-rouge\">[headers]</code> attribute only refer to other cells in the same table may improve the experience for screen reader users.</p>\n  </li>\n  <li>\n    <p><code class=\"language-plaintext highlighter-rouge\">&lt;th&gt;</code> elements and elements with <code class=\"language-plaintext highlighter-rouge\">[role=\"columnheader\"/\"rowheader\"]</code> have data cells they describe: Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users.</p>\n  </li>\n</ol>"
       }
     ],
-    "url": "https://docs.scangov.org/tables-lists"
+    "key": "a11y-tables-lists",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        },
+        {
+          "url": "https://docs.scangov.org/audio-video",
+          "text": "Audio and video"
+        },
+        {
+          "url": "https://docs.scangov.org/color-contrast",
+          "text": "Color contrast"
+        },
+        {
+          "url": "https://docs.scangov.org/custom-control-roles",
+          "text": "Custom control roles"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -117,7 +413,31 @@
         "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title\">The Document Title element</a> (Mozilla)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/page-title"
+    "key": "title",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -134,7 +454,31 @@
         "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata\">What’s in the head? Webpage metadata</a> (Mozilla)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/page-description"
+    "key": "description",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -147,7 +491,31 @@
         "content": "<div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;meta</span> <span class=\"na\">name=</span><span class=\"s\">\"viewport\"</span> <span class=\"na\">content=</span><span class=\"s\">\"width=device-width, initial-scale=1.0\"</span><span class=\"nt\">&gt;</span>\n</code></pre></div></div>"
       }
     ],
-    "url": "https://docs.scangov.org/viewport-meta-tag"
+    "key": "viewport",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        },
+        {
+          "url": "https://docs.scangov.org/open-graph",
+          "text": "Open Graph"
+        },
+        {
+          "url": "https://docs.scangov.org/accessibility-best-practices",
+          "text": "Accessibility best practices"
+        },
+        {
+          "url": "https://docs.scangov.org/aria",
+          "text": "ARIA attributes"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -168,7 +536,31 @@
         "content": "<ul>\n  <li><a href=\"https://https.cio.gov/\">The HTTPS-Only Standard</a> (CIO.gov)</li>\n  <li><a href=\"https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf\">M-15-13: Policy to Require Secure Connections across Federal Websites and Web\nServices</a></li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/https"
+    "key": "https",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -185,10 +577,33 @@
         "content": "<p>Example of a government website with <code class=\"language-plaintext highlighter-rouge\">www</code> and non-<code class=\"language-plaintext highlighter-rouge\">www</code> resolution:</p><ul>\n  <li><a href=\"https://digital.gov\">https://digital.gov</a></li>\n  <li><a href=\"https://www.digital.gov\">https://www.digital.gov</a></li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/www-resolution"
+    "key": "www",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/url",
+          "text": "URL"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/stld.mp3",
     "sections": [
       {
         "title": "Guidance",
@@ -207,17 +622,20 @@
         "content": "<ul>\n  <li><a href=\"https://en.wikipedia.org/wiki/.gov\">.gov</a> (Wikipedia)</li>\n  <li><a href=\"https://get.gov/\">Get a .gov</a> (Cybersecurity and Infrastructure Security Agency)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sponsored_top-level_domain\">Sponsored top-level domain</a> (Wikipedia)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/stld",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/url",
-        "text": "URL"
-      },
-      {
-        "url": "https://docs.scangov.org/www-resolution",
-        "text": "www resolution"
-      }
-    ]
+    "key": "dotgov",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/stld.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/url",
+          "text": "URL"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -226,7 +644,31 @@
         "content": "<p>​Cumulative Layout Shift (CLS) measures how much a webpage’s content unexpectedly moves during loading, affecting user experience. A good CLS score is 0.1 or less. Common causes include images or ads without specified dimensions, dynamically added content, and late-loading fonts. To improve CLS, always set size attributes for media, reserve space for ads, and ensure fonts load properly. ​</p>"
       }
     ],
-    "url": "https://docs.scangov.org/cumulative-layout-shift"
+    "key": "cls",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -235,7 +677,31 @@
         "content": "<p>First Contentful Paint (FCP) measures how quickly a webpage shows any content after a user starts to load it. It checks the time from when the user begins to navigate to the page until any part of the page’s content, like text or images, appears on the screen. A fast FCP reassures users that the page is loading. For a good user experience, aim for an FCP of 1.8 seconds or less.</p>"
       }
     ],
-    "url": "https://docs.scangov.org/first-contentful-paint"
+    "key": "fcp",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -244,7 +710,31 @@
         "content": "<p>Interaction to Next Paint (INP) measures how quickly a webpage responds to user actions like clicks or typing. It tracks the time from when you interact until the next screen update. A good INP score is 200 milliseconds or less, ensuring a smooth experience. INP has replaced First Input Delay (FID) as a key performance metric.</p>"
       }
     ],
-    "url": "https://docs.scangov.org/interaction-to-next-paint"
+    "key": "inp",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -253,7 +743,31 @@
         "content": "<p>Largest Contentful Paint (LCP) measures how long it takes for the main content of a web page to appear. This is important because it helps users know when the page is ready. A good LCP time is 2.5 seconds or less. It tracks the largest visible element, like images, videos, or text blocks. A faster LCP improves user experience and helps websites perform better.</p>"
       }
     ],
-    "url": "https://docs.scangov.org/largest-contentful-paint"
+    "key": "lcp",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -262,10 +776,33 @@
         "content": "<p>Time to First Byte (TTFB) measures the time it takes from when a browser requests a resource to when the first byte of data begins to load. It’s an important metric for website performance, affecting how quickly a page appears. A good TTFB is under 0.8 seconds, and anything over 1.8 seconds needs improvement. TTFB is influenced by server responsiveness and connection setup time. Lowering it can improve overall user experience and speed.</p>"
       }
     ],
-    "url": "https://docs.scangov.org/time-to-first-byte"
+    "key": "ttfb",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/sitemaps.mp3",
     "sections": [
       {
         "title": "Guidance",
@@ -288,32 +825,34 @@
         "content": "<ul>\n  <li><a href=\"https://www.sitemaps.org/\">sitemaps.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sitemaps\">Sitemaps</a> (Wikipedia)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/sitemaps",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/metadata",
-        "text": "Metadata"
-      },
-      {
-        "url": "https://docs.scangov.org/robots-txt",
-        "text": "robots.txt"
-      },
-      {
-        "url": "https://docs.scangov.org/canonicalization",
-        "text": "Canonicalization"
-      },
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/www-resolution",
-        "text": "www resolution"
-      }
-    ]
+    "key": "sitemap",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/sitemaps.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/robots-txt.mp3",
     "sections": [
       {
         "title": "Guidance",
@@ -321,7 +860,7 @@
       },
       {
         "title": "About",
-        "content": "<p>Web robots, also known as web wanderers, crawlers or spiders, are automated programs that traverse the Web. Search engines use them to index web content, while spammers use them to scan for email addresses, among other purposes.</p><p>A robots.txt file is a text file placed on a website’s server to instruct web robots (typically search engine crawlers) how to crawl and index pages on their site. It specifies which parts of the site should not be accessed by crawlers or are “off-limits” to them. It’s a way for website owners to communicate with web robots and guide their behavior.</p><p>A robots policy can be used to limit the rate of requests or to block robots from indexing paths, which can save stress on the server. The file consists of one or more records separated by one or more blank lines. The record starts with one or more <code class=\"language-plaintext highlighter-rouge\">User-agent</code> lines, followed by one or more <code class=\"language-plaintext highlighter-rouge\">Disallow</code> lines. Unrecognised headers are ignored.</p><p>User-agent:</p><ul>\n  <li>The value of this field is the name of the robot the record is describing access policy for.</li>\n  <li>If the value is <code class=\"language-plaintext highlighter-rouge\">*</code>, the record describes the default access policy for any robot that has not matched any of the other records. It is not allowed to have multiple such records in the <code class=\"language-plaintext highlighter-rouge\">/robots.txt</code> file.</li>\n</ul><p>Disallow:</p><ul>\n  <li>The value of this field specifies a partial URL that is not to be visited. This can be a full path, or a partial path; any URL that starts with this value will not be retrieved. For example, <code class=\"language-plaintext highlighter-rouge\">Disallow: /help</code> disallows both <code class=\"language-plaintext highlighter-rouge\">/help.html</code> and <code class=\"language-plaintext highlighter-rouge\">/help/index.html</code>, whereas <code class=\"language-plaintext highlighter-rouge\">Disallow: /help/</code> would disallow <code class=\"language-plaintext highlighter-rouge\">/help/index.html</code> but allow <code class=\"language-plaintext highlighter-rouge\">/help.html</code>.</li>\n  <li>Any empty value, indicates that all URLs can be retrieved. At least one Disallow field needs to be present in a record.</li>\n</ul><p>The presence of an empty <code class=\"language-plaintext highlighter-rouge\">/robots.txt</code> file has no explicit associated semantics, it will be treated as if it was not present, i.e. all robots will consider themselves welcome.</p><h3 id=\"sitemap\">\n  \n  \n    Sitemap <a id=\"heading-hashtag\" href=\"#sitemap\"><span class=\"d-none\">href=\"#sitemap\"</span><svg class=\"svg-inline--fa fa-link\" aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg><!-- <i class=\"fa-solid fa-link\"></i> Font Awesome fontawesome.com --></a>\n  \n  \n</h3><p>robots.txt files should point to a sitemap with a line starting with <code class=\"language-plaintext highlighter-rouge\">Sitemap:</code>. If you are having trouble manually adding in your sitemap, see <a href=\"https://github.com/civichackingagency/scangov/issues/151#issue-2404528767\">this solution</a>.</p><h3 id=\"other-methods\">\n  \n  \n    Other methods <a id=\"heading-hashtag\" href=\"#other-methods\"><span class=\"d-none\">href=\"#other-methods\"</span><svg class=\"svg-inline--fa fa-link\" aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg><!-- <i class=\"fa-solid fa-link\"></i> Font Awesome fontawesome.com --></a>\n  \n  \n</h3><p>A robots policy can be set through the <code class=\"language-plaintext highlighter-rouge\">&lt;meta name=\"robots\"&gt;</code> tag.</p><p>It can also be set using the <code class=\"language-plaintext highlighter-rouge\">X-Robots-Tag</code> HTTP response header.</p>"
+        "content": "<p>Web robots, also known as web wanderers, crawlers or spiders, are automated programs that traverse the Web. Search engines use them to index web content, while spammers use them to scan for email addresses, among other purposes.</p><p>A robots.txt file is a text file placed on a website’s server to instruct web robots (typically search engine crawlers) how to crawl and index pages on their site. It specifies which parts of the site should not be accessed by crawlers or are “off-limits” to them. It’s a way for website owners to communicate with web robots and guide their behavior.</p><p>A robots policy can be used to limit the rate of requests or to block robots from indexing paths, which can save stress on the server. The file consists of one or more records separated by one or more blank lines. The record starts with one or more <code class=\"language-plaintext highlighter-rouge\">User-agent</code> lines, followed by one or more <code class=\"language-plaintext highlighter-rouge\">Disallow</code> lines. Unrecognised headers are ignored.</p><p>User-agent:</p><ul>\n  <li>The value of this field is the name of the robot the record is describing access policy for.</li>\n  <li>If the value is <code class=\"language-plaintext highlighter-rouge\">*</code>, the record describes the default access policy for any robot that has not matched any of the other records. It is not allowed to have multiple such records in the <code class=\"language-plaintext highlighter-rouge\">/robots.txt</code> file.</li>\n</ul><p>Disallow:</p><ul>\n  <li>The value of this field specifies a partial URL that is not to be visited. This can be a full path, or a partial path; any URL that starts with this value will not be retrieved. For example, <code class=\"language-plaintext highlighter-rouge\">Disallow: /help</code> disallows both <code class=\"language-plaintext highlighter-rouge\">/help.html</code> and <code class=\"language-plaintext highlighter-rouge\">/help/index.html</code>, whereas <code class=\"language-plaintext highlighter-rouge\">Disallow: /help/</code> would disallow <code class=\"language-plaintext highlighter-rouge\">/help/index.html</code> but allow <code class=\"language-plaintext highlighter-rouge\">/help.html</code>.</li>\n  <li>Any empty value, indicates that all URLs can be retrieved. At least one Disallow field needs to be present in a record.</li>\n</ul><p>The presence of an empty <code class=\"language-plaintext highlighter-rouge\">/robots.txt</code> file has no explicit associated semantics, it will be treated as if it was not present, i.e. all robots will consider themselves welcome.</p><h3>\n  \n  \n    Sitemap <a href=\"#sitemap\"><span class=\"d-none\">href=\"#sitemap\"</span><svg class=\"svg-inline--fa fa-link\" aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg><!-- <i class=\"fa-solid fa-link\"></i> Font Awesome fontawesome.com --></a>\n  \n  \n</h3><p>robots.txt files should point to a sitemap with a line starting with <code class=\"language-plaintext highlighter-rouge\">Sitemap:</code>. If you are having trouble manually adding in your sitemap, see <a href=\"https://github.com/civichackingagency/scangov/issues/151#issue-2404528767\">this solution</a>.</p><h3>\n  \n  \n    Other methods <a href=\"#other-methods\"><span class=\"d-none\">href=\"#other-methods\"</span><svg class=\"svg-inline--fa fa-link\" aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg><!-- <i class=\"fa-solid fa-link\"></i> Font Awesome fontawesome.com --></a>\n  \n  \n</h3><p>A robots policy can be set through the <code class=\"language-plaintext highlighter-rouge\">&lt;meta name=\"robots\"&gt;</code> tag.</p><p>It can also be set using the <code class=\"language-plaintext highlighter-rouge\">X-Robots-Tag</code> HTTP response header.</p>"
       },
       {
         "title": "Examples",
@@ -336,77 +875,32 @@
         "content": "<ul>\n  <li><a href=\"https://www.robotstxt.org\">robotstxt.org</a></li>\n  <li><a href=\"https://search.gov/indexing/robotstxt.html\">robots.txt</a> (Search.gov)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Robots.txt\">robots.txt</a> (Wikipedia)</li>\n  <li><a href=\"https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag\">Robots Meta Tags Specifications</a> (Google)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/robots-txt",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/metadata",
-        "text": "Metadata"
-      },
-      {
-        "url": "https://docs.scangov.org/canonicalization",
-        "text": "Canonicalization"
-      },
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/www-resolution",
-        "text": "www resolution"
-      },
-      {
-        "url": "https://docs.scangov.org/open-graph",
-        "text": "Open Graph"
-      }
-    ]
-  },
-  {
-    "audio": "https://docs.scangov.org/assets/audio/sitemaps.mp3",
-    "sections": [
-      {
-        "title": "Guidance",
-        "content": "<p>All government websites must have a sitemap.</p>"
-      },
-      {
-        "title": "About",
-        "content": "<p>A sitemap is a file that lists all of the pages on a website in addition to information about each so that search engines can more intelligently crawl the site.</p><p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support sitemaps to pick up all Uniform Resources Locators (URLs) in the sitemap and learn about them using the associated metadata. Using sitemap protocol doesn’t guarantee web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p><p>The sitemap is an Extensible Markup Language (XML) file on the website’s root directory that include metadata for each URL, such as:</p><ul>\n  <li>when it was last updated</li>\n  <li>how often it usually changes</li>\n  <li>how important it is, relative to other URLs in the site</li>\n</ul>"
-      },
-      {
-        "title": "Examples",
-        "content": "<p>Example government website sitemaps:</p><ul>\n  <li><a href=\"https://www.usa.gov/sitemap.xml\">https://www.usa.gov/sitemap.xml</a></li>\n  <li><a href=\"https://18f.gov/sitemap.xml\">https://18f.gov/sitemap.xml</a></li>\n</ul>"
-      },
-      {
-        "title": "Code",
-        "content": "<p>Example sitemap code:</p><div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;</span>\n\n<span class=\"nt\">&lt;urlset</span> <span class=\"na\">xmlns=</span><span class=\"s\">\"http://www.sitemaps.org/schemas/sitemap/0.9\"</span><span class=\"nt\">&gt;</span>\n\n   <span class=\"nt\">&lt;url&gt;</span>\n\n      <span class=\"nt\">&lt;loc&gt;</span>http://www.example.com/<span class=\"nt\">&lt;/loc&gt;</span>\n\n      <span class=\"nt\">&lt;lastmod&gt;</span>2005-01-01<span class=\"nt\">&lt;/lastmod&gt;</span>\n\n      <span class=\"nt\">&lt;changefreq&gt;</span>monthly<span class=\"nt\">&lt;/changefreq&gt;</span>\n\n      <span class=\"nt\">&lt;priority&gt;</span>0.8<span class=\"nt\">&lt;/priority&gt;</span>\n\n   <span class=\"nt\">&lt;/url&gt;</span>\n\n<span class=\"nt\">&lt;/urlset&gt;</span>\n</code></pre></div></div>"
-      },
-      {
-        "title": "Links",
-        "content": "<ul>\n  <li><a href=\"https://www.sitemaps.org/\">sitemaps.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sitemaps\">Sitemaps</a> (Wikipedia)</li>\n</ul>"
-      }
-    ],
-    "url": "https://docs.scangov.org/sitemaps",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/metadata",
-        "text": "Metadata"
-      },
-      {
-        "url": "https://docs.scangov.org/robots-txt",
-        "text": "robots.txt"
-      },
-      {
-        "url": "https://docs.scangov.org/canonicalization",
-        "text": "Canonicalization"
-      },
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/www-resolution",
-        "text": "www resolution"
-      }
-    ]
+    "key": "valid",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/robots-txt.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        },
+        {
+          "url": "https://docs.scangov.org/open-graph",
+          "text": "Open Graph"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -419,10 +913,33 @@
         "content": "<ul>\n  <li><a href=\"https://developers.google.com/search/docs/crawling-indexing/canonicalization\">Google canonicalization guide</a></li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/canonicalization"
+    "key": "canonical",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        },
+        {
+          "url": "https://docs.scangov.org/open-graph",
+          "text": "Open Graph"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/content-security-policy.mp3",
     "sections": [
       {
         "title": "Guidance",
@@ -441,29 +958,32 @@
         "content": "<ul>\n  <li><a href=\"https://guides.18f.gov/engineering/security/content-security-policy/\">Content Security Policy</a> (18F)</li>\n  <li><a href=\"https://research.sidstamm.com/papers/csp-www2010.pdf\">Reining in the Web with Content Security Policy</a> (Mozilla)</li>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP\">Content Security Policy</a> (Mozilla)</li>\n  <li><a href=\"https://www.w3.org/TR/CSP3/\">Content Security Policy Level 3</a> (W3C)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Content_Security_Policy\">Content Security Policy</a> (Wikipedia)</li>\n  <li><a href=\"https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html\">Content Security Policy Cheat Sheet</a> (OWASP)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/content-security-policy",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/metadata",
-        "text": "Metadata"
-      },
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/x-content-type-options",
-        "text": "X-Content-Type-Options"
-      },
-      {
-        "url": "https://docs.scangov.org/security-txt",
-        "text": "security.txt"
-      },
-      {
-        "url": "https://docs.scangov.org/owasp-top-10",
-        "text": "OWASP Top 10"
-      }
-    ]
+    "key": "csp",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/content-security-policy.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/x-content-type-options",
+          "text": "X-Content-Type-Options"
+        },
+        {
+          "url": "https://docs.scangov.org/security-txt",
+          "text": "security.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/owasp-top-10",
+          "text": "OWASP Top 10"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -484,10 +1004,33 @@
         "content": "<ul>\n  <li><a href=\"https://https.cio.gov/hsts/\">HTTP Strict Transport Security</a> (CIO.gov)</li>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/\">HTTP Strict Transport Security</a> (Mozilla)</li>\n  <li><a href=\"https://cloud.gov/docs/management/headers/\">Security-related HTTP headers</a> (Cloud.gov)</li>\n  <li><a href=\"https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html\">HTTP Strict Transport Security Cheat Sheet</a> (OWASP)</li>\n  <li><a href=\"https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security\">HTTP Strict Transport Security</a> (Wikipedia)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/hsts"
+    "key": "hsts",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/security-txt.mp3",
     "sections": [
       {
         "title": "Guidance",
@@ -510,32 +1053,34 @@
         "content": "<ul>\n  <li><a href=\"https://securitytxt.org/\">securitytxt.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/w/index.php?title=Security.txt&amp;oldid=1229043494\">security.txt - Wikipedia</a></li>\n  <li><a href=\"https://www.cisa.gov/news-events/news/securitytxt-simple-file-big-value\">security.txt: A Simple File with Big Value</a></li>\n  <li><a href=\"https://www.rfc-editor.org/rfc/rfc9116\">RFC 9116</a></li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/security-txt",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/content-security-policy",
-        "text": "Content security policy (CSP)"
-      },
-      {
-        "url": "https://docs.scangov.org/x-content-type-options",
-        "text": "X-Content-Type-Options"
-      },
-      {
-        "url": "https://docs.scangov.org/owasp-top-10",
-        "text": "OWASP Top 10"
-      },
-      {
-        "url": "https://docs.scangov.org/cybersecurity-performance-goals",
-        "text": "CISA Cybersecurity Performance Goals"
-      }
-    ]
+    "key": "securityTxt",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/security-txt.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        },
+        {
+          "url": "https://docs.scangov.org/x-content-type-options",
+          "text": "X-Content-Type-Options"
+        },
+        {
+          "url": "https://docs.scangov.org/owasp-top-10",
+          "text": "OWASP Top 10"
+        },
+        {
+          "url": "https://docs.scangov.org/cybersecurity-performance-goals",
+          "text": "CISA Cybersecurity Performance Goals"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/x-content-type-options.mp3",
     "sections": [
       {
         "title": "Guidance",
@@ -554,29 +1099,32 @@
         "content": "<ul>\n  <li><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options\">X-Content-Type-Options</a> (Mozilla)</li>\n  <li><a href=\"https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#x-content-type-options\">X-Content-Type-Options</a> (OWASP)</li>\n  <li><a href=\"https://cloud.gov/docs/management/headers/\">Security-related HTTP headers</a> (Cloud.gov)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/x-content-type-options",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/content-security-policy",
-        "text": "Content security policy (CSP)"
-      },
-      {
-        "url": "https://docs.scangov.org/security-txt",
-        "text": "security.txt"
-      },
-      {
-        "url": "https://docs.scangov.org/owasp-top-10",
-        "text": "OWASP Top 10"
-      },
-      {
-        "url": "https://docs.scangov.org/cybersecurity-performance-goals",
-        "text": "CISA Cybersecurity Performance Goals"
-      }
-    ]
+    "key": "xContentTypeOptions",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/x-content-type-options.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        },
+        {
+          "url": "https://docs.scangov.org/security-txt",
+          "text": "security.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/owasp-top-10",
+          "text": "OWASP Top 10"
+        },
+        {
+          "url": "https://docs.scangov.org/cybersecurity-performance-goals",
+          "text": "CISA Cybersecurity Performance Goals"
+        }
+      ]
+    }
   },
   {
     "sections": [
@@ -601,10 +1149,33 @@
         "content": "<ul>\n  <li><a href=\"https://govfresh.com/thoughts/metadata-open-graph-government-websites\">Metadata, Open Graph and government websites</a> (GovFresh)</li>\n  <li><a href=\"https://govfresh.com/thoughts/analyzing-government-website-metadata\">Analyzing U.S. federal and state government website metadata\n</a> (GovFresh)</li>\n  <li><a href=\"https://search.gov/indexing/metadata.html\">Metadata and tags you should include in your website</a> (searchgov)</li>\n</ul>"
       }
     ],
-    "url": "https://docs.scangov.org/metadata"
+    "key": "metadata",
+    "relatedLinks": {
+      "links": [
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        },
+        {
+          "url": "https://docs.scangov.org/content-security-policy",
+          "text": "Content security policy (CSP)"
+        }
+      ]
+    }
   },
   {
-    "audio": "https://docs.scangov.org/assets/audio/open-graph.mp3",
     "sections": [
       {
         "title": "About",
@@ -615,28 +1186,31 @@
         "content": "<div class=\"language-html highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:title\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Open Graph Title\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for setting the title of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:description\"</span> <span class=\"na\">content=</span><span class=\"s\">\"Your Open Graph Description\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for providing a brief description of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:image\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for specifying the image associated with the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:image:alt\"</span> <span class=\"na\">content=</span><span class=\"s\">\"A description of the image\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for providing an alternative text description of the image, improving accessibility and context when the image cannot be displayed --&gt;</span>\n \n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:url\"</span> <span class=\"na\">content=</span><span class=\"s\">\"URL to your page\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for defining the URL of the content when shared on social media --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:type\"</span> <span class=\"na\">content=</span><span class=\"s\">\"website\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for specifying the type of content (e.g., website, article) --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"og:locale\"</span> <span class=\"na\">content=</span><span class=\"s\">\"en_US\"</span><span class=\"nt\">&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for setting the locale (language and country) of the content --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"article:published_time\"</span> <span class=\"na\">content=</span><span class=\"s\">\"YYYY-MM-DDTHH:mm:ssZ\"</span> <span class=\"nt\">/&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for indicating the publish time of an article --&gt;</span>\n\n<span class=\"nt\">&lt;meta</span> <span class=\"na\">property=</span><span class=\"s\">\"article:modified_time\"</span> <span class=\"na\">content=</span><span class=\"s\">\"YYYY-MM-DDTHH:mm:ssZ\"</span> <span class=\"nt\">/&gt;</span>\n<span class=\"c\">&lt;!-- Open Graph meta tag for indicating the last modification time of an article --&gt;</span>\n\n</code></pre></div></div>"
       }
     ],
-    "url": "https://docs.scangov.org/open-graph",
-    "relatedLinks": [
-      {
-        "url": "https://docs.scangov.org/metadata",
-        "text": "Metadata"
-      },
-      {
-        "url": "https://docs.scangov.org/robots-txt",
-        "text": "robots.txt"
-      },
-      {
-        "url": "https://docs.scangov.org/canonicalization",
-        "text": "Canonicalization"
-      },
-      {
-        "url": "https://docs.scangov.org/https",
-        "text": "Hypertext Transfer Protocol Secure (HTTPS)"
-      },
-      {
-        "url": "https://docs.scangov.org/www-resolution",
-        "text": "www resolution"
-      }
-    ]
+    "key": "ogSiteName",
+    "relatedLinks": {
+      "audio": "https://docs.scangov.org/assets/audio/open-graph.mp3",
+      "links": [
+        {
+          "url": "https://docs.scangov.org/metadata",
+          "text": "Metadata"
+        },
+        {
+          "url": "https://docs.scangov.org/robots-txt",
+          "text": "robots.txt"
+        },
+        {
+          "url": "https://docs.scangov.org/canonicalization",
+          "text": "Canonicalization"
+        },
+        {
+          "url": "https://docs.scangov.org/https",
+          "text": "Hypertext Transfer Protocol Secure (HTTPS)"
+        },
+        {
+          "url": "https://docs.scangov.org/www-resolution",
+          "text": "www resolution"
+        }
+      ]
+    }
   }
 ]
