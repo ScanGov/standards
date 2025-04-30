@@ -23,7 +23,7 @@
     <td class="p-3 col-3">
         <ul class="small">
             {% for guidance in item.guidance %}
-            <li><a href="{{ guidance.url }}">{{ guidance.displayName }}</a></li>
+            <li><a href="{{ guidance.url.replace('https://docs.scangov.org','') }}">{{ guidance.displayName }}</a></li>
             {% endfor %}
         </ul>
     </td>
