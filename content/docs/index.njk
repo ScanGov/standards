@@ -10,7 +10,7 @@ pagination:
   addAllPagesToCollections: false
   alias: docpage
 
-permalink: "docs/{{ docpage.key | slugify }}/"
+permalink: "{{ docpage.key | slugify }}/"
 
 eleventyComputed:
   title: "{{ docpage.displayName }}"
@@ -21,57 +21,80 @@ topics:
   - Standards
 ---
 
-{% if docpage.pageInfo.relatedLinks.audio %}
-<div class="border px-4 py-2 shadow">
-    <h2 class="h4 my-0 py-3">Listen
-      <svg class="svg-inline--fa fa-volume-high" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="volume-high" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64l0 384c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352 64 352c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l67.8 0L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"></path></svg><!-- <i class="fa-solid fa-volume-high" aria-hidden="true"></i> Font Awesome fontawesome.com -->
-    </h2>
-    <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview of {{ docpage.displayName }} made with Google NotebookLM.</p>
-    <script src="/js/plyr.js"></script>
-    <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped"><div class="plyr__controls"><button class="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-label="Play"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__controls__item plyr__progress__container"><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="532.584" aria-valuenow="0" id="plyr-seek-6009" aria-valuetext="00:00 of 00:00" style="--value: 0%;" seek-value="16.795363150640966"><progress class="plyr__progress__buffer" min="0" max="100" value="6.0934988659066" role="progressbar" aria-hidden="true">% buffered</progress><span class="plyr__tooltip" style="left: 4.47071%;">00:23</span></div></div><div class="plyr__controls__item plyr__time--current plyr__time" aria-label="Current time">00:00</div><div class="plyr__controls__item plyr__time--duration plyr__time" aria-label="Duration">08:52</div><div class="plyr__controls__item plyr__volume"><button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-6009" aria-valuetext="100.0%" style="--value: 100%;"></div></div><audio id="player">
-      <source src="{{ docpage.pageInfo.relatedLinks.audio }}" type="audio/mp3">
-    </audio></div>
-    <script>
-                const plyr = new Plyr('audio', {
-                    controls: [
-                        'play',
-                        'progress',
-                        'current-time',
-                        'duration',
-                        'mute',
-                        'volume'
-                    ]
-                });
-    </script>
-  </div>
-{% endif %}
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xxl-2"></div>
+    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
+      {% if docpage.pageInfo.relatedLinks.audio %}
+      <div class="border mb-4 px-4 py-2 shadow">
+          <h2 class="h4 my-0 py-3">Listen
+            <svg class="svg-inline--fa fa-volume-high" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="volume-high" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64l0 384c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352 64 352c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l67.8 0L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"></path></svg><!-- <i class="fa-solid fa-volume-high" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+          </h2>
+          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview of {{ docpage.displayName }} made with Google NotebookLM.</p>
+          <script src="/js/plyr.js"></script>
+          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped"><div class="plyr__controls"><button class="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-label="Play"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__controls__item plyr__progress__container"><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="532.584" aria-valuenow="0" id="plyr-seek-6009" aria-valuetext="00:00 of 00:00" style="--value: 0%;" seek-value="16.795363150640966"><progress class="plyr__progress__buffer" min="0" max="100" value="6.0934988659066" role="progressbar" aria-hidden="true">% buffered</progress><span class="plyr__tooltip" style="left: 4.47071%;">00:23</span></div></div><div class="plyr__controls__item plyr__time--current plyr__time" aria-label="Current time">00:00</div><div class="plyr__controls__item plyr__time--duration plyr__time" aria-label="Duration">08:52</div><div class="plyr__controls__item plyr__volume"><button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-6009" aria-valuetext="100.0%" style="--value: 100%;"></div></div><audio id="player">
+            <source src="{{ docpage.pageInfo.relatedLinks.audio }}" type="audio/mp3">
+          </audio></div>
+          <script>
+                      const plyr = new Plyr('audio', {
+                          controls: [
+                              'play',
+                              'progress',
+                              'current-time',
+                              'duration',
+                              'mute',
+                              'volume'
+                          ]
+                      });
+          </script>
+        </div>
+      {% endif %}
 
-<h2>Why</h2>
-{{ docpage.why }}
+      <h2>Impact</h2>
 
-<h2>Error</h2>
-{{ docpage.error }}
+      <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</small></p>
 
+      <i class="fa-solid fa-bolt"></i> <i class="fa-solid fa-bolt"></i> <i class="fa-solid fa-bolt"></i> <i class="fa-solid fa-bolt"></i> <i class="fa-solid fa-bolt"></i>
 
-{% for section in docpage.pageInfo.sections %}
-  <h2>{{ section.title }}</h2>
+      <h2>Why it's important</h2>
+      {{ docpage.why }}
 
-  {{ section.content | safe }}
-{% endfor %}
+      <h2>Error</h2>
+      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</small></p>
 
+      <blockquote>
+      {{ docpage.error }}
+      </blockquote>
 
-<h2>Related links</h2>
-<ul>
-{% for item in docpage.pageInfo.relatedLinks.links %}
-  <li><a href="{{ item.url }}">{{ item.text }}</a></li>
-{% endfor %}
-</ul>
+      {% for section in docpage.pageInfo.sections %}
+        <h2>{{ section.title }}</h2>
 
-{% if docpage.guidance %}
-<h2>Guidance</h2>
-<ul>
-{% for item in docpage.guidance %}
-  <li><a href="{{ item.url }}">{{ item.displayName }}</a></li>
-{% endfor %}
-</ul>
-{% endif %}
+        {{ section.content | safe }}
+      {% endfor %}
+
+      {% if docpage.guidance %}
+      <h2>Guidance</h2>
+      <ul>
+      {% for item in docpage.guidance %}
+        <li><a href="{{ item.url }}">{{ item.displayName }}</a></li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+
+      <h2>Indicator</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="#" class="btn btn-primary-outline">Indicator text</a>
+        </li>
+      </ul>
+
+      <h2>Related</h2>
+      <ul>
+      {% for item in docpage.pageInfo.relatedLinks.links %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endfor %}
+      </ul>
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xxl-2"></div>
