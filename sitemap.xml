@@ -152,6 +152,51 @@
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/securitytxt/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/xcontenttypeoptions/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogsitename/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogtype/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogtitle/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogdescription/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogurl/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogimage/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/ogimagealt/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
@@ -263,7 +308,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-04-30T19:39:12.847Z</lastmod>
+            <lastmod>2025-04-30T22:08:01.570Z</lastmod>
         </url>
     
 </urlset>
