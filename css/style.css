@@ -384,6 +384,12 @@ a.card {
     color: var(--bs-body-color) !important;
 }
 
+.active {
+    --bs-nav-pills-link-active-bg: var(--bs-btn-primary-bg) !important;
+    color: var(--bs-body-bg) !important;
+    --bs-link-color: var(--bs-body-bg);
+}
+
 /* Images */
 
 main#home img {
