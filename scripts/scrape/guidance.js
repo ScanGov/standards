@@ -132,7 +132,3 @@ await browser.close()
 
 fs.writeFileSync('./guidance.json',JSON.stringify(allPageContent),'utf8');
 
-
-// get audio
-
-// skip related & topics

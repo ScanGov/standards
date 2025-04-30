@@ -18,9 +18,10 @@ export default async function () {
   for(const topic in auditData) {
     auditData[topic].attributes.forEach(attr => {
       docpagesData.forEach(docpage => {
-        if(docpage.key === attr.key) {
+        if(docpage.key.toLowerCase() === attr.key.toLowerCase()) {
           attr.pageInfo = docpage;
           attr.topic = topic;
+          attr.key = docpage.key.toLowerCase();
           attr.topicDisplayName = auditData[topic].displayName;
           attr.topicIcon = auditData[topic].icon;        
           docPages.push(attr);
