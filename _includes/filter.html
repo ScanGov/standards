@@ -1,0 +1,13 @@
+<ul class="nav nav-pills mb-5 small">
+    <li class="nav-item">
+        <a class="nav-link {% if not topic %}active{% endif %}" href="/">All</a>
+    </li>
+    {% for key, audit in audits | dictsort %}
+        <li class="nav-item">
+            {# topic is the pagination variable for each page #}
+            <a class="nav-link {% if key == topic %}active{% endif %}" href="/{{ key }}/">
+                {{ audit.displayName }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

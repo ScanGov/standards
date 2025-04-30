@@ -1,0 +1,31 @@
+{% for item in value.attributes %}
+<tr>
+    <td class="p-3 col-1">
+        <div class="d-flex flex-wrap">
+            <a href="/{{ key }}/" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
+                <i class="fa-solid fa-{{ value.icon }} me-2" title="{{ topic }}" aria-label="{{ value.displayName }}"></i>
+            </a>
+        </div>
+    </td>
+    <td class="p-3 col-4">
+        <div>
+            <a href="{{ item.docs }}">{{ item.displayName }}</a>
+        </div>
+        <div>
+            <span class="small">{{ item.description }}</span>
+        </div>
+    </td>
+    <td class="p-3 col-4">
+        <div>
+            <span class="small">{{ item.why }}</span>
+        </div>
+    </td>
+    <td class="p-3 col-3">
+        <ul class="small">
+            {% for guidance in item.guidance %}
+            <li><a href="{{ guidance.url }}">{{ guidance.displayName }}</a></li>
+            {% endfor %}
+        </ul>
+    </td>
+</tr>
+{% endfor %}

@@ -1,22 +1,32 @@
 ---
-layout: layouts/default.html
 title: "Government digital experience standards"
-date: 2025-02-01
-modified: 2025-03-17
+layout: layouts/default.html
+date: 2025-04-28
+modified: 2025-04-29
 author: ScanGov
 description: "Based on public policy, web protocol, guidelines and best practices."
 topics:
   - Standards
+
+pagination:
+    data: audits
+    size: 1
+    addAllPagesToCollections: true
+    alias: topic
+
+
+permalink: "/{{ topic }}/"
 ---
 
 {% include "filter.html" %}
+
+{% set value = audits[topic] %}
+
 <div class="table-responsive">
     <table class="table table-bordered table-hover shadow">
         {% include "table_header.html" %}
         <tbody>
-            {% for key, value in audits %}
-                {% include "standards_table.html" %}
-            {% endfor %}
+            {% include "standards_table.html" %}
         </tbody>
     </table>
 </div>
