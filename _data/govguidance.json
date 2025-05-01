@@ -19,7 +19,7 @@
       }
     ],
     "audio": "https://docs.scangov.org/assets/audio/21st-century-idea.mp3",
-    "key": "21st-century-idea",
+    "key": "21stcenturyidea",
     "topics": [
       "accessibility",
       "content",
@@ -43,7 +43,7 @@
         "text": "Website"
       }
     ],
-    "key": "robots-txt-org",
+    "key": "robots",
     "topics": [
       "ai",
       "search-engine-optimization"

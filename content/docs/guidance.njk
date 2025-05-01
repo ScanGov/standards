@@ -71,6 +71,15 @@ topics:
           </li>
         {% endfor %}
       </ul>
-      
+
+      <h2>Standards</h2>
+      <ul class="list-inline pt-3">
+        {% for item in guidance[guide.key].standards %}
+          <li class="list-inline-item mr-1 mb-3">
+            <a href="{{ item.url.replace('https://standards.scangov.org','') }}" class="btn btn-primary-outline">{{ item.displayName }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
     </div>
     <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xxl-2"></div>
