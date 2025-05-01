@@ -56,13 +56,15 @@ topics:
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</small></p>
 
-      {% set taskNum = docpage.impact %}
-      {% if taskNum == 0 %}
-        {% set taskNum = 1 %}
-      {% endif %}
-      {% for i in range(taskNum) %}
-        <i class="fa-solid fa-bolt"></i>
-      {% endfor %}
+      <div class="bolts mt-3 mb-3">
+        {% set taskNum = docpage.impact %}
+        {% if taskNum == 0 %}
+          {% set taskNum = 1 %}
+        {% endif %}
+        {% for i in range(taskNum) %}
+          <i class="fa-solid fa-bolt"></i>
+        {% endfor %}
+      </div>
 
       <h2>Why it's important</h2>
       {{ docpage.why }}
