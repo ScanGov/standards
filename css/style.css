@@ -387,7 +387,6 @@ a.card {
 .active {
     --bs-nav-pills-link-active-bg: var(--bs-btn-primary-bg) !important;
     color: var(--bs-body-bg) !important;
-    --bs-link-color: var(--bs-body-bg);
 }
 
 /* Images */
@@ -557,4 +556,12 @@ a[href$=".mp4"]::after {
 .icon-link svg {
     width: 20px;
     height: 20px;
+}
+
+svg {
+    max-width: 50px;
+}
+.bolts svg {
+    color: #face00;
+    text-decoration: none;
 }
