@@ -389,6 +389,10 @@ a.card {
     color: var(--bs-body-bg) !important;
 }
 
+.nav-pills .active {
+    --bs-link-color: var(--bs-body-bg);
+}
+
 /* Images */
 
 main#home img {
