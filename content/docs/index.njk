@@ -103,7 +103,7 @@ topics:
       <h2>Related</h2>
       <ul>
       {% for item in audits[docpage.topic].attributes %}
-        <li><a href="/{{ item.key }}">{{ item.displayName }}</a></li>
+        <li><a href="/{{ item.key.toLowerCase() }}">{{ item.displayName }}</a></li>
       {% endfor %}
       </ul>
       {% endif %}
