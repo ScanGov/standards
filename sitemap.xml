@@ -307,8 +307,48 @@
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/guidance/aifriendly/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/accessibility/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/content/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/domain/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/performance/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/seo/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/security/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/guidance/social/</loc>
+            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-01T18:17:49.805Z</lastmod>
+            <lastmod>2025-05-01T19:20:21.164Z</lastmod>
         </url>
     
 </urlset>
