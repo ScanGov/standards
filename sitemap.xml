@@ -242,12 +242,12 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/21st-century-idea/</loc>
+            <loc>https://standards.scangov.org/21stcenturyidea/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/robots-txt-org/</loc>
+            <loc>https://standards.scangov.org/robots/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -348,7 +348,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-01T19:20:21.164Z</lastmod>
+            <lastmod>2025-05-01T19:56:27.572Z</lastmod>
         </url>
     
 </urlset>
