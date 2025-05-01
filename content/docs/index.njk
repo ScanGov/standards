@@ -95,15 +95,15 @@ topics:
 
       <ul class="list-inline pt-3">
         <li class="list-inline-item mr-1 mb-3">
-            <a href="/{{ docpage.topic }}" class="btn btn-primary-outline">{{ docpage.topic }}</a>
+            <a href="/{{ docpage.topic }}" class="btn btn-primary-outline">{{ audits[docpage.topic].displayName }}</a>
         </li>
       </ul>
 
       {% if docpage.pageInfo.relatedLinks %}
       <h2>Related</h2>
       <ul>
-      {% for item in docpage.pageInfo.relatedLinks.links %}
-        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% for item in audits[docpage.topic].attributes %}
+        <li><a href="/{{ item.key }}">{{ item.displayName }}</a></li>
       {% endfor %}
       </ul>
       {% endif %}

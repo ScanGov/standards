@@ -1,0 +1,75 @@
+---
+title: "Government digital experience standards"
+layout: layouts/default.html
+date: 2025-05-01
+modified: 2025-05-01
+author: ScanGov
+description: "Based on public policy, web protocol, guidelines and best practices."
+topics:
+  - Guidcance
+
+pagination:
+    data: audits
+    size: 1
+    addAllPagesToCollections: true
+    alias: topic
+
+
+permalink: "/guidance/{{ topic }}/"
+---
+
+
+{% include "filter-guidance.html" %}
+
+{% set value = topic %}
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover shadow">
+      <thead>
+        <tr>
+          <th scope="col" class="p-3">Indicators <a href="https://docs.scangov.org/indicators" style="color: inherit;"><i class="fa-solid fa-circle-question" aria-label="Indicators"></i></a></th>
+          <th scope="col" class="p-3">Guidance</th>
+          <th scope="col" class="p-3">Standards <a href="https://standards.scangov.org/" style="color: inherit;"><i class="fa-solid fa-circle-question" aria-label="Standards"></i></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for key, item  in guidance %}
+          {% set showGuidanceRow = false %}
+          {% for topicKey in item.topics %}
+            {% if topicKey == value %}
+              {% set showGuidanceRow = true %}
+            {% endif %}
+          {% endfor %}
+          {% if showGuidanceRow %}
+          <tr>
+            <td class="p-3 col-2">
+              <div class="d-flex flex-wrap">
+                {% for topic in item.topics %}
+                  <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
+                    <i class="fa-solid fa-{{ audits[topic].icon }} me-2 mb-2" title="{{ audits[topic].displayName }}"></i>
+                  </a>
+                {% endfor %}
+              </div>
+            </td>
+            <td class="p-3 col-7">
+              <div>
+                <a href="{{ item.docs }}">{{ item.displayName }}</a>
+              </div>
+              <div>
+                <span class="small">{{ item.description }}</span>
+              </div>
+            </td>
+            <td class="p-3 w-30">
+              <ul class="small">
+                {% for standard in item.standards %}
+                  <li><a href="{{ standard.url }}">{{ standard.displayName }}</a></li>
+                {% endfor %}
+              </ul>
+            </td>
+          </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
