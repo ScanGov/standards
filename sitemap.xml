@@ -312,6 +312,11 @@
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/memorandum-m-23-22/</loc>
+            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/guidance/aifriendly/</loc>
             <lastmod>2025-05-01T00:00:00.000Z</lastmod>
         </url>
@@ -353,7 +358,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-03T18:34:52.803Z</lastmod>
+            <lastmod>2025-05-03T18:40:50.102Z</lastmod>
         </url>
     
 </urlset>
