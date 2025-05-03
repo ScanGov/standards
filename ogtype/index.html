@@ -172,18 +172,17 @@
         
 <div class="container">
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xxl-2"></div>
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
       <div class="border mb-4 px-4 py-2 shadow">
           <h2 class="h4 my-0 py-3" id="listen">Listen
             <i class="fa-solid fa-volume-high"></i>
           </h2>
-          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview of Open Graph type made with Google NotebookLM.</p>
+          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to Open Graph type made with Google NotebookLM.</p>
           <script src="/js/plyr.js"></script>
           <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
             <audio id="player">
-              <source src="https://docs.scangov.org/assets/audio/open-graph.mp3" type="audio/mp3">
+              <source src="https://standards.scangov.org/assets/audio/open-graph.mp3" type="audio/mp3">
             </audio>
           </div>
           <script>
@@ -226,38 +225,20 @@
       
         <h2 id="about">About</h2>
 
-        <p>Open Graph is a protocol that helps websites control how their content look when shared on social media. It decides the title, image, and description that appear in previews. This makes shared links more attractive and informative. Platforms like Facebook and X use Open Graph to display content properly. Website owners add special tags to their pages to customize previews, helping posts stand out and get more clicks.</p>
+        <p>An Open Graph type tells social media what kind of content a webpage has. For example, it could be a “video,” “article,” or “website.” This helps the platform know how to display the post. If the type is “article,” it might show the title, image, and author. Picking the right type makes shared links look better and more useful.</p>
       
         <h2 id="examples">Examples</h2>
 
-        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:title"</span> <span class="na">content=</span><span class="s">"Your Open Graph Title"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for setting the title of the content when shared on social media --&gt;</span>
-
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:description"</span> <span class="na">content=</span><span class="s">"Your Open Graph Description"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for providing a brief description of the content when shared on social media --&gt;</span>
-
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"URL to your image"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for specifying the image associated with the content when shared on social media --&gt;</span>
-
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image:alt"</span> <span class="na">content=</span><span class="s">"A description of the image"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for providing an alternative text description of the image, improving accessibility and context when the image cannot be displayed --&gt;</span>
- 
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:url"</span> <span class="na">content=</span><span class="s">"URL to your page"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for defining the URL of the content when shared on social media --&gt;</span>
-
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:type"</span> <span class="na">content=</span><span class="s">"website"</span><span class="nt">&gt;</span>
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:type"</span> <span class="na">content=</span><span class="s">"website"</span> <span class="nt">&gt;</span>
 <span class="c">&lt;!-- Open Graph meta tag for specifying the type of content (e.g., website, article) --&gt;</span>
 
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:locale"</span> <span class="na">content=</span><span class="s">"en_US"</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for setting the locale (language and country) of the content --&gt;</span>
-
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:published_time"</span> <span class="na">content=</span><span class="s">"YYYY-MM-DDTHH:mm:ssZ"</span> <span class="nt">/&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for indicating the publish time of an article --&gt;</span>
-
-<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:modified_time"</span> <span class="na">content=</span><span class="s">"YYYY-MM-DDTHH:mm:ssZ"</span> <span class="nt">/&gt;</span>
-<span class="c">&lt;!-- Open Graph meta tag for indicating the last modification time of an article --&gt;</span>
-
 </code></pre></div></div>
+      
+        <h2 id="links">Links</h2>
+
+        <ul>
+  <li><a href="https://ogp.me/">The Open Graph protocol</a></li>
+</ul>
       
 
       
@@ -299,7 +280,7 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xxl-2"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
 
       </div>
     </div>
