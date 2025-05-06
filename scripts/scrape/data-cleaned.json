@@ -352,7 +352,7 @@
         "content": "<ul>\n  <li><a href=\"https://www.sitemaps.org/\">sitemaps.org</a></li>\n  <li><a href=\"https://en.wikipedia.org/wiki/Sitemaps\">Sitemaps</a> (Wikipedia)</li>\n</ul>"
       }
     ],
-    "key": "completion",
+    "key": "sitemap-completion",
     "relatedLinks": {
       "audio": "https://standards.scangov.org/assets/audio/sitemaps.mp3"
     }

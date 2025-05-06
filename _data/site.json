@@ -27,11 +27,6 @@
       "url": "https://scangov.org",
       "title": "Project ScanGov",
       "icon": "fa-solid fa-diagram-project"
-    },
-    {
-      "url": "https://docs.scangov.org",
-      "title": "Docs",
-      "icon": "fa-solid fa-file-lines"
     }
   ]
 }
