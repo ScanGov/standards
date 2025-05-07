@@ -165,31 +165,6 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
-      <div class="border mb-4 px-4 py-2 shadow">
-          <h2 class="h4 my-0 py-3" id="listen">Listen
-            <i class="fa-solid fa-volume-high"></i>
-          </h2>
-          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to X-Content-Type-Options made with Google NotebookLM.</p>
-          <script src="/js/plyr.js"></script>
-          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
-            <audio id="player">
-              <source src="https://standards.scangov.org/assets/audio/x-content-type-options.mp3" type="audio/mp3">
-            </audio>
-          </div>
-          <script>
-            const plyr = new Plyr('#player', {
-              controls: [
-                'play',
-                'progress',
-                'current-time',
-                'duration',
-                'mute',
-                'volume'
-              ]
-            });
-          </script>
-        </div>
-      
 
       <h2 id="impact">Impact</h2>
 
@@ -218,36 +193,9 @@
       </blockquote>
 
       
-        <h2 id="guidance">Guidance</h2>
-
-        <p>All government websites must have <code class="language-plaintext highlighter-rouge">X-Content-Type-Options</code> designated.</p>
-      
-        <h2 id="about">About</h2>
-
-        <p><code class="language-plaintext highlighter-rouge">X-Content-Type-Options</code> is a security header that:</p><ul>
-  <li>Prevents browsers from MIME-sniffing.</li>
-  <li>Ensures content is rendered as declared (e.g., no misinterpretation of file types).</li>
-  <li>Stops browsers from guessing content types, enhancing security.</li>
-</ul>
-      
-        <h2 id="code">Code</h2>
-
-        <p>Example header:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">X-Content-Type-Options</span><span class="pi">:</span> <span class="s">nosniff</span>
-</code></pre></div></div><p>Example HTML code:</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Example of setting X-Content-Type-Options in a meta tag --&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-Content-Type-Options"</span> <span class="na">content=</span><span class="s">"nosniff"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-      
-        <h2 id="links">Links</h2>
-
-        <ul>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options">X-Content-Type-Options</a> (Mozilla)</li>
-  <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html#x-content-type-options">X-Content-Type-Options</a> (OWASP)</li>
-  <li><a href="https://cloud.gov/docs/management/headers/">Security-related HTTP headers</a> (Cloud.gov)</li>
-</ul>
-      
 
       
-      <h2 id="guidance-2">Guidance</h2>
+      <h2 id="guidance">Guidance</h2>
       <ul>
       
         <li><a href="https://standards.scangov.org/owasp-top-10">OWASP Top 10</a></li>
@@ -263,19 +211,6 @@
         </li>
       </ul>
 
-      
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/csp">Content security policy (CSP)</a></li>
-      
-        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
-      
-        <li><a href="/securitytxt">security.txt</a></li>
-      
-        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
-      
-      </ul>
       
 
     </div>

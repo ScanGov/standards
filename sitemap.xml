@@ -107,12 +107,27 @@
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/lcp/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/ttfb/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/status/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/xml/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/completion/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -247,12 +262,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/robots/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/wcag/</loc>
+            <loc>https://standards.scangov.org/cpg/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -267,22 +277,22 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/web-vitals-core-web-vitals/</loc>
+            <loc>https://standards.scangov.org/gsa-site-scanning/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/sitemaps-org/</loc>
+            <loc>https://standards.scangov.org/m2322/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/cisa-web-security/</loc>
+            <loc>https://standards.scangov.org/opengraph/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/cybersecurity-performance-goals/</loc>
+            <loc>https://standards.scangov.org/owasp10/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -297,17 +307,27 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/owasp-top-10/</loc>
+            <loc>https://standards.scangov.org/sitemaps/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/open-graph/</loc>
+            <loc>https://standards.scangov.org/wcag/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/memorandum-m-23-22/</loc>
+            <loc>https://standards.scangov.org/robots/</loc>
+            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/websitesecurity-cisa/</loc>
+            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/webvitals/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -353,7 +373,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-06T21:22:38.889Z</lastmod>
+            <lastmod>2025-05-07T01:14:15.155Z</lastmod>
         </url>
     
 </urlset>

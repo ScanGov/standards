@@ -165,31 +165,6 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
-      <div class="border mb-4 px-4 py-2 shadow">
-          <h2 class="h4 my-0 py-3" id="listen">Listen
-            <i class="fa-solid fa-volume-high"></i>
-          </h2>
-          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to security.txt made with Google NotebookLM.</p>
-          <script src="/js/plyr.js"></script>
-          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
-            <audio id="player">
-              <source src="https://standards.scangov.org/assets/audio/security-txt.mp3" type="audio/mp3">
-            </audio>
-          </div>
-          <script>
-            const plyr = new Plyr('#player', {
-              controls: [
-                'play',
-                'progress',
-                'current-time',
-                'duration',
-                'mute',
-                'volume'
-              ]
-            });
-          </script>
-        </div>
-      
 
       <h2 id="impact">Impact</h2>
 
@@ -214,47 +189,9 @@
       </blockquote>
 
       
-        <h2 id="guidance">Guidance</h2>
-
-        <p>All government websites must have a security.txt file.</p><p>The Cybersecurity and Infrastructure Security Agency recommends this practice in its <a href="https://www.cisa.gov/cross-sector-cybersecurity-performance-goals">Cross-Sector Cybersecurity Performance Goals</a>:</p><blockquote>
-  <p>“All public-facing web domains have a security.txt file that conforms to the
-recommendations in RFC 9116.”</p>
-</blockquote><p><a href="https://www.cisa.gov/news-events/news/securitytxt-simple-file-big-value">CISA</a>:</p><blockquote>
-  <p>“In an effort to accelerate the delivery of <em>all</em> notifications, CISA supports using the ‘security.txt’ standard to streamline notifications and reduce the risk of compromise. It not only helps our work but also supports other partners that try to warn organizations of internet-accessible vulnerabilities susceptible to cyber threat actors – this is most important for organizations aligned to our most valuable critical infrastructure sectors.”</p>
-</blockquote>
-      
-        <h2 id="about">About</h2>
-
-        <p>security.txt is a text file located on the site root-level or <code class="language-plaintext highlighter-rouge">/.well-known/</code> directory that helps improve vulnerability disclosure by giving security researchers clear contact and reporting information.</p><p>security.txt is an accepted standard (<a href="https://www.rfc-editor.org/rfc/rfc9116">RFC 9116</a>) by the<a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force"> Internet Engineering Task Force</a>.</p>
-      
-        <h2 id="examples">Examples</h2>
-
-        <ul>
-  <li><a href="https://www.cisa.gov/sites/default/files/security.txt">CISA</a></li>
-</ul>
-      
-        <h2 id="code">Code</h2>
-
-        <p>Example code:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Contact</span><span class="pi">:</span> <span class="s">mailto:IRT@mail.cisa.dhs.gov</span>
-<span class="na">Contact</span><span class="pi">:</span> <span class="s">mailto:TOC@mail.CISA.dhs.gov</span>
-<span class="na">Encryption</span><span class="pi">:</span> <span class="s">https://www.cisa.gov/contact-us</span>
-<span class="na">Hiring</span><span class="pi">:</span> <span class="s">https://www.cisa.gov/careers</span>
-<span class="na">CSAF</span><span class="pi">:</span> <span class="s">https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json</span>
-<span class="na">Expires</span><span class="pi">:</span> <span class="s">2025-10-01T00:00:00.000Z</span>
-</code></pre></div></div>
-      
-        <h2 id="links">Links</h2>
-
-        <ul>
-  <li><a href="https://securitytxt.org/">securitytxt.org</a></li>
-  <li><a href="https://en.wikipedia.org/w/index.php?title=Security.txt&amp;oldid=1229043494">security.txt - Wikipedia</a></li>
-  <li><a href="https://www.cisa.gov/news-events/news/securitytxt-simple-file-big-value">security.txt: A Simple File with Big Value</a></li>
-  <li><a href="https://www.rfc-editor.org/rfc/rfc9116">RFC 9116</a></li>
-</ul>
-      
 
       
-      <h2 id="guidance-2">Guidance</h2>
+      <h2 id="guidance">Guidance</h2>
       <ul>
       
         <li><a href="https://standards.scangov.org/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a></li>
@@ -274,19 +211,6 @@ recommendations in RFC 9116.”</p>
         </li>
       </ul>
 
-      
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/csp">Content security policy (CSP)</a></li>
-      
-        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
-      
-        <li><a href="/securitytxt">security.txt</a></li>
-      
-        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
-      
-      </ul>
       
 
     </div>
