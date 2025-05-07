@@ -68,6 +68,13 @@ topics:
       <h2>Why it's important</h2>
       {{ docpage.why }}
 
+      {% if docpage.userStories %}
+      <h2>User stories</h2>
+      {% for item in docpage.userStories %}
+        <blockquote>{{ item.title }}</blockquote>
+      {% endfor %}
+      {% endif %}
+
       <h2>Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</small></p>
 
