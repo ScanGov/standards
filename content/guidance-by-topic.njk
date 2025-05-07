@@ -34,7 +34,7 @@ permalink: "/guidance/{{ topic }}/"
       </thead>
       <tbody>
 
-        {% for key, item  in guidance %}
+        {% for item  in guidance %}
           {% set showGuidanceRow = false %}
           {% for topicKey in item.topics %}
             {% if topicKey == value %}

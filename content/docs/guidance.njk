@@ -5,7 +5,7 @@ modified: 2025-04-30
 author: ScanGov
 
 pagination:
-  data: govguidance
+  data: guidance
   size: 1
   addAllPagesToCollections: true
   alias: guide
@@ -13,7 +13,7 @@ pagination:
 permalink: "{{ guide.key | slugify }}/"
 
 eleventyComputed:
-  title: "{{ guide.title }}"
+  title: "{{ guide.displayName }}"
   description: "{{ guide.description }}"
 
 topics:
@@ -28,7 +28,7 @@ topics:
           <h2 class="h4 my-0 py-3">Listen
             <i class="fa-solid fa-volume-high"></i>
           </h2>
-          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to {{ guide.title }} made with Google NotebookLM.</p>
+          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to {{ guide.displayName }} made with Google NotebookLM.</p>
           <script src="/js/plyr.js"></script>
           <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
             <audio id="player">
@@ -64,7 +64,7 @@ topics:
 
       <h2>Indicator</h2>
       <ul class="list-inline pt-3">
-        {% for item in guidance[guide.key].topics %}
+        {% for item in guide.topics %}
           <li class="list-inline-item mr-1 mb-3">
             <a href="/{{ item }}" class="btn btn-primary-outline">{{ audits[item].displayName }}</a>
           </li>
@@ -73,7 +73,7 @@ topics:
 
       <h2>Standards</h2>
       <ul class="">
-        {% for item in guidance[guide.key].standards %}
+        {% for item in guide.standards %}
           <li>
             <a href="{{ item.url.replace('https://standards.scangov.org','') }}">{{ item.displayName }}</a>
           </li>

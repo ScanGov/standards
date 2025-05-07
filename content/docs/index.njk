@@ -24,7 +24,7 @@ topics:
 <div class="container">
   <div class="row">
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
-      {% if docpage.pageInfo.relatedLinks.audio %}
+      {% if docpage.relatedLinks.audio %}
       <div class="border mb-4 px-4 py-2 shadow">
           <h2 class="h4 my-0 py-3">Listen
             <i class="fa-solid fa-volume-high"></i>
@@ -33,7 +33,7 @@ topics:
           <script src="/js/plyr.js"></script>
           <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
             <audio id="player">
-              <source src="{{ docpage.pageInfo.relatedLinks.audio }}" type="audio/mp3">
+              <source src="{{ docpage.relatedLinks.audio }}" type="audio/mp3">
             </audio>
           </div>
           <script>
@@ -75,7 +75,7 @@ topics:
       {{ docpage.error }}
       </blockquote>
 
-      {% for section in docpage.pageInfo.sections %}
+      {% for section in docpage.sections %}
         <h2>{{ section.title }}</h2>
 
         {{ section.content | safe }}
@@ -98,7 +98,7 @@ topics:
         </li>
       </ul>
 
-      {% if docpage.pageInfo.relatedLinks %}
+      {% if docpage.relatedLinks %}
       <h2>Related</h2>
       <ul>
       {% for item in audits[docpage.topic].attributes %}

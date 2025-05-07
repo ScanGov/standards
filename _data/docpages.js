@@ -11,22 +11,14 @@ export default async function () {
 
   const auditData = await getData(auditsFile, getDataLocally);
 
-  let docpagesData = JSON.parse(fs.readFileSync('./scripts/scrape/data-cleaned.json'));
-
   let docPages = [];
 
   for(const topic in auditData) {
     auditData[topic].attributes.forEach(attr => {
-      docpagesData.forEach(docpage => {
-        if(docpage.key.toLowerCase() === attr.key.toLowerCase()) {
-          attr.pageInfo = docpage;
-          attr.topic = topic;
-          attr.key = docpage.key.toLowerCase();
-          attr.topicDisplayName = auditData[topic].displayName;
-          attr.topicIcon = auditData[topic].icon;        
-          docPages.push(attr);
-        }
-      })
+      attr.topic = topic;
+      attr.topicDisplayName = auditData[topic].displayName;
+      attr.topicIcon = auditData[topic].icon;        
+      docPages.push(attr);
     })
   }
 
