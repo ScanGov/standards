@@ -14,7 +14,7 @@ Reference: [Standards](https://standards.scangov.org)
 Name: 
 Link: 
 Guidance: 
-Indicator:
+Indicator: 
 
 ## Why
 
