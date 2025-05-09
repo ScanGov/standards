@@ -77,12 +77,12 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/image-aspect-ratio/</loc>
+            <loc>https://standards.scangov.org/image_aspect_ratio/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/html-lang-valid/</loc>
+            <loc>https://standards.scangov.org/html_lang_valid/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -177,7 +177,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/link-text/</loc>
+            <loc>https://standards.scangov.org/link_text/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -197,62 +197,62 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/securitytxt/</loc>
+            <loc>https://standards.scangov.org/securityTxt/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/xcontenttypeoptions/</loc>
+            <loc>https://standards.scangov.org/xContentTypeOptions/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/errors-in-console/</loc>
+            <loc>https://standards.scangov.org/errors_in_console/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/clickjacking-mitigation/</loc>
+            <loc>https://standards.scangov.org/clickjacking_mitigation/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/paste-preventing-inputs/</loc>
+            <loc>https://standards.scangov.org/paste_preventing_inputs/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogsitename/</loc>
+            <loc>https://standards.scangov.org/ogSiteName/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogtype/</loc>
+            <loc>https://standards.scangov.org/ogType/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogtitle/</loc>
+            <loc>https://standards.scangov.org/ogTitle/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogdescription/</loc>
+            <loc>https://standards.scangov.org/ogDescription/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogurl/</loc>
+            <loc>https://standards.scangov.org/ogUrl/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogimage/</loc>
+            <loc>https://standards.scangov.org/ogImage/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogimagealt/</loc>
+            <loc>https://standards.scangov.org/ogImageAlt/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -423,7 +423,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-09T18:18:47.740Z</lastmod>
+            <lastmod>2025-05-09T19:03:52.504Z</lastmod>
         </url>
     
 </urlset>

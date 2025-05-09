@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Mitigate clickjacking with XFO or CSP">
+    <meta name="description" content="`&amp;lt;html&amp;gt;` element has a valid value for its `[lang]` attribute">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/clickjacking-mitigation/">
+    <link rel="canonical" href="https://standards.scangov.org/html_lang_valid/">
     <!-- Title -->
-    <title>Clickjacking mitigation - ScanGov Standards</title>
+    <title>Valid language code in the HTML tag - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/clickjacking-mitigation/">
+    <meta property="og:url" content="https://standards.scangov.org/html_lang_valid/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="clickjacking-mitigation">Clickjacking mitigation</h1>
+              <h1 class="display-5" id="valid-language-code-in-the-html-tag">Valid language code in the HTML tag</h1>
             
             
-              <p class="lead fs-5">Mitigate clickjacking with XFO or CSP</p>
+              <p class="lead fs-5">`&lt;html&gt;` element has a valid value for its `[lang]` attribute</p>
             
           </div>
         </div>
@@ -176,7 +176,7 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      The `X-Frame-Options` (XFO) header or the `frame-ancestors` directive in the `Content-Security-Policy` (CSP) header control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from embedding the page.
+      Clearly specifying the language of the page in the html tag helps screen readers and browsers.
 
       
 
@@ -184,17 +184,19 @@
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Page is not protected from possible clickjacking by containing frames.
+      Page language is not defined in html.
       </blockquote>
 
       
         <h2 id="about">About</h2>
-
-        <p>Clickjacking is a malicious attack where users are tricked into clicking on links or UI elements on a site that appears to be a trusted and familiar site. This is typically accomplished by embedding part or all of the trusted site into the malicious site using an <iframe>.</iframe></p><p>The X-Frame-Options (XFO) header and the frame-ancestors directive in the Content-Security-Policy (CSP) header can mitigate clickjacking attacks by controlling how a site can be embedded within an <iframe>.</iframe></p>
+        <p>Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly.</p>
+      
+      
+      
+      
       
         <h2 id="links">Links</h2>
-
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/clickjacking-mitigation">Learn more about mitigating clickjacking</a></li></ul>
+        <ul><li><a href="https://dequeuniversity.com/rules/axe/4.10/html-lang-valid">Learn how to use the `lang` attribute</a></li></ul>
       
 
       
@@ -208,7 +210,7 @@
 
       <ul class="list-inline pt-3">
         <li class="list-inline-item mr-1 mb-3">
-            <a href="/security" class="btn btn-primary-outline">Security</a>
+            <a href="/content" class="btn btn-primary-outline">Content</a>
         </li>
       </ul>
 
@@ -216,19 +218,21 @@
       <h2 id="related">Related</h2>
       <ul>
       
-        <li><a href="/csp">Content security policy (CSP)</a></li>
+        <li><a href="/title">Page title</a></li>
       
-        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
+        <li><a href="/description">Page description</a></li>
       
-        <li><a href="/securitytxt">security.txt</a></li>
+        <li><a href="/viewport">Viewport meta tag</a></li>
       
-        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
+        <li><a href="/image_aspect_ratio">Image aspect ratio</a></li>
       
-        <li><a href="/errors_in_console">Errors in the console</a></li>
+        <li><a href="/html_lang_valid">Valid language code in the HTML tag</a></li>
       
-        <li><a href="/clickjacking_mitigation">Clickjacking mitigation</a></li>
+        <li><a href="/meta-viewport">Allow user scaling in viewport meta tag</a></li>
       
-        <li><a href="/paste_preventing_inputs">Paste preventing inputs</a></li>
+        <li><a href="/doctype">Valid doctype</a></li>
+      
+        <li><a href="/charset">charset</a></li>
       
       </ul>
       

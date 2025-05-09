@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Allows users to paste into input fields">
+    <meta name="description" content="Mitigate clickjacking with XFO or CSP">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/paste-preventing-inputs/">
+    <link rel="canonical" href="https://standards.scangov.org/clickjacking_mitigation/">
     <!-- Title -->
-    <title>Paste preventing inputs - ScanGov Standards</title>
+    <title>Clickjacking mitigation - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/paste-preventing-inputs/">
+    <meta property="og:url" content="https://standards.scangov.org/clickjacking_mitigation/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="paste-preventing-inputs">Paste preventing inputs</h1>
+              <h1 class="display-5" id="clickjacking-mitigation">Clickjacking mitigation</h1>
             
             
-              <p class="lead fs-5">Allows users to paste into input fields</p>
+              <p class="lead fs-5">Mitigate clickjacking with XFO or CSP</p>
             
           </div>
         </div>
@@ -176,7 +176,7 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.
+      The `X-Frame-Options` (XFO) header or the `frame-ancestors` directive in the `Content-Security-Policy` (CSP) header control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from embedding the page.
 
       
 
@@ -184,17 +184,19 @@
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Do not block paste operations inside input fields.
+      Page is not protected from possible clickjacking by containing frames.
       </blockquote>
 
       
         <h2 id="about">About</h2>
-
-        <p>Some websites claim that allowing users to paste passwords reduces security. However, password pasting actually improves security because it enables the use of password managers.</p><p>Password managers typically generate strong passwords for users, store them securely, and then automatically paste them into password fields whenever users need to log in. This approach is generally more secure than forcing users to type in passwords that are short enough to remember.</p><p>In the general case, users should not be prevented from pasting into <input> elements.</p>
+        <p>Clickjacking is a malicious attack where users are tricked into clicking on links or UI elements on a site that appears to be a trusted and familiar site. This is typically accomplished by embedding part or all of the trusted site into the malicious site using an <iframe>.</iframe></p><p>The X-Frame-Options (XFO) header and the frame-ancestors directive in the Content-Security-Policy (CSP) header can mitigate clickjacking attacks by controlling how a site can be embedded within an <iframe>.</iframe></p>
+      
+      
+      
+      
       
         <h2 id="links">Links</h2>
-
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/">Learn more about user-friendly input fields</a></li></ul>
+        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/clickjacking-mitigation">Learn more about mitigating clickjacking</a></li></ul>
       
 
       

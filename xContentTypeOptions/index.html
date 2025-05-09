@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="No browser errors logged to the console">
+    <meta name="description" content="The site prevents mime type sniffing.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/errors-in-console/">
+    <link rel="canonical" href="https://standards.scangov.org/xContentTypeOptions/">
     <!-- Title -->
-    <title>Errors in the console - ScanGov Standards</title>
+    <title>X-Content-Type-Options - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/errors-in-console/">
+    <meta property="og:url" content="https://standards.scangov.org/xContentTypeOptions/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="errors-in-the-console">Errors in the console</h1>
+              <h1 class="display-5" id="x-content-type-options">X-Content-Type-Options</h1>
             
             
-              <p class="lead fs-5">No browser errors logged to the console</p>
+              <p class="lead fs-5">The site prevents mime type sniffing.</p>
             
           </div>
         </div>
@@ -173,29 +173,40 @@
         
           <i class="fa-solid fa-bolt"></i>
         
+          <i class="fa-solid fa-bolt"></i>
+        
+          <i class="fa-solid fa-bolt"></i>
+        
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns.
+      The X-Content-Type-Options header helps prevent browsers from interpreting files as a different MIME type than what is specified. This is a security measure that prevents certain types of attacks, such as MIME sniffing. Without this header, there is a risk that malicious content might be executed if a browser misinterprets the type of content being served.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a website user, I want the site to ensure that my browser only loads files of the correct type, so I can avoid unexpected errors or security issues while browsing.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Errors are occuring during page load and are reflected in the client side browser console.
+      Mime type sniffing is not prevented.
       </blockquote>
 
       
-        <h2 id="about">About</h2>
-
-        <p>Most browsers ship with built-in developer tools. These developer tools usually include a console. The console gives you information about the page that's currently running.</p><p>Messages logged in the console come from either the web developers who built the page or the browser itself. All console messages have a severity level: Verbose, Info, Warning, or Error. An Error message means there's a problem on your page that you need to resolve.</p>
+      
+      
+      
       
 
       
       <h2 id="guidance">Guidance</h2>
       <ul>
+      
+        <li><a href="https://standards.scangov.org/owasp-top-10">OWASP Top 10</a></li>
       
       </ul>
       
@@ -208,25 +219,6 @@
         </li>
       </ul>
 
-      
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/csp">Content security policy (CSP)</a></li>
-      
-        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
-      
-        <li><a href="/securitytxt">security.txt</a></li>
-      
-        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
-      
-        <li><a href="/errors_in_console">Errors in the console</a></li>
-      
-        <li><a href="/clickjacking_mitigation">Clickjacking mitigation</a></li>
-      
-        <li><a href="/paste_preventing_inputs">Paste preventing inputs</a></li>
-      
-      </ul>
       
 
     </div>
