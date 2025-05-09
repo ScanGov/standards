@@ -45,7 +45,7 @@
           {% if item.url %}
             <li class="nav-item me-3 me-lg-0 small">
               <a class="nav-item nav-link mx-1 {% if page.url in item.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">
-                <span class="{{ item.icon }}" style="color: {{ item.color }}"></span>
+                <span class="{{ item.icon }}"></span>
                 {{ item.title }}
               </a>
             </li>
