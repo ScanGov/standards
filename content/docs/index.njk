@@ -10,7 +10,7 @@ pagination:
   addAllPagesToCollections: true
   alias: docpage
 
-permalink: "{{ docpage.key | slugify }}/"
+permalink: "{{ docpage.key }}/"
 
 eleventyComputed:
   title: "{{ docpage.displayName }}"
@@ -82,11 +82,26 @@ topics:
       {{ docpage.error }}
       </blockquote>
 
-      {% for section in docpage.sections %}
-        <h2>{{ section.title }}</h2>
-
-        {{ section.content | safe }}
-      {% endfor %}
+      {% if docpage.sections.about.title %}
+        <h2>{{ docpage.sections.about.title }}</h2>
+        {{ docpage.sections.about.content | safe }}
+      {% endif %}
+      {% if docpage.sections.guidance %}
+        <h2>{{ docpage.sections.guidance.title }}</h2>
+        {{ docpage.sections.guidance.content | safe }}
+      {% endif %}
+      {% if docpage.sections.example %}
+        <h2>{{ docpage.sections.example.title }}</h2>
+        {{ docpage.sections.example.content | safe }}
+      {% endif %}
+      {% if docpage.sections.code %}
+        <h2>{{ docpage.sections.code.title }}</h2>
+        {{ docpage.sections.code.content | safe }}
+      {% endif %}
+      {% if docpage.sections.links %}
+        <h2>{{ docpage.sections.links.title }}</h2>
+        {{ docpage.sections.links.content | safe }}
+      {% endif %}
 
       {% if docpage.guidance %}
       <h2>Guidance</h2>
