@@ -77,6 +77,31 @@
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/image-aspect-ratio/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/html-lang-valid/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/meta-viewport/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/doctype/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/charset/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/https/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
@@ -152,6 +177,16 @@
         </url>
     
         <url>
+            <loc>https://standards.scangov.org/link-text/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/hreflang/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://standards.scangov.org/csp/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
@@ -168,6 +203,21 @@
     
         <url>
             <loc>https://standards.scangov.org/xcontenttypeoptions/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/errors-in-console/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/clickjacking-mitigation/</loc>
+            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://standards.scangov.org/paste-preventing-inputs/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -373,7 +423,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-08T17:30:21.590Z</lastmod>
+            <lastmod>2025-05-09T15:37:01.241Z</lastmod>
         </url>
     
 </urlset>
