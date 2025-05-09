@@ -1,0 +1,14 @@
+:root {
+    --scangov-color-tasklist: #c3ebfa;
+    --scangov-color-pages: #b7f5bd;
+    --scangov-color-alerts: #29e1cb;
+    --scangov-color-sites: #ffcdd5;
+    --scangov-color-me: #fffb00;
+    --scangov-color-standards: #face00;
+    --scangov-color-schedule: #f8b9c5;
+    --scangov-color-what-they-say: #f5f6f7;
+    --scangov-color-news: #f4b2ff;
+    --scangov-color-project: #7efbe1;
+    --scangov-color-docs: #a8f2ff;
+    --scangov-color-guidance: #fee685;
+}

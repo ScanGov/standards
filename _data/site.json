@@ -16,17 +16,20 @@
     {
       "url": "/guidance",
       "title": "Guidance",
-      "icon": "fa-solid fa-scroll"
+      "icon": "fa-solid fa-scroll",
+      "color": "#fee685"
     },
     {
       "url": "https://scangov.com",
       "title": "ScanGov",
-      "icon": "fa-solid fa-landmark"
+      "icon": "fa-solid fa-landmark",
+      "color": "#ffffff"
     },
     {
       "url": "https://scangov.org",
       "title": "Project ScanGov",
-      "icon": "fa-solid fa-diagram-project"
+      "icon": "fa-solid fa-diagram-project",
+      "color": "#7efbe1"
     }
   ]
 }
