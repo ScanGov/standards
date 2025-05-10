@@ -200,13 +200,13 @@
         <h2 id="about">About</h2>
         <p>Follow these recommendations to improve the experience for visitors who may take advantage of translations.</p><ol>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element has a <code class="language-plaintext highlighter-rouge">[lang]</code> attribute: If a page doesn’t specify a <code class="language-plaintext highlighter-rouge">lang</code> attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn’t actually in the default language, then the screen reader might not announce the page’s text correctly.</p>
+    <p><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element has a <code class="language-plaintext highlighter-rouge">[lang]</code> attribute: If a page doesn't specify a <code class="language-plaintext highlighter-rouge">lang</code> attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly.</p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element has a valid value for its <code class="language-plaintext highlighter-rouge">[lang]</code> attribute: Specifying a valid <a href="https://www.w3.org/International/questions/qa-choosing-language-tags#question">BCP 47 language</a> helps screen readers announce text properly.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element has an <code class="language-plaintext highlighter-rouge">[xml:lang]</code> attribute with the same base language as the <code class="language-plaintext highlighter-rouge">[lang]</code> attribute: If the webpage does not specify a consistent language, then the screen reader might not announce the page’s text correctly.</p>
+    <p><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element has an <code class="language-plaintext highlighter-rouge">[xml:lang]</code> attribute with the same base language as the <code class="language-plaintext highlighter-rouge">[lang]</code> attribute: If the webpage does not specify a consistent language, then the screen reader might not announce the page's text correctly.</p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">[lang]</code> attributes have a valid value: Specifying a valid <a href="https://www.w3.org/International/questions/qa-choosing-language-tags#question">BCP 47 language</a> on elements helps ensure that text is pronounced correctly by a screen reader.</p>
@@ -230,7 +230,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/wcag">Web Content Accessibility Guidelines</a></li>
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
       
       </ul>
       
@@ -269,7 +269,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -287,6 +289,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

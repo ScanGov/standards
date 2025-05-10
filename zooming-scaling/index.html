@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Displays images with incorrect aspect ratio">
+    <meta name="description" content="Making images bigger or smaller.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/image_aspect_ratio/">
+    <link rel="canonical" href="https://standards.scangov.org/zooming-scaling/">
     <!-- Title -->
-    <title>Image aspect ratio - ScanGov Standards</title>
+    <title>Zooming/scaling enabled - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/image_aspect_ratio/">
+    <meta property="og:url" content="https://standards.scangov.org/zooming-scaling/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="image-aspect-ratio">Image aspect ratio</h1>
+              <h1 class="display-5" id="zooming-scaling-enabled">Zooming/scaling enabled</h1>
             
             
-              <p class="lead fs-5">Displays images with incorrect aspect ratio</p>
+              <p class="lead fs-5">Making images bigger or smaller.</p>
             
           </div>
         </div>
@@ -173,35 +173,49 @@
         
           <i class="fa-solid fa-bolt"></i>
         
+          <i class="fa-solid fa-bolt"></i>
+        
+          <i class="fa-solid fa-bolt"></i>
+        
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Image display dimensions should match natural aspect ratio.
+      Zooming and scaling help users see content clearly on different screen sizes or if they have vision problems.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a website user, I want to zoom and scale content so I can read and view it comfortably on any device.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Images are displayed at an aspect ratio significantly different from source.
+      Viewport configuration error: &#39;user-scalable&#39; is set to &#39;no&#39; or &#39;maximum-scale&#39; exceeds the recommended limit.
       </blockquote>
 
       
         <h2 id="about">About</h2>
-        <p>If a rendered image has an aspect ratio that's significantly different to the aspect ratio in its source file (the natural aspect ratio), the rendered image may look distorted, possibly creating an unpleasant user experience.</p>
+        <p>Zooming and scaling mean changing the size of something on a screen, like making an image or text bigger or smaller. Zooming usually refers to the whole screen or view, while scaling changes the size of a specific object, like a picture. These tools help people see things better, fit images in different spaces, or make websites work well on all screen sizes. It's useful for both design and accessibility.</p>
       
       
       
+      
+        <h2 id="code">Code</h2>
+        <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5"&gt;</code>
       
       
         <h2 id="links">Links</h2>
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/">Learn more about image aspect ratio</a></li></ul>
+        <ul><li><a href="https://dequeuniversity.com/rules/axe/4.10/meta-viewport">Zooming and scaling must not be disabled</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Viewport_meta_element">Using the viewport meta element</a></li></ul>
       
 
       
       <h2 id="guidance">Guidance</h2>
       <ul>
+      
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
       
       </ul>
       
@@ -215,30 +229,11 @@
       </ul>
 
       
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/title">Page title</a></li>
-      
-        <li><a href="/description">Page description</a></li>
-      
-        <li><a href="/viewport">Viewport meta tag</a></li>
-      
-        <li><a href="/image_aspect_ratio">Image aspect ratio</a></li>
-      
-        <li><a href="/html_lang_valid">Valid language code in the HTML tag</a></li>
-      
-        <li><a href="/meta-viewport">Allow user scaling in viewport meta tag</a></li>
-      
-        <li><a href="/doctype">Valid doctype</a></li>
-      
-        <li><a href="/charset">charset</a></li>
-      
-      </ul>
-      
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -256,6 +251,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -200,10 +200,10 @@
         <h2 id="about">About</h2>
         <p>Hidden elements are parts of a webpage that are not visible to users but still present in the code. They might be used for functions like pop-up menus or content that shows only when needed. However, hidden elements can be problematic for accessibility if not properly managed. Screen readers and other assistive tools may still detect them. Use proper techniques, such as <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> or hiding content visually while maintaining accessibility.</p><p>Follow these recommendations to avoid hiding content from visitors using assistive technology:</p><ol>
   <li>
-    <p>All heading elements contain content: A heading with no content or inaccessible text prevent screen reader users from accessing information on the page’s structure.</p>
+    <p>All heading elements contain content: A heading with no content or inaccessible text prevent screen reader users from accessing information on the page's structure.</p>
   </li>
   <li>
-    <p>Identical links have the same purpose: Links with the same destination should have the same description, to help users understand the link’s purpose and decide whether to follow it.</p>
+    <p>Identical links have the same purpose: Links with the same destination should have the same description, to help users understand the link's purpose and decide whether to follow it.</p>
   </li>
   <li>
     <p>Document has a main landmark: One main landmark helps screen reader users navigate a web page.</p>
@@ -238,7 +238,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/wcag">Web Content Accessibility Guidelines</a></li>
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
       
       </ul>
       
@@ -277,7 +277,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -295,6 +297,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -183,11 +183,6 @@
       The X-Content-Type-Options header helps prevent browsers from interpreting files as a different MIME type than what is specified. This is a security measure that prevents certain types of attacks, such as MIME sniffing. Without this header, there is a risk that malicious content might be executed if a browser misinterprets the type of content being served.
 
       
-      <h2 id="user-stories">User stories</h2>
-      
-        <blockquote>As a website user, I want the site to ensure that my browser only loads files of the correct type, so I can avoid unexpected errors or security issues while browsing.</blockquote>
-      
-      
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
@@ -206,7 +201,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/owasp-top-10">OWASP Top 10</a></li>
+        <li><a href="/owasp-top-10">OWASP Top 10</a></li>
       
       </ul>
       
@@ -222,7 +217,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -240,6 +237,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

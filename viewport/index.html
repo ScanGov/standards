@@ -194,7 +194,7 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Using the viewport meta tag ensures that websites are mobile-friendly and responsive, improving the user experience across all devices.
+      Ensures websites are mobile-friendly and responsive, improving the user experience across all devices.
 
       
       <h2 id="user-stories">User stories</h2>
@@ -212,7 +212,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>The viewport meta tag helps web pages look good on all devices by controlling the screen size and zoom settings. This makes websites adjust to fit different screens. You can also disable zooming or set a custom zoom level. It’s important for making websites mobile-friendly.</p>
+        <p>The viewport meta tag helps web pages look good on all devices by controlling the screen size and zoom settings. This makes websites adjust to fit different screens. You can also disable zooming or set a custom zoom level. It's important for making websites mobile-friendly.</p>
       
       
       
@@ -227,9 +227,9 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/21stcenturyidea">21st Century Integrated Digital Experience Act</a></li>
+        <li><a href="/21stcenturyidea">21st Century Integrated Digital Experience Act</a></li>
       
-        <li><a href="https://standards.scangov.org/memorandum-m-23-22">Memorandum (M-23-22)</a></li>
+        <li><a href="/memorandum-m-23-22">Memorandum (M-23-22)</a></li>
       
       </ul>
       
@@ -252,21 +252,23 @@
       
         <li><a href="/viewport">Viewport meta tag</a></li>
       
-        <li><a href="/image_aspect_ratio">Image aspect ratio</a></li>
+        <li><a href="/image-aspect-ratio">Image aspect ratio</a></li>
       
-        <li><a href="/html_lang_valid">Valid language code in the HTML tag</a></li>
+        <li><a href="/html-lang-valid">Valid language code</a></li>
       
-        <li><a href="/meta-viewport">Allow user scaling in viewport meta tag</a></li>
+        <li><a href="/zooming-scaling">Zooming/scaling enabled</a></li>
       
         <li><a href="/doctype">Valid doctype</a></li>
       
-        <li><a href="/charset">charset</a></li>
+        <li><a href="/charset">Character encoding</a></li>
       
       </ul>
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -284,6 +286,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

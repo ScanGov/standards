@@ -242,11 +242,19 @@
           </li>
         
           <li>
+            <a href="/character-encoding">Character encoding</a>
+          </li>
+        
+          <li>
             <a href="/a11y-color-contrast">Color contrast</a>
           </li>
         
           <li>
             <a href="/hidden">Hidden elements</a>
+          </li>
+        
+          <li>
+            <a href="/image-aspect-ratio">Image aspect ratio</a>
           </li>
         
           <li>
@@ -265,10 +273,24 @@
             <a href="/a11y-tables-lists">Tables and lists</a>
           </li>
         
+          <li>
+            <a href="/doctype">Valid doctype</a>
+          </li>
+        
+          <li>
+            <a href="/html-lang-valid">Valid language code</a>
+          </li>
+        
+          <li>
+            <a href="/zooming-scaling">Zooming/scaling enabled</a>
+          </li>
+        
       </ul>
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -286,6 +308,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

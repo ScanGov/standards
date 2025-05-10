@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Document has a valid `hreflang`">
+    <meta name="description" content="Specifies language and region for webpages.">
     
     
     <meta name="robots" content="index, follow">
@@ -147,7 +147,7 @@
               <h1 class="display-5" id="hreflang">hreflang</h1>
             
             
-              <p class="lead fs-5">Document has a valid `hreflang`</p>
+              <p class="lead fs-5">Specifies language and region for webpages.</p>
             
           </div>
         </div>
@@ -176,8 +176,13 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      hreflang links tell search engines what version of a page they should list in search results for a given language or region.
+      `hreflang` ensures users see the right language or region-specific page, improving search results and user experience globally.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a website visitor, I want to see the page in my language so I can easily understand the content.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
@@ -189,19 +194,21 @@
 
       
         <h2 id="about">About</h2>
-        <p>Many sites provide different versions of a page based on a user's language or region. hreflang links tell search engines the URLs for all the versions of a page so that they can display the correct version for each language or region.</p>
+        <p>The `hreflang` attribute helps search engines understand which language and region a webpage is targeting. This is useful when a website has multiple versions in different languages or for different regions. By using `hreflang`, the site can show the correct version of a page to users based on their language or location, improving their experience. It also helps search engines avoid showing the wrong language version in search results, leading to better SEO and user engagement.</p>
       
       
       
       
       
         <h2 id="links">Links</h2>
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/seo/hreflang/">Document doesn't have a valid hreflang</a></li></ul>
+        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/seo/hreflang/">Document doesn't have a valid hreflang</a></li><li><a href="https://developers.google.com/search/docs/specialty/international/localized-versions">Tell Google about localized versions of your page</a></li></ul>
       
 
       
       <h2 id="guidance">Guidance</h2>
       <ul>
+      
+        <li><a href="/google-search-central">Google Search Central</a></li>
       
       </ul>
       
@@ -228,11 +235,11 @@
       
         <li><a href="/allowed">Robots allowed</a></li>
       
-        <li><a href="/sitemap">Sitemap</a></li>
+        <li><a href="/sitemap-robots">Sitemap in robots.txt</a></li>
       
         <li><a href="/canonical">Canonical</a></li>
       
-        <li><a href="/link_text">Link text</a></li>
+        <li><a href="/link-text">Link text</a></li>
       
         <li><a href="/hreflang">hreflang</a></li>
       
@@ -240,7 +247,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -258,6 +267,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

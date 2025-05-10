@@ -6,27 +6,27 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Delivering a digital-first public experience.">
+    <meta name="description" content="Page doesn&amp;#39;t allow copy-paste into inputs.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/m2322/">
+    <link rel="canonical" href="https://standards.scangov.org/paste-preventing-inputs/">
     <!-- Title -->
-    <title>Memorandum (M-23-22) - ScanGov Standards</title>
+    <title>Paste preventing inputs - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/m2322/">
+    <meta property="og:url" content="https://standards.scangov.org/paste-preventing-inputs/">
     
     <!-- Created date -->
-    <meta property="article:published_time" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-    <meta name="dc.date" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-    <meta name="dc.date.created" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-    <meta name="dcterms.created" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta name="dc.date" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta name="dc.date.created" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta name="dcterms.created" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
     
     
     
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="memorandum-m-23-22">Memorandum (M-23-22)</h1>
+              <h1 class="display-5" id="paste-preventing-inputs">Paste preventing inputs</h1>
             
             
-              <p class="lead fs-5">Delivering a digital-first public experience.</p>
+              <p class="lead fs-5">Page doesn&#39;t allow copy-paste into inputs.</p>
             
           </div>
         </div>
@@ -163,64 +163,85 @@
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
 
+      <h2 id="impact">Impact</h2>
+
+      <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
+
+      <div class="bolts mt-3 mb-3">
+        
+        
+        
+          <i class="fa-solid fa-bolt"></i>
+        
+      </div>
+
+      <h2 id="why-its-important">Why it's important</h2>
+      Preventing input pasting negatively impacts user experience and weakens security by blocking password managers.
+
       
 
+      <h2 id="error">Error</h2>
+      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
+
+      <blockquote>
+      Page doesn&#39;t allow copy-paste into inputs.
+      </blockquote>
+
+      
+        <h2 id="about">About</h2>
+        <p>Some websites claim that allowing users to paste passwords reduces security. However, password pasting actually improves security because it enables the use of password managers.</p><p>Password managers typically generate strong passwords for users, store them securely, and then automatically paste them into password fields whenever users need to log in. This approach is generally more secure than forcing users to type in passwords that are short enough to remember.</p><p>In the general case, users should not be prevented from pasting into <code>&lt;input&gt;</code> elements.</p>
+      
+      
+      
+      
+        <h2 id="code">Code</h2>
+        <code>&lt;input type=&quot;text&quot; /&gt;</code>
+      
+      
+        <h2 id="links">Links</h2>
+        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/">Prevents users from pasting into input fields</a></li></ul>
+      
+
+      
+      <h2 id="guidance">Guidance</h2>
       <ul>
       
       </ul>
+      
 
       <h2 id="indicator">Indicator</h2>
+
       <ul class="list-inline pt-3">
-        
-          <li class="list-inline-item mr-1 mb-3">
-            <a href="/accessibility" class="btn btn-primary-outline">Accessibility</a>
-          </li>
-        
-          <li class="list-inline-item mr-1 mb-3">
-            <a href="/content" class="btn btn-primary-outline">Content</a>
-          </li>
-        
-          <li class="list-inline-item mr-1 mb-3">
-            <a href="/performance" class="btn btn-primary-outline">Performance</a>
-          </li>
-        
-          <li class="list-inline-item mr-1 mb-3">
-            <a href="/seo" class="btn btn-primary-outline">SEO</a>
-          </li>
-        
-          <li class="list-inline-item mr-1 mb-3">
+        <li class="list-inline-item mr-1 mb-3">
             <a href="/security" class="btn btn-primary-outline">Security</a>
-          </li>
-        
+        </li>
       </ul>
 
-      <h2 id="standards">Standards</h2>
-      <ul class="">
-        
-          <li>
-            <a href="/https">Hypertext Transfer Protocol Secure (HTTPS)</a>
-          </li>
-        
-          <li>
-            <a href="/hsts">HTTP Strict Transport Security (HSTS)</a>
-          </li>
-        
-          <li>
-            <a href="/title">Page title</a>
-          </li>
-        
-          <li>
-            <a href="/description">Page description</a>
-          </li>
-        
-          <li>
-            <a href="/viewport">Viewport meta tag</a>
-          </li>
-        
+      
+      <h2 id="related">Related</h2>
+      <ul>
+      
+        <li><a href="/csp">Content security policy (CSP)</a></li>
+      
+        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
+      
+        <li><a href="/securitytxt">security.txt</a></li>
+      
+        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
+      
+        <li><a href="/errors-in-console">Errors in the console</a></li>
+      
+        <li><a href="/clickjacking-mitigation">Clickjacking mitigation</a></li>
+      
+        <li><a href="/paste-preventing-inputs">Paste preventing inputs</a></li>
+      
       </ul>
+      
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -238,6 +259,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

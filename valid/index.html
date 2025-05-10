@@ -218,7 +218,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>Robots valid means the robots.txt file is correctly written and follows the rules that search engines understand. If it's valid, search engines can read the file and know which parts of the site they can or can’t visit. A valid file helps control how your site shows up in search results and avoids errors.</p>
+        <p>Robots valid means the robots.txt file is correctly written and follows the rules that search engines understand. If it's valid, search engines can read the file and know which parts of the site they can or can't visit. A valid file helps control how your site shows up in search results and avoids errors.</p>
       
       
         <h2 id="guidance">Guidance</h2>
@@ -271,7 +271,7 @@ and links on it can be followed --&gt;</span>
       <h2 id="guidance-2">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/robots">The Web Robots Pages</a></li>
+        <li><a href="/robots">The Web Robots Pages</a></li>
       
       </ul>
       
@@ -298,11 +298,11 @@ and links on it can be followed --&gt;</span>
       
         <li><a href="/allowed">Robots allowed</a></li>
       
-        <li><a href="/sitemap">Sitemap</a></li>
+        <li><a href="/sitemap-robots">Sitemap in robots.txt</a></li>
       
         <li><a href="/canonical">Canonical</a></li>
       
-        <li><a href="/link_text">Link text</a></li>
+        <li><a href="/link-text">Link text</a></li>
       
         <li><a href="/hreflang">hreflang</a></li>
       
@@ -310,7 +310,9 @@ and links on it can be followed --&gt;</span>
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -328,6 +330,25 @@ and links on it can be followed --&gt;</span>
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

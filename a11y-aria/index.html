@@ -198,7 +198,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader.</p><p>You don’t always need <code class="language-plaintext highlighter-rouge">aria-</code> attributes in your application for it to be accessible. When you do use <code class="language-plaintext highlighter-rouge">aria-</code> attributes follow these recommendations to make sure they are helpful.</p><p>Contains:</p><ol>
+        <p>These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader.</p><p>You don't always need <code class="language-plaintext highlighter-rouge">aria-</code> attributes in your application for it to be accessible. When you do use <code class="language-plaintext highlighter-rouge">aria-</code> attributes follow these recommendations to make sure they are helpful.</p><p>Contains:</p><ol>
   <li>
     <p><code class="language-plaintext highlighter-rouge">[aria-*]</code> attributes match their roles: Each ARIA <code class="language-plaintext highlighter-rouge">role</code> supports a specific subset of <code class="language-plaintext highlighter-rouge">aria-*</code> attributes. Mismatching these invalidates the <code class="language-plaintext highlighter-rouge">aria-*</code> attributes.</p>
   </li>
@@ -206,10 +206,10 @@
     <p>Uses ARIA roles only on compatible elements: Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">button</code>, <code class="language-plaintext highlighter-rouge">link</code>, and <code class="language-plaintext highlighter-rouge">menuitem</code> elements have accessible names: When an element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p><code class="language-plaintext highlighter-rouge">button</code>, <code class="language-plaintext highlighter-rouge">link</code>, and <code class="language-plaintext highlighter-rouge">menuitem</code> elements have accessible names: When an element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
-    <p>ARIA attributes are used as specified for the element’s role: Some ARIA attributes are only allowed on an element under certain conditions.</p>
+    <p>ARIA attributes are used as specified for the element's role: Some ARIA attributes are only allowed on an element under certain conditions.</p>
   </li>
   <li>
     <p>Deprecated ARIA roles were not used: Deprecated ARIA roles may not be processed correctly by assistive technology.</p>
@@ -224,13 +224,13 @@
     <p><code class="language-plaintext highlighter-rouge">[aria-hidden="true"]</code> elements do not contain focusable descendents: Focusable descendents within an <code class="language-plaintext highlighter-rouge">[aria-hidden="true"]</code> element prevent those interactive elements from being available to users of assistive technologies like screen readers.</p>
   </li>
   <li>
-    <p>ARIA input fields have accessible names: When an input field doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p>ARIA input fields have accessible names: When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
-    <p>ARIA meter elements have accessible names: When a meter element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p>ARIA meter elements have accessible names: When a meter element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
-    <p>ARIA progressbar elements have accessible names: When a <code class="language-plaintext highlighter-rouge">progressbar</code> element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p>ARIA progressbar elements have accessible names: When a <code class="language-plaintext highlighter-rouge">progressbar</code> element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
     <p>Elements use only permitted ARIA attributes: Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies.</p>
@@ -248,22 +248,22 @@
     <p>[role] values are valid: ARIA roles must have valid values in order to perform their intended accessibility functions.</p>
   </li>
   <li>
-    <p>Elements with the role=text attribute do not have focusable descendents: Adding <code class="language-plaintext highlighter-rouge">role=text</code> around a text node split by markup enables VoiceOver to treat it as one phrase, but the element’s focusable descendents will not be announced.</p>
+    <p>Elements with the role=text attribute do not have focusable descendents: Adding <code class="language-plaintext highlighter-rouge">role=text</code> around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's focusable descendents will not be announced.</p>
   </li>
   <li>
-    <p>ARIA toggle fields have accessible names: When a toggle field doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p>ARIA toggle fields have accessible names: When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
-    <p>ARIA tooltip elements have accessible names: When a tooltip element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p>ARIA tooltip elements have accessible names: When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
-    <p>ARIA treeitem elements have accessible names: When a <code class="language-plaintext highlighter-rouge">treeitem</code> element doesn’t have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
+    <p>ARIA treeitem elements have accessible names: When a <code class="language-plaintext highlighter-rouge">treeitem</code> element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">[aria-*]</code> attributes have valid values: Assistive technologies, like screen readers, can’t interpret ARIA attributes with invalid values.</p>
+    <p><code class="language-plaintext highlighter-rouge">[aria-*]</code> attributes have valid values: Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values.</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">[aria-*]</code> attributes are valid and not misspelled: Assistive technologies, like screen readers, can’t interpret ARIA attributes with invalid names.</p>
+    <p><code class="language-plaintext highlighter-rouge">[aria-*]</code> attributes are valid and not misspelled: Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names.</p>
   </li>
   <li>
     <p>ARIA IDs are unique: The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies.</p>
@@ -306,7 +306,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/wcag">Web Content Accessibility Guidelines</a></li>
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
       
       </ul>
       
@@ -345,7 +345,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -363,6 +365,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -262,7 +262,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/cisa-web-security">CISA Website Security</a>
+            <a href="/cisa-web-security">CISA Website Security</a>
           </li>
         
       </ul>
@@ -294,19 +294,19 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/21stcenturyidea">21st Century Integrated Digital Experience Act</a>
+            <a href="/21stcenturyidea">21st Century Integrated Digital Experience Act</a>
           </li>
         
           <li>
-            <a href="https://standards.scangov.org/cisa-web-security">CISA Website Security</a>
+            <a href="/cisa-web-security">CISA Website Security</a>
           </li>
         
           <li>
-            <a href="https://standards.scangov.org/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a>
+            <a href="/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a>
           </li>
         
           <li>
-            <a href="https://standards.scangov.org/memorandum-m-23-22">Memorandum (M-23-22)</a>
+            <a href="/memorandum-m-23-22">Memorandum (M-23-22)</a>
           </li>
         
       </ul>
@@ -338,15 +338,15 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a>
+            <a href="/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a>
           </li>
         
           <li>
-            <a href="https://standards.scangov.org/rfc9116">RFC 9116</a>
+            <a href="/rfc9116">RFC 9116</a>
           </li>
         
           <li>
-            <a href="https://standards.scangov.org/security-txt">security.txt</a>
+            <a href="/security-txt">security.txt</a>
           </li>
         
       </ul>
@@ -378,7 +378,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/owasp-top-10">OWASP Top 10</a>
+            <a href="/owasp-top-10">OWASP Top 10</a>
           </li>
         
       </ul>
@@ -395,15 +395,15 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <a href="/errors_in_console">Errors in the console</a>
+        <a href="/errors-in-console">Errors in the console</a>
       </div>
       <div>
-        <span class="small">No browser errors logged to the console</span>
+        <span class="small">Tracks mistakes in code for debugging.</span>
       </div>
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns.</span>
+        <span class="small">Logging errors helps developers fix problems quickly, improving website performance and user experience by identifying and resolving issues.</span>
       </div>
     </td>
     <td class="p-3 col-3">
@@ -423,19 +423,23 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <a href="/clickjacking_mitigation">Clickjacking mitigation</a>
+        <a href="/clickjacking-mitigation">Clickjacking mitigation</a>
       </div>
       <div>
-        <span class="small">Mitigate clickjacking with XFO or CSP</span>
+        <span class="small">Stops fake clicks on hidden content.</span>
       </div>
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">The `X-Frame-Options` (XFO) header or the `frame-ancestors` directive in the `Content-Security-Policy` (CSP) header control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from embedding the page.</span>
+        <span class="small">Clickjacking tricks users into clicking hidden things. Stopping it helps keep users safe and protects their personal info.</span>
       </div>
     </td>
     <td class="p-3 col-3">
       <ul class="small">
+        
+          <li>
+            <a href="/owasp-top-10">OWASP Top 10</a>
+          </li>
         
       </ul>
     </td>
@@ -451,15 +455,15 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <a href="/paste_preventing_inputs">Paste preventing inputs</a>
+        <a href="/paste-preventing-inputs">Paste preventing inputs</a>
       </div>
       <div>
-        <span class="small">Allows users to paste into input fields</span>
+        <span class="small">Page doesn&#39;t allow copy-paste into inputs.</span>
       </div>
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.</span>
+        <span class="small">Preventing input pasting negatively impacts user experience and weakens security by blocking password managers.</span>
       </div>
     </td>
     <td class="p-3 col-3">
@@ -489,6 +493,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

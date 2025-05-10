@@ -262,7 +262,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -294,7 +294,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -326,7 +326,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -358,7 +358,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -390,7 +390,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -422,7 +422,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -454,7 +454,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/open-graph">Open Graph</a>
+            <a href="/open-graph">Open Graph</a>
           </li>
         
       </ul>
@@ -481,6 +481,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Page has the HTML doctype">
+    <meta name="description" content="Tells browser how to read code.">
     
     
     <meta name="robots" content="index, follow">
@@ -147,7 +147,7 @@
               <h1 class="display-5" id="valid-doctype">Valid doctype</h1>
             
             
-              <p class="lead fs-5">Page has the HTML doctype</p>
+              <p class="lead fs-5">Tells browser how to read code.</p>
             
           </div>
         </div>
@@ -176,36 +176,45 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Specifying a doctype prevents the browser from switching to quirks-mode.
+      Helps browsers display web pages correctly by telling them what kind of HTML code the page is using.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a web developer, I want to define the correct doctype so that my website displays properly in all browsers.</blockquote>
+      
+        <blockquote>As a website visitor, I want pages to load and look right, so I can read and use them easily.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Page lacks the HTML doctype, thus triggering quirks mode
+      Page may not display correctly due to missing or incorrect doctype declaration.
       </blockquote>
 
       
         <h2 id="about">About</h2>
-        <p>The doctype declaration is usually the start of an html document. Specifying a doctype prevents the browser from switching to quirks mode, which can cause your page to render in unexpected ways.</p>
+        <p>Doctype (short for "document type declaration") tells the web browser what version of HTML the page is using. It helps the browser understand how to read and display the webpage correctly. Without it, the browser might not show the page the way it should. The most common doctype today is for HTML5, written as <code>&lt;!DOCTYPE html&gt;</code>. It's simple but important for making websites work the right way across different browsers.</p>
       
       
       
       
         <h2 id="code">Code</h2>
-        <p>Example sitemap code:</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 </code></pre></div></div>
       
       
         <h2 id="links">Links</h2>
-        <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/doctype">Learn more about the doctype declaration</a> (MDN)</li></ul>
+        <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/doctype">Learn more about the doctype declaration</a> (MDN)</li><li><a href="https://html.spec.whatwg.org/multipage/syntax.html#the-doctype">The DOCTYPE</a></li></ul>
       
 
       
       <h2 id="guidance">Guidance</h2>
       <ul>
+      
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
       
       </ul>
       
@@ -219,30 +228,11 @@
       </ul>
 
       
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/title">Page title</a></li>
-      
-        <li><a href="/description">Page description</a></li>
-      
-        <li><a href="/viewport">Viewport meta tag</a></li>
-      
-        <li><a href="/image_aspect_ratio">Image aspect ratio</a></li>
-      
-        <li><a href="/html_lang_valid">Valid language code in the HTML tag</a></li>
-      
-        <li><a href="/meta-viewport">Allow user scaling in viewport meta tag</a></li>
-      
-        <li><a href="/doctype">Valid doctype</a></li>
-      
-        <li><a href="/charset">charset</a></li>
-      
-      </ul>
-      
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -260,6 +250,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

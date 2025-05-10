@@ -225,13 +225,8 @@
 
       
         <h2 id="about">About</h2>
-        <p><strong>Content Security Policy (CSP)</strong> is a security standard that helps protect websites from attacks like cross-site scripting (XSS) by allowing website owners to declare trusted sources of content.</p><p>CSP is delivered using HTTP headers or HTML meta tags, and uses directives like <code class="language-plaintext highlighter-rouge">default-src</code>, <code class="language-plaintext highlighter-rouge">script-src</code>, and <code class="language-plaintext highlighter-rouge">img-src</code> to control resource loading. CSP can enforce policies, report violations, and is not a replacement for careful input validation, but a defense-in-depth measure. <strong>Strict CSP</strong> is more secure using nonces or hashes.</p><p>Note: It’s an extra layer of protection, not the primary defense.</p>
+        <p><strong>Content Security Policy (CSP)</strong> is a security standard that helps protect websites from attacks like cross-site scripting (XSS) by allowing website owners to declare trusted sources of content.</p><p>CSP is delivered using HTTP headers or HTML meta tags, and uses directives like <code class="language-plaintext highlighter-rouge">default-src</code>, <code class="language-plaintext highlighter-rouge">script-src</code>, and <code class="language-plaintext highlighter-rouge">img-src</code> to control resource loading. CSP can enforce policies, report violations, and is not a replacement for careful input validation, but a defense-in-depth measure. <strong>Strict CSP</strong> is more secure using nonces or hashes.</p><p>Note: It's an extra layer of protection, not the primary defense.</p>
       
-      
-        <h2 id="guidance">Guidance</h2>
-        <p>All government websites should have a content security policy.</p><p><a href="https://www.cisa.gov/news-events/news/website-security#:~:text=Implement%20a%20Content%20Security%20Policy">Cybersecurity and Infrastructure Security Agency</a>:</p><blockquote>
-  <p><strong>Implement a Content Security Policy (CSP).</strong> Website owners should also consider implementing a CSP. Implementing a CSP lessens the chances of an attacker successfully loading and running malicious JavaScript on the end user machine.</p>
-</blockquote>
       
       
       
@@ -271,10 +266,10 @@
       
 
       
-      <h2 id="guidance-2">Guidance</h2>
+      <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/cisa-web-security">CISA Website Security</a></li>
+        <li><a href="/cisa-web-security">CISA Website Security</a></li>
       
       </ul>
       
@@ -299,17 +294,19 @@
       
         <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
       
-        <li><a href="/errors_in_console">Errors in the console</a></li>
+        <li><a href="/errors-in-console">Errors in the console</a></li>
       
-        <li><a href="/clickjacking_mitigation">Clickjacking mitigation</a></li>
+        <li><a href="/clickjacking-mitigation">Clickjacking mitigation</a></li>
       
-        <li><a href="/paste_preventing_inputs">Paste preventing inputs</a></li>
+        <li><a href="/paste-preventing-inputs">Paste preventing inputs</a></li>
       
       </ul>
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -327,6 +324,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -208,7 +208,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>A page description is a short summary of a webpage, usually shown in search results. It’s set using the <code class="language-plaintext highlighter-rouge">&lt;meta name="description"&gt;</code> tag inside the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section of an HTML document. A good description is clear, brief, and tells users what to expect on the page. It also helps with search engine optimization.</p>
+        <p>A page description is a short summary of a webpage, usually shown in search results. It's set using the <code class="language-plaintext highlighter-rouge">&lt;meta name="description"&gt;</code> tag inside the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section of an HTML document. A good description is clear, brief, and tells users what to expect on the page. It also helps with search engine optimization.</p>
       
       
       
@@ -222,7 +222,7 @@
       
         <h2 id="links">Links</h2>
         <ul>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata">What’s in the head? Webpage metadata</a> (Mozilla)</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage-metadata">What's in the head? Webpage metadata</a> (Mozilla)</li>
 </ul>
       
 
@@ -230,11 +230,11 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/21stcenturyidea">21st Century Integrated Digital Experience Act</a></li>
+        <li><a href="/21stcenturyidea">21st Century Integrated Digital Experience Act</a></li>
       
-        <li><a href="https://standards.scangov.org/federal-website-standards">Federal website standards</a></li>
+        <li><a href="/federal-website-standards">Federal website standards</a></li>
       
-        <li><a href="https://standards.scangov.org/memorandum-m-23-22">Memorandum (M-23-22)</a></li>
+        <li><a href="/memorandum-m-23-22">Memorandum (M-23-22)</a></li>
       
       </ul>
       
@@ -257,21 +257,23 @@
       
         <li><a href="/viewport">Viewport meta tag</a></li>
       
-        <li><a href="/image_aspect_ratio">Image aspect ratio</a></li>
+        <li><a href="/image-aspect-ratio">Image aspect ratio</a></li>
       
-        <li><a href="/html_lang_valid">Valid language code in the HTML tag</a></li>
+        <li><a href="/html-lang-valid">Valid language code</a></li>
       
-        <li><a href="/meta-viewport">Allow user scaling in viewport meta tag</a></li>
+        <li><a href="/zooming-scaling">Zooming/scaling enabled</a></li>
       
         <li><a href="/doctype">Valid doctype</a></li>
       
-        <li><a href="/charset">charset</a></li>
+        <li><a href="/charset">Character encoding</a></li>
       
       </ul>
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -289,6 +291,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

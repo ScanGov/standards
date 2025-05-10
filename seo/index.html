@@ -262,7 +262,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/sitemaps-org">sitemaps.org</a>
+            <a href="/sitemaps-org">sitemaps.org</a>
           </li>
         
       </ul>
@@ -294,7 +294,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/sitemaps-org">sitemaps.org</a>
+            <a href="/sitemaps-org">sitemaps.org</a>
           </li>
         
       </ul>
@@ -319,14 +319,14 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">A sitemap with complete links helps search engines like Google find every page on your website. This makes it easier for people to discover your content in search results. It also helps search engines understand your site’s structure, which can improve how well your site ranks and gets noticed online.</span>
+        <span class="small">A sitemap with complete links helps search engines like Google find every page on your website. This makes it easier for people to discover your content in search results. It also helps search engines understand your site&#39;s structure, which can improve how well your site ranks and gets noticed online.</span>
       </div>
     </td>
     <td class="p-3 col-3">
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/sitemaps-org">sitemaps.org</a>
+            <a href="/sitemaps-org">sitemaps.org</a>
           </li>
         
       </ul>
@@ -358,7 +358,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/robots">The Web Robots Pages</a>
+            <a href="/robots">The Web Robots Pages</a>
           </li>
         
       </ul>
@@ -390,7 +390,7 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/robots">The Web Robots Pages</a>
+            <a href="/robots">The Web Robots Pages</a>
           </li>
         
       </ul>
@@ -407,7 +407,7 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <a href="/sitemap">Sitemap</a>
+        <a href="/sitemap-robots">Sitemap in robots.txt</a>
       </div>
       <div>
         <span class="small">The robots.txt file points to a sitemap file.</span>
@@ -415,14 +415,14 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">Pointing to a sitemap file in the robots.txt file helps search engines discover the sitemap easily, improving crawl efficiency. This ensures that all important URLs are included in the search engine’s index and enhances visibility in search results.</span>
+        <span class="small">Pointing to a sitemap file in the robots.txt file helps search engines discover the sitemap easily, improving crawl efficiency. This ensures that all important URLs are included in the search engine&#39;s index and enhances visibility in search results.</span>
       </div>
     </td>
     <td class="p-3 col-3">
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/google-search-central">Google Search Central</a>
+            <a href="/google-search-central">Google Search Central</a>
           </li>
         
       </ul>
@@ -454,11 +454,11 @@
       <ul class="small">
         
           <li>
-            <a href="https://standards.scangov.org/robots">The Web Robots Pages</a>
+            <a href="/robots">The Web Robots Pages</a>
           </li>
         
           <li>
-            <a href="https://standards.scangov.org/google-search-central">Google Search Central</a>
+            <a href="/google-search-central">Google Search Central</a>
           </li>
         
       </ul>
@@ -475,10 +475,10 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <a href="/link_text">Link text</a>
+        <a href="/link-text">Link text</a>
       </div>
       <div>
-        <span class="small">Links have descriptive text</span>
+        <span class="small">Links have descriptive text.</span>
       </div>
     </td>
     <td class="p-3 col-4">
@@ -488,6 +488,10 @@
     </td>
     <td class="p-3 col-3">
       <ul class="small">
+        
+          <li>
+            <a href="/google-search-central">Google Search Central</a>
+          </li>
         
       </ul>
     </td>
@@ -506,16 +510,20 @@
         <a href="/hreflang">hreflang</a>
       </div>
       <div>
-        <span class="small">Document has a valid `hreflang`</span>
+        <span class="small">Specifies language and region for webpages.</span>
       </div>
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">hreflang links tell search engines what version of a page they should list in search results for a given language or region.</span>
+        <span class="small">`hreflang` ensures users see the right language or region-specific page, improving search results and user experience globally.</span>
       </div>
     </td>
     <td class="p-3 col-3">
       <ul class="small">
+        
+          <li>
+            <a href="/google-search-central">Google Search Central</a>
+          </li>
         
       </ul>
     </td>
@@ -541,6 +549,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

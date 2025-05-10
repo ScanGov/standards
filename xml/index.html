@@ -223,7 +223,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>The sitemap is an Extensible Markup Language (XML) file on the website’s root directory that include metadata for each URL, such as:</p><ul>
+        <p>The sitemap is an Extensible Markup Language (XML) file on the website's root directory that include metadata for each URL, such as:</p><ul>
   <li>when it was last updated</li>
   <li>how often it usually changes</li>
   <li>how important it is, relative to other URLs in the site</li>
@@ -239,7 +239,7 @@
       
       
         <h2 id="code">Code</h2>
-        <p>Example sitemap code:</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 
 <span class="nt">&lt;urlset</span> <span class="na">xmlns=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9"</span><span class="nt">&gt;</span>
 
@@ -270,7 +270,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/sitemaps-org">sitemaps.org</a></li>
+        <li><a href="/sitemaps-org">sitemaps.org</a></li>
       
       </ul>
       
@@ -297,11 +297,11 @@
       
         <li><a href="/allowed">Robots allowed</a></li>
       
-        <li><a href="/sitemap">Sitemap</a></li>
+        <li><a href="/sitemap-robots">Sitemap in robots.txt</a></li>
       
         <li><a href="/canonical">Canonical</a></li>
       
-        <li><a href="/link_text">Link text</a></li>
+        <li><a href="/link-text">Link text</a></li>
       
         <li><a href="/hreflang">hreflang</a></li>
       
@@ -309,7 +309,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -327,6 +329,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

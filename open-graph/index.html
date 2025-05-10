@@ -6,27 +6,27 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Mitigate clickjacking with XFO or CSP">
+    <meta name="description" content="Improves how social media content shows.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/clickjacking_mitigation/">
+    <link rel="canonical" href="https://standards.scangov.org/open-graph/">
     <!-- Title -->
-    <title>Clickjacking mitigation - ScanGov Standards</title>
+    <title>Open Graph - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/clickjacking_mitigation/">
+    <meta property="og:url" content="https://standards.scangov.org/open-graph/">
     
     <!-- Created date -->
-    <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-    <meta name="dc.date" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-    <meta name="dc.date.created" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-    <meta name="dcterms.created" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta property="article:published_time" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta name="dc.date" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta name="dc.date.created" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+    <meta name="dcterms.created" content="Wed Apr 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
     
     
     
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="clickjacking-mitigation">Clickjacking mitigation</h1>
+              <h1 class="display-5" id="open-graph">Open Graph</h1>
             
             
-              <p class="lead fs-5">Mitigate clickjacking with XFO or CSP</p>
+              <p class="lead fs-5">Improves how social media content shows.</p>
             
           </div>
         </div>
@@ -163,80 +163,66 @@
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
 
-      <h2 id="impact">Impact</h2>
-
-      <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
-
-      <div class="bolts mt-3 mb-3">
-        
-        
-        
-          <i class="fa-solid fa-bolt"></i>
-        
-      </div>
-
-      <h2 id="why-its-important">Why it's important</h2>
-      The `X-Frame-Options` (XFO) header or the `frame-ancestors` directive in the `Content-Security-Policy` (CSP) header control where a page can be embedded. These can mitigate clickjacking attacks by blocking some or all sites from embedding the page.
-
       
 
-      <h2 id="error">Error</h2>
-      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
-
-      <blockquote>
-      Page is not protected from possible clickjacking by containing frames.
-      </blockquote>
-
-      
-        <h2 id="about">About</h2>
-        <p>Clickjacking is a malicious attack where users are tricked into clicking on links or UI elements on a site that appears to be a trusted and familiar site. This is typically accomplished by embedding part or all of the trusted site into the malicious site using an <iframe>.</iframe></p><p>The X-Frame-Options (XFO) header and the frame-ancestors directive in the Content-Security-Policy (CSP) header can mitigate clickjacking attacks by controlling how a site can be embedded within an <iframe>.</iframe></p>
-      
-      
-      
-      
-      
-        <h2 id="links">Links</h2>
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/clickjacking-mitigation">Learn more about mitigating clickjacking</a></li></ul>
-      
-
-      
-      <h2 id="guidance">Guidance</h2>
       <ul>
       
       </ul>
-      
 
       <h2 id="indicator">Indicator</h2>
-
       <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/security" class="btn btn-primary-outline">Security</a>
-        </li>
+        
+          <li class="list-inline-item mr-1 mb-3">
+            <a href="/content" class="btn btn-primary-outline">Content</a>
+          </li>
+        
+          <li class="list-inline-item mr-1 mb-3">
+            <a href="/seo" class="btn btn-primary-outline">SEO</a>
+          </li>
+        
+          <li class="list-inline-item mr-1 mb-3">
+            <a href="/social" class="btn btn-primary-outline">Social</a>
+          </li>
+        
       </ul>
 
-      
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/csp">Content security policy (CSP)</a></li>
-      
-        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
-      
-        <li><a href="/securitytxt">security.txt</a></li>
-      
-        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
-      
-        <li><a href="/errors_in_console">Errors in the console</a></li>
-      
-        <li><a href="/clickjacking_mitigation">Clickjacking mitigation</a></li>
-      
-        <li><a href="/paste_preventing_inputs">Paste preventing inputs</a></li>
-      
+      <h2 id="standards">Standards</h2>
+      <ul class="">
+        
+          <li>
+            <a href="/ogsitename">Open Graph site name</a>
+          </li>
+        
+          <li>
+            <a href="/ogtype">Open Graph type</a>
+          </li>
+        
+          <li>
+            <a href="/ogtitle">Open Graph title</a>
+          </li>
+        
+          <li>
+            <a href="/ogdescription">Open Graph description</a>
+          </li>
+        
+          <li>
+            <a href="/ogurl">Open Graph URL</a>
+          </li>
+        
+          <li>
+            <a href="/ogimage">Open Graph image</a>
+          </li>
+        
+          <li>
+            <a href="/ogimagealt">Open Graph image alt</a>
+          </li>
+        
       </ul>
-      
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -254,6 +240,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Links have descriptive text">
+    <meta name="description" content="The robots.txt file points to a sitemap file.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/link_text/">
+    <link rel="canonical" href="https://standards.scangov.org/sitemap-robots/">
     <!-- Title -->
-    <title>Link text - ScanGov Standards</title>
+    <title>Sitemap in robots.txt - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/link_text/">
+    <meta property="og:url" content="https://standards.scangov.org/sitemap-robots/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="link-text">Link text</h1>
+              <h1 class="display-5" id="sitemap-in-robots-txt">Sitemap in robots.txt</h1>
             
             
-              <p class="lead fs-5">Links have descriptive text</p>
+              <p class="lead fs-5">The robots.txt file points to a sitemap file.</p>
             
           </div>
         </div>
@@ -162,6 +162,31 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
+      <div class="border mb-4 px-4 py-2 shadow">
+          <h2 class="h4 my-0 py-3" id="listen">Listen
+            <i class="fa-solid fa-volume-high"></i>
+          </h2>
+          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to Sitemap in robots.txt made with Google NotebookLM.</p>
+          <script src="/js/plyr.js"></script>
+          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
+            <audio id="player">
+              <source src="https://standards.scangov.org/assets/audio/sitemaps.mp3" type="audio/mp3">
+            </audio>
+          </div>
+          <script>
+            const plyr = new Plyr('#player', {
+              controls: [
+                'play',
+                'progress',
+                'current-time',
+                'duration',
+                'mute',
+                'volume'
+              ]
+            });
+          </script>
+        </div>
+      
 
       <h2 id="impact">Impact</h2>
 
@@ -173,36 +198,83 @@
         
           <i class="fa-solid fa-bolt"></i>
         
+          <i class="fa-solid fa-bolt"></i>
+        
+          <i class="fa-solid fa-bolt"></i>
+        
+          <i class="fa-solid fa-bolt"></i>
+        
+          <i class="fa-solid fa-bolt"></i>
+        
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Descriptive link text helps search engines understand your content.
+      Pointing to a sitemap file in the robots.txt file helps search engines discover the sitemap easily, improving crawl efficiency. This ensures that all important URLs are included in the search engine&#39;s index and enhances visibility in search results.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a search engine bot, I want the `robots.txt` file to point to the sitemap so that I can easily discover and crawl the full sitemap of the website, ensuring comprehensive indexing and better visibility in search results.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      
+      robots.txt missing sitemap reference.
       </blockquote>
 
       
         <h2 id="about">About</h2>
-        <p>Link text is the clickable word or phrase in a hyperlink. When link text clearly conveys a hyperlink's target, both users and search engines can more easily understand your content and how it relates to other pages.</p>
+        <p>A sitemap is a file that lists all of the pages on a website in addition to information about each so that search engines can more intelligently crawl the site.</p><p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support sitemaps to pick up all Uniform Resources Locators (URLs) in the sitemap and learn about them using the associated metadata. Using sitemap protocol doesn't guarantee web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p><p>The sitemap is an Extensible Markup Language (XML) file on the website's root directory that include metadata for each URL, such as:</p><ul>
+  <li>when it was last updated</li>
+  <li>how often it usually changes</li>
+  <li>how important it is, relative to other URLs in the site</li>
+</ul>
       
       
       
+        <h2 id="examples">Examples</h2>
+        <p>Example government website sitemaps:</p><ul>
+  <li><a href="https://www.usa.gov/sitemap.xml">https://www.usa.gov/sitemap.xml</a></li>
+  <li><a href="https://18f.gov/sitemap.xml">https://18f.gov/sitemap.xml</a></li>
+</ul>
+      
+      
+        <h2 id="code">Code</h2>
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+<span class="nt">&lt;urlset</span> <span class="na">xmlns=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9"</span><span class="nt">&gt;</span>
+
+   <span class="nt">&lt;url&gt;</span>
+
+      <span class="nt">&lt;loc&gt;</span>http://www.example.com/<span class="nt">&lt;/loc&gt;</span>
+
+      <span class="nt">&lt;lastmod&gt;</span>2005-01-01<span class="nt">&lt;/lastmod&gt;</span>
+
+      <span class="nt">&lt;changefreq&gt;</span>monthly<span class="nt">&lt;/changefreq&gt;</span>
+
+      <span class="nt">&lt;priority&gt;</span>0.8<span class="nt">&lt;/priority&gt;</span>
+
+   <span class="nt">&lt;/url&gt;</span>
+
+<span class="nt">&lt;/urlset&gt;</span>
+</code></pre></div></div>
       
       
         <h2 id="links">Links</h2>
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/seo/link-text/">Links do not have descriptive text</a></li>
+        <ul>
+  <li><a href="https://www.sitemaps.org/">sitemaps.org</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Sitemaps">Sitemaps</a> (Wikipedia)</li>
 </ul>
       
 
       
       <h2 id="guidance">Guidance</h2>
       <ul>
+      
+        <li><a href="/google-search-central">Google Search Central</a></li>
       
       </ul>
       
@@ -229,11 +301,11 @@
       
         <li><a href="/allowed">Robots allowed</a></li>
       
-        <li><a href="/sitemap">Sitemap</a></li>
+        <li><a href="/sitemap-robots">Sitemap in robots.txt</a></li>
       
         <li><a href="/canonical">Canonical</a></li>
       
-        <li><a href="/link_text">Link text</a></li>
+        <li><a href="/link-text">Link text</a></li>
       
         <li><a href="/hreflang">hreflang</a></li>
       
@@ -241,7 +313,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -259,6 +333,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

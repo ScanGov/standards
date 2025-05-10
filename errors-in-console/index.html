@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="No browser errors logged to the console">
+    <meta name="description" content="Tracks mistakes in code for debugging.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/errors_in_console/">
+    <link rel="canonical" href="https://standards.scangov.org/errors-in-console/">
     <!-- Title -->
     <title>Errors in the console - ScanGov Standards</title>
     <!-- Open Graph -->
@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/errors_in_console/">
+    <meta property="og:url" content="https://standards.scangov.org/errors-in-console/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -147,7 +147,7 @@
               <h1 class="display-5" id="errors-in-the-console">Errors in the console</h1>
             
             
-              <p class="lead fs-5">No browser errors logged to the console</p>
+              <p class="lead fs-5">Tracks mistakes in code for debugging.</p>
             
           </div>
         </div>
@@ -176,8 +176,13 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns.
+      Logging errors helps developers fix problems quickly, improving website performance and user experience by identifying and resolving issues.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a security researcher, I want to find a security.txt file on the website so that I can report vulnerabilities to the right contact securely and efficiently.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
@@ -189,7 +194,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>Most browsers ship with built-in developer tools. These developer tools usually include a console. The console gives you information about the page that's currently running.</p><p>Messages logged in the console come from either the web developers who built the page or the browser itself. All console messages have a severity level: Verbose, Info, Warning, or Error. An Error message means there's a problem on your page that you need to resolve.</p>
+        <p>Errors logged to the console help developers find and fix problems in their code. When something goes wrong, like a bug or incorrect function, the console displays a message with details about the issue. This helps developers understand what went wrong, where it happened, and what needs to be fixed. By using the console, developers can troubleshoot and improve their websites or applications, making them run more smoothly for users.</p>
       
       
       
@@ -212,28 +217,11 @@
       </ul>
 
       
-      <h2 id="related">Related</h2>
-      <ul>
-      
-        <li><a href="/csp">Content security policy (CSP)</a></li>
-      
-        <li><a href="/hsts">HTTP Strict Transport Security (HSTS)</a></li>
-      
-        <li><a href="/securitytxt">security.txt</a></li>
-      
-        <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
-      
-        <li><a href="/errors_in_console">Errors in the console</a></li>
-      
-        <li><a href="/clickjacking_mitigation">Clickjacking mitigation</a></li>
-      
-        <li><a href="/paste_preventing_inputs">Paste preventing inputs</a></li>
-      
-      </ul>
-      
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -251,6 +239,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -208,7 +208,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>Time to First Byte (TTFB) measures the time it takes from when a browser requests a resource to when the first byte of data begins to load. It’s an important metric for website performance, affecting how quickly a page appears. A good TTFB is under 0.8 seconds, and anything over 1.8 seconds needs improvement. TTFB is influenced by server responsiveness and connection setup time. Lowering it can improve overall user experience and speed.</p>
+        <p>Time to First Byte (TTFB) measures the time it takes from when a browser requests a resource to when the first byte of data begins to load. It's an important metric for website performance, affecting how quickly a page appears. A good TTFB is under 0.8 seconds, and anything over 1.8 seconds needs improvement. TTFB is influenced by server responsiveness and connection setup time. Lowering it can improve overall user experience and speed.</p>
       
       
       
@@ -219,7 +219,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/web-vitals-core-web-vitals">Web Vitals / Core Web Vitals</a></li>
+        <li><a href="/web-vitals-core-web-vitals">Web Vitals / Core Web Vitals</a></li>
       
       </ul>
       
@@ -250,7 +250,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -268,6 +270,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

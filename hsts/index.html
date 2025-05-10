@@ -249,13 +249,13 @@
       <h2 id="guidance-2">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/21stcenturyidea">21st Century Integrated Digital Experience Act</a></li>
+        <li><a href="/21stcenturyidea">21st Century Integrated Digital Experience Act</a></li>
       
-        <li><a href="https://standards.scangov.org/cisa-web-security">CISA Website Security</a></li>
+        <li><a href="/cisa-web-security">CISA Website Security</a></li>
       
-        <li><a href="https://standards.scangov.org/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a></li>
+        <li><a href="/cybersecurity-performance-goals">CISA Cybersecurity Performance Goals</a></li>
       
-        <li><a href="https://standards.scangov.org/memorandum-m-23-22">Memorandum (M-23-22)</a></li>
+        <li><a href="/memorandum-m-23-22">Memorandum (M-23-22)</a></li>
       
       </ul>
       
@@ -280,17 +280,19 @@
       
         <li><a href="/xcontenttypeoptions">X-Content-Type-Options</a></li>
       
-        <li><a href="/errors_in_console">Errors in the console</a></li>
+        <li><a href="/errors-in-console">Errors in the console</a></li>
       
-        <li><a href="/clickjacking_mitigation">Clickjacking mitigation</a></li>
+        <li><a href="/clickjacking-mitigation">Clickjacking mitigation</a></li>
       
-        <li><a href="/paste_preventing_inputs">Paste preventing inputs</a></li>
+        <li><a href="/paste-preventing-inputs">Paste preventing inputs</a></li>
       
       </ul>
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -308,6 +310,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

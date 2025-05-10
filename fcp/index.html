@@ -195,7 +195,7 @@
       
       <h2 id="user-stories">User stories</h2>
       
-        <blockquote>As a user visiting the website, I want the first visible content to load quickly so that I know the site is responding and I don’t leave out of frustration.</blockquote>
+        <blockquote>As a user visiting the website, I want the first visible content to load quickly so that I know the site is responding and I don&#39;t leave out of frustration.</blockquote>
       
       
 
@@ -208,7 +208,7 @@
 
       
         <h2 id="about">About</h2>
-        <p>First Contentful Paint (FCP) measures how quickly a webpage shows any content after a user starts to load it. It checks the time from when the user begins to navigate to the page until any part of the page’s content, like text or images, appears on the screen. A fast FCP reassures users that the page is loading. For a good user experience, aim for an FCP of 1.8 seconds or less.</p>
+        <p>First Contentful Paint (FCP) measures how quickly a webpage shows any content after a user starts to load it. It checks the time from when the user begins to navigate to the page until any part of the page's content, like text or images, appears on the screen. A fast FCP reassures users that the page is loading. For a good user experience, aim for an FCP of 1.8 seconds or less.</p>
       
       
       
@@ -219,7 +219,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="https://standards.scangov.org/web-vitals-core-web-vitals">Web Vitals / Core Web Vitals</a></li>
+        <li><a href="/web-vitals-core-web-vitals">Web Vitals / Core Web Vitals</a></li>
       
       </ul>
       
@@ -250,7 +250,9 @@
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -268,6 +270,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Properly defines charset">
+    <meta name="description" content="Character set for text encoding.">
     
     
     <meta name="robots" content="index, follow">
@@ -14,7 +14,7 @@
     <meta property="og:locale" content="en_US">
     <link rel="canonical" href="https://standards.scangov.org/charset/">
     <!-- Title -->
-    <title>charset - ScanGov Standards</title>
+    <title>Character encoding - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="charset">charset</h1>
+              <h1 class="display-5" id="character-encoding">Character encoding</h1>
             
             
-              <p class="lead fs-5">Properly defines charset</p>
+              <p class="lead fs-5">Character set for text encoding.</p>
             
           </div>
         </div>
@@ -176,32 +176,39 @@
       </div>
 
       <h2 id="why-its-important">Why it's important</h2>
-      A character encoding declaration is required. It can be done with a `&lt;meta&gt;` tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header.
+      Helps computers show words and symbols correctly in different languages and on different devices.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a website visitor, I want the text to display correctly in my language so I can read and understand it easily.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Charset declaration is missing or occurs too late in the HTML
+      Charset declaration is missing or occurs too late in the HTML.
       </blockquote>
 
       
         <h2 id="about">About</h2>
-        <p>If the server doesn't specify which character encoding format it's using when it sends an HTML file, the browser won't know what character each byte represents. The character encoding declaration specification solves this problem.</p>
+        <p>A charset (character set) is a list of letters, numbers, and symbols that computers use to show and read text. It helps make sure the right characters appear, especially in different languages. For example, UTF-8 is a popular charset that works with many languages and symbols. Without the correct charset, websites may show weird symbols or question marks. Setting the right charset helps everyone read and understand the text properly.</p>
       
       
       
       
       
         <h2 id="links">Links</h2>
-        <ul><li><a href="https://developer.chrome.com/docs/lighthouse/best-practices/charset/">Learn more about declaring the character encoding</a></li></ul>
+        <ul><li><a href="https://www.w3.org/International/articles/definitions-characters/">Character encodings: Essential concepts</a></li></ul>
       
 
       
       <h2 id="guidance">Guidance</h2>
       <ul>
+      
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
       
       </ul>
       
@@ -224,21 +231,23 @@
       
         <li><a href="/viewport">Viewport meta tag</a></li>
       
-        <li><a href="/image_aspect_ratio">Image aspect ratio</a></li>
+        <li><a href="/image-aspect-ratio">Image aspect ratio</a></li>
       
-        <li><a href="/html_lang_valid">Valid language code in the HTML tag</a></li>
+        <li><a href="/html-lang-valid">Valid language code</a></li>
       
-        <li><a href="/meta-viewport">Allow user scaling in viewport meta tag</a></li>
+        <li><a href="/zooming-scaling">Zooming/scaling enabled</a></li>
       
         <li><a href="/doctype">Valid doctype</a></li>
       
-        <li><a href="/charset">charset</a></li>
+        <li><a href="/charset">Character encoding</a></li>
       
       </ul>
       
 
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
+      <!-- on this page links will be put here in footer js -->
+    </div>
 
       </div>
     </div>
@@ -256,6 +265,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
 <script>

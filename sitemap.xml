@@ -77,17 +77,17 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/image_aspect_ratio/</loc>
+            <loc>https://standards.scangov.org/image-aspect-ratio/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/html_lang_valid/</loc>
+            <loc>https://standards.scangov.org/html-lang-valid/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/meta-viewport/</loc>
+            <loc>https://standards.scangov.org/zooming-scaling/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -167,7 +167,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/sitemap/</loc>
+            <loc>https://standards.scangov.org/sitemap-robots/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -177,7 +177,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/link_text/</loc>
+            <loc>https://standards.scangov.org/link-text/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -207,17 +207,17 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/errors_in_console/</loc>
+            <loc>https://standards.scangov.org/errors-in-console/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/clickjacking_mitigation/</loc>
+            <loc>https://standards.scangov.org/clickjacking-mitigation/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/paste_preventing_inputs/</loc>
+            <loc>https://standards.scangov.org/paste-preventing-inputs/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -332,12 +332,12 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/m2322/</loc>
+            <loc>https://standards.scangov.org/memorandum-m-23-22/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/opengraph/</loc>
+            <loc>https://standards.scangov.org/open-graph/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -423,7 +423,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-10T04:36:10.276Z</lastmod>
+            <lastmod>2025-05-10T14:38:20.582Z</lastmod>
         </url>
     
 </urlset>
