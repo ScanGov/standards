@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="Canonical link for social sharing.">
+    <meta name="description" content="The site prevents mime type sniffing.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/ogUrl/">
+    <link rel="canonical" href="https://standards.scangov.org/xcontenttypeoptions/">
     <!-- Title -->
-    <title>Open Graph URL - ScanGov Standards</title>
+    <title>X-Content-Type-Options - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/ogUrl/">
+    <meta property="og:url" content="https://standards.scangov.org/xcontenttypeoptions/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="open-graph-url">Open Graph URL</h1>
+              <h1 class="display-5" id="x-content-type-options">X-Content-Type-Options</h1>
             
             
-              <p class="lead fs-5">Canonical link for social sharing.</p>
+              <p class="lead fs-5">The site prevents mime type sniffing.</p>
             
           </div>
         </div>
@@ -173,25 +173,24 @@
         
           <i class="fa-solid fa-bolt"></i>
         
+          <i class="fa-solid fa-bolt"></i>
+        
+          <i class="fa-solid fa-bolt"></i>
+        
       </div>
 
       
 
       <h2 id="why-its-important">Why it's important</h2>
-      The Open Graph URL tag provides the canonical URL for the content, which is essential for social media platforms to know which page to link to when shared. If the URL is missing or incorrect, social media platforms may not correctly associate the content with the intended page, potentially causing issues like broken links or the sharing of the wrong page, which could affect user engagement and SEO performance.
+      The X-Content-Type-Options header helps prevent browsers from interpreting files as a different MIME type than what is specified. This is a security measure that prevents certain types of attacks, such as MIME sniffing. Without this header, there is a risk that malicious content might be executed if a browser misinterprets the type of content being served.
 
-      
-      <h2 id="user-stories">User stories</h2>
-      
-        <blockquote>As a site visitor, I want the shared content to link to the correct webpage, so that I can be sure I am clicking the right link and accessing the intended content.</blockquote>
-      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Canonical link missing.
+      Mime type sniffing is not prevented.
       </blockquote>
 
       
@@ -203,7 +202,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="/open-graph">Open Graph</a></li>
+        <li><a href="/owasp-top-10">OWASP Top 10</a></li>
       
       </ul>
       
@@ -212,7 +211,7 @@
 
       <ul class="list-inline pt-3">
         <li class="list-inline-item mr-1 mb-3">
-            <a href="/social" class="btn btn-primary-outline">Social</a>
+            <a href="/security" class="btn btn-primary-outline">Security</a>
         </li>
       </ul>
 

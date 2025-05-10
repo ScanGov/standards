@@ -6,21 +6,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     
-    <meta name="description" content="The site prevents mime type sniffing.">
+    <meta name="description" content="Preview image for social sharing.">
     
     
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://standards.scangov.org/xContentTypeOptions/">
+    <link rel="canonical" href="https://standards.scangov.org/ogimage/">
     <!-- Title -->
-    <title>X-Content-Type-Options - ScanGov Standards</title>
+    <title>Open Graph image - ScanGov Standards</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="ScanGov Standards">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://standards.scangov.org/xContentTypeOptions/">
+    <meta property="og:url" content="https://standards.scangov.org/ogimage/">
     
     <!-- Created date -->
     <meta property="article:published_time" content="Sat Feb 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
@@ -144,10 +144,10 @@
         <div class="col-12">
           <div id="main-content">
             
-              <h1 class="display-5" id="x-content-type-options">X-Content-Type-Options</h1>
+              <h1 class="display-5" id="open-graph-image">Open Graph image</h1>
             
             
-              <p class="lead fs-5">The site prevents mime type sniffing.</p>
+              <p class="lead fs-5">Preview image for social sharing.</p>
             
           </div>
         </div>
@@ -173,24 +173,25 @@
         
           <i class="fa-solid fa-bolt"></i>
         
-          <i class="fa-solid fa-bolt"></i>
-        
-          <i class="fa-solid fa-bolt"></i>
-        
       </div>
 
       
 
       <h2 id="why-its-important">Why it's important</h2>
-      The X-Content-Type-Options header helps prevent browsers from interpreting files as a different MIME type than what is specified. This is a security measure that prevents certain types of attacks, such as MIME sniffing. Without this header, there is a risk that malicious content might be executed if a browser misinterprets the type of content being served.
+      The Open Graph image tag is used to specify a preview image that appears when a page is shared on social media. Without this tag, social media platforms may not display any image, or they might display an irrelevant image, which could negatively affect user engagement and click-through rates. Including a proper Open Graph image ensures that the page looks attractive and engaging when shared on platforms like Facebook, X, and LinkedIn.
 
+      
+      <h2 id="user-stories">User stories</h2>
+      
+        <blockquote>As a social media user, I want shared links to have a clear and relevant image so that I can easily understand the content of the link before clicking on it.</blockquote>
+      
       
 
       <h2 id="error">Error</h2>
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
 
       <blockquote>
-      Mime type sniffing is not prevented.
+      Open Graph image is missing.
       </blockquote>
 
       
@@ -202,7 +203,7 @@
       <h2 id="guidance">Guidance</h2>
       <ul>
       
-        <li><a href="/owasp-top-10">OWASP Top 10</a></li>
+        <li><a href="/open-graph">Open Graph</a></li>
       
       </ul>
       
@@ -211,7 +212,7 @@
 
       <ul class="list-inline pt-3">
         <li class="list-inline-item mr-1 mb-3">
-            <a href="/security" class="btn btn-primary-outline">Security</a>
+            <a href="/social" class="btn btn-primary-outline">Social</a>
         </li>
       </ul>
 

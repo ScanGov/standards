@@ -197,12 +197,12 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/securityTxt/</loc>
+            <loc>https://standards.scangov.org/securitytxt/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/xContentTypeOptions/</loc>
+            <loc>https://standards.scangov.org/xcontenttypeoptions/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -222,37 +222,37 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogSiteName/</loc>
+            <loc>https://standards.scangov.org/ogsitename/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogType/</loc>
+            <loc>https://standards.scangov.org/ogtype/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogTitle/</loc>
+            <loc>https://standards.scangov.org/ogtitle/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogDescription/</loc>
+            <loc>https://standards.scangov.org/ogdescription/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogUrl/</loc>
+            <loc>https://standards.scangov.org/ogurl/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogImage/</loc>
+            <loc>https://standards.scangov.org/ogimage/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/ogImageAlt/</loc>
+            <loc>https://standards.scangov.org/ogimagealt/</loc>
             <lastmod>2025-02-01T00:00:00.000Z</lastmod>
         </url>
     
@@ -423,7 +423,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-10T14:59:12.958Z</lastmod>
+            <lastmod>2025-05-10T16:28:31.126Z</lastmod>
         </url>
     
 </urlset>
