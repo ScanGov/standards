@@ -193,6 +193,18 @@
         
       </div>
 
+      
+        <h2 id="about">About</h2>
+        <p>HTTP Strict Transport Security is a security feature that:</p><ul>
+  <li>Forces web browsers to use HTTPS instead of HTTP.</li>
+  <li>Protects against downgrade attacks and cookie hijacking.</li>
+  <li>Specifies a period during which the browser should enforce HTTPS for the site.</li>
+</ul><p>Key points:</p><ul>
+  <li>Activated by the server through a response header (<code class="language-plaintext highlighter-rouge">Strict-Transport-Security</code>).</li>
+  <li>Helps improve website security by ensuring encrypted connections.</li>
+</ul>
+      
+
       <h2 id="why-its-important">Why it's important</h2>
       HSTS is a security feature that ensures a website is only accessible over HTTPS. It helps to prevent man-in-the-middle attacks, such as protocol downgrade attacks, by enforcing that browsers always communicate with the server over a secure connection. Without HSTS, an attacker could intercept traffic on a non-secure connection and compromise user data.
 
@@ -210,17 +222,6 @@
       Secure connection upgrade not enforced.
       </blockquote>
 
-      
-        <h2 id="about">About</h2>
-        <p>HTTP Strict Transport Security is a security feature that:</p><ul>
-  <li>Forces web browsers to use HTTPS instead of HTTP.</li>
-  <li>Protects against downgrade attacks and cookie hijacking.</li>
-  <li>Specifies a period during which the browser should enforce HTTPS for the site.</li>
-</ul><p>Key points:</p><ul>
-  <li>Activated by the server through a response header (<code class="language-plaintext highlighter-rouge">Strict-Transport-Security</code>).</li>
-  <li>Helps improve website security by ensuring encrypted connections.</li>
-</ul>
-      
       
         <h2 id="guidance">Guidance</h2>
         <p>All government websites must have HSTS.</p><p><a href="https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf">M-15-13</a>:</p><blockquote>
