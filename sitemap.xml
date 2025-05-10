@@ -342,7 +342,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/owasp10/</loc>
+            <loc>https://standards.scangov.org/owasp-top-10/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -357,7 +357,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/sitemaps/</loc>
+            <loc>https://standards.scangov.org/sitemaps-org/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -377,7 +377,7 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/webvitals/</loc>
+            <loc>https://standards.scangov.org/web-vitals-core-web-vitals/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
     
@@ -423,7 +423,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-10T16:28:31.126Z</lastmod>
+            <lastmod>2025-05-10T16:58:43.753Z</lastmod>
         </url>
     
 </urlset>
