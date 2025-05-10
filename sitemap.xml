@@ -352,11 +352,6 @@
         </url>
     
         <url>
-            <loc>https://standards.scangov.org/security-txt/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://standards.scangov.org/sitemaps-org/</loc>
             <lastmod>2025-04-30T00:00:00.000Z</lastmod>
         </url>
@@ -423,7 +418,7 @@
     
         <url>
             <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-10T18:13:15.780Z</lastmod>
+            <lastmod>2025-05-10T19:02:26.667Z</lastmod>
         </url>
     
 </urlset>
