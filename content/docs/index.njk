@@ -65,6 +65,11 @@ topics:
         {% endfor %}
       </div>
 
+      {% if docpage.sections.about.title %}
+        <h2>{{ docpage.sections.about.title }}</h2>
+        {{ docpage.sections.about.content | safe }}
+      {% endif %}
+
       <h2>Why it's important</h2>
       {{ docpage.why }}
 
@@ -82,10 +87,6 @@ topics:
       {{ docpage.error }}
       </blockquote>
 
-      {% if docpage.sections.about.title %}
-        <h2>{{ docpage.sections.about.title }}</h2>
-        {{ docpage.sections.about.content | safe }}
-      {% endif %}
       {% if docpage.sections.guidance %}
         <h2>{{ docpage.sections.guidance.title }}</h2>
         {{ docpage.sections.guidance.content | safe }}

@@ -50,11 +50,10 @@ topics:
         </div>
       {% endif %}
 
-      {% for section in guide.sections %}
-        <h2>{{ section.title }}</h2>
-
-        {{ section.content | safe }}
-      {% endfor %}
+      {% if guide.about.title %}
+        <h2>{{ guide.about.title }}</h2>
+        {{ guide.about.content | safe }}
+      {% endif %}
 
       <ul>
       {% for item in guide.links %}
