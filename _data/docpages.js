@@ -18,7 +18,6 @@ export default async function () {
       attr.topic = topic;
       attr.topicDisplayName = auditData[topic].displayName;
       attr.topicIcon = auditData[topic].icon;
-      console.log(attr.key)
       docPages.push(attr);
     })
   }

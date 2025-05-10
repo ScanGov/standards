@@ -10,6 +10,25 @@
     </div>
   </div>
 </footer>
+<script>
+  function onThisPage() {
+    let targetEl = document.querySelector('.js-on-this-page');
+    let headersToLink = document.querySelectorAll('h2');
+    console.log(headersToLink)
+    let html = `<p class="border-bottom pb-3">On this page</p>
+      <ul class="nav flex-column">
+        ${Array.from(headersToLink).map(h => {
+          return `<li class="mb-2 small ">
+            <a href="#${h.id}">${h.textContent.trim()}</a>
+          </li>`;
+        }).join('')}
+      </ul>`;
+      targetEl.innerHTML = html;
+  }
+  if(document.querySelector('.js-on-this-page')) {
+    onThisPage();
+  }
+</script>
 <!-- Google tag (gtag.js) -->
 <script
   async
