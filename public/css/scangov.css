@@ -17,33 +17,43 @@
 .fa-scroll {
     color: var(--scangov-color-guidance) !important;
 }
+
 .fa-diagram-project {
     color: var(--scangov-color-project) !important;
 }
+
 .fa-landmark {
     color: var(--scangov-color-landmark) !important;
 }
+
 .fa-robot {
     color: #e6e6e6;
 }
+
 .fa-universal-access {
     color: #a8f2ff;
 }
+
 .fa-file-lines {
     color: #d5bfff;
 }
+
 .fa-link {
     color: #7efbe1;
 }
-.fa-dashboard {
+
+.fa-dashboard, .fa-gauge {
     color: #ffbc78;
 }
+
 .fa-lock {
     color: #ff8d7b;
 }
+
 .fa-magnifying-glass {
     color: #ffe396;
 }
+
 .fa-share-nodes {
     color: #ffb4cf;
 }
