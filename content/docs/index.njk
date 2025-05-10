@@ -10,7 +10,7 @@ pagination:
   addAllPagesToCollections: true
   alias: docpage
 
-permalink: "{{ docpage.key }}/"
+permalink: "{{ docpage.key.toLowerCase() }}/"
 
 eleventyComputed:
   title: "{{ docpage.displayName }}"
