@@ -27,7 +27,7 @@
       <ul class="small">
         {% for guidance in item.guidance %}
           <li>
-            <a href="{{ guidance.url.replace('https://docs.scangov.org','') }}">{{ guidance.displayName }}</a>
+            <a href="{{ guidance.url }}">{{ guidance.displayName }}</a>
           </li>
         {% endfor %}
       </ul>

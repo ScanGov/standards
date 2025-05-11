@@ -51,6 +51,17 @@ topics:
         </div>
       {% endif %}
 
+      <h2>Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/{{ docpage.topic }}" class="btn btn-primary-outline">
+              <i class="fa fa-{{ docpage.topicIcon }}"></i>
+              {{ audits[docpage.topic].displayName }}
+            </a>
+        </li>
+      </ul>
+
       <h2>Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</small></p>
@@ -73,11 +84,22 @@ topics:
       <h2>Why it's important</h2>
       {{ docpage.why }}
 
+      {% if docpage.sections.about.title %}
+        <h2>{{ docpage.sections.about.title }}</h2>
+        {{ docpage.sections.about.content | safe }}
+      {% endif %}
+
       {% if docpage.userStories %}
       <h2>User stories</h2>
       {% for item in docpage.userStories %}
         <blockquote>{{ item.title }}</blockquote>
       {% endfor %}
+      {% endif %}
+
+      {% if docpage.sections.code %}
+        <h2>{{ docpage.sections.code.title }}</h2>
+        <p>Sample code:</p>
+        {{ docpage.sections.code.content | safe }}
       {% endif %}
 
       <h2>Error</h2>
@@ -95,14 +117,6 @@ topics:
         <h2>{{ docpage.sections.example.title }}</h2>
         {{ docpage.sections.example.content | safe }}
       {% endif %}
-      {% if docpage.sections.code %}
-        <h2>{{ docpage.sections.code.title }}</h2>
-        {{ docpage.sections.code.content | safe }}
-      {% endif %}
-      {% if docpage.sections.links %}
-        <h2>{{ docpage.sections.links.title }}</h2>
-        {{ docpage.sections.links.content | safe }}
-      {% endif %}
 
       {% if docpage.guidance %}
       <h2>Guidance</h2>
@@ -113,13 +127,10 @@ topics:
       </ul>
       {% endif %}
 
-      <h2>Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/{{ docpage.topic }}" class="btn btn-primary-outline">{{ audits[docpage.topic].displayName }}</a>
-        </li>
-      </ul>
+      {% if docpage.sections.links %}
+        <h2>{{ docpage.sections.links.title }}</h2>
+        {{ docpage.sections.links.content | safe }}
+      {% endif %}
 
       {% if docpage.relatedLinks %}
       <h2>Related</h2>

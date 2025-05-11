@@ -54,20 +54,23 @@ topics:
         <h2>{{ guide.about.title }}</h2>
         {{ guide.about.content | safe }}
       {% endif %}
+      
+      <h2>Indicators</h2>
+      <ul class="list-inline pt-3">
+        {% for item in guide.topics %}
+          <li class="list-inline-item mr-1 mb-3">
+            <a href="/{{ item }}" class="btn btn-primary-outline">
+              <i class="fa fa-{{ audits[item].icon }}"></i>
+              {{ audits[item].displayName }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
 
       <ul>
       {% for item in guide.links %}
         <li><a href="{{ item.link }}">{{ item.text }}</a></li>
       {% endfor %}
-      </ul>
-
-      <h2>Indicator</h2>
-      <ul class="list-inline pt-3">
-        {% for item in guide.topics %}
-          <li class="list-inline-item mr-1 mb-3">
-            <a href="/{{ item }}" class="btn btn-primary-outline">{{ audits[item].displayName }}</a>
-          </li>
-        {% endfor %}
       </ul>
 
       <h2>Standards</h2>
