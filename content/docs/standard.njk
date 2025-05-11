@@ -84,11 +84,6 @@ topics:
       <h2>Why it's important</h2>
       {{ docpage.why }}
 
-      {% if docpage.sections.about.title %}
-        <h2>{{ docpage.sections.about.title }}</h2>
-        {{ docpage.sections.about.content | safe }}
-      {% endif %}
-
       {% if docpage.userStories %}
       <h2>User stories</h2>
       {% for item in docpage.userStories %}

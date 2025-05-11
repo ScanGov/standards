@@ -49,11 +49,6 @@ topics:
           </script>
         </div>
       {% endif %}
-
-      {% if guide.about.title %}
-        <h2>{{ guide.about.title }}</h2>
-        {{ guide.about.content | safe }}
-      {% endif %}
       
       <h2>Indicators</h2>
       <ul class="list-inline pt-3">
@@ -67,6 +62,12 @@ topics:
         {% endfor %}
       </ul>
 
+      {% if guide.about.title %}
+        <h2>{{ guide.about.title }}</h2>
+        {{ guide.about.content | safe }}
+      {% endif %}
+      
+      <h2>Links</h2>
       <ul>
       {% for item in guide.links %}
         <li><a href="{{ item.link }}">{{ item.text }}</a></li>
