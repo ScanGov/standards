@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -188,6 +186,17 @@
         </div>
       
 
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/seo" class="btn btn-primary-outline">
+              <i class="fa fa-magnifying-glass"></i>
+              SEO
+            </a>
+        </li>
+      </ul>
+
       <h2 id="impact">Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
@@ -221,29 +230,24 @@
       Pointing to a sitemap file in the robots.txt file helps search engines discover the sitemap easily, improving crawl efficiency. This ensures that all important URLs are included in the search engine&#39;s index and enhances visibility in search results.
 
       
+        <h2 id="about-2">About</h2>
+        <p>A sitemap is a file that lists all of the pages on a website in addition to information about each so that search engines can more intelligently crawl the site.</p><p>Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support sitemaps to pick up all Uniform Resources Locators (URLs) in the sitemap and learn about them using the associated metadata. Using sitemap protocol doesn't guarantee web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site.</p><p>The sitemap is an Extensible Markup Language (XML) file on the website's root directory that include metadata for each URL, such as:</p><ul>
+  <li>when it was last updated</li>
+  <li>how often it usually changes</li>
+  <li>how important it is, relative to other URLs in the site</li>
+</ul>
+      
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a search engine bot, I want the `robots.txt` file to point to the sitemap so that I can easily discover and crawl the full sitemap of the website, ensuring comprehensive indexing and better visibility in search results.</blockquote>
       
       
 
-      <h2 id="error">Error</h2>
-      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
-
-      <blockquote>
-      robots.txt missing sitemap reference.
-      </blockquote>
-
-      
-      
-        <h2 id="examples">Examples</h2>
-        <p>Example government website sitemaps:</p><ul>
-  <li><a href="https://www.usa.gov/sitemap.xml">https://www.usa.gov/sitemap.xml</a></li>
-  <li><a href="https://18f.gov/sitemap.xml">https://18f.gov/sitemap.xml</a></li>
-</ul>
-      
       
         <h2 id="code">Code</h2>
+        <p>Sample code:</p>
         <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 
 <span class="nt">&lt;urlset</span> <span class="na">xmlns=</span><span class="s">"http://www.sitemaps.org/schemas/sitemap/0.9"</span><span class="nt">&gt;</span>
@@ -263,11 +267,20 @@
 <span class="nt">&lt;/urlset&gt;</span>
 </code></pre></div></div>
       
+
+      <h2 id="error">Error</h2>
+      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
+
+      <blockquote>
+      robots.txt missing sitemap reference.
+      </blockquote>
+
       
-        <h2 id="links">Links</h2>
-        <ul>
-  <li><a href="https://www.sitemaps.org/">sitemaps.org</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Sitemaps">Sitemaps</a> (Wikipedia)</li>
+      
+        <h2 id="examples">Examples</h2>
+        <p>Example government website sitemaps:</p><ul>
+  <li><a href="https://www.usa.gov/sitemap.xml">https://www.usa.gov/sitemap.xml</a></li>
+  <li><a href="https://18f.gov/sitemap.xml">https://18f.gov/sitemap.xml</a></li>
 </ul>
       
 
@@ -280,13 +293,13 @@
       </ul>
       
 
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/seo" class="btn btn-primary-outline">SEO</a>
-        </li>
-      </ul>
+      
+        <h2 id="links">Links</h2>
+        <ul>
+  <li><a href="https://www.sitemaps.org/">sitemaps.org</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Sitemaps">Sitemaps</a> (Wikipedia)</li>
+</ul>
+      
 
       
       <h2 id="related">Related</h2>

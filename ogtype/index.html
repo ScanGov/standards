@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -163,6 +161,17 @@
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
 
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/social" class="btn btn-primary-outline">
+              <i class="fa fa-share-nodes"></i>
+              Social
+            </a>
+        </li>
+      </ul>
+
       <h2 id="impact">Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
@@ -181,10 +190,14 @@
       The Open Graph type tag specifies the type of content being shared (e.g., website, article, video, etc.) and helps social media platforms understand how to render the content. It allows for better control over how the shared content is presented, ensuring that the correct type of preview is displayed, which enhances user engagement. Without this tag, the content may not display optimally on social platforms.
 
       
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a site visitor, I want the content shared from the website to display the correct type of information (e.g., article, video, website) so that I can easily understand the context and purpose of the link before clicking on it.</blockquote>
       
+      
+
       
 
       <h2 id="error">Error</h2>
@@ -194,8 +207,6 @@
       Open Graph type is missing.
       </blockquote>
 
-      
-      
       
       
 
@@ -208,13 +219,7 @@
       </ul>
       
 
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/social" class="btn btn-primary-outline">Social</a>
-        </li>
-      </ul>
+      
 
       
 

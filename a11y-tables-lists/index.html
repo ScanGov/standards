@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -162,6 +160,17 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
+
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/accessibility" class="btn btn-primary-outline">
+              <i class="fa fa-universal-access"></i>
+              Accessibility
+            </a>
+        </li>
+      </ul>
 
       <h2 id="impact">Impact</h2>
 
@@ -210,10 +219,39 @@
       Properly structured tables and lists are easier to navigate for users with disabilities, making content more accessible.
 
       
+        <h2 id="about-2">About</h2>
+        <p>Follow these recommendations to improve the accessibility of tabular and list data:</p><ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code>'s contain only properly-ordered <code class="language-plaintext highlighter-rouge">&lt;dt&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;dd&gt;</code> groups, <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>, <template> or `&lt;div&gt;` elements: When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output.</template></p>
+  </li>
+  <li>
+    <p>Definition list items are wrapped in <code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code> elements: Definition list items (<code class="language-plaintext highlighter-rouge">&lt;dt&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;dd&gt;</code>) must be wrapped in a parent <code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code> element to ensure that screen readers can properly announce them.</p>
+  </li>
+  <li>
+    <p>Lists contain only <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> elements and script supporting elements (<code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;template&gt;</code>): Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output.</p>
+  </li>
+  <li>
+    <p>List items (<code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>) are contained within <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;menu&gt;</code> parent elements: Screen readers require list items (<code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>) to be contained within a parent <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;menu&gt;</code> to be announced properly.</p>
+  </li>
+  <li>
+    <p>Tables have different content in the summary attribute and <code class="language-plaintext highlighter-rouge">&lt;caption&gt;</code>: The summary attribute should describe the table structure, while <code class="language-plaintext highlighter-rouge">&lt;caption&gt;</code> should have the onscreen title. Accurate table mark-up helps users of screen readers.</p>
+  </li>
+  <li>
+    <p>Cells in a <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code> element that use the <code class="language-plaintext highlighter-rouge">[headers]</code> attribute refer to table cells within the same table: Screen readers have features to make navigating tables easier. Ensuring <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> cells using the <code class="language-plaintext highlighter-rouge">[headers]</code> attribute only refer to other cells in the same table may improve the experience for screen reader users.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> elements and elements with <code class="language-plaintext highlighter-rouge">[role="columnheader"/"rowheader"]</code> have data cells they describe: Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users.</p>
+  </li>
+</ol>
+      
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a screen reader user, I want data tables to have clear headers and associations so that I can understand the relationships between rows and columns.</blockquote>
       
+      
+
       
 
       <h2 id="error">Error</h2>
@@ -225,7 +263,16 @@
 
       
       
+
       
+      <h2 id="guidance">Guidance</h2>
+      <ul>
+      
+        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
+      
+      </ul>
+      
+
       
         <h2 id="links">Links</h2>
         <ul>
@@ -238,23 +285,6 @@
   <li><a href="https://dequeuniversity.com/rules/axe/4.10/th-has-data-cells">About table headers</a></li>
 </ul>
       
-
-      
-      <h2 id="guidance">Guidance</h2>
-      <ul>
-      
-        <li><a href="/wcag">Web Content Accessibility Guidelines (WCAG)</a></li>
-      
-      </ul>
-      
-
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/accessibility" class="btn btn-primary-outline">Accessibility</a>
-        </li>
-      </ul>
 
       
       <h2 id="related">Related</h2>

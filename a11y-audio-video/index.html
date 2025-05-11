@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -163,6 +161,17 @@
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
 
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/accessibility" class="btn btn-primary-outline">
+              <i class="fa fa-universal-access"></i>
+              Accessibility
+            </a>
+        </li>
+      </ul>
+
       <h2 id="impact">Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
@@ -190,10 +199,19 @@
       Providing alternative content for audio and video ensures that multimedia is accessible to all users, including those with auditory or visual impairments.
 
       
+        <h2 id="about-2">About</h2>
+        <p>These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments.</p><ol>
+  <li><code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> elements contain a <code class="language-plaintext highlighter-rouge">&lt;track&gt;</code> element with <code class="language-plaintext highlighter-rouge">[kind="captions"]</code>: When a video provides a caption it is easier for deaf and hearing impaired users to access its information.</li>
+</ol>
+      
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a user with hearing or visual impairment, I want to have access to captions, transcripts, and audio descriptions for multimedia content so that I can fully understand and engage with the media on the website.</blockquote>
       
+      
+
       
 
       <h2 id="error">Error</h2>
@@ -205,13 +223,6 @@
 
       
       
-      
-      
-        <h2 id="links">Links</h2>
-        <ul>
-  <li><a href="https://dequeuniversity.com/rules/axe/4.10/video-caption">About video captions</a></li>
-</ul>
-      
 
       
       <h2 id="guidance">Guidance</h2>
@@ -222,13 +233,12 @@
       </ul>
       
 
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/accessibility" class="btn btn-primary-outline">Accessibility</a>
-        </li>
-      </ul>
+      
+        <h2 id="links">Links</h2>
+        <ul>
+  <li><a href="https://dequeuniversity.com/rules/axe/4.10/video-caption">About video captions</a></li>
+</ul>
+      
 
       
       <h2 id="related">Related</h2>

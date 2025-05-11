@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -188,6 +186,17 @@
         </div>
       
 
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/seo" class="btn btn-primary-outline">
+              <i class="fa fa-magnifying-glass"></i>
+              SEO
+            </a>
+        </li>
+      </ul>
+
       <h2 id="impact">Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
@@ -213,32 +222,20 @@
       Allowing access to browsers and scrapers ensures that search engines can crawl the site effectively and index relevant content. This promotes better SEO, as search engines can gather and display up-to-date information from the site.
 
       
+        <h2 id="about-2">About</h2>
+        <p>Robots allowed in a robots.txt file means search engines like Google are allowed to look at and list (or “crawl”) the page in search results. Website owners use robots.txt to tell search engines what they can and can't see. If robots are allowed, the site or page can show up in search engines, making it easier for people to find.</p>
+      
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a search engine crawler, I want to read the robots.txt file so that I know which parts of the website I am allowed or disallowed to index.</blockquote>
       
       
 
-      <h2 id="error">Error</h2>
-      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
-
-      <blockquote>
-      Robots policy blocks browsers or scrapers.
-      </blockquote>
-
-      
-        <h2 id="guidance">Guidance</h2>
-        <p>All government websites must allow robots indexing and following.</p>
-      
-      
-        <h2 id="examples">Examples</h2>
-        <p>Example government website robots.txt files:</p><ul>
-  <li><a href="https://www.usa.gov/robots.txt">https://www.usa.gov/robots.txt</a></li>
-  <li><a href="https://www.ca.gov/robots.txt">https://www.ca.gov/robots.txt</a></li>
-</ul>
-      
       
         <h2 id="code">Code</h2>
+        <p>Sample code:</p>
         <p>Example robots.txt code:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Only applies to search.gov scraping</span>
 <span class="na">User-agent</span><span class="pi">:</span> <span class="s">usasearch</span>  
 <span class="c1"># Slow amount of requests</span>
@@ -263,13 +260,23 @@ and links on it can be followed --&gt;</span>
 <span class="na">X-Robots-Tag</span><span class="pi">:</span> <span class="s">index, follow</span>
 </code></pre></div></div>
       
+
+      <h2 id="error">Error</h2>
+      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
+
+      <blockquote>
+      Robots policy blocks browsers or scrapers.
+      </blockquote>
+
       
-        <h2 id="links">Links</h2>
-        <ul>
-  <li><a href="https://www.robotstxt.org">robotstxt.org</a></li>
-  <li><a href="https://search.gov/indexing/robotstxt.html">robots.txt</a> (Search.gov)</li>
-  <li><a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> (Wikipedia)</li>
-  <li><a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag">Robots Meta Tags Specifications</a> (Google)</li>
+        <h2 id="guidance">Guidance</h2>
+        <p>All government websites must allow robots indexing and following.</p>
+      
+      
+        <h2 id="examples">Examples</h2>
+        <p>Example government website robots.txt files:</p><ul>
+  <li><a href="https://www.usa.gov/robots.txt">https://www.usa.gov/robots.txt</a></li>
+  <li><a href="https://www.ca.gov/robots.txt">https://www.ca.gov/robots.txt</a></li>
 </ul>
       
 
@@ -282,13 +289,15 @@ and links on it can be followed --&gt;</span>
       </ul>
       
 
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/seo" class="btn btn-primary-outline">SEO</a>
-        </li>
-      </ul>
+      
+        <h2 id="links">Links</h2>
+        <ul>
+  <li><a href="https://www.robotstxt.org">robotstxt.org</a></li>
+  <li><a href="https://search.gov/indexing/robotstxt.html">robots.txt</a> (Search.gov)</li>
+  <li><a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> (Wikipedia)</li>
+  <li><a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag">Robots Meta Tags Specifications</a> (Google)</li>
+</ul>
+      
 
       
       <h2 id="related">Related</h2>

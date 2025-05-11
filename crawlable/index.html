@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -163,6 +161,17 @@
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
       
 
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/aifriendly" class="btn btn-primary-outline">
+              <i class="fa fa-robot"></i>
+              AI-friendly
+            </a>
+        </li>
+      </ul>
+
       <h2 id="impact">Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
@@ -190,10 +199,17 @@
       Crawlability ensures that search engines can index the content, making it discoverable by users.
 
       
+        <h2 id="about-2">About</h2>
+        <p>The <code class="language-plaintext highlighter-rouge">robots.txt</code> file tells AI crawlers and search engines which parts of a website they can or cannot access. This helps website owners control what data is available to AI models while protecting private or sensitive information. It also prevents unnecessary crawling, reducing server load and improving site performance. By following <code class="language-plaintext highlighter-rouge">robots.txt</code> rules, AI crawlers respect website preferences and ensure ethical data collection.</p>
+      
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As an AI bot, I want to be able to crawl and access all relevant content on the website so that I can accurately index and understand the site for providing useful responses to users.</blockquote>
       
+      
+
       
 
       <h2 id="error">Error</h2>
@@ -203,8 +219,6 @@
       Site is not accessible to well-behaved agents.
       </blockquote>
 
-      
-      
       
       
 
@@ -221,13 +235,7 @@
       </ul>
       
 
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/aifriendly" class="btn btn-primary-outline">AI-friendly</a>
-        </li>
-      </ul>
+      
 
       
       <h2 id="related">Related</h2>

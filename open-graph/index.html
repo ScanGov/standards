@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -167,26 +165,35 @@
         <h2 id="about">About</h2>
         Open Graph is a protocol that helps websites control how their content look when shared on social media. It decides the title, image, and description that appear in previews. This makes shared links more attractive and informative. Platforms like Facebook and X use Open Graph to display content properly. Website owners add special tags to their pages to customize previews, helping posts stand out and get more clicks.
       
-
-      <ul>
       
-      </ul>
-
-      <h2 id="indicator">Indicator</h2>
+      <h2 id="indicators">Indicators</h2>
       <ul class="list-inline pt-3">
         
           <li class="list-inline-item mr-1 mb-3">
-            <a href="/content" class="btn btn-primary-outline">Content</a>
+            <a href="/content" class="btn btn-primary-outline">
+              <i class="fa fa-file-lines"></i>
+              Content
+            </a>
           </li>
         
           <li class="list-inline-item mr-1 mb-3">
-            <a href="/seo" class="btn btn-primary-outline">SEO</a>
+            <a href="/seo" class="btn btn-primary-outline">
+              <i class="fa fa-magnifying-glass"></i>
+              SEO
+            </a>
           </li>
         
           <li class="list-inline-item mr-1 mb-3">
-            <a href="/social" class="btn btn-primary-outline">Social</a>
+            <a href="/social" class="btn btn-primary-outline">
+              <i class="fa fa-share-nodes"></i>
+              Social
+            </a>
           </li>
         
+      </ul>
+
+      <ul>
+      
       </ul>
 
       <h2 id="standards">Standards</h2>

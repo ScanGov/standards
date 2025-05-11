@@ -98,8 +98,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="/guidance">
-                <span class="fa-solid fa-scroll"></span>
+              <a class="nav-item nav-link mx-1" href="/guidance">
+                <span class="fa-solid fa-solid fa-scroll"></span>
                 Guidance
               </a>
             </li>
@@ -107,8 +107,8 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.com">
-                <span class="fa-solid fa-landmark"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.com">
+                <span class="fa-solid fa-solid fa-landmark"></span>
                 ScanGov
               </a>
             </li>
@@ -116,17 +116,15 @@
         
           
             <li class="nav-item me-3 me-lg-0 small">
-              <a class="nav-item nav-link mx-1 " href="https://scangov.org">
-                <span class="fa-solid fa-diagram-project"></span>
+              <a class="nav-item nav-link mx-1" href="https://scangov.org">
+                <span class="fa-solid fa-solid fa-diagram-project"></span>
                 Project ScanGov
               </a>
             </li>
           
         
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"
-            style="width: 1rem;">
-          <script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
             let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
           </script>
           Mode
@@ -188,6 +186,17 @@
         </div>
       
 
+      <h2 id="indicators">Indicators</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/security" class="btn btn-primary-outline">
+              <i class="fa fa-lock"></i>
+              Security
+            </a>
+        </li>
+      </ul>
+
       <h2 id="impact">Impact</h2>
 
       <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</p>
@@ -213,6 +222,11 @@
       A missing or overly permissive Content Security Policy (CSP) can expose a website to security vulnerabilities such as cross-site scripting (XSS) and data injection attacks. By implementing a restrictive CSP, you can define which sources are trusted for loading content, helping to protect your site from malicious activity and improving overall security.
 
       
+        <h2 id="about-2">About</h2>
+        <p><strong>Content Security Policy (CSP)</strong> is a security standard that helps protect websites from attacks like cross-site scripting (XSS) by allowing website owners to declare trusted sources of content.</p><p>CSP is delivered using HTTP headers or HTML meta tags, and uses directives like <code class="language-plaintext highlighter-rouge">default-src</code>, <code class="language-plaintext highlighter-rouge">script-src</code>, and <code class="language-plaintext highlighter-rouge">img-src</code> to control resource loading. CSP can enforce policies, report violations, and is not a replacement for careful input validation, but a defense-in-depth measure. <strong>Strict CSP</strong> is more secure using nonces or hashes.</p><p>Note: It's an extra layer of protection, not the primary defense.</p>
+      
+
+      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a website owner, I want to define a Content Security Policy so that I can prevent malicious scripts from executing and protect users from XSS attacks.</blockquote>
@@ -221,17 +235,9 @@
       
       
 
-      <h2 id="error">Error</h2>
-      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
-
-      <blockquote>
-      Content Security Policy is missing or too permissive.
-      </blockquote>
-
-      
-      
       
         <h2 id="code">Code</h2>
+        <p>Sample code:</p>
         <p>Example header:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Content-Security-Policy</span><span class="pi">:</span>
   <span class="s">default-src 'self';</span>
   <span class="s">script-src 'self' https://example.gov;</span>
@@ -254,16 +260,15 @@
 "</span><span class="nt">&gt;</span>
 </code></pre></div></div>
       
+
+      <h2 id="error">Error</h2>
+      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p>
+
+      <blockquote>
+      Content Security Policy is missing or too permissive.
+      </blockquote>
+
       
-        <h2 id="links">Links</h2>
-        <ul>
-  <li><a href="https://guides.18f.gov/engineering/security/content-security-policy/">Content Security Policy</a> (18F)</li>
-  <li><a href="https://research.sidstamm.com/papers/csp-www2010.pdf">Reining in the Web with Content Security Policy</a> (Mozilla)</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy</a> (Mozilla)</li>
-  <li><a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a> (W3C)</li>
-  <li><a href="https://en.wikipedia.org/wiki/Content_Security_Policy">Content Security Policy</a> (Wikipedia)</li>
-  <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">Content Security Policy Cheat Sheet</a> (OWASP)</li>
-</ul>
       
 
       
@@ -275,13 +280,17 @@
       </ul>
       
 
-      <h2 id="indicator">Indicator</h2>
-
-      <ul class="list-inline pt-3">
-        <li class="list-inline-item mr-1 mb-3">
-            <a href="/security" class="btn btn-primary-outline">Security</a>
-        </li>
-      </ul>
+      
+        <h2 id="links">Links</h2>
+        <ul>
+  <li><a href="https://guides.18f.gov/engineering/security/content-security-policy/">Content Security Policy</a> (18F)</li>
+  <li><a href="https://research.sidstamm.com/papers/csp-www2010.pdf">Reining in the Web with Content Security Policy</a> (Mozilla)</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy</a> (Mozilla)</li>
+  <li><a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a> (W3C)</li>
+  <li><a href="https://en.wikipedia.org/wiki/Content_Security_Policy">Content Security Policy</a> (Wikipedia)</li>
+  <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">Content Security Policy Cheat Sheet</a> (OWASP)</li>
+</ul>
+      
 
       
       <h2 id="related">Related</h2>
