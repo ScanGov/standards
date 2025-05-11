@@ -216,30 +216,6 @@
       Hidden elements must be accessible for screen readers to ensure that all content is navigable and understandable for users with disabilities.
 
       
-        <h2 id="about-2">About</h2>
-        <p>Hidden elements are parts of a webpage that are not visible to users but still present in the code. They might be used for functions like pop-up menus or content that shows only when needed. However, hidden elements can be problematic for accessibility if not properly managed. Screen readers and other assistive tools may still detect them. Use proper techniques, such as <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> or hiding content visually while maintaining accessibility.</p><p>Follow these recommendations to avoid hiding content from visitors using assistive technology:</p><ol>
-  <li>
-    <p>All heading elements contain content: A heading with no content or inaccessible text prevent screen reader users from accessing information on the page's structure.</p>
-  </li>
-  <li>
-    <p>Identical links have the same purpose: Links with the same destination should have the same description, to help users understand the link's purpose and decide whether to follow it.</p>
-  </li>
-  <li>
-    <p>Document has a main landmark: One main landmark helps screen reader users navigate a web page.</p>
-  </li>
-  <li>
-    <p>Elements with visible text labels have matching accessible names: Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users.</p>
-  </li>
-  <li>
-    <p>Tables use <code class="language-plaintext highlighter-rouge">&lt;caption&gt;</code> instead of cells with the <code class="language-plaintext highlighter-rouge">[colspan]</code> attribute to indicate a caption: Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the <code class="language-plaintext highlighter-rouge">[colspan]</code> attribute may improve the experience for screen reader users.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> elements in a large <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code> have one or more table headers: Screen readers have features to make navigating tables easier. Ensuring that <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> elements in a large table (3 or more cells in width and height) have an associated table header may improve the experience for screen reader users.</p>
-  </li>
-</ol>
-      
-
-      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a user relying on assistive technologies, I want hidden elements to be properly marked so that I am not confused or misled by content that is not meant to be visible or interactive.</blockquote>

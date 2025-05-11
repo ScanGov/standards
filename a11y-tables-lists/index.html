@@ -219,33 +219,6 @@
       Properly structured tables and lists are easier to navigate for users with disabilities, making content more accessible.
 
       
-        <h2 id="about-2">About</h2>
-        <p>Follow these recommendations to improve the accessibility of tabular and list data:</p><ol>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code>'s contain only properly-ordered <code class="language-plaintext highlighter-rouge">&lt;dt&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;dd&gt;</code> groups, <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>, <template> or `&lt;div&gt;` elements: When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output.</template></p>
-  </li>
-  <li>
-    <p>Definition list items are wrapped in <code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code> elements: Definition list items (<code class="language-plaintext highlighter-rouge">&lt;dt&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;dd&gt;</code>) must be wrapped in a parent <code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code> element to ensure that screen readers can properly announce them.</p>
-  </li>
-  <li>
-    <p>Lists contain only <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> elements and script supporting elements (<code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;template&gt;</code>): Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output.</p>
-  </li>
-  <li>
-    <p>List items (<code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>) are contained within <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;menu&gt;</code> parent elements: Screen readers require list items (<code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>) to be contained within a parent <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;menu&gt;</code> to be announced properly.</p>
-  </li>
-  <li>
-    <p>Tables have different content in the summary attribute and <code class="language-plaintext highlighter-rouge">&lt;caption&gt;</code>: The summary attribute should describe the table structure, while <code class="language-plaintext highlighter-rouge">&lt;caption&gt;</code> should have the onscreen title. Accurate table mark-up helps users of screen readers.</p>
-  </li>
-  <li>
-    <p>Cells in a <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code> element that use the <code class="language-plaintext highlighter-rouge">[headers]</code> attribute refer to table cells within the same table: Screen readers have features to make navigating tables easier. Ensuring <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> cells using the <code class="language-plaintext highlighter-rouge">[headers]</code> attribute only refer to other cells in the same table may improve the experience for screen reader users.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> elements and elements with <code class="language-plaintext highlighter-rouge">[role="columnheader"/"rowheader"]</code> have data cells they describe: Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users.</p>
-  </li>
-</ol>
-      
-
-      
       <h2 id="user-stories">User stories</h2>
       
         <blockquote>As a screen reader user, I want data tables to have clear headers and associations so that I can understand the relationships between rows and columns.</blockquote>
