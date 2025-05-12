@@ -38,6 +38,10 @@ npm i
 
 ^ pre requisites for this is <a href="https://nodejs.org/en">node.js</a>
 
+## Components
+
+Design tokens in public/css/scangov.css are copied from the <a href="https://github.com/ScanGov/components">ScanGov/components repo</a>. This file should be edited there. Local edits are overwritten anytime the start command is run.
+
 ## Deployment
 
 This site deploys itself to GitHub pages. The git action workflow writes the built files to the gh-pages pages branch which is what the GitHub pages uses for source.
