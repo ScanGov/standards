@@ -20,8 +20,8 @@
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     {% if page.date %}
     <!-- Created date -->
@@ -41,22 +41,15 @@
     <meta name="dcterms.modified" content="{{ page.modified }}">
     {% endif %}
     <!-- Meta site -->
-    <meta property="linkedin:site" content="{{ site.linkedin-url }}">
     {% if page.img-og %}
     <meta property="og:image" content="{{ site.url }}/assets/img/{{ page.img-path }}/{{ page.img-og }}">
     {% else %}
     <meta property="og:image" content="{{ site.url }}/assets/img/avatar-og.png">
     {% endif %}
-    {% if page.img-feat %}
     <!-- Featured image -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    {% if page.img-alt %}
-    <meta property="og:image:alt" content="{{ page.img-alt }}">
-    {% else %}
-    <meta property="og:image:alt" content="{{ page.title }} image">
-    {% endif %}
-    {% endif %}
+    <meta property="og:image:alt" content="{{ site.title }} logo">
     <!-- Favicon -->
     {% include "favicon.html" %}
     <!-- CSS -->
