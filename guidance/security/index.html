@@ -151,7 +151,9 @@
             
               <p class="lead fs-5">Based on public policy, web protocol, guidelines and best practices.</p>
             
-            <ul class="list-group list-group-horizontal-sm pt-3">
+            
+
+<ul class="list-group list-group-horizontal-sm pt-3">
   <li class="list-group-item">
     <div class="dropdown btn dropdown-toggle">
       <a href="javascript:void(0);" onclick="navigator.clipboard.writeText(location.href);" title="Copy link" class="dropdown-item">
@@ -168,40 +170,31 @@
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <li class="dropdown-item small">
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=/guidance/security/" id="linkedin" rel="nofollow" target="_blank" title="Share on LinkedIn" class="text-white text-decoration-none">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://standards.scangov.org%2Fguidance%2Fsecurity%2F&title=$Government digital experience standards&summary=Based on public policy, web protocol, guidelines and best practices.&source=ScanGov" id="linkedin" rel="nofollow" target="_blank" title="Share on LinkedIn" class="text-white text-decoration-none">
             <i class="fa-brands fa-linkedin-in"></i>
             LinkedIn
           </a>
         </li>
         <li class="dropdown-item small">
-          <a href="https://bsky.app/intent/compose?text=/guidance/security/" id="bluesky" rel="nofollow" target="_blank" title="Share on Bluesky" class="text-white text-decoration-none">
+          <a href="https://bsky.app/intent/compose?text=https://standards.scangov.org/guidance/security/" id="bluesky" rel="nofollow" target="_blank" title="Share on Bluesky" class="text-white text-decoration-none">
             <i class="fa-solid fa-cloud"></i>
             Bluesky
           </a>
         </li>
         <li class="dropdown-item small">
-          <a href="https://twitter.com/intent/tweet?url=/guidance/security/" id="x" rel="nofollow" target="_blank" title="Share on X" class="text-white text-decoration-none">
+          <a href="https://x.com/intent/tweet?text=&via=ScanGov&url=https://standards.scangov.org%2Fguidance%2Fsecurity%2F" id="x" rel="nofollow" target="_blank" title="Share on X" class="text-white text-decoration-none">
             <i class="fa-brands fa-x-twitter"></i>
             X
           </a>
         </li>
         <li class="dropdown-item small">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=/guidance/security/" id="facebook" rel="nofollow" target="_blank" title="Share on Facebook" class="text-white text-decoration-none">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://standards.scangov.org%2Fguidance%2Fsecurity%2F" id="facebook" rel="nofollow" target="_blank" title="Share on Facebook" class="text-white text-decoration-none">
             <i class="fa-brands fa-facebook-f"></i>
             Facebook
           </a>
         </li>
       </ul>
     </div>
-    <script>
-      const shareParams = new URLSearchParams(location.search);
-      let url = shareParams.get('domain');
-      if (!url && shareParams.get('agency') == 1)
-          url = shareParams.get('search');
-      document.getElementById('linkedin').href = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(location.href)}&title=${document.title}&summary=${url}%20website%20metadata%20information.&source=Civic%20Hacking%20Agency`;
-      document.getElementById('x').href = `https://twitter.com/intent/tweet?text=${url}%20website%20metadata%20information.&via=civic_hacking&url=${encodeURIComponent(location.href)}`;
-      document.getElementById('facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href)}`;
-    </script>
   </li>
 </ul>
           </div>
