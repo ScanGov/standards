@@ -1,6 +1,7 @@
+/* This file is maintaned in https://github.com/ScanGov/components and copied to multiple projects during startup */
 :root {
     --scangov-color-alerts: #29e1cb;
-    --scangov-color-certificate: #e7f434;
+    --scangov-color-certificate: #ffbe2e;
     --scangov-color-docs: #a8f2ff;
     --scangov-color-guidance: #fee685;
     --scangov-color-landmark: #c5ee93;
