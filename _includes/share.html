@@ -1,3 +1,5 @@
+{% set encodedAbsoluteUrl = site.url + page.url | encodeParameter %}
+
 <ul class="list-group list-group-horizontal-sm pt-3">
   <li class="list-group-item">
     <div class="dropdown btn dropdown-toggle">
@@ -25,7 +27,7 @@
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <li class="dropdown-item small">
           <a
-            href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | url }}"
+            href="https://www.linkedin.com/shareArticle?mini=true&url={{ encodedAbsoluteUrl }}&title=${{title}}&summary={{ description}}&source=ScanGov"
             id="linkedin"
             rel="nofollow"
             target="_blank"
@@ -37,7 +39,7 @@
         </li>
         <li class="dropdown-item small">
           <a
-            href="https://bsky.app/intent/compose?text={{ page.url | url }}"
+            href="https://bsky.app/intent/compose?text={{ site.url }}{{ page.url | url }}"
             id="bluesky"
             rel="nofollow"
             target="_blank"
@@ -49,7 +51,7 @@
         </li>
         <li class="dropdown-item small">
           <a
-            href="https://twitter.com/intent/tweet?url={{ page.url | url }}"
+            href="https://x.com/intent/tweet?text={{ page.title }}&via=ScanGov&url={{ encodedAbsoluteUrl }}"
             id="x"
             rel="nofollow"
             target="_blank"
@@ -61,7 +63,7 @@
         </li>
         <li class="dropdown-item small">
           <a
-            href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | url }}"
+            href="https://www.facebook.com/sharer/sharer.php?u={{ encodedAbsoluteUrl }}"
             id="facebook"
             rel="nofollow"
             target="_blank"
@@ -73,14 +75,5 @@
         </li>
       </ul>
     </div>
-    <script>
-      const shareParams = new URLSearchParams(location.search);
-      let url = shareParams.get('domain');
-      if (!url && shareParams.get('agency') == 1)
-          url = shareParams.get('search');
-      document.getElementById('linkedin').href = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(location.href)}&title=${document.title}&summary=${url}%20website%20metadata%20information.&source=Civic%20Hacking%20Agency`;
-      document.getElementById('x').href = `https://twitter.com/intent/tweet?text=${url}%20website%20metadata%20information.&via=civic_hacking&url=${encodeURIComponent(location.href)}`;
-      document.getElementById('facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href)}`;
-    </script>
   </li>
 </ul>
