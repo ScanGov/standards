@@ -12,7 +12,7 @@
     "build": "npx @11ty/eleventy --quiet",
     "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
     "build-ghpages": "npx @11ty/eleventy --pathprefix=/scangov/",
-    "start": "npx @11ty/eleventy --serve --quiet",
+    "start": "node scripts/getcomponents.js && npx @11ty/eleventy --serve --quiet",
     "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
     "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet"
   },
