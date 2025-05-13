@@ -68,17 +68,17 @@ topics:
         {{ guide.about.content | safe }}
       {% endif %}
       
-      {% if guide.links.title %}
-      <h2>Links</h2>
-      <ul>
-      {% for item in guide.links %}
-        <li><a href="{{ item.link }}">{{ item.text }}</a></li>
-      {% endfor %}
-      </ul>
+      {% if guide.links %}
+        <h2>Links</h2>
+        <ul>
+        {% for item in guide.links %}
+          <li><a href="{{ item.link }}">{{ item.text }}</a></li>
+        {% endfor %}
+        </ul>
       {% endif %}
 
       <h2>Standards</h2>
-      <ul class="">
+      <ul>
         {% for item in guide.standards %}
           <li>
             <a href="{{ item.url.replace('https://standards.scangov.org','') }}">{{ item.displayName }}</a>
