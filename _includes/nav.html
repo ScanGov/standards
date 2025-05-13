@@ -1,3 +1,23 @@
+<div class="d-flex justify-content-end border-bottom py-1">
+  <ul class="nav nav-pills small">
+    <li class="nav-item">
+      <a
+        class="nav-link btn btn-primary-outline mx"
+        aria-current="page"
+        href="https://scangov.com">
+        <i class="fa-solid fa-landmark me-1"></i>ScanGov</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn btn-primary-outline mx active" href="https://standards.scangov.org">
+        <i class="fa-solid fa-certificate me-1 active"></i>Standards</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn btn-primary-outline mx" href="https://scangov.org">
+        <i class="fa-solid fa-project-diagram me-1"></i>
+        Project</a>
+    </li>
+  </ul>
+</div>
 <nav class="navbar navbar-expand-md border-bottom">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ site.baseurl }}/">
@@ -52,9 +72,7 @@
           {% endif %}
         {% endfor %}
       <!--
-        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>
-            let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }
-          </script>
+        <li class="nav-item me-3 me-lg-0 small" id="toggle-theme">  <a    class="nav-item nav-link mx-1"    href="javascript:void(0)"    onclick="    localStorage.setItem('theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.body.setAttribute('data-bs-theme', document.body.getAttribute('data-bs-theme') == 'light' ? 'dark' : 'light');    document.querySelector('#toggle-theme img').src = '/assets/img/' + (document.body.getAttribute('data-bs-theme') == 'light' ? 'moon' : 'sun') + '.svg';    ">    <img      id="theme-icon"      src="/assets/img/sun.svg"      alt="Toggle theme"      style="width: 1rem;">    <script>      let colorTheme = localStorage.getItem('theme');      if (colorTheme) {        document.body.setAttribute('data-bs-theme', colorTheme);        document.querySelector('#toggle-theme img').src = '/assets/img/' + (colorTheme == 'light' ? 'moon' : 'sun') + '.svg';      }    </script>
           Mode
         </a>
       </li>
