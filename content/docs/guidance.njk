@@ -68,12 +68,14 @@ topics:
         {{ guide.about.content | safe }}
       {% endif %}
       
+      {% if guide.links.title %}
       <h2>Links</h2>
       <ul>
       {% for item in guide.links %}
         <li><a href="{{ item.link }}">{{ item.text }}</a></li>
       {% endfor %}
       </ul>
+      {% endif %}
 
       <h2>Standards</h2>
       <ul class="">

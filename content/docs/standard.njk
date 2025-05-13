@@ -94,7 +94,6 @@ topics:
 
       {% if docpage.sections.code %}
         <h2>{{ docpage.sections.code.title }}</h2>
-        <p>Sample code:</p>
         {{ docpage.sections.code.content | safe }}
       {% endif %}
 
@@ -105,10 +104,6 @@ topics:
       {{ docpage.error }}
       </blockquote>
 
-      {% if docpage.sections.guidance %}
-        <h2>{{ docpage.sections.guidance.title }}</h2>
-        {{ docpage.sections.guidance.content | safe }}
-      {% endif %}
       {% if docpage.sections.example %}
         <h2>{{ docpage.sections.example.title }}</h2>
         {{ docpage.sections.example.content | safe }}
