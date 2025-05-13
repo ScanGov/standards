@@ -52,6 +52,7 @@
     filter: drop-shadow(-2px 2px 0 rgba(255, 255, 255, 0.25));
 }
 
+/*
 .fa-circle-info {
     color: #b8d293 !important;
     filter: drop-shadow(-2px 2px 0 rgba(255, 255, 255, 0.25));
@@ -61,6 +62,7 @@
     color: #97d4ea !important;
     filter: drop-shadow(-2px 2px 0 rgba(255, 255, 255, 0.25));
 }
+*/
 
 .fa-code {
     color: #bbc8f5 !important;
