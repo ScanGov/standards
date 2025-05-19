@@ -1,424 +1,587 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
-        <url>
-            <loc>https://standards.scangov.org/guidance/</loc>
-            <lastmod>2024-03-08T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/crawlable/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/text-content/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-best-practices/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-aria/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-audio-video/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-color-contrast/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/hidden/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-language/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-names-labels/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-navigation/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/a11y-tables-lists/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/title/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/description/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/viewport/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/image-aspect-ratio/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/html-lang-valid/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/zooming-scaling/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/doctype/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/charset/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/https/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/www/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/dotgov/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/cls/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/fcp/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/inp/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/lcp/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ttfb/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/status/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/xml/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/completion/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/valid/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/allowed/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/sitemap-robots/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/canonical/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/link-text/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/hreflang/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/csp/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/hsts/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/securitytxt/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/xcontenttypeoptions/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/errors-in-console/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/clickjacking-mitigation/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/paste-preventing-inputs/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogsitename/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogtype/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogtitle/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogdescription/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogurl/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogimage/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/ogimagealt/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/</loc>
-            <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/aifriendly/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/accessibility/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/content/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/domain/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/performance/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/seo/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/security/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/social/</loc>
-            <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/21stcenturyidea/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/28-cfr-part-35/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/cybersecurity-performance-goals/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/federal-website-standards/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/google-search-central/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/gsa-site-scanning/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/memorandum-m-23-22/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/open-graph/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/owasp-top-10/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/rfc9116/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/sitemaps-org/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/wcag/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/robots/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/websitesecurity-cisa/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/web-vitals-core-web-vitals/</loc>
-            <lastmod>2025-04-30T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/aifriendly/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/accessibility/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/content/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/domain/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/performance/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/seo/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/security/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/guidance/social/</loc>
-            <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://standards.scangov.org/404.html</loc>
-            <lastmod>2025-05-13T23:58:00.360Z</lastmod>
-        </url>
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/</loc>
+                <lastmod>2024-03-08T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/crawlable/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/text-content/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-best-practices/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-aria/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-audio-video/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-color-contrast/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/hidden/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-language/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-names-labels/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-navigation/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/a11y-tables-lists/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/title/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/description/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/viewport/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/image-aspect-ratio/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/html-lang-valid/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/zooming-scaling/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/doctype/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/charset/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/https/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/www/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/dotgov/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/cls/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/fcp/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/inp/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/lcp/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ttfb/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/status/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/xml/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/completion/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/valid/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/allowed/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/sitemap-robots/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/canonical/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/link-text/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/hreflang/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/csp/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/hsts/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/securitytxt/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/xcontenttypeoptions/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/errors-in-console/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/clickjacking-mitigation/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/paste-preventing-inputs/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogsitename/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogtype/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogtitle/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogdescription/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogurl/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogimage/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogimagealt/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/aifriendly/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/accessibility/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/content/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/domain/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/performance/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/seo/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/security/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/social/</loc>
+                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/21stcenturyidea/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/28-cfr-part-35/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/cybersecurity-performance-goals/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/federal-website-standards/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/google-search-central/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/gsa-site-scanning/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/memorandum-m-23-22/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/open-graph/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/owasp-top-10/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/rfc9116/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/sitemaps-org/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/wcag/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/robots/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/websitesecurity-cisa/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/web-vitals-core-web-vitals/</loc>
+                <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/aifriendly/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/accessibility/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/content/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/domain/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/performance/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/seo/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/security/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/guidance/social/</loc>
+                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
     
 </urlset>
