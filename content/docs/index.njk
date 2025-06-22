@@ -1,0 +1,136 @@
+---
+layout: layouts/default.html
+date: 2025-02-01
+modified: 2025-03-17
+author: ScanGov
+
+pagination:
+  data: docpages
+  size: 1
+  addAllPagesToCollections: true
+  alias: docpage
+
+permalink: "{{ docpage.key }}/"
+
+eleventyComputed:
+  title: "{{ docpage.displayName }}"
+  description: "{{ docpage.description }}"
+
+
+topics:
+  - Standards
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
+      {% if docpage.relatedLinks.audio %}
+      <div class="border mb-4 px-4 py-2 shadow">
+          <h2 class="h4 my-0 py-3">Listen
+            <i class="fa-solid fa-volume-high"></i>
+          </h2>
+          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to {{ docpage.displayName }} made with Google NotebookLM.</p>
+          <script src="/js/plyr.js"></script>
+          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
+            <audio id="player">
+              <source src="{{ docpage.relatedLinks.audio }}" type="audio/mp3">
+            </audio>
+          </div>
+          <script>
+            const plyr = new Plyr('#player', {
+              controls: [
+                'play',
+                'progress',
+                'current-time',
+                'duration',
+                'mute',
+                'volume'
+              ]
+            });
+          </script>
+        </div>
+      {% endif %}
+
+      {% if docpage.sections.about.title %}
+        <h2>{{ docpage.sections.about.title }}</h2>
+        {{ docpage.sections.about.content | safe }}
+      {% endif %}
+
+      <h2>Impact</h2>
+
+      <p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</small></p>
+
+      <div class="bolts mt-3 mb-3">
+        {% set taskNum = docpage.impact %}
+        {% if taskNum == 0 %}
+          {% set taskNum = 1 %}
+        {% endif %}
+        {% for i in range(taskNum) %}
+          <i class="fa-solid fa-bolt"></i>
+        {% endfor %}
+      </div>
+
+      <h2>Why it's important</h2>
+      {{ docpage.why }}
+
+      {% if docpage.userStories %}
+      <h2>User stories</h2>
+      {% for item in docpage.userStories %}
+        <blockquote>{{ item.title }}</blockquote>
+      {% endfor %}
+      {% endif %}
+
+      {% if docpage.sections.code %}
+        <h2>{{ docpage.sections.code.title }}</h2>
+        {{ docpage.sections.code.content | safe }}
+      {% endif %}
+
+      <h2>Error</h2>
+      <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</small></p>
+
+      <blockquote>
+      {{ docpage.error }}
+      </blockquote>
+
+      {% if docpage.sections.guidance %}
+        <h2>{{ docpage.sections.guidance.title }}</h2>
+        {{ docpage.sections.guidance.content | safe }}
+      {% endif %}
+      {% if docpage.sections.example %}
+        <h2>{{ docpage.sections.example.title }}</h2>
+        {{ docpage.sections.example.content | safe }}
+      {% endif %}
+
+      {% if docpage.guidance %}
+      <h2>Guidance</h2>
+      <ul>
+      {% for item in docpage.guidance %}
+        <li><a href="{{ item.url }}">{{ item.displayName }}</a></li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+
+      <h2>Indicator</h2>
+
+      <ul class="list-inline pt-3">
+        <li class="list-inline-item mr-1 mb-3">
+            <a href="/{{ docpage.topic }}" class="btn btn-primary-outline">{{ audits[docpage.topic].displayName }}</a>
+        </li>
+      </ul>
+
+      {% if docpage.sections.links %}
+        <h2>{{ docpage.sections.links.title }}</h2>
+        {{ docpage.sections.links.content | safe }}
+      {% endif %}
+
+      {% if docpage.relatedLinks %}
+      <h2>Related</h2>
+      <ul>
+      {% for item in audits[docpage.topic].attributes %}
+        <li><a href="/{{ item.key.toLowerCase() }}">{{ item.displayName }}</a></li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4"></div>
