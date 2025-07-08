@@ -9,12 +9,13 @@
   },
   "type": "module",
   "scripts": {
-    "build": "npx @11ty/eleventy --quiet",
-    "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/scangov/",
-    "start": "node scripts/getcomponents.js && npx @11ty/eleventy --serve --quiet",
-    "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
-    "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet"
+    "build": "npm run concat:css && npx @11ty/eleventy --quiet",
+    "build-nocolor": "npm run concat:css && cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+    "build-ghpages": "npm run concat:css && npx @11ty/eleventy --pathprefix=/scangov/",
+    "concat:css": "cat public/css/code.css public/css/plyr.css public/css/scangov.css public/assets/bootstrap/css/bootstrap.css public/assets/font-awesome/css/all.css > scripts/bundle.css",
+    "start": "npm run concat:css && node scripts/getcomponents.js && npx @11ty/eleventy --serve --quiet",
+    "debug": "npm run concat:css && cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+    "debugstart": "npm run concat:css && cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.1-alpha.4",

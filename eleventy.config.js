@@ -291,7 +291,7 @@ export default async function (eleventyConfig) {
                         extension: 'html' // Indicate the content type
                     }
                 ],
-                css: ['_site/bundle.css'],
+                css: ['scripts/bundle.css'],
             })
 
             let minifiedCSS = new CleanCSS({}).minify(purgeCSSResults[0].css).styles;
