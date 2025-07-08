@@ -320,7 +320,7 @@ a.btn-primary-outline:not(.active):hover, .btn-primary-outline:not(.active):hove
     fill: var(--bs-body-color);
     width: 100%;
     /* Use percentage or specific value as per your layout */
-    max-width: 45px;
+    max-width: 35px;
     /* Sets a maximum width */
 }
 
