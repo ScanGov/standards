@@ -1,35 +1,42 @@
 @font-face {
     font-family: "Public Sans ExtraBold";
+    font-display: swap;
     src: url("/assets/fonts/public-sans/ttf/PublicSans-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Public Sans Bold";
+    font-display: swap;
     src: url("/assets/fonts/public-sans/ttf/PublicSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Public Sans Regular";
+    font-display: swap;
     src: url("/assets/fonts/public-sans/ttf/PublicSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Public Sans Light";
+    font-display: swap;
     src: url("/assets/fonts/public-sans/ttf/PublicSans-Light.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Public Sans Thin";
+    font-display: swap;
     src: url("/assets/fonts/public-sans/ttf/PublicSans-Thin.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "JetBrains Mono Medium";
+    font-display: swap;
     src: url("/assets/fonts/jetbrains-mono/JetBrainsMono-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "JetBrains Mono ExtraBold";
+    font-display: swap;
     src: url("/assets/fonts/jetbrains-mono/JetBrainsMono-ExtraBold.ttf") format("truetype");
 }
 
@@ -197,17 +204,6 @@ strong {
 a:hover {
     text-decoration: var(--bs-link-hover-decoration);
     color: var(--bs-link-hover-color);
-}
-
-a[href^="http"]:not([href^="https://linkedin.com"]):not([href^="https://facebook.com"]):not([href^="https://x.com"]):not([href^="https://bsky.app"]):not([href^="https://scangov.org"]):not([href^="https://standards.scangov.org"]):not([href^="https://scangov.com"]):not([href^="https://data.scangov.org"]):not([href^="http://localhost:4000/"]):not([href^="https://docs.scangov.org"])::after {
-    content: "\f35d";
-    /* Font Awesome Unicode for 'arrow-up-right-from-square' */
-    font-family: "Font Awesome 5 Free";
-    /* Ensure FontAwesome is loaded */
-    font-weight: 900;
-    margin-left: 5px;
-    font-size: 0.8em;
-    display: inline-block;
 }
 
 .social a[href^="http"]:not([href^="https://scangov.org"]):not([href^="https://standards.scangov.org"]):not([href^="https://scangov.com"]):not([href^="http://localhost:4000/"]):not([href^="https://docs.scangov.org"])::after {
@@ -573,7 +569,7 @@ svg {
     text-decoration: none;
 }
 
-.fa-solid {
+.fa-solid, .fa-brands {
   display: var(--fa-display, inline-block);
   height: 1em;
   width: 1em;
