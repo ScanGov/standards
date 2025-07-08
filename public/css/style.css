@@ -1,5 +1,3 @@
-@import url('code.css');
-
 @font-face {
     font-family: "Public Sans ExtraBold";
     src: url("/assets/fonts/public-sans/ttf/PublicSans-ExtraBold.ttf") format("truetype");
@@ -573,4 +571,13 @@ svg {
 .bolts svg {
     color: #face00;
     text-decoration: none;
+}
+
+.fa-solid {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  width: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+  font-weight: 400;
 }

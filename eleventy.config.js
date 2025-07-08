@@ -8,10 +8,13 @@ import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import pluginNavigation from '@11ty/eleventy-navigation'
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import { EleventyRenderPlugin } from '@11ty/eleventy'
-import * as fs from 'fs'
 import pluginFilters from './_config/filters.js'
-import fontAwesomePlugin from '@11ty/font-awesome'
 import { getData } from './scripts/getdata.js';
+import fontAwesomePlugin from "@11ty/font-awesome";
+import { PurgeCSS } from 'purgecss'
+import CleanCSS from "clean-css";
+import htmlmin from "html-minifier-terser";
+
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -21,8 +24,8 @@ export default async function (eleventyConfig) {
     getDataLocally = true;
   }
   const audits = await getData(auditsFile, getDataLocally);
-  // let audits = JSON.parse(fs.readFileSync('./_data/audits.json'))
-  // eleventyConfig.addPlugin(fontAwesomePlugin)
+
+  eleventyConfig.addPlugin(fontAwesomePlugin);
 
   // Drafts, see also _data/eleventyDataSchema.js
   eleventyConfig.addPreprocessor('drafts', '*', (data, content) => {
@@ -273,6 +276,48 @@ export default async function (eleventyConfig) {
     return encodeURIComponent(param.trim());
   })
 
+
+  eleventyConfig.addFilter("cssmin", function (code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
+
+  eleventyConfig.addTransform("cssinliner", async function (content) {
+		if ((this.page.outputPath || "").endsWith(".html")) {
+
+            const purgeCSSResults = await new PurgeCSS().purge({
+                content: [
+                    {
+                        raw: content,
+                        extension: 'html' // Indicate the content type
+                    }
+                ],
+                css: ['_site/bundle.css'],
+            })
+
+            let minifiedCSS = new CleanCSS({}).minify(purgeCSSResults[0].css).styles;
+			return content.replace('<!--put inlined css here-->',`<style>${minifiedCSS}</style>`);
+		}
+
+		// If not an HTML output, return content as-is
+		return content;
+	});
+
+  eleventyConfig.addTransform("htmlmin", async function (content) {
+		if ((this.page.outputPath || "").endsWith(".html")) {
+
+			let minified = htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			});
+
+			return minified;
+		}
+
+		// If not an HTML output, return content as-is
+		return content;
+	});
+  
   // Features to make your build faster (when you need them)
 
   // If your passthrough copy gets heavy and cumbersome, add this line

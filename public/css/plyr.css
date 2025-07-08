@@ -148,7 +148,7 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     color: var(--bs-body-bg);
-    x line-height: 185%;
+    line-height: 185%;
     padding: .2em .5em;
     white-space: pre-wrap
 }
@@ -923,8 +923,7 @@ a.plyr__control {
 .plyr--video {
     background: #000;
     background: var(--plyr-video-background, var(--plyr-video-background, #000));
-    overflow: hidden'
-
+    overflow: hidden;
 }
 
 .plyr--video.plyr--menu-open {
