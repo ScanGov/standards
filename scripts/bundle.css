@@ -312,6 +312,10 @@ h6,
     color: #face00 !important;
 }
 
+.fa-book-open-reader {
+    color: #c3ebfa !important;
+}
+
 .fa-brain {
     color: #fdb8ae !important;
 }
@@ -480,6 +484,10 @@ h6,
 
 .fa-percent {
     color: #a8f2ff;
+}
+
+.fa-plug-circle-bolt {
+    color: #fff5c2;
 }
 
 .fa-ranking-star {
