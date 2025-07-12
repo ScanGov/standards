@@ -1,5 +1,8 @@
 <!--put inlined css here-->
-{% set css %} {% include "public/css/style.css" %} {% endset %}
+{% set css %} 
+{% include "public/css/plyr.css" %}
+{% include "public/css/style.css" %} 
+{% endset %}
 <style>
 	{{ css | cssmin | safe }}
 </style>
