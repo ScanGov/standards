@@ -36,7 +36,7 @@ npm run start
 npm i
 ```
 
-^ pre requisites for this is <a href="https://nodejs.org/en">node.js</a>
+^ pre requisite for this is <a href="https://nodejs.org/en">node.js</a>
 
 ## Components
 
