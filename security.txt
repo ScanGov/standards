@@ -1,0 +1,5 @@
+Contact: https://scangov.com/contact
+Expires: 2027-01-01T20:00:00.000Z
+Preferred-Languages: en
+Canonical: https://standards.scangov.org/security.txt
+Policy: https://scangov.com/contact

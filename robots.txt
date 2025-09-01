@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /404
 
-Sitemap: /sitemap.xml
+Sitemap: https://standards.scangov.org/sitemap.xml

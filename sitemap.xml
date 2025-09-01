@@ -122,14 +122,14 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/image_aspect_ratio/</loc>
+                <loc>https://standards.scangov.org/image-aspect-ratio/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
     
         
             <url>
-                <loc>https://standards.scangov.org/html_lang_valid/</loc>
+                <loc>https://standards.scangov.org/html-lang-valid/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
@@ -297,21 +297,21 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/errors_in_console/</loc>
+                <loc>https://standards.scangov.org/errors-in-console/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
     
         
             <url>
-                <loc>https://standards.scangov.org/clickjacking_mitigation/</loc>
+                <loc>https://standards.scangov.org/clickjacking-mitigation/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
     
         
             <url>
-                <loc>https://standards.scangov.org/paste_preventing_inputs/</loc>
+                <loc>https://standards.scangov.org/paste-preventing-inputs/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
