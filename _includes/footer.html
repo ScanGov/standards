@@ -1,10 +1,12 @@
 <footer>
-  <div class="container mt-5 pt-5 border-top">
+  <div class="container-fluid py-4 mt-4 border-top">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 text-center">
         <p class="small">
-          <a href="{{ site['org-url'] }}" style="text-decoration: none;">ScanGov</a>
-          {% thisYear %}
+          Built with
+          <i class="fa-solid fa-heart" aria-label="Heart"></i>
+          by
+          <a href="{{ site['org-url'] }}">{{ site.org }}</a>
         </p>
       </div>
     </div>
@@ -42,29 +44,9 @@
   gtag('config', 'G-9NLQN90ZH2');
 </script>
 {% include "js.html" %}
-
 {% getBundle "fontawesome" %}
-
-<div id="feedback-container" class="text-center">
-  <a
-    href="https://docs.scangov.org/feedback"
-    id="feedback-button"
-    aria-label="Feedback"
-    class="feedback btn btn-lg">
-    Feedback
-  </a>
-</div>
+{% include "feedback.html" %}
 <script>
-  const feedbackButton = document.getElementById("feedback-button");
-  window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > window.innerHeight * .3) 
-      feedbackButton.style.opacity = '1';
-    else
-      feedbackButton.style.opacity = '0';
-  });
-
-
-
   document.querySelector('button.navbar-toggler').addEventListener('click',function(e) {
     let el = document.querySelector(this.dataset.target);
     console.log(el)
@@ -76,6 +58,4 @@
       el.classList.toggle('show');
     })
   }
-</script>
-
-</body></html>
+</script></body></html>
