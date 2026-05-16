@@ -79,11 +79,11 @@ topics:
 
       {% if docpage.sections.about.title %}
         <h2>{{ docpage.sections.about.title }}</h2>
-        {{ docpage.sections.about.content | safe }}
+        {{ docpage.sections.about.content | safeHtml | safe }}
       {% endif %}
 
       <h2>Why it's important</h2>
-      {{ docpage.why }}
+      <p>{{ docpage.why | escape }}</p>
 
       {% if docpage.userStories %}
       <h2>User stories</h2>
@@ -101,7 +101,7 @@ topics:
       <p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</small></p>
 
       <blockquote>
-      {{ docpage.error }}
+      {{ docpage.error | escape }}
       </blockquote>
 
       {% if docpage.sections.example %}
@@ -127,7 +127,7 @@ topics:
       <h2>Related</h2>
       <ul>
       {% for item in audits[docpage.topic].attributes %}
-        <li><a href="/{{ item.key.toLowerCase() }}">{{ item.displayName }}</a></li>
+        <li><a href="/{{ item.key.toLowerCase() }}">{{ item.displayName | escape }}</a></li>
       {% endfor %}
       </ul>
       {% endif %}

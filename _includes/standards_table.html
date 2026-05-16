@@ -12,15 +12,15 @@
     </td>
     <td class="p-3 col-4">
       <div>
-        <a href="/{{ item.key.toLowerCase() }}">{{ item.displayName }}</a>
+        <a href="/{{ item.key.toLowerCase() }}">{{ item.displayName | escape }}</a>
       </div>
       <div>
-        <span class="small">{{ item.description }}</span>
+        <span class="small">{{ item.description | escape }}</span>
       </div>
     </td>
     <td class="p-3 col-4">
       <div>
-        <span class="small">{{ item.why }}</span>
+        <span class="small">{{ item.why | escape }}</span>
       </div>
     </td>
     <td class="p-3 col-3">

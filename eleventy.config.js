@@ -19,11 +19,7 @@ import htmlmin from "html-minifier-terser";
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
   let auditsFile = 'https://github.com/ScanGov/data/raw/refs/heads/main/standards/audits.json';
-  let getDataLocally = false;
-  if(process.env.ELEVENTY_RUN_MODE === 'serve') {
-    getDataLocally = true;
-  }
-  const audits = await getData(auditsFile, getDataLocally);
+  const audits = await getData(auditsFile, true);
 
   eleventyConfig.addPlugin(fontAwesomePlugin);
 
@@ -276,6 +272,15 @@ export default async function (eleventyConfig) {
     return encodeURIComponent(param.trim());
   })
 
+
+  eleventyConfig.addFilter('safeHtml', (content) => {
+    if (!content) return '';
+    // Convert backtick-wrapped content to <code> with escaped HTML inside
+    return content.replace(/`([^`]*)`/g, (match, inner) => {
+      const escaped = inner.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `<code>${escaped}</code>`;
+    });
+  });
 
   eleventyConfig.addFilter("cssmin", function (code) {
 		return new CleanCSS({}).minify(code).styles;
