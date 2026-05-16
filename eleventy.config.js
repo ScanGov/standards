@@ -19,7 +19,7 @@ import htmlmin from "html-minifier-terser";
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
   let auditsFile = 'https://github.com/ScanGov/data/raw/refs/heads/main/standards/audits.json';
-  const audits = await getData(auditsFile, true);
+  const audits = await getData(auditsFile);
 
   eleventyConfig.addPlugin(fontAwesomePlugin);
 
