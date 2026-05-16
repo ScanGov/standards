@@ -1,0 +1,25 @@
+/* Font Awesome SVG icon sizing */
+.fa-solid {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    width: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+/* Button hover: green background with dark text */
+.btn-primary-outline:not(.active):hover,
+a.btn-primary-outline:not(.active):hover {
+    background-color: var(--bs-link-color) !important;
+    color: var(--bs-body-bg);
+}
+
+/* Button hover: icon matches dark text */
+a.btn:not(.active):hover svg {
+    color: var(--bs-body-bg) !important;
+}
+
+/* Nav link hover: icon turns green (no green bg on these) */
+.nav-link:not(.active):hover svg {
+    color: var(--bs-link-color) !important;
+}

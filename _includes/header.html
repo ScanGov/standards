@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     {% if description %}
-    <meta name="description" content="{{ description }}">
+    <meta name="description" content="{{ description | safe }}">
     {% endif %}
     {% if page.author %}
     <meta name="author" content="{{ page.author }}">
@@ -16,12 +16,12 @@
     <meta property="og:locale" content="en_US">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <!-- Title -->
-    <title>{{ title }} - {{ site.title }}</title>
+    <title>{{ title | safe }} - {{ site.title }}</title>
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ description }}">
+    <meta property="og:title" content="{{ title | safe }}">
+    <meta property="og:description" content="{{ description | safe }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     {% if page.date %}
     <!-- Created date -->
@@ -69,6 +69,6 @@
 </head>
 
 <body class="" data-bs-theme="dark">
-    <a class="sr-only sr-only-focusable skip-link" href="#main-content">
+    <a class="visually-hidden visually-hidden-focusable skip-link" href="#main-content">
         Skip to main content
     </a>

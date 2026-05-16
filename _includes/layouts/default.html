@@ -23,7 +23,7 @@
               </div>
             {% endif %}
             {% if title %}
-              <h1 class="display-5">{{ title }}</h1>
+              <h1 class="display-5">{{ title | safe }}</h1>
             {% endif %}
             {% if description %}
               <p class="lead fs-5">{{ description | safe }}</p>
