@@ -577,20 +577,6 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/zooming-scaling/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/https/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://standards.scangov.org/www/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
@@ -689,6 +675,13 @@
     
         
             <url>
+                <loc>https://standards.scangov.org/https/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
                 <loc>https://standards.scangov.org/ogsitename/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
@@ -760,13 +753,6 @@
         
             <url>
                 <loc>https://standards.scangov.org/usability/</loc>
-                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/domain/</loc>
                 <lastmod>2025-04-28T00:00:00.000Z</lastmod>
             </url>
         
@@ -942,13 +928,6 @@
         
             <url>
                 <loc>https://standards.scangov.org/guidance/usability/</loc>
-                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/guidance/domain/</loc>
                 <lastmod>2025-05-01T00:00:00.000Z</lastmod>
             </url>
         
