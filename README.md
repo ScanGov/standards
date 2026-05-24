@@ -48,7 +48,7 @@ This site deploys itself to GitHub pages. The git action workflow writes the bui
 
 ## Contact
 
-[Contact ScanGov](https://docs.scangov.org/contact)
+[Contact ScanGov](https://docs.scangov.org/contact/)
 
 ## License
 
