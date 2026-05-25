@@ -584,13 +584,6 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/dotgov/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://standards.scangov.org/cls/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
@@ -620,6 +613,55 @@
         
             <url>
                 <loc>https://standards.scangov.org/ttfb/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogsitename/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogtype/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogtitle/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogdescription/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogurl/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogimage/</loc>
+                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://standards.scangov.org/ogimagealt/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
@@ -682,49 +724,7 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/ogsitename/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/ogtype/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/ogtitle/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/ogdescription/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/ogurl/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/ogimage/</loc>
-                <lastmod>2025-02-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/ogimagealt/</loc>
+                <loc>https://standards.scangov.org/dotgov/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
         
@@ -738,7 +738,7 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/botfriendly/</loc>
+                <loc>https://standards.scangov.org/botability/</loc>
                 <lastmod>2025-04-28T00:00:00.000Z</lastmod>
             </url>
         
@@ -759,21 +759,7 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/performance/</loc>
-                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://standards.scangov.org/security/</loc>
-                <lastmod>2025-04-28T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/social/</loc>
                 <lastmod>2025-04-28T00:00:00.000Z</lastmod>
             </url>
         
@@ -913,7 +899,7 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/guidance/botfriendly/</loc>
+                <loc>https://standards.scangov.org/guidance/botability/</loc>
                 <lastmod>2025-05-01T00:00:00.000Z</lastmod>
             </url>
         
@@ -934,21 +920,7 @@
     
         
             <url>
-                <loc>https://standards.scangov.org/guidance/performance/</loc>
-                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://standards.scangov.org/guidance/security/</loc>
-                <lastmod>2025-05-01T00:00:00.000Z</lastmod>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://standards.scangov.org/guidance/social/</loc>
                 <lastmod>2025-05-01T00:00:00.000Z</lastmod>
             </url>
         
