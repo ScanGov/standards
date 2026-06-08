@@ -33,26 +33,9 @@ and links on it can be followed --&gt;</span>
 </code></pre></div></div><p>Example X-Robots-Tag:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># This URL can be indexed </span>
 <span class="c1"># and links on it can be followed</span>
 <span class="na">X-Robots-Tag</span><span class="pi">:</span> <span class="s">index, follow</span>
-</code></pre></div></div><h2 id="error">Error</h2><p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p><blockquote>Robots policy blocks browsers or scrapers.</blockquote><h2 id="examples">Examples</h2><p>Example government website robots.txt files:</p><ul><li><a href="https://www.usa.gov/robots.txt">https://www.usa.gov/robots.txt</a></li><li><a href="https://www.ca.gov/robots.txt">https://www.ca.gov/robots.txt</a></li></ul><h2 id="guidance">Guidance</h2><ul><li><a href="/robots">The Web Robots Pages</a></li></ul><h2 id="links">Links</h2><ul><li><a href="https://www.robotstxt.org">robotstxt.org</a></li><li><a href="https://search.gov/indexing/robotstxt.html">robots.txt</a> (Search.gov)</li><li><a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> (Wikipedia)</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag">Robots Meta Tags Specifications</a> (Google)</li></ul><h2 id="related">Related</h2><ul><li><a href="/crawlable">Crawlable</a></li><li><a href="/text-content">Content available in document</a></li><li><a href="/schema-government-organization">GovernmentOrganization Schema.org Type</a></li><li><a href="/status">Sitemap status</a></li><li><a href="/xml">Sitemap XML</a></li><li><a href="/valid">Robots valid</a></li><li><a href="/allowed">Robots allowed</a></li><li><a href="/sitemap-robots">Sitemap in robots.txt</a></li><li><a href="/canonical">Canonical</a></li><li><a href="/link-text">Link text</a></li><li><a href="/hreflang">hreflang</a></li></ul></div><div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page"></div></div></div></div></div></div></main><footer><div class="container-fluid py-4 mt-4 border-top"><div class="row"><div class="col-12 text-center"><p class="small">Built with <svg class="fa-solid fa-heart" aria-label="Heart" aria-hidden="true"><use href="#fas-fa-heart" xlink:href="#fas-fa-heart"></use></svg> by <a href="https://scangov.com/">ScanGov</a></p></div></div></div></footer><script>function onThisPage() {
-    let targetEl = document.querySelector('.js-on-this-page');
-    let headersToLink = document.querySelectorAll('h2');
-    console.log(headersToLink)
-    let html = `<p class="border-bottom pb-3">On this page</p>
-      <ul class="nav flex-column">
-        ${Array.from(headersToLink).map(h => {
-          return `<li class="mb-2 small ">
-            <a href="#${h.id}">${h.textContent.trim()}</a>
-          </li>`;
-        }).join('')}
-      </ul>`;
-      targetEl.innerHTML = html;
-  }
-  if(document.querySelector('.js-on-this-page')) {
-    onThisPage();
-  }</script><script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script><script>window.dataLayer = window.dataLayer || [];
+</code></pre></div></div><h2 id="error">Error</h2><p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p><blockquote>Robots policy blocks browsers or scrapers.</blockquote><h2 id="examples">Examples</h2><p>Example government website robots.txt files:</p><ul><li><a href="https://www.usa.gov/robots.txt">https://www.usa.gov/robots.txt</a></li><li><a href="https://www.ca.gov/robots.txt">https://www.ca.gov/robots.txt</a></li></ul><h2 id="guidance">Guidance</h2><ul><li><a href="/robots">The Web Robots Pages</a></li></ul><h2 id="links">Links</h2><ul><li><a href="https://www.robotstxt.org">robotstxt.org</a></li><li><a href="https://search.gov/indexing/robotstxt.html">robots.txt</a> (Search.gov)</li><li><a href="https://en.wikipedia.org/wiki/Robots.txt">robots.txt</a> (Wikipedia)</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag">Robots Meta Tags Specifications</a> (Google)</li></ul><h2 id="related">Related</h2><ul><li><a href="/crawlable">Crawlable</a></li><li><a href="/text-content">Content available in document</a></li><li><a href="/schema-government-organization">GovernmentOrganization Schema.org Type</a></li><li><a href="/status">Sitemap status</a></li><li><a href="/xml">Sitemap XML</a></li><li><a href="/valid">Robots valid</a></li><li><a href="/allowed">Robots allowed</a></li><li><a href="/sitemap-robots">Sitemap in robots.txt</a></li><li><a href="/canonical">Canonical</a></li><li><a href="/link-text">Link text</a></li><li><a href="/hreflang">hreflang</a></li></ul></div><div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page"></div></div></div></div></div></div></main><footer><div class="container-fluid py-4 mt-4 border-top"><div class="row"><div class="col-12 text-center"><p class="small">Built with <svg class="fa-solid fa-heart" aria-label="Heart" aria-hidden="true"><use href="#fas-fa-heart" xlink:href="#fas-fa-heart"></use></svg> by <a href="https://scangov.com/">ScanGov</a></p></div></div></div></footer><script async="" defer="" src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script><script>window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-9NLQN90ZH2');</script><script src="/assets/bootstrap/js/popper.min.js"></script><script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script><script>const setTheme = (dark) => {
     document.body.setAttribute('data-bs-theme', dark ? 'dark' : 'light');
   };
@@ -64,7 +47,29 @@ and links on it can be followed --&gt;</span>
   setTheme(!lightQuery.matches);
 
   // Update instantly when OS preference changes
-  darkQuery.addEventListener('change', e => setTheme(e.matches));</script><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="landmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fas-fa-landmark"><path fill="currentColor" d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8L32 192c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9l0-.9 4.4-1.6L240.1 4.2zM64 224l64 0 0 192 40 0 0-192 64 0 0 192 48 0 0-192 64 0 0 192 40 0 0-192 64 0 0 196.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512L32 512c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1L64 224z"></path></symbol></svg>
+  darkQuery.addEventListener('change', e => setTheme(e.matches));</script><script>document.querySelector('button.navbar-toggler').addEventListener('click', function(e) {
+    document.querySelector(this.dataset.target).classList.toggle('show');
+  });
+  if (document.getElementById('dropdownMenuButton')) {
+    document.getElementById('dropdownMenuButton').addEventListener('click', function(e) {
+      document.querySelector('[aria-labelledby="' + this.id + '"]').classList.toggle('show');
+    });
+  }</script><a href="https://scangov.com/plans" id="feedback-button" class="feedback btn" aria-hidden="true" tabindex="-1">Get ScanGov</a><script>const feedbackButton = document.getElementById("feedback-button");
+  const footer = document.querySelector("footer");
+
+  function updateButton() {
+    const scrolled = document.documentElement.scrollTop > window.innerHeight * 0.3;
+    const footerVisible = footer && footer.getBoundingClientRect().top < window.innerHeight;
+    const visible = scrolled && !footerVisible;
+    feedbackButton.classList.toggle('is-visible', visible);
+    feedbackButton.setAttribute('aria-hidden', visible ? 'false' : 'true');
+    feedbackButton.setAttribute('tabindex', visible ? '0' : '-1');
+  }
+
+  if (window.location.hostname !== 'my.scangov.com') {
+    window.addEventListener('scroll', updateButton);
+    updateButton();
+  }</script><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="landmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fas-fa-landmark"><path fill="currentColor" d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8L32 192c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9l0-.9 4.4-1.6L240.1 4.2zM64 224l64 0 0 192 40 0 0-192 64 0 0 192 48 0 0-192 64 0 0 192 40 0 0-192 64 0 0 196.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512L32 512c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1L64 224z"></path></symbol></svg>
 <svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="certificate" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fas-fa-certificate"><path fill="currentColor" d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"></path></symbol></svg>
 <svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="diagram-project" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="fas-fa-diagram-project"><path fill="currentColor" d="M0 80C0 53.5 21.5 32 48 32l96 0c26.5 0 48 21.5 48 48l0 16 192 0 0-16c0-26.5 21.5-48 48-48l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-16-192 0 0 16c0 1.7-.1 3.4-.3 5L272 288l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-96c0-1.7 .1-3.4 .3-5L144 224l-96 0c-26.5 0-48-21.5-48-48L0 80z"></path></symbol></svg>
 <svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-lines" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="fas-fa-file-lines"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></symbol></svg>
@@ -72,27 +77,4 @@ and links on it can be followed --&gt;</span>
 <svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="volume-high" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" id="fas-fa-volume-high"><path fill="currentColor" d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zm-60.5 74.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64l0 384c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352 64 352c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l67.8 0L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"></path></symbol></svg>
 <svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="robot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" id="fas-fa-robot"><path fill="currentColor" d="M320 0c17.7 0 32 14.3 32 32l0 64 120 0c39.8 0 72 32.2 72 72l0 272c0 39.8-32.2 72-72 72l-304 0c-39.8 0-72-32.2-72-72l0-272c0-39.8 32.2-72 72-72l120 0 0-64c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224l16 0 0 192-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0 0-192 16 0z"></path></symbol></svg>
 <svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bolt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="fas-fa-bolt"><path fill="currentColor" d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288l111.5 0L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7l-111.5 0L349.4 44.6z"></path></symbol></svg>
-<svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fas-fa-heart"><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></symbol></svg> <a href="https://scangov.com/" id="feedback-button" aria-label="Get ScanGov — return to main site" class="feedback btn">Get ScanGov</a><script>const feedbackButton = document.getElementById("feedback-button");
-  const footer = document.querySelector("footer");
-
-  function updateButton() {
-  const scrolled = document.documentElement.scrollTop > window.innerHeight * 0.3;
-  const footerVisible = footer && footer.getBoundingClientRect().top < window.innerHeight;
-  const visible = scrolled && !footerVisible;
-  feedbackButton.classList.toggle('is-visible', visible);
-  feedbackButton.setAttribute('aria-hidden', visible ? 'false' : 'true');
-  feedbackButton.setAttribute('tabindex', visible ? '0' : '-1');
-  }
-
-  window.addEventListener('scroll', updateButton);
-  updateButton();</script><script>document.querySelector('button.navbar-toggler').addEventListener('click',function(e) {
-    let el = document.querySelector(this.dataset.target);
-    console.log(el)
-    el.classList.toggle('show');
-  })
-  if(document.getElementById('dropdownMenuButton')) {
-    document.getElementById('dropdownMenuButton').addEventListener('click',function(e) {
-      let el = document.querySelector('[aria-labelledby="'+this.id+'"]')
-      el.classList.toggle('show');
-    })
-  }</script></body></html>
+<svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="fas-fa-heart"><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></symbol></svg></body></html>
