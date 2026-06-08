@@ -1,4 +1,21 @@
 <footer>
+  {% if footer %}
+  <div class="container mt-5 pt-5 border-top">
+    <div class="row">
+      {% for col in footer %}
+        <div class="col-6 col-sm-6 col-md-3 mb-3">
+          <ul class="nav flex-column">
+            {% for item in col %}
+              <li class="small mb-1">
+                <a href="{{ item.url }}" class="nav-link p-0 text-body-secondary">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
   <div class="container-fluid py-4 mt-4 border-top">
     <div class="row">
       <div class="col-12 text-center">
@@ -12,50 +29,9 @@
     </div>
   </div>
 </footer>
-<script>
-  function onThisPage() {
-    let targetEl = document.querySelector('.js-on-this-page');
-    let headersToLink = document.querySelectorAll('h2');
-    console.log(headersToLink)
-    let html = `<p class="border-bottom pb-3">On this page</p>
-      <ul class="nav flex-column">
-        ${Array.from(headersToLink).map(h => {
-          return `<li class="mb-2 small ">
-            <a href="#${h.id}">${h.textContent.trim()}</a>
-          </li>`;
-        }).join('')}
-      </ul>`;
-      targetEl.innerHTML = html;
-  }
-  if(document.querySelector('.js-on-this-page')) {
-    onThisPage();
-  }
-</script>
-<!-- Google tag (gtag.js) -->
-<script
-  async
-  defer
-  src="https://www.googletagmanager.com/gtag/js?id=G-9NLQN90ZH2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9NLQN90ZH2');
-</script>
+{% include "analytics.html" %}
 {% include "js.html" %}
-{% getBundle "fontawesome" %}
 {% include "feedback.html" %}
-<script>
-  document.querySelector('button.navbar-toggler').addEventListener('click',function(e) {
-    let el = document.querySelector(this.dataset.target);
-    console.log(el)
-    el.classList.toggle('show');
-  })
-  if(document.getElementById('dropdownMenuButton')) {
-    document.getElementById('dropdownMenuButton').addEventListener('click',function(e) {
-      let el = document.querySelector('[aria-labelledby="'+this.id+'"]')
-      el.classList.toggle('show');
-    })
-  }
-</script></body></html>
+{% getBundle "fontawesome" %}
+</body>
+</html>
