@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.html
+layout: layouts/docs.html
 date: 2025-04-30
 modified: 2025-04-30
 author: ScanGov
@@ -21,72 +21,64 @@ topics:
   - Guidance
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xxl-8 post">
-      {% if guide.audio %}
-      <div class="border mb-4 px-4 py-2 shadow">
-          <h2 class="h4 my-0 py-3">Listen
-            <i class="fa-solid fa-volume-high"></i>
-          </h2>
-          <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to {{ guide.displayName }} made with Google NotebookLM.</p>
-          <script src="/js/plyr.js"></script>
-          <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
-            <audio id="player">
-              <source src="{{ guide.audio }}" type="audio/mp3">
-            </audio>
-          </div>
-          <script>
-            const plyr = new Plyr('#player', {
-              controls: [
-                'play',
-                'progress',
-                'current-time',
-                'duration',
-                'mute',
-                'volume'
-              ]
-            });
-          </script>
-        </div>
-      {% endif %}
-      
-      <h2>Indicators</h2>
-      <ul class="list-inline pt-3">
-        {% for item in guide.topics %}
-          <li class="list-inline-item mr-1 mb-3">
-            <a href="/{{ item }}" class="btn btn-primary-outline">
-              <i class="fa-solid fa-{{ audits[item].icon }}"></i>
-              {{ audits[item].displayName }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-
-      {% if guide.about.title %}
-        <h2>{{ guide.about.title }}</h2>
-        {{ guide.about.content | safe }}
-      {% endif %}
-      
-      {% if guide.links %}
-        <h2>Links</h2>
-        <ul>
-        {% for item in guide.links %}
-          <li><a href="{{ item.link }}">{{ item.text }}</a></li>
-        {% endfor %}
-        </ul>
-      {% endif %}
-
-      <h2>Standards</h2>
-      <ul>
-        {% for item in guide.standards %}
-          <li>
-            <a href="{{ item.url.replace('https://standards.scangov.org','') }}">{{ item.displayName }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-
+{% if guide.audio %}
+<div class="border mb-4 px-4 py-2 shadow">
+    <h2 class="h4 my-0 py-3">Listen
+      <i class="fa-solid fa-volume-high"></i>
+    </h2>
+    <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to {{ guide.displayName }} made with Google NotebookLM.</p>
+    <script src="/js/plyr.js"></script>
+    <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
+      <audio id="player">
+        <source src="{{ guide.audio }}" type="audio/mp3">
+      </audio>
     </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4 js-on-this-page">
-      <!-- on this page links will be put here in footer js -->
-    </div>
+    <script>
+      const plyr = new Plyr('#player', {
+        controls: [
+          'play',
+          'progress',
+          'current-time',
+          'duration',
+          'mute',
+          'volume'
+        ]
+      });
+    </script>
+  </div>
+{% endif %}
+
+<h2>Indicators</h2>
+<ul class="list-inline pt-3">
+  {% for item in guide.topics %}
+    <li class="list-inline-item mr-1 mb-3">
+      <a href="/{{ item }}" class="btn btn-primary-outline">
+        <i class="fa-solid fa-{{ audits[item].icon }}"></i>
+        {{ audits[item].displayName }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% if guide.about.title %}
+  <h2>{{ guide.about.title }}</h2>
+  {{ guide.about.content | safe }}
+{% endif %}
+
+{% if guide.links %}
+  <h2>Links</h2>
+  <ul>
+  {% for item in guide.links %}
+    <li><a href="{{ item.link }}">{{ item.text }}</a></li>
+  {% endfor %}
+  </ul>
+{% endif %}
+
+<h2>Standards</h2>
+<ul>
+  {% for item in guide.standards %}
+    <li>
+      <a href="{{ item.url.replace('https://standards.scangov.org','') }}">{{ item.displayName }}</a>
+    </li>
+  {% endfor %}
+</ul>
