@@ -1,0 +1,43 @@
+{% include "header.html" %}
+{% include "nav.html" %}
+<main id="main-content">
+  <article>
+    <div class="container-fluid mt-3">
+      <div class="row g-4">
+        <div class="col-12 col-md-8 col-lg-9">
+          <div id="post">
+            {% if isStandard %}
+              <div class="mb-4">
+                <a href="/" class="btn btn-primary-outline">
+                  <i class="fa-solid fa-certificate" aria="hidden"></i>
+                  Standard
+                </a>
+              </div>
+            {% endif %}
+            {% if isGuidance %}
+              <div class="mb-4">
+                <a href="/guidance" class="btn btn-primary-outline">
+                  <i class="fa-solid fa-scroll" aria="hidden"></i>
+                  Guidance
+                </a>
+              </div>
+            {% endif %}
+            {% if title %}
+              <h1 class="display-5 pt-3 pb-2">{{ title | safe }}</h1>
+            {% endif %}
+            {% if description %}
+              <p class="lead fs-4 pb-3 mb-4 border-bottom">{{ description | safe }}</p>
+            {% endif %}
+            <div class="post">
+              {{ content | safe }}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          {% include "toc.html" %}
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+{% include "footer.html" %}
