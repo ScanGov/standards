@@ -1,0 +1,18 @@
+{% if imgOg %}
+  <figure class="mb-5">
+    <img src="/assets/img/posts/{{ imgOg }}" alt="{{ imgAlt }}" type="{{ folder }}" class="border img-fluid">
+    {% if imgCaption %}
+      <figcaption>
+        <p class="small mt-3 mb-4 pb-3 border-bottom">
+          {% if imgLink %}
+            <a href="{{ imgLink }}" class="text-body-secondary link-body-emphasis link-offset-3">
+          {% endif %}
+          {{ imgCaption }}
+          {% if imgLink %}
+            </a>
+          {% endif %}
+        </p>
+      </figcaption>
+    {% endif %}
+  </figure>
+{% endif %}

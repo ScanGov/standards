@@ -1,0 +1,44 @@
+{% set related_pages = [] %}
+{% if topics %}
+  {% for other_page in collections.pages %}
+    {% if other_page.url != page.url and other_page.data.topics %}
+      {% for topic in topics %}
+        {% if topic in other_page.data.topics %}
+          {% set related_pages = (related_pages.push(other_page), related_pages) %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if related_pages.length > 0 %}
+  <h2 class="mt-5">Related</h2>
+  <ul>
+    {% for related in related_pages %}
+      {% if loop.index <= 5 %}
+        {% if related.data.title != "Services" and "ScanGov" not in related.data.title %}
+          <li>
+            <a href="{{ related.url }}">{{ related.data.title }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}
+{% set shown_topics = [] %}
+{% for topic in collections.topics %}
+  {% if topic.data.link and topic.data.title in topics %}
+    {% set shown_topics = (shown_topics.push(topic), shown_topics) %}
+  {% endif %}
+{% endfor %}
+
+{% if shown_topics.length > 0 %}
+  <h2 class="mt-5">ScanGov</h2>
+  <p>Grades/scores that use {{ title }}:</p>
+  <ul>
+    {% for topic in shown_topics %}
+      <li>
+        <a href="{{ topic.data.link }}">{{ topic.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
