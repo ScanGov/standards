@@ -1842,6 +1842,9 @@ th a:focus i, th a:focus svg {
     fill: var(--bs-body-color) !important;
 }
 /* Docs */
+#post h2 {
+    margin-top: 2.5rem;
+}
 #post h3 {
     margin-top: 2rem;
 }

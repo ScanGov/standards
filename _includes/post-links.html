@@ -1,0 +1,18 @@
+{% if website %}
+  <ul class="list-unstyled">
+{% endif %}
+{% if website %}
+  <li>
+    <i class="fa-solid fa-laptop"></i>
+    <a href="{{ website }}" class="">Website</a>
+  </li>
+{% endif %}
+{% if org %}
+  <li class="mt-2">
+    <i class="fa-solid fa-building"></i>
+    <a href="{{ orgLink }}" class="">{{ org }}</a>
+  </li>
+{% endif %}
+{% if website %}
+  </ul>
+{% endif %}
