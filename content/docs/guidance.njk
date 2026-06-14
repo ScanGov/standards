@@ -51,10 +51,10 @@ topics:
 <h2>Indicators</h2>
 <ul class="nav nav-pills filter small">
   {% for item in guide.topics %}
-    <li class="nav-item">
-      <a class="nav-link btn btn-primary-outline mx-1" href="/{{ item }}">
-        <i class="fa-solid fa-{{ audits[item].icon }}"></i>{{ audits[item].displayName }}</a>
-    </li>
+    {% set pillTitle = audits[item].displayName %}
+    {% set pillUrl = "/" + item %}
+    {% set pillIcon = "fa-solid fa-" + audits[item].icon %}
+    {% include "filter-pill.html" %}
   {% endfor %}
 </ul>
 

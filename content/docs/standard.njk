@@ -52,10 +52,10 @@ topics:
 <h2>Indicators</h2>
 
 <ul class="nav nav-pills filter small">
-  <li class="nav-item">
-    <a class="nav-link btn btn-primary-outline mx-1" href="/{{ docpage.topic }}">
-      <i class="fa-solid fa-{{ docpage.topicIcon }}"></i>{{ audits[docpage.topic].displayName }}</a>
-  </li>
+  {% set pillTitle = audits[docpage.topic].displayName %}
+  {% set pillUrl = "/" + docpage.topic %}
+  {% set pillIcon = "fa-solid fa-" + docpage.topicIcon %}
+  {% include "filter-pill.html" %}
 </ul>
 
 <h2>Impact</h2>
