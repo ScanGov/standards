@@ -51,12 +51,10 @@ topics:
 
 <h2>Indicators</h2>
 
-<ul class="list-inline pt-3">
-  <li class="list-inline-item mr-1 mb-3">
-      <a href="/{{ docpage.topic }}" class="btn btn-primary-outline">
-        <i class="fa-solid fa-{{ docpage.topicIcon }}"></i>
-        {{ audits[docpage.topic].displayName }}
-      </a>
+<ul class="nav nav-pills filter small">
+  <li class="nav-item">
+    <a class="nav-link btn btn-primary-outline mx-1" href="/{{ docpage.topic }}">
+      <i class="fa-solid fa-{{ docpage.topicIcon }}"></i>{{ audits[docpage.topic].displayName }}</a>
   </li>
 </ul>
 
