@@ -49,14 +49,12 @@ topics:
 {% endif %}
 
 <h2>Indicators</h2>
-<ul class="list-inline pt-3">
+<ul class="nav nav-pills filter small">
   {% for item in guide.topics %}
-    <li class="list-inline-item mr-1 mb-3">
-      <a href="/{{ item }}" class="btn btn-primary-outline">
-        <i class="fa-solid fa-{{ audits[item].icon }}"></i>
-        {{ audits[item].displayName }}
-      </a>
-    </li>
+    {% set pillTitle = audits[item].displayName %}
+    {% set pillUrl = "/" + item %}
+    {% set pillIcon = "fa-solid fa-" + audits[item].icon %}
+    {% include "filter-pill.html" %}
   {% endfor %}
 </ul>
 

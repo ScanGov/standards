@@ -1,16 +1,16 @@
-{% if isStandard %}
-  <div class="mb-4">
-    <a href="/" class="btn btn-primary-outline">
-      <i class="fa-solid fa-certificate" aria="hidden"></i>
-      Standard
-    </a>
-  </div>
-{% endif %}
-{% if isGuidance %}
-  <div class="mb-4">
-    <a href="/guidance" class="btn btn-primary-outline">
-      <i class="fa-solid fa-scroll" aria="hidden"></i>
-      Guidance
-    </a>
-  </div>
+{% if isStandard or isGuidance %}
+  <ul class="nav nav-pills filter small">
+    {% if isStandard %}
+      {% set pillTitle = "Standard" %}
+      {% set pillUrl = "/" %}
+      {% set pillIcon = "fa-solid fa-certificate" %}
+      {% include "filter-pill.html" %}
+    {% endif %}
+    {% if isGuidance %}
+      {% set pillTitle = "Guidance" %}
+      {% set pillUrl = "/guidance" %}
+      {% set pillIcon = "fa-solid fa-scroll" %}
+      {% include "filter-pill.html" %}
+    {% endif %}
+  </ul>
 {% endif %}
