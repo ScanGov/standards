@@ -12,6 +12,7 @@
             {% include "post-badges.html" %}
             {% if title %}<h1 class="pb-2">{{ title | safe }}</h1>{% endif %}
             {% if description %}<p class="lead fs-4 pb-3 mb-4 border-bottom">{{ description | safe }}</p>{% endif %}
+            {% include "actions.html" %}
             {% include "toc-mobile.html" %}
             {% include "scangov.html" %}
             {% include "image.html" %}

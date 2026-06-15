@@ -17,7 +17,7 @@ pre.highlight {
 
 .highlight .err {
     background-color: #1e0010;
-    color: #960050
+    color: #ff6b9d
 }
 
 .highlight .k {
@@ -301,13 +301,16 @@ pre.highlight {
     --bs-form-control-focus-color: var(--bs-body-color);
     --bs-card-focus-box-shadow: 0 0 0 0.25rem rgba(112, 225, 123, 0.25);
     /* Status colors */
+    --bs-success: #70e17b;
     --bs-bg-success: #70e17b;
     --bs-bg-success-rgb: 112, 225, 123;
     --bs-border-success: #70e17b;
+    --bs-warning: #face00;
     --bs-text-warning: #000000;
     --bs-bg-warning: #face00;
     --bs-bg-warning-rgb: 250, 206, 0;
     --bs-border-warning: #face00;
+    --bs-danger: #e41d3d;
     --bs-text-danger: #ffffff;
     --bs-bg-danger: #e41d3d;
     --bs-bg-danger-rgb: 228, 29, 61;
@@ -822,6 +825,17 @@ a.btn:hover, a.btn:focus,
     --bs-link-color: var(--bs-body-bg);
 }
 
+/* Topic filter pills (standards/guidance switcher, rankings/map tabs, etc.) */
+
+.filter {
+    margin-bottom: 1rem;
+}
+
+.filter .nav-link i,
+.filter .nav-link svg {
+    margin-right: 0.5rem;
+}
+
 /* Pagination */
 
 .active>.page-link, .page-link.active {
@@ -845,6 +859,21 @@ a.btn:hover, a.btn:focus,
 .dropdown-toggle:hover svg,
 .dropdown-toggle:focus svg {
     color: var(--bs-btn-hover-color) !important;
+}
+
+/* Page actions (Rescan / Download / Share) */
+
+.actions > li > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+}
+
+.actions > li > a:hover,
+.actions > li > a:focus {
+    color: var(--bs-link-color);
 }
 
 .dropdown-menu.show {
@@ -1316,6 +1345,86 @@ a[href$=".mp4"]::after {
     background-image: url(/assets/font-awesome/svgs/solid/file-video.svg);
 }
 
+.fa-bluesky {
+    color: #96abee !important;
+}
+
+.fa-mastodon {
+    color: #f8b9c5 !important;
+}
+
+.fa-book-open-reader {
+    color: #c3ebfa !important;
+}
+
+.fa-check {
+    color: #e7f434 !important;
+}
+
+.fa-circle-exclamation {
+    color: #f8b9c5 !important;
+}
+
+.fa-circle-plus {
+    color: #70e17b !important;
+}
+
+.fa-circle-dot {
+    color: #f3bf90 !important;
+}
+
+.fa-circle-down {
+    color: #e41d3d !important;
+}
+
+.fa-circle-up {
+    color: #21c834 !important;
+}
+
+.fa-comments {
+    color: #c5c5f3 !important;
+}
+
+.fa-dolly {
+    color: #f5fbc1 !important;
+}
+
+.fa-file-contract {
+    color: #fee685 !important;
+}
+
+.fa-file-pdf {
+    color: #f8b9c5 !important;
+}
+
+.fa-filter-circle-xmark {
+    color: #f8b9c5 !important;
+}
+
+.fa-fire {
+    color: #ffbc78 !important;
+}
+
+.fa-highlighter {
+    color: #e7f434 !important;
+}
+
+.fa-plug-circle-bolt {
+    color: #fff5c2 !important;
+}
+
+.fa-puzzle-piece {
+    color: #98d035 !important;
+}
+
+.fa-rotate {
+    color: #c5ee93 !important;
+}
+
+.fa-share-from-square {
+    color: #f8b9c5 !important;
+}
+
 /* Icons — dark mode (vibrant pastels on dark bg) */
 
 .fa-github {
@@ -1629,6 +1738,9 @@ a[href$=".mp4"]::after {
 [data-bs-theme=light] .fa-building,
 [data-bs-theme=light] .fa-circle-check,
 [data-bs-theme=light] .fa-circle-info,
+[data-bs-theme=light] .fa-circle-plus,
+[data-bs-theme=light] .fa-puzzle-piece,
+[data-bs-theme=light] .fa-rotate,
 [data-bs-theme=light] .fa-seedling {
     /* → #2d7a3a = 5.31:1 ✓ */
     color: #2d7a3a !important;
@@ -1655,8 +1767,11 @@ a[href$=".mp4"]::after {
 
 [data-bs-theme=light] .fa-bolt,
 [data-bs-theme=light] .fa-certificate,
+[data-bs-theme=light] .fa-check,
 [data-bs-theme=light] .fa-crown,
+[data-bs-theme=light] .fa-dolly,
 [data-bs-theme=light] .fa-face-smile,
+[data-bs-theme=light] .fa-file-contract,
 [data-bs-theme=light] .fa-hand, [data-bs-theme=light] .fa-hands,
 [data-bs-theme=light] .fa-hands-clapping,
 [data-bs-theme=light] .fa-handshake-simple,
@@ -1667,8 +1782,10 @@ a[href$=".mp4"]::after {
 [data-bs-theme=light] .fa-hand-point-down,
 [data-bs-theme=light] .fa-hand-point-right,
 [data-bs-theme=light] .fa-hand-point-left,
+[data-bs-theme=light] .fa-highlighter,
 [data-bs-theme=light] .fa-lightbulb,
 [data-bs-theme=light] .fa-magnifying-glass,
+[data-bs-theme=light] .fa-plug-circle-bolt,
 [data-bs-theme=light] .fa-scale-balanced,
 [data-bs-theme=light] .fa-scroll,
 [data-bs-theme=light] .fa-star,
@@ -1679,6 +1796,7 @@ a[href$=".mp4"]::after {
 
 [data-bs-theme=light] .fa-bars-progress,
 [data-bs-theme=light] .fa-dashboard,
+[data-bs-theme=light] .fa-fire,
 [data-bs-theme=light] .fa-gauge-simple,
 [data-bs-theme=light] .fa-gauge-high,
 [data-bs-theme=light] .fa-rss {
@@ -1686,6 +1804,7 @@ a[href$=".mp4"]::after {
     color: #8a4f00 !important;
 }
 
+[data-bs-theme=light] .fa-book-open-reader,
 [data-bs-theme=light] .fa-circle-nodes,
 [data-bs-theme=light] .fa-file,
 [data-bs-theme=light] .fa-file-lines,
@@ -1699,6 +1818,7 @@ a[href$=".mp4"]::after {
     color: #1a6fa0 !important;
 }
 
+[data-bs-theme=light] .fa-bluesky,
 [data-bs-theme=light] .fa-code,
 [data-bs-theme=light] .fa-bullhorn,
 [data-bs-theme=light] .fa-github,
@@ -1708,6 +1828,7 @@ a[href$=".mp4"]::after {
 }
 
 [data-bs-theme=light] .fa-comment,
+[data-bs-theme=light] .fa-comments,
 [data-bs-theme=light] .fa-filter,
 [data-bs-theme=light] .fa-rocket {
     /* → #5b4ea0 = 6.90:1 ✓ */
@@ -1727,20 +1848,32 @@ a[href$=".mp4"]::after {
 
 [data-bs-theme=light] .fa-discord,
 [data-bs-theme=light] .fa-calendar,
+[data-bs-theme=light] .fa-circle-exclamation,
 [data-bs-theme=light] .fa-eye,
+[data-bs-theme=light] .fa-file-pdf,
+[data-bs-theme=light] .fa-filter-circle-xmark,
 [data-bs-theme=light] .fa-key,
+[data-bs-theme=light] .fa-mastodon,
 [data-bs-theme=light] .fa-newspaper,
 [data-bs-theme=light] .fa-rectangle-list,
+[data-bs-theme=light] .fa-share-from-square,
 [data-bs-theme=light] .fa-user-astronaut {
     /* → #b5476a = 5.15:1 ✓ */
     color: #b5476a !important;
 }
 
+[data-bs-theme=light] .fa-circle-down,
 [data-bs-theme=light] .fa-flag {
     /* → #b52040 = 6.47:1 ✓ */
     color: #b52040 !important;
 }
 
+[data-bs-theme=light] .fa-circle-up {
+    /* → #1a7a2a = 5.10:1 ✓ */
+    color: #1a7a2a !important;
+}
+
+[data-bs-theme=light] .fa-circle-dot,
 [data-bs-theme=light] .fa-gear {
     /* → #1a5e9e = 6.69:1 ✓ */
     color: #1a5e9e !important;
@@ -1929,7 +2062,19 @@ th a:hover i, th a:hover svg,
 th a:focus i, th a:focus svg {
     color: var(--bs-body-color) !important;
     fill: var(--bs-body-color) !important;
-}@charset "UTF-8";
+}
+/* Docs */
+#post h2 {
+    margin-top: 2.5rem;
+}
+#post h3 {
+    margin-top: 2rem;
+}
+
+.js-sidenav a:hover {
+    color: var(--bs-link-color) !important;
+}
+@charset "UTF-8";
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
