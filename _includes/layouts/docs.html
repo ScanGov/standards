@@ -9,7 +9,15 @@
         </div>
         <div class="col-12 col-md-8">
           <div id="post">
-            {% include "post-badges.html" %}
+            {% if isStandard %}
+            <nav aria-label="Breadcrumb" class="breadcrumb-default mb-3">
+              <ol class="breadcrumb small">
+                <li class="breadcrumb-item"><a href="/">Standards</a></li>
+                <li class="breadcrumb-item"><a href="/{{ docpage.topic }}/">{{ docpage.topicDisplayName }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ docpage.displayName }}</li>
+              </ol>
+            </nav>
+            {% endif %}
             {% if title %}<h1 class="pb-2">{{ title | safe }}</h1>{% endif %}
             {% if description %}<p class="lead fs-4 pb-3 mb-4 border-bottom">{{ description | safe }}</p>{% endif %}
             {% include "actions.html" %}
@@ -19,7 +27,7 @@
             {% include "audio.html" %}
             {{ content | safe }}
             {% include "post-links.html" %}
-            {% include "related.html" %}
+            {% if not isStandard %}{% include "related.html" %}{% endif %}
           </div>
         </div>
         <div class="col-12 col-md-2">

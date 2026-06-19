@@ -1,0 +1,43 @@
+<div class="alert alert-info small mt-2" role="alert">
+  <i class="fa-solid fa-circle-info"></i>
+  <a href="https://docs.scangov.org/indicators">Indicators</a>
+  &middot;
+  <a href="/guidance/">Guidance</a>
+</div>
+<script>
+(function() {
+  var tbody = document.getElementById('standards-table');
+  if (!tbody) return;
+  var table = tbody.closest('table');
+  var headers = table.querySelectorAll('th.sortable');
+  var sortState = { col: -1, dir: 'asc' };
+
+  function setIcon(th, dir) {
+    th.querySelector('.sort-neutral').classList.toggle('d-none', dir !== null);
+    th.querySelector('.sort-asc').classList.toggle('d-none', dir !== 'asc');
+    th.querySelector('.sort-desc').classList.toggle('d-none', dir !== 'desc');
+  }
+
+  headers.forEach(function(th) {
+    th.addEventListener('click', function() {
+      var col = parseInt(this.getAttribute('data-col'));
+      if (sortState.col === col) {
+        sortState.dir = sortState.dir === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortState.col = col;
+        sortState.dir = 'asc';
+      }
+      headers.forEach(function(h) { setIcon(h, null); });
+      setIcon(this, sortState.dir);
+
+      var rows = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort(function(a, b) {
+        var aVal = a.cells[col].getAttribute('data-sort') || '';
+        var bVal = b.cells[col].getAttribute('data-sort') || '';
+        return sortState.dir === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+      });
+      rows.forEach(function(row) { tbody.appendChild(row); });
+    });
+  });
+})();
+</script>

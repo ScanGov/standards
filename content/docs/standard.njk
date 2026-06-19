@@ -10,10 +10,10 @@ pagination:
   addAllPagesToCollections: true
   alias: docpage
 
-permalink: "{{ docpage.key.toLowerCase() }}/"
+permalink: "{{ docpage.key | slugify }}/"
 
 eleventyComputed:
-  title: "{{ docpage.displayName }}"
+  title: "{{ docpage.displayName }} ({{ docpage.topicDisplayName }})"
   description: "{{ docpage.description }}"
   isStandard: true
 
@@ -49,18 +49,7 @@ topics:
   </div>
 {% endif %}
 
-<h2>Indicators</h2>
-
-<ul class="nav nav-pills filter small">
-  {% set pillTitle = audits[docpage.topic].displayName %}
-  {% set pillUrl = "/" + docpage.topic %}
-  {% set pillIcon = "fa-solid fa-" + docpage.topicIcon %}
-  {% include "filter-pill.html" %}
-</ul>
-
 <h2>Impact</h2>
-
-<p class="small">(How <a href="https://scangov.com">ScanGov</a> measures tasklist priorities.)</small></p>
 
 <div class="bolts mt-3 mb-3">
   {% set taskNum = docpage.impact %}
@@ -71,6 +60,8 @@ topics:
     <i class="fa-solid fa-bolt"></i>
   {% endfor %}
 </div>
+
+<p class="small">(<a href="https://docs.scangov.org/impact/">ScanGov impact</a>)</p>
 
 {% if docpage.sections.about.title %}
   <h2>{{ docpage.sections.about.title }}</h2>
@@ -93,7 +84,7 @@ topics:
 {% endif %}
 
 <h2>Error</h2>
-<p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</small></p>
+<p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p></p>
 
 <blockquote>
 {{ docpage.error | escape }}
@@ -118,11 +109,37 @@ topics:
   {{ docpage.sections.links.content | safe }}
 {% endif %}
 
-{% if docpage.relatedLinks %}
-<h2>Related</h2>
-<ul>
+<h2>Indicators</h2>
+
+<ul class="nav nav-pills filter small">
+  {% set pillTitle = audits[docpage.topic].displayName %}
+  {% set pillUrl = "/" + docpage.topic %}
+  {% set pillIcon = "fa-solid fa-" + docpage.topicIcon %}
+  {% include "filter-pill.html" %}
+</ul>
+
+<div class="alert alert-info small" role="alert">
+
+<h2 class="h4 mt-0">Related</h2>
+
+{% set siblings = [] %}
 {% for item in audits[docpage.topic].attributes %}
-  <li><a href="/{{ item.key.toLowerCase() }}">{{ item.displayName | escape }}</a></li>
+  {% if item.key | slugify != docpage.key | slugify %}
+    {% set siblings = (siblings.push(item), siblings) %}
+  {% endif %}
+{% endfor %}
+
+{% if siblings.length > 0 %}
+<h3 class="h5">{{ docpage.topicDisplayName }}</h3>
+<ul>
+{% for item in siblings %}
+  <li><a href="/{{ item.key | slugify }}">{{ item.displayName | escape }}</a></li>
 {% endfor %}
 </ul>
+<p><a href="/{{ docpage.topic }}/">All {{ docpage.topicDisplayName }} standards</a></p>
 {% endif %}
+
+<h3 class="h5">On Project ScanGov</h3>
+<p class="mb-0"><a href="https://scangov.org/rankings/{{ docpage.topic }}/">Site {{ docpage.topicDisplayName }} scores</a></p>
+
+</div>
