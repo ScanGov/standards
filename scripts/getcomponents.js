@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 
-let scangovCSS = 'https://raw.githubusercontent.com/ScanGov/components/refs/heads/main/scangov.css';
+let scangovCSS = 'https://raw.githubusercontent.com/ScanGov/components/refs/heads/main/public/css/scangov.css';
 try {
   const response = await fetch(scangovCSS);
   if (!response.ok) {

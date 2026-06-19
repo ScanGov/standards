@@ -13,10 +13,11 @@ topics:
 <div class="table-responsive">
     <table class="table table-bordered table-hover shadow">
         {% include "table_header.html" %}
-        <tbody>
+        <tbody id="standards-table">
             {% for key, value in audits %}
                 {% include "standards_table.html" %}
             {% endfor %}
         </tbody>
     </table>
 </div>
+{% include "standards-table-sort.html" %}

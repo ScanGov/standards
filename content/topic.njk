@@ -25,8 +25,9 @@ permalink: "/{{ topic }}/"
 <div class="table-responsive">
     <table class="table table-bordered table-hover shadow">
         {% include "table_header.html" %}
-        <tbody>
+        <tbody id="standards-table">
             {% include "standards_table.html" %}
         </tbody>
     </table>
 </div>
+{% include "standards-table-sort.html" %}

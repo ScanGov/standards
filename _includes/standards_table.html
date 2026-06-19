@@ -1,6 +1,6 @@
 {% for item in value.attributes %}
   <tr>
-    <td class="p-3 col-1">
+    <td class="p-3 col-1" data-sort="{{ value.displayName }}">
       <div class="d-flex flex-wrap">
         <a
           href="/{{ key }}/"
@@ -10,9 +10,9 @@
         </a>
       </div>
     </td>
-    <td class="p-3 col-4">
+    <td class="p-3 col-4" data-sort="{{ item.displayName }}">
       <div>
-        <a href="/{{ item.key.toLowerCase() }}">{{ item.displayName | escape }}</a>
+        <a href="/{{ item.key | slugify }}">{{ item.displayName | escape }}</a>
       </div>
       <div>
         <span class="small">{{ item.description | escape }}</span>
