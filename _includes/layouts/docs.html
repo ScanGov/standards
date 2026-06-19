@@ -18,6 +18,14 @@
               </ol>
             </nav>
             {% endif %}
+            {% if isGuidance %}
+            <nav aria-label="Breadcrumb" class="breadcrumb-default mb-3">
+              <ol class="breadcrumb small">
+                <li class="breadcrumb-item"><a href="/guidance/">Guidance</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ guide.displayName }}</li>
+              </ol>
+            </nav>
+            {% endif %}
             {% if title %}<h1 class="pb-2">{{ title | safe }}</h1>{% endif %}
             {% if description %}<p class="lead fs-4 pb-3 mb-4 border-bottom">{{ description | safe }}</p>{% endif %}
             {% include "actions.html" %}

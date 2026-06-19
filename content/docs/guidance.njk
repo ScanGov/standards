@@ -48,6 +48,11 @@ topics:
   </div>
 {% endif %}
 
+{% if guide.about.title %}
+  <h2>{{ guide.about.title }}</h2>
+  {{ guide.about.content | safe }}
+{% endif %}
+
 <h2>Indicators</h2>
 <ul class="nav nav-pills filter small">
   {% for item in guide.topics %}
@@ -57,11 +62,6 @@ topics:
     {% include "filter-pill.html" %}
   {% endfor %}
 </ul>
-
-{% if guide.about.title %}
-  <h2>{{ guide.about.title }}</h2>
-  {{ guide.about.content | safe }}
-{% endif %}
 
 {% if guide.links %}
   <h2>Links</h2>
