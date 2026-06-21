@@ -3,5 +3,10 @@
     "title": "Guidance",
     "url": "/guidance",
     "icon": "fa-solid fa-scroll"
+  },
+  {
+    "title": "Search",
+    "icon": "fa-solid fa-magnifying-glass",
+    "url": "/search"
   }
 ]
