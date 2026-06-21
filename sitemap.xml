@@ -10,6 +10,13 @@
     
         
             <url>
+                <loc>https://standards.scangov.org/search/</loc>
+                <lastmod>2025-01-31T00:00:00.000Z</lastmod>
+            </url>
+        
+    
+        
+            <url>
                 <loc>https://standards.scangov.org/crawlable/</loc>
                 <lastmod>2025-02-01T00:00:00.000Z</lastmod>
             </url>
