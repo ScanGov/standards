@@ -51,6 +51,19 @@
     {% if isDoc %}{% include "schema-docs.html" %}{% endif %}
     {% if schema %}
     <script type="application/ld+json">{{ schema | safe }}</script>
+    {% elif not isStandard and not isGuidance and not isDoc %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}"
+      {% if site.description %},"description": "{{ site.description }}"{% endif %}
+      {% if site.substack or site.linkedin or site.youtube or site.discord or site.github %}
+      ,"sameAs": [{% set comma = joiner() %}{% if site.substack %}{{ comma() }}"{{ site.substack }}"{% endif %}{% if site.linkedin %}{{ comma() }}"{{ site.linkedin }}"{% endif %}{% if site.youtube %}{{ comma() }}"{{ site.youtube }}"{% endif %}{% if site.discord %}{{ comma() }}"{{ site.discord }}"{% endif %}{% if site.github %}{{ comma() }}"{{ site.github }}"{% endif %}]
+      {% endif %}
+    }
+    </script>
     {% endif %}
     {% include "favicon.html" %}
     {% include "style.html" %}
