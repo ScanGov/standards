@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://standards.scangov.org/sitemap.xml
