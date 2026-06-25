@@ -12,7 +12,7 @@
 {% endif %}
 {% if related_pages.length > 0 %}
   <div class="alert alert-info small mt-4" role="alert">
-    <h2 class="h4 mt-0">Related</h2>
+    <h2 class="mt-0">Related</h2>
     <ul class="mb-0">
       {% for related in related_pages %}
         {% if loop.index <= 5 %}
@@ -35,7 +35,7 @@
 
 {% if shown_topics.length > 0 %}
   <div class="alert alert-info small mt-4" role="alert">
-    <h2 class="h4 mt-0">ScanGov</h2>
+    <h2 class="mt-0">ScanGov</h2>
     <p>Grades/scores that use {{ title }}:</p>
     <ul class="mb-0">
       {% for topic in shown_topics %}
