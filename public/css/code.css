@@ -3,8 +3,27 @@ pre.highlight {
     background-color: #000000;
     border-radius: .15rem;
     font-family: var(--bs-font-monospace);
+    font-size: 0.875rem;
     margin-bottom: 2rem;
+    overflow-x: auto;
     padding: 1rem;
+    white-space: pre;
+}
+
+[data-bs-theme=light] .highlight pre,
+[data-bs-theme=light] pre.highlight {
+    background-color: #f6f8fa;
+}
+
+code {
+    font-family: var(--bs-font-monospace);
+    font-size: 0.875em;
+}
+
+code.language-plaintext {
+    background-color: var(--bs-tertiary-bg);
+    border-radius: 0.2rem;
+    padding: 0.1em 0.35em;
 }
 
 .highlight .hll {

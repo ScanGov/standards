@@ -8,7 +8,7 @@ export default async function () {
 
   let docPages = [];
 
-  for(const topic in auditData) {
+  for (const topic in auditData) {
     auditData[topic].attributes.forEach(attr => {
       attr.topic = topic;
       attr.topicDisplayName = auditData[topic].displayName;
