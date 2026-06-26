@@ -28,6 +28,7 @@
             {% endif %}
             {% if title %}<h1 class="pb-2">{{ title | safe }}</h1>{% endif %}
             {% if description %}<p class="lead fs-4 pb-3 mb-4 border-bottom">{{ description | safe }}</p>{% endif %}
+            {% include "actions.html" %}
             {% include "toc-mobile.html" %}
             {% include "scangov.html" %}
             {% include "image.html" %}
@@ -35,7 +36,6 @@
             {{ content | safe }}
             {% include "post-links.html" %}
             {% if not isStandard %}{% include "related.html" %}{% endif %}
-            {% include "actions.html" %}
           </div>
         </div>
         <div class="col-12 col-md-2">

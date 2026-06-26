@@ -13,7 +13,7 @@ pagination:
 permalink: "{{ docpage.key | slugify }}/"
 
 eleventyComputed:
-  title: "{{ docpage.displayName }} ({{ docpage.topicDisplayName }})"
+  title: "{{ docpage.displayName }}"
   description: "{{ docpage.description }}"
   isStandard: true
 
@@ -22,12 +22,12 @@ topics:
   - Standards
 ---
 
-{% if docpage.relatedLinks.audio %}
+{# {% if docpage.relatedLinks.audio %}
 <div class="border mb-4 px-4 py-2 shadow">
     <h2 class="h4 my-0 py-3">Listen
       <i class="fa-solid fa-volume-high"></i>
     </h2>
-    <p class="pb-0 small text-secondary mb-0 pb-3">A podcast overview related to {{ docpage.displayName }} made with Google NotebookLM.</p>
+    <p class="small text-secondary mb-0 pb-3">A podcast overview related to {{ docpage.displayName }} made with Google NotebookLM.</p>
     <script src="/js/plyr.js"></script>
     <div tabindex="0" class="plyr plyr--full-ui plyr--audio plyr--html5 plyr--paused plyr--stopped">
       <audio id="player">
@@ -47,7 +47,7 @@ topics:
       });
     </script>
   </div>
-{% endif %}
+{% endif %} #}
 
 <h2>Impact</h2>
 
@@ -61,7 +61,7 @@ topics:
   {% endfor %}
 </div>
 
-<p class="small">(<a href="https://docs.scangov.org/impact/">ScanGov impact</a>)</p>
+<p class="small"><a href="https://docs.scangov.org/impact/">ScanGov impact ratings</a></p>
 
 {% if docpage.sections.about.title %}
   <h2>{{ docpage.sections.about.title }}</h2>
@@ -84,7 +84,7 @@ topics:
 {% endif %}
 
 <h2>Error</h2>
-<p class="small mb-3 pb-0">(ScanGov messaging when a site fails a standard)</p></p>
+<p><a href="https://scangov.com">ScanGov</a> messaging when a site fails a standard:</p>
 
 <blockquote>
 {{ docpage.error | escape }}
@@ -109,6 +109,13 @@ topics:
   {{ docpage.sections.links.content | safe }}
 {% endif %}
 
+{% set siblings = [] %}
+{% for item in audits[docpage.topic].attributes %}
+  {% if item.key | slugify != docpage.key | slugify %}
+    {% set siblings = (siblings.push(item), siblings) %}
+  {% endif %}
+{% endfor %}
+
 <h2>Indicators</h2>
 
 <ul class="nav nav-pills filter small">
@@ -118,28 +125,16 @@ topics:
   {% include "filter-pill.html" %}
 </ul>
 
-<div class="alert alert-info small" role="alert">
-
-<h2 class="h4 mt-0">Related</h2>
-
-{% set siblings = [] %}
-{% for item in audits[docpage.topic].attributes %}
-  {% if item.key | slugify != docpage.key | slugify %}
-    {% set siblings = (siblings.push(item), siblings) %}
-  {% endif %}
-{% endfor %}
-
 {% if siblings.length > 0 %}
-<h3 class="h5">{{ docpage.topicDisplayName }}</h3>
-<ul>
-{% for item in siblings %}
-  <li><a href="/{{ item.key | slugify }}">{{ item.displayName | escape }}</a></li>
-{% endfor %}
-</ul>
-<p><a href="/{{ docpage.topic }}/">All {{ docpage.topicDisplayName }} standards</a></p>
-{% endif %}
-
-<h3 class="h5">On Project ScanGov</h3>
-<p class="mb-0"><a href="https://scangov.org/rankings/{{ docpage.topic }}/">Site {{ docpage.topicDisplayName }} scores</a></p>
-
+{% set catInfo = audits[docpage.topic] %}
+<div class="alert alert-info small mt-4" role="alert">
+  <h2>Related</h2>
+  <ul>
+    {% for item in siblings %}
+    <li><a href="/{{ item.key | slugify }}">{{ item.displayName | escape }}</a></li>
+    {% endfor %}
+    <li><a href="https://scangov.org{{ catInfo.rankingsUrl }}">{{ docpage.topicDisplayName }} grades on Project ScanGov</a></li>
+    <li><a href="https://scangov.com{{ catInfo.scangovUrl }}">ScanGov {{ docpage.topicDisplayName }}</a></li>
+  </ul>
 </div>
+{% endif %}
