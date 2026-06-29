@@ -1,10 +1,9 @@
 ---
-title: "Digital experience standards"
 layout: layouts/default.html
 date: 2025-04-28
 modified: 2025-04-29
 author: ScanGov
-description: "Based on public policy, web protocol, guidelines and best practices."
+compact: true
 topics:
   - Standards
 
@@ -14,8 +13,11 @@ pagination:
     addAllPagesToCollections: true
     alias: topic
 
-
 permalink: "/{{ topic }}/"
+
+eleventyComputed:
+  title: "{{ audits[topic].displayName }} standards"
+  description: "{{ audits[topic].standardsDescription }}"
 ---
 
 {% include "filter.html" %}

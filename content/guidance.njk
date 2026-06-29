@@ -1,9 +1,10 @@
 ---
 layout: layouts/default.html
-title: "Guidance"
+title: "Digital experience guidance"
 date: 2024-03-08
 modified: 2025-03-17
 author: ScanGov
+compact: true
 description: "Public policy, web protocol, guidelines and best practices used to develop the ScanGov Standards."
 topics:
   - Guidance
@@ -25,10 +26,12 @@ topics:
         <tr>
           <td class="p-3 col-2">
             <div class="d-flex flex-wrap">
-              {% for topic in item.topics %}
-                <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
-                  <i class="fa-solid fa-{{ audits[topic].icon }} me-2 mb-2" title="{{ audits[topic].displayName }}"></i>
-                </a>
+              {% for key in ["accessibility", "botability", "security", "usability"] %}
+                {% if key in item.topics %}
+                  <a href="{{ audits[key].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
+                    <i class="fa-solid fa-{{ audits[key].icon }} me-2 mb-2" title="{{ audits[key].displayName }}"></i>
+                  </a>
+                {% endif %}
               {% endfor %}
             </div>
           </td>

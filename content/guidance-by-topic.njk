@@ -1,12 +1,11 @@
 ---
-title: "Digital experience standards"
 layout: layouts/default.html
 date: 2025-05-01
 modified: 2025-05-01
 author: ScanGov
-description: "Based on public policy, web protocol, guidelines and best practices."
+compact: true
 topics:
-  - Guidcance
+  - Guidance
 
 pagination:
     data: audits
@@ -14,8 +13,11 @@ pagination:
     addAllPagesToCollections: true
     alias: topic
 
-
 permalink: "/guidance/{{ topic }}/"
+
+eleventyComputed:
+  title: "{{ audits[topic].displayName }} guidance"
+  description: "{{ audits[topic].guidanceDescription }}"
 ---
 
 
@@ -45,11 +47,13 @@ permalink: "/guidance/{{ topic }}/"
           <tr>
             <td class="p-3 col-2">
               <div class="d-flex flex-wrap">
-                {% for topic in item.topics %}
-                  <a href="{{ audits[topic].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
-                    <i class="fa-solid fa-{{ audits[topic].icon }} me-2 mb-2" title="{{ audits[topic].displayName }}"></i>
+                {% for key in ["accessibility", "botability", "security", "usability"] %}
+                {% if key in item.topics %}
+                  <a href="{{ audits[key].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
+                    <i class="fa-solid fa-{{ audits[key].icon }} me-2 mb-2" title="{{ audits[key].displayName }}"></i>
                   </a>
-                {% endfor %}
+                {% endif %}
+              {% endfor %}
               </div>
             </td>
             <td class="p-3 col-7">

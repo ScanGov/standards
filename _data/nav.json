@@ -1,5 +1,10 @@
 [
   {
+    "title": "Standards",
+    "url": "/",
+    "icon": "fa-solid fa-certificate"
+  },
+  {
     "title": "Guidance",
     "url": "/guidance",
     "icon": "fa-solid fa-scroll"
