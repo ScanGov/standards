@@ -1,17 +1,11 @@
 <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 <script>
-  const setTheme = (dark) => {
-    document.body.setAttribute('data-bs-theme', dark ? 'dark' : 'light');
-  };
-  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-  const lightQuery = window.matchMedia("(prefers-color-scheme: light)");
-  setTheme(!lightQuery.matches);
-  darkQuery.addEventListener('change', e => setTheme(e.matches));
-</script>
-<script>
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    document.documentElement.setAttribute('data-bs-theme', e.matches ? 'dark' : 'light');
+  });
   const toggler = document.querySelector('button.navbar-toggler');
   if (toggler) {
-    toggler.addEventListener('click', function(e) {
+    toggler.addEventListener('click', function() {
       document.querySelector(this.dataset.target).classList.toggle('show');
     });
   }

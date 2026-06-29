@@ -68,6 +68,11 @@ topics:
   {{ docpage.sections.about.content | safeHtml | safe }}
 {% endif %}
 
+{% if docpage.risk %}
+<h2>Risks</h2>
+<p>{{ docpage.risk | escape }}</p>
+{% endif %}
+
 <h2>Why it's important</h2>
 <p>{{ docpage.why | escape }}</p>
 
