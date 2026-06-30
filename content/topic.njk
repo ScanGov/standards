@@ -25,7 +25,8 @@ eleventyComputed:
 {% set value = audits[topic] %}
 
 <div class="table-responsive">
-    <table class="table table-bordered table-hover shadow">
+    <table class="table">
+        <caption class="visually-hidden">{{ audits[topic].displayName }} standards</caption>
         {% include "table_header.html" %}
         <tbody id="standards-table">
             {% include "standards_table.html" %}
