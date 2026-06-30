@@ -12,7 +12,8 @@ topics:
 
 {% include "filter.html" %}
 <div class="table-responsive">
-    <table class="table table-bordered table-hover shadow">
+    <table class="table">
+        <caption class="visually-hidden">Digital experience standards</caption>
         {% include "table_header.html" %}
         <tbody id="standards-table">
             {% for key, value in audits %}

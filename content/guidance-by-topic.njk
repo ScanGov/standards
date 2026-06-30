@@ -26,7 +26,8 @@ eleventyComputed:
 {% set value = topic %}
 
 <div class="table-responsive">
-    <table class="table table-bordered table-hover shadow">
+    <table class="table">
+      <caption class="visually-hidden">{{ audits[topic].displayName }} indicators, guidance, and related standards</caption>
       <thead>
         <tr>
           <th scope="col" class="p-3">Indicators <a href="https://docs.scangov.org/indicators"><i class="fa-solid fa-circle-question" aria-label="Indicators"></i></a></th>
