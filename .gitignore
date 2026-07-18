@@ -135,3 +135,7 @@ dist
 .pnp.*
 
 package-lock.json
+
+# Claude Code local/generated content
+.claude/
+docs/plans/
