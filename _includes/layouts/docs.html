@@ -2,32 +2,16 @@
 {% include "nav.html" %}
 <main id="main-content">
   <article>
-    <div class="container-fluid mt-4">
+    <div class="container-fluid mt-3">
       <div class="row g-4">
         <div class="col-12 col-md-2">
           {% include "sidenav.html" %}
         </div>
         <div class="col-12 col-md-8">
           <div id="post">
-            {% if isStandard %}
-            <nav aria-label="Breadcrumb" class="breadcrumb-default mb-3">
-              <ol class="breadcrumb small font-monospace">
-                <li class="breadcrumb-item"><a href="/">Standards</a></li>
-                <li class="breadcrumb-item"><a href="/{{ docpage.topic }}/">{{ docpage.topicDisplayName }}</a></li>
-                <li class="breadcrumb-item active" aria-current="page">{{ docpage.displayName }}</li>
-              </ol>
-            </nav>
-            {% endif %}
-            {% if isGuidance %}
-            <nav aria-label="Breadcrumb" class="breadcrumb-default mb-3">
-              <ol class="breadcrumb small font-monospace">
-                <li class="breadcrumb-item"><a href="/guidance/">Guidance</a></li>
-                <li class="breadcrumb-item active" aria-current="page">{{ guide.displayName }}</li>
-              </ol>
-            </nav>
-            {% endif %}
+            {% include "post-badges.html" %}
             {% if title %}<h1 class="pb-2">{{ title | safe }}</h1>{% endif %}
-            {% if description %}<p class="lead fs-4 pb-3 mb-4 border-bottom">{{ description | safe }}</p>{% endif %}
+            {% if description %}<p class="lead fs-4">{{ description | safe }}</p>{% endif %}
             {% include "actions.html" %}
             {% include "toc-mobile.html" %}
             {% include "scangov.html" %}
@@ -35,7 +19,16 @@
             {% include "audio.html" %}
             {{ content | safe }}
             {% include "post-links.html" %}
-            {% if not isStandard %}{% include "related.html" %}{% endif %}
+            {% if videos %}
+            <h2>Demo</h2>
+            {% for v in videos %}
+            <div class="ratio ratio-16x9 border mb-3">
+              <iframe src="https://www.youtube.com/embed/{{ v.id }}?modestbranding=1&rel=0"
+                      title="{{ v.title }} demo"
+                      allowfullscreen></iframe>
+            </div>
+            {% endfor %}
+            {% endif %}
           </div>
         </div>
         <div class="col-12 col-md-2">

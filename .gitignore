@@ -135,3 +135,6 @@ dist
 .pnp.*
 
 package-lock.json
+
+docs/plans/
+.claude
