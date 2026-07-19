@@ -109,6 +109,17 @@ topics:
 </ul>
 {% endif %}
 
+{% if docpage.videos %}
+<h2>Demo</h2>
+{% for v in docpage.videos %}
+<div class="ratio ratio-16x9 border mb-3">
+  <iframe src="https://www.youtube.com/embed/{{ v.id }}?modestbranding=1&rel=0"
+          title="{{ v.title }} demo"
+          allowfullscreen></iframe>
+</div>
+{% endfor %}
+{% endif %}
+
 {% if docpage.sections.links %}
   <h2>{{ docpage.sections.links.title }}</h2>
   {{ docpage.sections.links.content | safe }}
