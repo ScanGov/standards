@@ -867,16 +867,6 @@ button.btn-primary-outline {
     transition: filter 0.25s ease, box-shadow 0.25s ease;
 }
 
-button.btn-primary-outline:hover,
-button.btn-primary-outline:focus {
-    color: var(--bs-body-bg) !important;
-}
-
-.btn-primary-outline:hover i,
-.btn-primary-outline:hover svg {
-    color: inherit !important;
-}
-
 .btn.btn-outline-primary {
     --bs-btn-color: var(--bs-body-color);
     --bs-btn-border-color: var(--bs-border-color);
@@ -924,6 +914,24 @@ button.btn-primary-outline:focus {
     color: inherit !important;
 }
 
+.btn.btn-outline-primary .fa-file-lines {
+    color: #a8f2ff !important;
+}
+
+.btn.btn-outline-primary:hover .fa-file-lines,
+.btn.btn-outline-primary:focus .fa-file-lines {
+    color: inherit !important;
+}
+
+.btn.btn-outline-primary .fa-rocket {
+    color: #d0c3e9 !important;
+}
+
+.btn.btn-outline-primary:hover .fa-rocket,
+.btn.btn-outline-primary:focus .fa-rocket {
+    color: inherit !important;
+}
+
 .btn[download] {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -961,8 +969,8 @@ button.btn-primary-outline:focus {
     transition: filter 0.25s ease;
 }
 
-.btn-primary:hover, .btn-primary:focus,
-.feedback:hover, .feedback:focus {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.feedback:hover, .feedback:focus, .feedback:active {
     filter: brightness(1.3);
     box-shadow: var(--bs-box-shadow-md);
     background-color: var(--bs-primary) !important;
@@ -970,14 +978,15 @@ button.btn-primary-outline:focus {
     border-color: var(--bs-primary) !important;
 }
 
-a.btn-primary-outline:not(.active):hover,
 .btn-primary-outline:not(.active):hover,
-a.btn-primary-outline:not(.active):focus,
-a.btn-primary-outline.active,
+.btn-primary-outline:not(.active):focus,
+.btn-primary-outline:not(.active):active,
 .btn-primary-outline.active {
     filter: brightness(1.3);
     box-shadow: var(--bs-box-shadow-md);
     border: 1px solid var(--bs-border-color);
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
 }
 
 @media (max-width: 767.98px) {
@@ -2125,6 +2134,10 @@ a[href$=".mp4"]::after {
     color: #c3ebfa;
 }
 
+.fa-expand {
+    color: #7ecbff !important;
+}
+
 .fa-file-contract {
     color: #fee685 !important;
 }
@@ -2584,6 +2597,10 @@ td a:hover .fa-circle-info {
     color: #a8f5d5;
 }
 
+.fa-terminal {
+    color: #8fd9c4 !important;
+}
+
 .fa-timeline {
     color: #ffb4cf;
 }
@@ -2703,6 +2720,16 @@ a .fa-up-right-from-square {
     color: #0d7a6e !important;
 }
 
+[data-bs-theme=light] .fa-expand {
+    /* → #0a6ebd = 5.28:1 ✓ */
+    color: #0a6ebd !important;
+}
+
+[data-bs-theme=light] .fa-terminal {
+    /* → #147a5f = 5.28:1 ✓ */
+    color: #147a5f !important;
+}
+
 [data-bs-theme=light] .fa-bell-concierge,
 [data-bs-theme=light] .fa-brain,
 [data-bs-theme=light] .fa-bug,
@@ -2796,6 +2823,24 @@ a .fa-up-right-from-square {
     color: inherit !important;
 }
 
+[data-bs-theme=light] .btn.btn-outline-primary .fa-file-lines {
+    color: #1a6fa0 !important;
+}
+
+[data-bs-theme=light] .btn.btn-outline-primary:hover .fa-file-lines,
+[data-bs-theme=light] .btn.btn-outline-primary:focus .fa-file-lines {
+    color: inherit !important;
+}
+
+[data-bs-theme=light] .btn.btn-outline-primary .fa-rocket {
+    color: #5b4ea0 !important;
+}
+
+[data-bs-theme=light] .btn.btn-outline-primary:hover .fa-rocket,
+[data-bs-theme=light] .btn.btn-outline-primary:focus .fa-rocket {
+    color: inherit !important;
+}
+
 [data-bs-theme=light] .fa-arrow-right,
 [data-bs-theme=light] .fa-arrow-right-long,
 [data-bs-theme=light] .fa-book-open,
@@ -2851,7 +2896,8 @@ a .fa-up-right-from-square {
     color: #5b4ea0 !important;
 }
 
-[data-bs-theme=light] .feedback .fa-rocket {
+[data-bs-theme=light] .feedback .fa-rocket,
+[data-bs-theme=light] .feedback .fa-message {
     color: inherit !important;
 }
 
@@ -3442,6 +3488,115 @@ dialog::backdrop { }
 
 .card-body.stretched-link:hover {
     color: inherit !important;
+}
+
+/* -----------------------------------------------------------------------
+   Migrated from my.scangov.com/public/css/style.css (style.css retired).
+   ----------------------------------------------------------------------- */
+
+[data-bs-theme=dark] .text-bg-info {
+  color: #fff !important;
+  background-color: #2672de !important;
+}
+
+[data-bs-theme=dark] button[type="submit"] {
+  min-width: 80px;
+}
+
+input[type="radio"],
+.form-check-input {
+  border-color: #9ca3ab;
+  border-width: 2px;
+}
+
+body[data-bs-theme='dark'] footer img,
+body[data-bs-theme='dark'] ul.navbar-nav img {
+  filter: invert(1);
+}
+
+.card-footer {
+  color: inherit !important;
+}
+
+a.cardlink {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Bootstrap dark mode WCAG compliance override */
+[data-bs-theme='dark'] .text-bg-danger .card {
+  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0);
+}
+
+.list-group-item.list-group-item-action {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.constrained-sm {
+  margin: 1rem 0;
+  max-width: 600px;
+}
+
+button.btn.btn-primary[disabled] {
+  background: none;
+}
+
+.nav-pills .nav-item a.btn-primary-outline:focus-visible {
+  color: var(--bs-btn-hover-color) !important;
+  background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+.nav-pills .nav-item a.btn-primary-outline.active:focus-visible {
+  border-color: white;
+}
+
+.btn {
+  text-wrap: nowrap;
+}
+
+td.padded-cell {
+  padding: 1rem;
+}
+
+.d-backlog .icon-open, .d-doing .icon-open {
+  display: inline;
+}
+
+.d-done .icon-open, .d-backlog .icon-open {
+  display: none;
+}
+
+.d-backlog .icon-closed, .d-doing .icon-closed {
+  display: none;
+}
+
+.d-done .icon-closed {
+  display: inline;
+}
+
+.js-subfilters {
+  background-color: var(--bs-badge-bg);
+  color: var(--bs-body-bg);
+}
+
+.js-top-badge {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+}
+
+[data-bs-theme=dark] .form-select.js-subfilters {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")
+}
+
+blockquote .lead {
+  margin: 2rem 0;
+}
+
+#pageInfo th {
+  min-width: 80px;
 }
 @charset "UTF-8";
 /*!
