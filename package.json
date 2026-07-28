@@ -38,6 +38,9 @@
     "html-minifier-terser": "^7.2.0",
     "purgecss": "^7.0.2"
   },
+  "overrides": {
+    "sharp": "^0.35.3"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
