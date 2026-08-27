@@ -6,7 +6,7 @@ import {
 import { feedPlugin } from '@11ty/eleventy-plugin-rss'
 import pluginSyntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import pluginNavigation from '@11ty/eleventy-navigation'
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
+import Image from '@11ty/eleventy-img'
 import { EleventyRenderPlugin } from '@11ty/eleventy'
 import pluginFilters from './_config/filters.js'
 import { getData } from './scripts/getdata.js';
@@ -70,6 +70,30 @@ export default async function (eleventyConfig) {
     // by default we use Eleventy’s built-in `slugify` filter:
     // slugify: eleventyConfig.getFilter("slugify"),
     // selector: "h1,h2,h3,h4,h5,h6", // default
+  })
+
+  // Responsive, optimized <picture> output (webp + original-format
+  // fallback, multiple widths, explicit width/height to avoid layout
+  // shift) for images referenced via the imgOg frontmatter field —
+  // see _includes/image.html. Source images live in public/assets/img/
+  // posts/ (passthrough-copied as-is too, for OG/social meta tags,
+  // which need one fixed image, not a responsive set).
+  eleventyConfig.addAsyncShortcode('optimizedImage', async function (src, alt, cssClass) {
+    let metadata = await Image(src, {
+      widths: [400, 800, 1200, null],
+      formats: ['webp', null],
+      outputDir: './_site/assets/img/optimized/',
+      urlPath: '/assets/img/optimized/',
+      sharpPngOptions: { compressionLevel: 9 },
+    });
+
+    return Image.generateHTML(metadata, {
+      alt,
+      loading: 'lazy',
+      decoding: 'async',
+      class: cssClass,
+      sizes: '(min-width: 992px) 800px, 100vw',
+    });
   })
 
   eleventyConfig.addShortcode('currentBuildDate', () => {
