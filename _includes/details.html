@@ -30,7 +30,24 @@
      per deployment (managing org, full-scan upsell, request-update link). To
      support another deployment, add a branch here and re-sync - don't fork
      the file.
+
+  4. `showLastUpdated` - set in page front matter for non-profile pages that
+     need a "Last updated" row (e.g. /pulse/). Renders a single-item ul with
+     the same mono/border-bottom styling as the profile list above.
 #}
+{% if showLastUpdated and not profile %}
+<ul class="small list-unstyled text-body-secondary font-monospace mt-2 mb-0">
+    <li>
+        Last scan:
+        <span id="updated">{{ updates }}</span>
+        {% set infoHref = "https://docs.scangov.org/scans/" %}
+        {% set infoLabel = "Last scan" %}
+        {% set infoDescription = "How often ScanGov scans this site." %}
+        {% set infoMatchTextColor = true %}
+        {% include "info-icon.html" %}
+    </li>
+</ul>
+{% endif %}
 {% if profile %}
 <ul class="small list-unstyled text-body-secondary font-monospace">
     {% if not mapPage and not orgPage %}
@@ -40,9 +57,15 @@
         <a href="/org/{{ domain.name | slugify }}/">{{ domain.name }}</a>
     </li>
     {% endif %}
+    {% if domain.status %}
+    <li>
+        Status:
+        <a href="/status/{{ domain.status }}/">{{ domain.status }}</a>
+    </li>
+    {% endif %}
     {% if site.url == 'https://scangov.org' %}
     <li>
-        Pages: 1
+        Pages: 1 (homepage only)
         &middot; <a href="https://scangov.com/plans">Get full site scan</a>
     </li>
     {% elif site.url == 'https://my.scangov.com' %}
@@ -56,6 +79,11 @@
     <li>
         Last scan:
         <span id="updated">{{ updates }}</span>
+        {% set infoHref = "https://docs.scangov.org/scans/" %}
+        {% set infoLabel = "Last scan" %}
+        {% set infoDescription = "How often ScanGov scans this site." %}
+        {% set infoMatchTextColor = true %}
+        {% include "info-icon.html" %}
     </li>
     {% elif site.url == 'https://my.scangov.com' %}
     <li>
