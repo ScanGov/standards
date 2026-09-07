@@ -14,7 +14,7 @@ permalink: "{{ guide.key | slugify }}/"
 
 eleventyComputed:
   title: "{{ guide.displayName }}"
-  description: "{{ guide.description }}"
+  description: "{{ guide.description | safe }}"
   isGuidance: true
 
 topics:
