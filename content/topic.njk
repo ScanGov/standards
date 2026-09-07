@@ -17,7 +17,7 @@ permalink: "/{{ topic }}/"
 
 eleventyComputed:
   title: "{{ audits[topic].displayName }} standards"
-  description: "{{ audits[topic].standardsDescription }}"
+  description: "{{ audits[topic].standardsDescription | safe }}"
 ---
 
 {% include "filter.html" %}

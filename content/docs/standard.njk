@@ -14,7 +14,7 @@ permalink: "{{ docpage.key | slugify }}/"
 
 eleventyComputed:
   title: "{{ docpage.displayName }}"
-  description: "{{ docpage.description }}"
+  description: "{{ docpage.description | safe }}"
   isStandard: true
 
 

@@ -17,7 +17,7 @@ permalink: "/guidance/{{ topic }}/"
 
 eleventyComputed:
   title: "{{ audits[topic].displayName }} guidance"
-  description: "{{ audits[topic].guidanceDescription }}"
+  description: "{{ audits[topic].guidanceDescription | safe }}"
 ---
 
 
