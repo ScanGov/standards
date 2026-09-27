@@ -29,5 +29,18 @@
     if (desktopToc) {
       desktopToc.classList.add('d-md-block');
     }
+
+    // Highlight the link for whichever section is current as the reader scrolls.
+    const tocLinks = document.querySelectorAll('.js-on-this-page a');
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        tocLinks.forEach(function (link) { link.classList.remove('active'); });
+        document.querySelectorAll('.js-on-this-page a[href="#' + entry.target.id + '"]').forEach(function (link) {
+          link.classList.add('active');
+        });
+      });
+    }, { rootMargin: '0px 0px -70% 0px', threshold: 0 });
+    headings.forEach(function (heading) { observer.observe(heading); });
   }
 </script>
