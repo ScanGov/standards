@@ -1895,9 +1895,13 @@ iframe {
 /* Bootstrap's accordion markup requires an <h2 class="accordion-header">
    wrapper around the toggle button - not a real section heading, so it
    shouldn't get the post's h2 spacing (e.g. .report-chart's data-table
-   accordion in _includes/report-chart.html). */
-.post-content .accordion-header {
+   accordion in _includes/report-chart.html, or the video transcript accordion
+   in _includes/transcript.html). #post is the docs equivalent of .post-content,
+   and its own h2 rules are more specific, so it needs its own selector. */
+.post-content .accordion-header,
+#post .accordion-header {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .post-content ul, .post-content p {

@@ -45,7 +45,7 @@
     updateButton();
   }</script><svg class="fa-solid fa-link" style="display:none" aria-hidden="true"><use href="#fas-fa-link" xlink:href="#fas-fa-link"></use></svg><script>(function() {
     document.querySelectorAll('#post h2[id], #post h3[id]').forEach(function(h) {
-        if (h.closest('.card')) return;
+        if (h.closest('.card') || h.classList.contains('accordion-header')) return;
         var wrap = document.createElement('a');
         wrap.className = 'heading-anchor-text';
         wrap.href = '#' + h.id;
