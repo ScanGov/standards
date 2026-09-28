@@ -4,7 +4,7 @@
   </ul>
 </div>
 <script>
-  const headings = document.querySelectorAll('#post h2, #post h3');
+  const headings = document.querySelectorAll('#post h2:not(.accordion-header), #post h3');
   if (headings.length > 0) {
     document.querySelectorAll('.js-on-this-page ul').forEach(function (tocContainer) {
       headings.forEach(function (heading) {
