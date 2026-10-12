@@ -27,7 +27,7 @@ topics:
         <tr>
           <td class="p-3 col-2">
             <div class="d-flex flex-wrap">
-              {% for key in ["accessibility", "botability", "security", "usability"] %}
+              {% for key, audit in audits | dictsort %}
                 {% if key in item.topics %}
                   <a href="{{ audits[key].url }}" class="icon-link d-inline-flex align-items-start mb-1 me-1 text-decoration-none">
                     <i class="fa-solid fa-{{ audits[key].icon }} me-2 mb-2" title="{{ audits[key].displayName }}"></i>

@@ -2,7 +2,7 @@ import { getData } from '../scripts/getdata.js';
 
 export default async function () {
   const auditsFile = 'https://github.com/ScanGov/data/raw/refs/heads/main/standards/audits.json';
-  const auditData = await getData(auditsFile);
+  const auditData = await getData(auditsFile, true);
 
   const items = [
     { title: 'Standards', url: '/', icon: 'fa-solid fa-certificate' },
