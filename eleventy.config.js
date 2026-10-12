@@ -21,7 +21,7 @@ import { execSync } from "child_process";
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
   let auditsFile = 'https://github.com/ScanGov/data/raw/refs/heads/main/standards/audits.json';
-  const audits = await getData(auditsFile);
+  const audits = await getData(auditsFile, true);
 
   // Rebuild scripts/bundle.css from its sources before every build (and
   // every --serve rebuild), so editing public/css/scangov.css can never
