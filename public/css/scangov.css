@@ -498,15 +498,19 @@ button:not(.card *) {
     }
 }
 
-/* Skip link — visible on focus for keyboard users (WCAG 2.4.1) */
+/* Skip link — visible on focus for keyboard users (WCAG 2.4.1). Hidden by
+   Bootstrap's .visually-hidden-focusable until it takes focus; never pair it
+   with .visually-hidden, which stays clipped on focus. */
 .skip-link {
     position: absolute;
-    top: -100%;
-    left: 0;
-}
-
-.skip-link:focus {
     top: 0;
+    left: 0;
+    z-index: 1100;
+    padding: 0.5rem 1rem;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-link-color);
+    border: 1px solid var(--bs-border-color);
+    border-top: 0;
 }
 
 /* Navbar */
@@ -1931,6 +1935,19 @@ h3:hover a#heading-hashtag {
 
 iframe {
     border: 1px solid var(--bs-border-color) !important;
+}
+
+/* Video embeds (lite-youtube-embed, see the youtube shortcode). The
+   component caps itself at 720px; fill the column like the old iframe did. */
+lite-youtube {
+    max-width: 100%;
+}
+
+/* The play button covers the whole poster and the component clips paint at
+   its edge, so the site's offset focus ring would be cut off. Draw it inset. */
+lite-youtube > .lyt-playbtn:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: -5px;
 }
 
 /* News posts */
