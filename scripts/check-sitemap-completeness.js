@@ -177,6 +177,22 @@ const sitemapPaths = new Set(
   [...sitemapXml.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => new URL(m[1]).pathname)
 );
 
+// The readability pages must stay in the sitemap. The checks below only catch a
+// built page that is missing, so a removed or renamed page would go unnoticed.
+const REQUIRED_READABILITY_PATHS = [
+  '/readability/',
+  '/reading-level/',
+  '/automated-readability-index/',
+  '/flesch-kincaid/',
+  '/guidance/readability/',
+];
+const requiredMissing = REQUIRED_READABILITY_PATHS.filter((p) => !sitemapPaths.has(p));
+if (requiredMissing.length > 0) {
+  console.error(`check-sitemap-completeness: ${requiredMissing.length} readability page(s) missing from sitemap.xml:\n`);
+  for (const p of requiredMissing) console.error(`  ${p}`);
+  process.exit(1);
+}
+
 let missing, total;
 try {
   ({ missing, total } = await checkViaNdjson(siteRoot, sitemapPaths));
