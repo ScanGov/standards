@@ -2893,6 +2893,10 @@ td a:hover .fa-circle-info {
     color: #7efbe1;
 }
 
+.fa-rotate-left {
+    color: #7efbe1;
+}
+
 .fa-face-frown {
     color: #fbbaa7;
 }
@@ -3035,7 +3039,10 @@ a .fa-up-right-from-square {
 [data-bs-theme=light] .fa-circle-nodes:not([class*="text-"]),
 [data-bs-theme=light] .fa-scale-balanced:not([class*="text-"]),
 [data-bs-theme=light] .fa-link:not([class*="text-"]),
+[data-bs-theme=light] .fa-wand-magic-sparkles:not([class*="text-"]),
 [data-bs-theme=light] .fa-window-maximize:not([class*="text-"]),
+[data-bs-theme=light] .fa-copy:not([class*="text-"]),
+[data-bs-theme=light] .fa-rotate-left:not([class*="text-"]),
 [data-bs-theme=light] .fa-link-slash:not([class*="text-"]),
 [data-bs-theme=light] .fa-concierge-bell:not([class*="text-"]),
 [data-bs-theme=light] .fa-table:not([class*="text-"]),
@@ -3091,6 +3098,16 @@ a .fa-up-right-from-square {
 [data-bs-theme=light] .text-neutral-icon {
     color: var(--bs-body-color) !important;
     fill: var(--bs-body-color) !important;
+}
+
+/* Icons inside a button follow the button's own text color when its background
+   changes (hover, focus, press). Without this the blanket light-mode icon rule above
+   keeps them body-colored, so they turn dark on a dark hover background. */
+[data-bs-theme=light] .btn:hover .fa-solid:not([class*="text-"]),
+[data-bs-theme=light] .btn:focus-visible .fa-solid:not([class*="text-"]),
+[data-bs-theme=light] .btn:active .fa-solid:not([class*="text-"]) {
+    color: var(--bs-btn-hover-color) !important;
+    fill: var(--bs-btn-hover-color) !important;
 }
 
 /* Status cards keep their own text color for icons in light mode too: the blanket
@@ -3670,6 +3687,7 @@ body[data-bs-theme='dark'] ul.navbar-nav img {
 .card-footer {
   color: inherit !important;
   font-family: var(--bs-font-monospace);
+  text-align: start;
 }
 
 a.cardlink {
@@ -4316,6 +4334,18 @@ blockquote .lead {
 }
 .sg-map-county--pass {
   fill: color-mix(in oklab, var(--sg-chart-muted) 30%, var(--bs-body-bg));
+}
+/* A page's most severe stage (scripts/issues.js `stages`, tone 'severe'). */
+.sg-map-issue--severe path {
+  fill: var(--bs-danger);
+}
+/* A passing county the page still flags (item.mark): the issue accent at a
+   tint, so it reads as related to the highlighted set but lesser. */
+.sg-map-county--marked {
+  fill: color-mix(in oklab, var(--sg-chart-series-1) 40%, var(--bs-body-bg));
+}
+.sg-swatch--marked {
+  background: color-mix(in oklab, var(--sg-chart-series-1) 40%, var(--bs-body-bg));
 }
 .sg-map-county--unscanned {
   fill: var(--bs-inaccessible);
