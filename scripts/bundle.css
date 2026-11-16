@@ -803,6 +803,8 @@ a.list-group-item {
 .navbar-nav .nav-link.active {
     padding-top: 0.65rem;
     padding-bottom: 0.65rem;
+    color: var(--bs-link-color) !important;
+    text-decoration: none;
 }
 
 .nav-link {
@@ -893,6 +895,11 @@ a.list-group-item:hover {
     color: white;
 }
 
+/* Org name with no org page: plain text, so not link blue. */
+.breadcrumb-item span.bc-org {
+    color: white;
+}
+
 [data-bs-theme=light] .bc-sep {
     color: var(--bs-body-color);
 }
@@ -906,6 +913,10 @@ a.list-group-item:hover {
 [data-bs-theme=light] .breadcrumb-item a.bc-domain:visited,
 [data-bs-theme=light] .breadcrumb-item a.bc-org-current,
 [data-bs-theme=light] .breadcrumb-item a.bc-org-current:visited {
+    color: var(--bs-body-color);
+}
+
+[data-bs-theme=light] .breadcrumb-item span.bc-org {
     color: var(--bs-body-color);
 }
 
@@ -984,6 +995,22 @@ a:hover {
 .btn + .dropdown:not(.d-flex > *):not(.d-grid > *),
 .dropdown + .btn:not(.d-flex > *):not(.d-grid > *) {
     margin-left: 0.5rem;
+}
+
+/* Search box submit: black in light, white in dark, instead of the primary blue */
+.search-form .btn-primary {
+    --bs-btn-bg: var(--bs-body-color);
+    --bs-btn-border-color: var(--bs-body-color);
+    --bs-btn-color: var(--bs-body-bg);
+    --bs-btn-hover-bg: var(--bs-body-color);
+    --bs-btn-hover-border-color: var(--bs-body-color);
+    --bs-btn-hover-color: var(--bs-body-bg);
+    --bs-btn-active-bg: var(--bs-body-color);
+    --bs-btn-active-border-color: var(--bs-body-color);
+    --bs-btn-active-color: var(--bs-body-bg);
+    background-color: var(--bs-body-color);
+    border-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
 }
 
 .btn:focus-visible {
@@ -1108,6 +1135,7 @@ a:hover {
     font-family: "Public Sans Regular", sans-serif !important;
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
+    box-shadow: var(--bs-shadow);
     transition: filter 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -1118,20 +1146,14 @@ a:hover {
     width: auto;
     flex-shrink: 0;
 }
+/* Hover matches linked cards: darker shadow and the same brightness shift */
 .nav-pills .nav-link:not(.active):hover {
-    background-color: var(--bs-primary) !important;
-    color: var(--bs-primary-text) !important;
-    border-color: var(--bs-primary) !important;
-    box-shadow: var(--bs-shadow);
+    filter: brightness(1.3);
+    box-shadow: var(--bs-box-shadow-hover);
 }
 
-.nav-pills .nav-link:not(.active):hover i,
-.nav-pills .nav-link:not(.active):hover svg {
-    color: var(--bs-primary-text) !important;
-}
-
-.nav-pills .nav-link:not(.active):hover svg path {
-    fill: var(--bs-primary-text) !important;
+[data-bs-theme=light] .nav-pills .nav-link:not(.active):hover {
+    filter: brightness(0.97);
 }
 
 .nav-pills .nav-link.active i,
@@ -1157,7 +1179,7 @@ a:hover {
     color: var(--bs-primary-text) !important;
     border-color: var(--bs-primary) !important;
     filter: brightness(1.3);
-    box-shadow: var(--bs-box-shadow-md);
+    box-shadow: var(--bs-box-shadow-hover);
 }
 
 .nav-pills .fa-bars-progress {
@@ -1444,6 +1466,12 @@ th.sortable {
 
 /* Rankings table */
 
+/* The rank column is only as wide as its number, so Site sits right beside it. */
+.rankings-col-rank {
+    width: 1%;
+    white-space: nowrap;
+}
+
 .rankings-col-site {
     word-break: break-word;
 }
@@ -1719,6 +1747,11 @@ a.card {
 }
 
 .card-grade .card-body {
+    /* The value sits in the vertical middle of the body, whatever the height of the
+       footer beside it or the cards next to it in the row. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1731,6 +1764,9 @@ a.card {
 }
 
 .card-grade-sm .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -2470,6 +2506,10 @@ td a:hover .fa-circle-info {
     color: #b8d293 !important;
 }
 
+.fa-note-sticky {
+    color: #ffe29a !important;
+}
+
 .fa-code {
     color: #bbc8f5 !important;
 }
@@ -2926,7 +2966,8 @@ a .fa-up-right-from-square {
 [data-bs-theme=light] .fa-star:not([class*="text-"]),
 [data-bs-theme=light] .fa-arrow-right-to-bracket:not([class*="text-"]),
 [data-bs-theme=light] .fa-check-circle:not([class*="text-"]),
-[data-bs-theme=light] .fa-square-check:not([class*="text-"]) {
+[data-bs-theme=light] .fa-square-check:not([class*="text-"]),
+[data-bs-theme=light] .fa-note-sticky:not([class*="text-"]) {
     color: var(--bs-body-color) !important;
     fill: var(--bs-body-color) !important;
 }
@@ -3934,16 +3975,8 @@ blockquote .lead {
   border-radius: 1px;
   vertical-align: .2em;
 }
-.sg-chart-data {
+.sg-chart .accordion {
   margin-top: .75rem;
-  font-size: .9rem;
-}
-.sg-chart-data summary {
-  cursor: pointer;
-  width: fit-content;
-}
-.sg-chart-data .table-responsive {
-  margin-top: .5rem;
 }
 
 /* Entrance motion: bars grow from the baseline once, values fade in after. */
@@ -4013,22 +4046,9 @@ blockquote .lead {
   }
 }
 
-/* County state pages (/rankings/counties/{st}/): stat tiles and the
-   screenshot placeholder in the top-three cards. The placeholder reserves the
-   image's aspect ratio so a future screenshot causes no layout shift. */
-.sg-stat-value {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  line-height: 1.1;
-  margin-bottom: .25rem;
-}
-.sg-stat-value .badge {
-  font-size: .45em;
-  vertical-align: .35em;
-}
-.sg-stat-label {
-  font-size: .9375rem;
-  margin: 0;
-}
+/* Screenshot placeholder in the top-three cards on county state pages
+   (/rankings/counties/{st}/). It reserves the image's aspect ratio so a future
+   screenshot causes no layout shift. */
 .sg-shot {
   aspect-ratio: 16 / 10;
   background: var(--bs-body-secondary-bg);
@@ -4172,6 +4192,15 @@ blockquote .lead {
 }
 .sg-map-county--unscanned {
   fill: var(--bs-inaccessible);
+}
+/* A county whose site the auditor looked at but did not score (item.skipped,
+   e.g. too little text): the warning tone at a tint, so it reads as a
+   caution rather than a failure or a gap in the scan. */
+.sg-map-county--skipped {
+  fill: color-mix(in oklab, var(--bs-warning) 45%, var(--bs-body-bg));
+}
+.sg-swatch--skipped {
+  background: color-mix(in oklab, var(--bs-warning) 45%, var(--bs-body-bg));
 }
 .sg-swatch--pass {
   background: color-mix(in oklab, var(--sg-chart-muted) 30%, var(--bs-body-bg));
